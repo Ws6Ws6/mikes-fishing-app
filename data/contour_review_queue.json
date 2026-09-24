@@ -309,5 +309,121 @@
     ],
     "shore_iou": 0.266,
     "status": "pending_review"
+  },
+  {
+    "id": "winona-lake-kosciusko",
+    "name": "Winona Lake",
+    "county": "Kosciusko",
+    "issues": [
+      "pdf_only",
+      "Shoreline IoU=0.29",
+      "Shoreline IoU=0.29"
+    ],
+    "shore_iou": 0.28732454771651283,
+    "status": "pending_review"
+  },
+  {
+    "id": "hill-lake-kosciusko",
+    "name": "Hill Lake",
+    "county": "Kosciusko",
+    "issues": [
+      "pdf_only",
+      "Shoreline IoU=0.03",
+      "Shoreline IoU=0.03"
+    ],
+    "shore_iou": 0.030305540598379102,
+    "status": "pending_review"
+  },
+  {
+    "id": "little-barbee-lake-kosciusko",
+    "name": "Little Barbee Lake",
+    "county": "Kosciusko",
+    "issues": [
+      "pdf_only",
+      "Shoreline IoU=0.14",
+      "Shoreline IoU=0.14"
+    ],
+    "shore_iou": 0.13958121281174832,
+    "status": "pending_review"
+  },
+  {
+    "id": "sechrist-lake-kosciusko",
+    "name": "Sechrist Lake",
+    "county": "Kosciusko",
+    "issues": [
+      "pdf_only",
+      "Shoreline IoU=0.31",
+      "Shoreline IoU=0.31"
+    ],
+    "shore_iou": 0.3108326061878085,
+    "status": "pending_review"
+  },
+  {
+    "id": "banning-lake-kosciusko",
+    "name": "Banning Lake",
+    "county": "Kosciusko",
+    "issues": [
+      "pdf_only",
+      "Shoreline IoU=0.38",
+      "Shoreline IoU=0.38"
+    ],
+    "shore_iou": 0.3809446578426731,
+    "status": "pending_review"
+  },
+  {
+    "id": "silver-lake-kosciusko",
+    "name": "Silver Lake",
+    "county": "Kosciusko",
+    "issues": [
+      "pdf_only",
+      "Shoreline IoU=0.31",
+      "Shoreline IoU=0.31"
+    ],
+    "shore_iou": 0.3102111304877842,
+    "status": "pending_review"
+  },
+  {
+    "id": "north-little-lake-kosciusko",
+    "name": "North Little Lake",
+    "county": "Kosciusko",
+    "issues": [
+      "pdf_only_max_unknown",
+      "Shoreline IoU=0.13",
+      "Shoreline IoU=0.13"
+    ],
+    "shore_iou": 0.1275459169557537,
+    "status": "pending_review"
+  },
+  {
+    "id": "tippecanoe-lake",
+    "name": "Tippecanoe Lake",
+    "county": "Kosciusko",
+    "issues": [
+      "Replaces incomplete FeatureServer contours",
+      "from shared Tippecanoe/Oswego PDF. georef={'iou': 0.550254527966317, 'canvas': [1731, 2354], 's_m_per_px': 2.8403979601941027, 'ominx': -9550341.040238306, 'omaxy': 5062655.8986687325, 'ooff_x': 20, 'ooff_y': 20}"
+    ],
+    "shore_iou": null,
+    "status": "pending_review"
+  },
+  {
+    "id": "oswego-lake",
+    "name": "Oswego Lake",
+    "county": "Kosciusko",
+    "issues": [
+      "Replaces incomplete FeatureServer contours",
+      "from shared Tippecanoe/Oswego PDF. georef={'iou': 0.550254527966317, 'canvas': [1731, 2354], 's_m_per_px': 2.8403979601941027, 'ominx': -9550341.040238306, 'omaxy': 5062655.8986687325, 'ooff_x': 20, 'ooff_y': 20}"
+    ],
+    "shore_iou": null,
+    "status": "pending_review"
+  },
+  {
+    "id": "bower-lake-steuben",
+    "name": "Bower Lake",
+    "county": "Steuben",
+    "issues": [
+      "Shoreline IoU=0.57"
+    ],
+    "shore_iou": 0.5704741520203697,
+    "status": "pending_review"
   }
 ]
