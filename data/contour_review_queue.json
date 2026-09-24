@@ -1,66 +1,14 @@
 [
   {
-    "id": "indian-lake-dekalb",
-    "name": "Indian Lake",
-    "county": "DeKalb",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "medium",
-    "shore_iou": 0.999,
-    "issues": [
-      "method=traced_from_pdf; n=135; in-OSM=0.9986522911051213; geo acres=56.7 vs PDF 101.0 ratio=0.561; Indian: OSM 57 ac vs PDF 101.0 \u2014 contours lock; honest acre gap retained as review"
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "fish-lake-elkhart",
-    "name": "Fish Lake",
-    "county": "Elkhart",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "low",
-    "shore_iou": 0.621,
-    "issues": [
-      "water-mask IoU=0.621; proxy=0.0; frac=0.704; Fixed overlapping bbox vs LaGrange Fish Lake"
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "simonton-lake-elkhart",
-    "name": "Simonton Lake",
-    "county": "Elkhart",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm_open_water_core(buf=-64m)",
-    "review_priority": "medium",
-    "shore_iou": 0.674,
-    "issues": [
-      "Acre mismatch shore 227.9 vs survey 303.0 (ratio=0.75); water-mask IoU=0.674; proxy=0.4003870130605069; frac=0.962"
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "webster-lake-kosciusko",
-    "name": "Webster Lake",
-    "county": "Kosciusko",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "medium",
-    "shore_iou": 1.0,
-    "issues": [
-      "Spot-check vs OSM; claimed water-mask IoU=0.606; contour-in-OSM=1.0; geo acres=637.4 vs PDF 774 (ratio=0.823); Webster: OSM relation smaller than PDF 774 ac (possible marsh/basin difference); contours lock to OSM but acre gap >15% \u2014 keep needs_review"
-    ],
-    "status": "pending_review"
-  },
-  {
     "id": "atwood-lake-lagrange",
     "name": "Atwood Lake",
     "county": "LaGrange",
     "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
+    "georef_method": "osm_clip_linemerge_v2",
     "review_priority": "medium",
     "shore_iou": 0.51,
     "issues": [
-      "water-mask IoU=0.51; proxy=0.5338751014838641; frac=0.862"
+      "Kept needs_review: frac=1.0 shore_ac=292.2 pdf_ac=170 (clear bar not met)"
     ],
     "status": "pending_review"
   },
@@ -73,7 +21,7 @@
     "review_priority": "low",
     "shore_iou": 0.606,
     "issues": [
-      "water-mask IoU=0.606; proxy=None; frac=0.994"
+      "Audit frac=0.9998149176383491; shore_ac=692.9; pdf_ac=365; iou=0.606; clear bar not met"
     ],
     "status": "pending_review"
   },
@@ -86,20 +34,33 @@
     "review_priority": "low",
     "shore_iou": 0.61,
     "issues": [
-      "water-mask IoU=0.61; proxy=0.5673943702210855; frac=1.000"
+      "Audit frac=1.0; shore_ac=229.3; pdf_ac=120; iou=0.61; clear bar not met"
     ],
     "status": "pending_review"
   },
   {
-    "id": "hackleburg-lake",
-    "name": "Hackleburg Lake",
-    "county": "LaGrange",
-    "contour_method": "vector_featureserver",
-    "georef_method": "featureserver",
+    "id": "fish-lake-elkhart",
+    "name": "Fish Lake",
+    "county": "Elkhart",
+    "contour_method": "traced_from_pdf",
+    "georef_method": "osm",
     "review_priority": "low",
-    "shore_iou": 0.807,
+    "shore_iou": 0.621,
     "issues": [
-      "FS weak lock frac=0.748 proxy=0.8072254178801934"
+      "Audit frac=0.9743589743589743; shore_ac=63.8; pdf_ac=34.0; iou=0.621; clear bar not met"
+    ],
+    "status": "pending_review"
+  },
+  {
+    "id": "lake-arrowhead-steuben",
+    "name": "Lake Arrowhead",
+    "county": "Steuben",
+    "contour_method": "traced_from_pdf",
+    "georef_method": "osm_clip_linemerge_v2",
+    "review_priority": "medium",
+    "shore_iou": 0.962,
+    "issues": [
+      "Still low frac_inside=0.8627450980392157 after osm_clip_linemerge_v2"
     ],
     "status": "pending_review"
   },
@@ -108,11 +69,11 @@
     "name": "Little Turkey Lake",
     "county": "LaGrange",
     "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
+    "georef_method": "osm_clip_linemerge_v2",
     "review_priority": "medium",
     "shore_iou": 0.437,
     "issues": [
-      "water-mask IoU=0.437; proxy=0.46174387189829036; frac=0.723"
+      "Kept needs_review: frac=0.9620253164556962 shore_ac=241.9 pdf_ac=135 (clear bar not met)"
     ],
     "status": "pending_review"
   },
@@ -125,20 +86,7 @@
     "review_priority": "low",
     "shore_iou": 0.434,
     "issues": [
-      "FS weak lock frac=0.929 proxy=0.4335859541499004"
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "nauvoo-lake-lagrange",
-    "name": "Nauvoo Lake",
-    "county": "LaGrange",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm:way/149488014",
-    "review_priority": "medium",
-    "shore_iou": 0.572,
-    "issues": [
-      "water-mask IoU=0.572; proxy=None; frac=0.806"
+      "Audit frac=1.0; shore_ac=116.2; pdf_ac=68; iou=0.434; clear bar not met"
     ],
     "status": "pending_review"
   },
@@ -151,7 +99,33 @@
     "review_priority": "low",
     "shore_iou": 0.675,
     "issues": [
-      "FS weak lock frac=0.868 proxy=0.674705635248937"
+      "Audit frac=0.9602272727272727; shore_ac=666.1; pdf_ac=371; iou=0.675; clear bar not met"
+    ],
+    "status": "pending_review"
+  },
+  {
+    "id": "oswego-lake",
+    "name": "Oswego Lake",
+    "county": "Kosciusko",
+    "contour_method": "traced_from_pdf",
+    "georef_method": "osm_clip_linemerge_v2",
+    "review_priority": "medium",
+    "shore_iou": 1.0,
+    "issues": [
+      "Still low frac_inside=0.8636363636363636 after osm_clip_linemerge_v2"
+    ],
+    "status": "pending_review"
+  },
+  {
+    "id": "simonton-lake-elkhart",
+    "name": "Simonton Lake",
+    "county": "Elkhart",
+    "contour_method": "traced_from_pdf",
+    "georef_method": "osm_open_water_core(buf=-64m)",
+    "review_priority": "medium",
+    "shore_iou": 0.674,
+    "issues": [
+      "Audit frac=0.9910714285714286; shore_ac=544.1; pdf_ac=303.0; iou=0.674; clear bar not met"
     ],
     "status": "pending_review"
   },
@@ -160,37 +134,24 @@
     "name": "Stone Lake",
     "county": "LaGrange",
     "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
+    "georef_method": "osm_clip_linemerge_v2",
     "review_priority": "medium",
     "shore_iou": 0.59,
     "issues": [
-      "water-mask IoU=0.59; proxy=0.6103494941622565; frac=0.713"
+      "Kept needs_review: frac=0.9743589743589743 shore_ac=205.2 pdf_ac=116 (clear bar not met)"
     ],
     "status": "pending_review"
   },
   {
-    "id": "troxel-lake-lagrange",
-    "name": "Troxel Lake",
-    "county": "LaGrange",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm:way/966612130",
-    "review_priority": "medium",
-    "shore_iou": 0.67,
-    "issues": [
-      "water-mask IoU=0.67; proxy=None; frac=1.000"
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "little-cedar-lake-whitley",
-    "name": "Little Cedar Lake",
-    "county": "Whitley",
+    "id": "webster-lake-kosciusko",
+    "name": "Webster Lake",
+    "county": "Kosciusko",
     "contour_method": "traced_from_pdf",
     "georef_method": "osm",
     "review_priority": "medium",
-    "shore_iou": 0.982,
+    "shore_iou": 1.0,
     "issues": [
-      "Shore water-mask IoU=0.719; OSM open-water 46.6 ac vs PDF 82.5 (ratio=0.565). Contour-in-OSM frac=0.982 \u2014 absolute scale vs survey acres uncertain; left needs_review."
+      "Audit frac=0.9895769466584917; shore_ac=1131.2; pdf_ac=774; iou=1.0; clear bar not met"
     ],
     "status": "pending_review"
   }

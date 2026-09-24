@@ -1,41 +1,75 @@
 {
-  "action": "restore_fea961c_plus_crooked_noble_only",
-  "reason": "shoreline_pass bucket clips exploded MultiLineStrings (Engle 33\u21921611); do not re-apply bucket1/2/3 fixed_contours",
-  "before_live": {
-    "contours": 16841
+  "pass": "shoreline_pass_v2_safe",
+  "base_live_commit_pages": "b1f93ec",
+  "method": "FeatureServer preferred else clip+linemerge by depth_ft; reject if n>3x or null depth_ft",
+  "skipped": [
+    "crooked-lake-noble"
+  ],
+  "audit": {
+    "n_lakes": 139,
+    "low_frac_before_fix": 28
   },
-  "fea961c_base": {
-    "contours": 9741,
-    "lakes": 139
+  "fixed": {
+    "n_lakes_contour_replaced": 27,
+    "lake_ids": [
+      "atwood-lake-lagrange",
+      "beaverdam-lake-steuben",
+      "bower-lake-steuben",
+      "cree-lake-noble",
+      "engle-lake-noble",
+      "hackleburg-lake",
+      "henry-lake-steuben",
+      "hindman-lake-noble",
+      "jones-lake-noble",
+      "lake-arrowhead-steuben",
+      "latta-lake-noble",
+      "little-cedar-lake-whitley",
+      "little-otter-lake-steuben",
+      "little-turkey-lake-lagrange",
+      "loon-lake-noble",
+      "martin-lake",
+      "mud-lake-noble",
+      "nauvoo-lake-lagrange",
+      "old-lake-whitley",
+      "oswego-lake",
+      "sand-lake",
+      "skinner-lake-noble",
+      "steinbarger-lake-noble",
+      "stone-lake-lagrange",
+      "sylvan-lake-east-west-noble",
+      "troxel-lake-lagrange",
+      "village-lake"
+    ],
+    "n_lakes_props_updated": 36
   },
-  "crooked_noble": {
-    "removed_from_fea": 304,
-    "added_from_bucket0": 220,
-    "depth_null_skipped": 0,
-    "nonzero_depth": 219,
-    "shore_iou": 0.979,
-    "bbox": [
-      -85.488513,
-      41.256581,
-      -85.469867,
-      41.270491
-    ]
+  "still_spilling": [
+    "lake-arrowhead-steuben",
+    "oswego-lake"
+  ],
+  "contours": {
+    "before": 9657,
+    "after": 8350,
+    "delta": -1307
   },
-  "after": {
-    "contours": 9657,
-    "lakes": 139,
-    "needs_review": 15,
+  "verification": {
     "engle": {
-      "n": 33,
+      "n": 7,
       "depth_null": 0
     },
     "sand": {
-      "n": 50,
+      "n": 10,
       "depth_null": 0
     },
     "crooked_noble": {
       "n": 220,
       "depth_null": 0
     }
-  }
+  },
+  "needs_review_after": 12,
+  "notes": [
+    "Did NOT reapply _shoreline_pass/bucket* exploded clips",
+    "Crooked Noble left untouched (frac\u22480.983, n=220)",
+    "Loon Noble/Steuben share identical bbox \u2014 contours applied once",
+    "Feature count drop is intentional (merge same depth_ft into MultiLineString)"
+  ]
 }
