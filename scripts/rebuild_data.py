@@ -435,3 +435,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# NOTE: Sylvan Lake (Noble) contours are maintained separately in data/contours.geojson
+# from DNR PDF digitization (see sylvan-work pipeline); a full rebuild from FeatureServer
+# alone will drop them unless re-merged.

@@ -1,6 +1,6 @@
 # Mike's Fishing App (prototype)
 
-Mobile-friendly web map of **Northeast Indiana** lake depth contours for Joey / Mike.
+Mobile-friendly web map for Joey / Mike: **statewide Indiana boat launches** plus **Northeast Indiana** lake depth contours.
 
 ## Features
 
@@ -9,7 +9,7 @@ Mobile-friendly web map of **Northeast Indiana** lake depth contours for Joey / 
 - Lake search/list for Steuben, LaGrange, Noble, DeKalb, Kosciusko, Elkhart, Whitley, Allen
 - Lake card: name, county, max depth, acres, Drive here (Google Maps), Next nearest lake
 - **Trolling mode**: live/demo GPS boat marker + heading, follow-me, breadcrumb track, speed (mph), approximate depth from nearest survey contour, Screen Wake Lock
-- **Boat launches / ramps**: public DNR access sites + private/commercial sites from Indiana recreational inventory and OSM (tagged), with map toggle, clusters, and nearby list on lake cards
+- **Boat launches / ramps** (statewide Indiana): public DNR access sites + private/commercial sites from Indiana recreational inventory and OSM (tagged), with map toggle, clusters, and nearby list on lake cards
 
 ## Run locally
 

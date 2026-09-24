@@ -1,17 +1,22 @@
-/* Mike's Fishing App — NE Indiana lake depth prototype */
+/* Mike's Fishing App — Indiana boat launches · NE Indiana lake depth prototype */
 (function () {
   "use strict";
 
   const MAX_ZOOM = 22;
+  // Default view stays NE Indiana (depth maps); pan/zoom freely for statewide launches.
   const NE_CENTER = [41.45, -85.35];
   const NE_ZOOM = 9;
+  const STATE_BOUNDS = L.latLngBounds([37.75, -88.12], [41.78, -84.75]);
 
   const map = L.map("map", {
     center: NE_CENTER,
     zoom: NE_ZOOM,
     maxZoom: MAX_ZOOM,
+    minZoom: 6,
     zoomControl: false,
     attributionControl: true,
+    maxBounds: STATE_BOUNDS.pad(0.35),
+    maxBoundsViscosity: 0.4,
   });
   L.control.zoom({ position: "bottomright" }).addTo(map);
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild boat launch / ramp GeoJSON for Mike's Fishing App (NE Indiana).
+"""Rebuild boat launch / ramp GeoJSON for Mike's Fishing App (statewide Indiana).
 
 Sources (public, no invented points):
   1. Indiana DNR Fish & Wildlife Fishing Access Sites (Fish_Access_RO)
@@ -8,8 +8,7 @@ Sources (public, no invented points):
      https://gisdata.in.gov/server/rest/services/Hosted/Recreational_Facility_Locations/FeatureServer/0
   3. OpenStreetMap leisure=slipway (+ marina / boat_rental with access tags)
      via Overpass API
-  County filter: Steuben, LaGrange, Noble, DeKalb, Kosciusko, Elkhart, Whitley, Allen
-  using Indiana County Boundaries 2022 polygons.
+  County attribution: Indiana County Boundaries 2022 polygons (all 92 counties).
 
 Usage:
   .venv/bin/python scripts/rebuild_launches.py
@@ -30,16 +29,16 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 PUBLIC_DATA = ROOT / "public" / "data"
 
-NE_COUNTIES = {
-    "STEUBEN": "Steuben",
-    "LAGRANGE": "LaGrange",
-    "NOBLE": "Noble",
+# Special-case county display names (ArcGIS often returns ALL CAPS / variants)
+COUNTY_DISPLAY = {
     "DEKALB": "DeKalb",
-    "KOSCIUSKO": "Kosciusko",
-    "KOSCIUSCO": "Kosciusko",
-    "ELKHART": "Elkhart",
-    "WHITLEY": "Whitley",
-    "ALLEN": "Allen",
+    "LAGRANGE": "LaGrange",
+    "STJOSEPH": "St. Joseph",
+    "SAINTJOSEPH": "St. Joseph",
+    "STJOE": "St. Joseph",
+    "LAPORTE": "LaPorte",
+    "LA PORTE": "LaPorte",
+    "VANDERBURGH": "Vanderburgh",
 }
 
 DNR_URL = (
@@ -59,9 +58,10 @@ OVERPASS_URLS = [
     "https://overpass-api.de/api/interpreter",
 ]
 
-# Approximate envelope covering the 8 counties (for OSM / rec spatial queries)
-BBOX = (40.85, -86.05, 41.80, -84.80)  # S, W, N, E
+# Full Indiana envelope (S, W, N, E) for OSM / rec spatial queries
+BBOX = (37.75, -88.12, 41.78, -84.75)
 DEDUP_M = 120.0
+PAGE_SIZE = 200
 
 try:
     from shapely.geometry import Point, shape
@@ -74,35 +74,56 @@ except ImportError:
 CTX = ssl.create_default_context()
 
 
-def http_get_json(url: str, params: dict | None = None, timeout: int = 180) -> dict:
+def http_get_json(url: str, params: dict | None = None, timeout: int = 180, retries: int = 4) -> dict:
     if params:
         url = url + "?" + urllib.parse.urlencode(params)
-    req = urllib.request.Request(url, headers={"User-Agent": "mikes-fishing-app/1.0"})
-    with urllib.request.urlopen(req, timeout=timeout, context=CTX) as r:
-        return json.load(r)
+    last = None
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "mikes-fishing-app/1.0"})
+            with urllib.request.urlopen(req, timeout=timeout, context=CTX) as r:
+                return json.load(r)
+        except Exception as exc:  # noqa: BLE001
+            last = exc
+            wait = 2 ** attempt
+            print(f"  HTTP retry {attempt+1}/{retries} after {exc} (sleep {wait}s)")
+            import time
+            time.sleep(wait)
+    raise last
 
 
-def http_post_bytes(url: str, body: bytes, timeout: int = 120) -> dict:
-    req = urllib.request.Request(
-        url,
-        data=body,
-        headers={
-            "User-Agent": "mikes-fishing-app/1.0",
-            "Content-Type": "application/x-www-form-urlencoded",
-        },
-        method="POST",
-    )
-    with urllib.request.urlopen(req, timeout=timeout, context=CTX) as r:
-        return json.load(r)
+def http_post_bytes(url: str, body: bytes, timeout: int = 180, retries: int = 4) -> dict:
+    last = None
+    for attempt in range(retries):
+        try:
+            req = urllib.request.Request(
+                url,
+                data=body,
+                headers={
+                    "User-Agent": "mikes-fishing-app/1.0",
+                    "Content-Type": "application/x-www-form-urlencoded",
+                },
+                method="POST",
+            )
+            with urllib.request.urlopen(req, timeout=timeout, context=CTX) as r:
+                return json.load(r)
+        except Exception as exc:  # noqa: BLE001
+            last = exc
+            wait = 2 ** attempt
+            print(f"  HTTP POST retry {attempt+1}/{retries} after {exc} (sleep {wait}s)")
+            import time
+            time.sleep(wait)
+    raise last
 
 
 def fix_county(c: str | None) -> str | None:
     if not c:
         return None
-    key = c.upper().replace(".", "").replace(" ", "")
-    if key == "DEKALB":
-        return "DeKalb"
-    return NE_COUNTIES.get(key, c.strip().title() if c else None)
+    key = c.upper().replace(".", "").replace(" ", "").replace("-", "")
+    if key in COUNTY_DISPLAY:
+        return COUNTY_DISPLAY[key]
+    # Title-case remaining ALL CAPS names from ArcGIS
+    return c.strip().title() if c else None
 
 
 def haversine_m(lat1, lon1, lat2, lon2) -> float:
@@ -121,11 +142,49 @@ def near_existing(lat, lng, existing, meters=DEDUP_M) -> bool:
     return False
 
 
+def arcgis_geojson_all(url: str, base_params: dict, page_size: int | None = None) -> list:
+    """Paginate an ArcGIS FeatureServer GeoJSON query."""
+    page = page_size or PAGE_SIZE
+    features = []
+    offset = 0
+    params0 = dict(base_params)
+    # Stable pagination when supported
+    if "orderByFields" not in params0:
+        params0["orderByFields"] = "objectid"
+    while True:
+        params = dict(params0)
+        params["resultOffset"] = offset
+        params["resultRecordCount"] = page
+        try:
+            g = http_get_json(url, params)
+        except Exception as exc:  # noqa: BLE001
+            # Some layers reject orderByFields — retry without
+            if "orderByFields" in params:
+                print(f"  orderByFields failed ({exc}); retrying without")
+                params0.pop("orderByFields", None)
+                params = dict(params0)
+                params["resultOffset"] = offset
+                params["resultRecordCount"] = page
+                g = http_get_json(url, params)
+            else:
+                raise
+        batch = g.get("features") or []
+        features.extend(batch)
+        print(f"  … offset {offset}: +{len(batch)} (total {len(features)})")
+        if len(batch) < page:
+            break
+        offset += page
+        if offset > 20000:
+            print("  warning: pagination safety stop")
+            break
+    return features
+
+
 def load_counties():
-    g = http_get_json(
+    features = arcgis_geojson_all(
         COUNTY_URL,
         {
-            "where": "name IN ('ALLEN','DEKALB','ELKHART','KOSCIUSKO','LAGRANGE','NOBLE','STEUBEN','WHITLEY')",
+            "where": "1=1",
             "outFields": "name",
             "returnGeometry": "true",
             "outSR": "4326",
@@ -133,10 +192,10 @@ def load_counties():
         },
     )
     polys = []
-    for f in g["features"]:
+    for f in features:
         name = fix_county(f["properties"]["name"])
         polys.append((name, shape(f["geometry"])))
-    print(f"Loaded {len(polys)} county polygons")
+    print(f"Loaded {len(polys)} county polygons (statewide)")
     return polys
 
 
@@ -170,31 +229,37 @@ def feature(name, access, lake, county, lat, lng, source, source_url, notes, ext
 
 
 def fetch_dnr(polys):
-    where = (
-        "county IN ('Steuben','LaGrange','Noble','Dekalb','DeKalb',"
-        "'Kosciusko','Elkhart','Whitley','Allen')"
+    print("Fetching DNR Fish Access (statewide)…")
+    dnr_fields = (
+        "site_name,waterbody,county,boat_ramp,type_of_la,type_of_ra,"
+        "fee,fees,parking_info,motor_rest,ada_access,comments,land_type,accessid,objectid"
     )
-    g = http_get_json(
+    features = arcgis_geojson_all(
         DNR_URL,
         {
-            "where": where,
-            "outFields": "*",
+            "where": "1=1",
+            "outFields": dnr_fields,
             "returnGeometry": "true",
             "outSR": "4326",
             "f": "geojson",
         },
+        page_size=200,
     )
     out = []
-    for f in g["features"]:
+    for f in features:
         p = f["properties"]
         br = str(p.get("boat_ramp") or "").lower()
         launch = p.get("type_of_la") or ""
         if br != "yes" and launch not in ("Boat Ramp", "Carry Down", "Canoe Ramp"):
             continue
-        coords = f["geometry"]["coordinates"]
+        geom = f.get("geometry")
+        if not geom or "coordinates" not in geom:
+            continue
+        coords = geom["coordinates"]
         lng, lat = float(coords[0]), float(coords[1])
         county = fix_county(p.get("county")) or county_of(lat, lng, polys)
-        if county not in NE_COUNTIES.values():
+        if not county:
+            # Outside Indiana polygons — skip
             continue
         name = (p.get("site_name") or "Public access").strip()
         lake = (p.get("waterbody") or "").strip() or None
@@ -238,8 +303,9 @@ def fetch_dnr(polys):
 
 def fetch_rec_private(polys, existing):
     """Private/Commercial sites with boat ramps from Indiana recreational facilities inventory."""
+    print("Fetching Rec Facility private/commercial ramps (statewide)…")
     s, w, n, e = BBOX
-    g = http_get_json(
+    features = arcgis_geojson_all(
         REC_URL,
         {
             "where": "rampnu > 0 AND areatype IN ('Private','Commercial')",
@@ -254,9 +320,12 @@ def fetch_rec_private(polys, existing):
         },
     )
     out = []
-    for f in g.get("features", []):
+    for f in features:
         p = f["properties"]
-        coords = f["geometry"]["coordinates"]
+        geom = f.get("geometry")
+        if not geom or "coordinates" not in geom:
+            continue
+        coords = geom["coordinates"]
         lng, lat = float(coords[0]), float(coords[1])
         county = county_of(lat, lng, polys)
         if not county:
@@ -300,8 +369,9 @@ def fetch_rec_private(polys, existing):
 
 
 def fetch_osm(polys, existing):
+    print("Fetching OSM slipways/marinas (Indiana bbox)…")
     s, w, n, e = BBOX
-    query = f"""[out:json][timeout:90];
+    query = f"""[out:json][timeout:180];
 (
   node["leisure"="slipway"]({s},{w},{n},{e});
   way["leisure"="slipway"]({s},{w},{n},{e});
@@ -317,7 +387,7 @@ out center tags;
     last_err = None
     for url in OVERPASS_URLS:
         try:
-            data = http_post_bytes(url, body, timeout=100)
+            data = http_post_bytes(url, body, timeout=200)
             break
         except Exception as exc:  # noqa: BLE001
             last_err = exc
@@ -435,19 +505,24 @@ def main():
 
     counts = Counter(f["properties"]["access"] for f in features)
     by_county = Counter(f["properties"]["county"] for f in features)
-    by_source = Counter(f["properties"]["source"].split(" —")[0].split(" Locations")[0][:40] for f in features)
+    by_source = Counter(
+        f["properties"]["source"].split(" —")[0].split(" Locations")[0][:40]
+        for f in features
+    )
+    county_list = sorted(by_county.keys())
 
     meta = {
         "generated": datetime.now(timezone.utc).isoformat(),
-        "region": "Northeast Indiana",
-        "counties": list(NE_COUNTIES.values()),
+        "region": "Indiana (statewide)",
+        "counties": county_list,
+        "county_count": len(county_list),
         "counts": {
             "total": len(features),
             "public": counts.get("public", 0),
             "private": counts.get("private", 0),
             "unknown": counts.get("unknown", 0),
         },
-        "by_county": dict(by_county),
+        "by_county": dict(sorted(by_county.items())),
         "sources": [
             {
                 "name": "Indiana DNR Fish & Wildlife — Fishing Access Sites",
@@ -493,15 +568,18 @@ def main():
     sources_path = DATA / "sources.json"
     if sources_path.exists():
         src = json.loads(sources_path.read_text())
+        # Keep depth region as NE Indiana; launches are statewide
         src["launches"] = meta
-        # drop bulky by_county from sources mirror? keep it
         sources_path.write_text(json.dumps(src, indent=2) + "\n")
         (PUBLIC_DATA / "sources.json").write_text(json.dumps(src, indent=2) + "\n")
 
     print("Wrote", out_path, "and", pub_path)
     print("Counts:", dict(counts))
-    print("By county:", dict(by_county))
+    print("County count:", len(county_list))
+    print("By county (sample):", dict(list(sorted(by_county.items()))[:15]), "…")
     print("By source prefix:", dict(by_source))
+    for probe in ("Marion", "Monroe", "Lake", "Vanderburgh"):
+        print(f"  {probe}: {by_county.get(probe, 0)}")
 
 
 if __name__ == "__main__":
