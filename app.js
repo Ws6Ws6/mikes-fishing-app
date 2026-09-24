@@ -77,7 +77,7 @@
   let wakeLock = null;
   let launches = [];
   let launchCluster = null;
-  let launchesVisible = true;
+  let launchesVisible = false; // off by default — user toggles on
 
   const ACCESS_COLORS = {
     public: { fill: "#1a7f4b", stroke: "#0e4d2c" },
