@@ -20,7 +20,7 @@
     "traced_from_pdf": 82
   },
   "synthetic_georef_lakes": [],
-  "contour_features": 8011,
+  "contour_features": 8131,
   "dashed_features": 0,
   "pdf_label_depth_features": 434,
   "high_priority_review_fix_2026_09_24": {
@@ -35,6 +35,23 @@
       "banning-lake-kosciusko",
       "silver-lake-kosciusko"
     ],
-    "script": "scripts/fix_depth_labels.py + scripts/fix_high_priority_review.py"
+    "lowered_to_medium": [
+      "cree-lake-noble",
+      "hindman-lake-noble",
+      "jones-lake-noble",
+      "latta-lake-noble",
+      "steinbarger-lake-noble",
+      "tamarack-lake-noble",
+      "waldron-lake-noble",
+      "skinner-lake-noble",
+      "crooked-lake-noble",
+      "sand-lake",
+      "hill-lake-kosciusko",
+      "little-barbee-lake-kosciusko",
+      "sechrist-lake-kosciusko",
+      "winona-lake-kosciusko",
+      "simonton-lake-elkhart",
+      "james-lake"
+    ]
   }
 }
