@@ -3,43 +3,31 @@
     "id": "big-long-lake-lagrange",
     "name": "Big Long Lake",
     "status": "pending_review",
-    "notes": "PDF water\u2192OSM affine fit_iou=0.648 water_iou=0.655 proxy=0.545; scale=0.847 shore_ac=387.7 pdf=365.0 osm_full=387.7; frac=0.993 n=682 depths via nested_ring_pdf_intervals; style=lare_yellow; clear_bar=iou=0.6547658694300067<0.75"
-  },
-  {
-    "id": "cedar-lake-lagrange",
-    "name": "Cedar Lake",
-    "status": "pending_review",
-    "notes": "PDF water\u2192OSM affine fit_iou=0.613 water_iou=0.613 proxy=0.583; scale=1.002 shore_ac=127.6 pdf=120.0 osm_full=127.6; frac=1.000 n=106 depths via nested_ring_pdf_intervals; style=biobase_yellow; clear_bar=iou=0.6125283527796094<0.75"
+    "notes": "aniso-only (TPS hurts multi-arm) fit=0.697 wiou=0.697 proxy=0.598 sx=0.890 sy=0.920; frac=0.992 n=672 shore_ac=387.7 pdf=365.0; BLOCKER: multi-arm PDF water vs OSM cannot honestly reach IoU>=0.75 under global/TPS warp; clear_bar=iou=0.6971044737023709<0.75; clear_bar=iou=0.6971044737023709<0.75"
   },
   {
     "id": "indian-lake-dekalb",
     "name": "Indian Lake",
     "status": "pending_review",
-    "notes": "Audit only (acre-title mismatch class): frac=0.997 proxy_iou=0.519; OSM shore=56.7ac vs PDF title=101.0ac ratio=0.561; Contours already on open water \u2014 no georef site error; acre gap is OSM/title/marsh mismatch"
+    "notes": "Audit only (acre-title mismatch): frac=0.9623 proxy_iou=0.519; OSM shore=56.7ac vs PDF title=101.0ac; Contours already on open water \u2014 no georef site error; acre gap is OSM/title/marsh mismatch"
   },
   {
     "id": "little-cedar-lake-whitley",
     "name": "Little Cedar Lake",
     "status": "pending_review",
-    "notes": "Audit only (acre-title mismatch class): frac=0.987 proxy_iou=0.548; OSM shore=46.6ac vs PDF title=82.5ac ratio=0.565; Contours already on open water \u2014 no georef site error; acre gap is OSM/title/marsh mismatch"
-  },
-  {
-    "id": "little-turkey-lake-lagrange",
-    "name": "Little Turkey Lake",
-    "status": "pending_review",
-    "notes": "PDF water\u2192OSM affine fit_iou=0.694 water_iou=0.685 proxy=0.557; scale=0.973 shore_ac=135.2 pdf=135.0 osm_full=135.2; frac=0.986 n=47 depths via nested_ring_pdf_intervals; style=lare_yellow; clear_bar=iou=0.6854275406343457<0.75"
+    "notes": "Audit only (acre-title mismatch): frac=None proxy_iou=0.548; OSM shore=46.6ac vs PDF title=82.5ac; Contours already on open water \u2014 no georef site error; acre gap is OSM/title/marsh mismatch"
   },
   {
     "id": "messick-lake",
     "name": "Messick Lake",
     "status": "pending_review",
-    "notes": "PDF water\u2192OSM affine fit_iou=0.536 water_iou=0.536 proxy=0.550; scale=1.103 shore_ac=65.0 pdf=68.0 osm_full=65.0; frac=0.990 n=92 depths via nested_ring_pdf_intervals; style=biobase_yellow; clear_bar=iou=0.5498582208304306<0.75"
+    "notes": "aniso+TPS mask=style sm=60 fit_iou=0.570 water_iou=0.721 proxy=0.644; sx=0.900 sy=1.180 shore_ac=65.0 pdf=68.0 osm_full=65.0; frac=1.000 n=156 depths via nested_ring_pdf_intervals; style=biobase_yellow; clear_bar=iou=0.7214868541497567<0.75"
   },
   {
     "id": "oswego-lake",
     "name": "Oswego Lake",
     "status": "pending_review",
-    "notes": "Audit only (acre-title mismatch class): frac=1.000 proxy_iou=0.110; OSM shore=74.3ac vs PDF title=83.0ac ratio=0.895; Contours already on open water \u2014 no georef site error; acre gap is OSM/title/marsh mismatch"
+    "notes": "Audit only (acre-title mismatch): frac=1.0 proxy_iou=0.11; OSM shore=74.3ac vs PDF title=83ac; Contours already on open water \u2014 no georef site error; acre gap is OSM/title/marsh mismatch"
   },
   {
     "id": "simonton-lake-elkhart",
@@ -57,6 +45,6 @@
     "id": "webster-lake-kosciusko",
     "name": "Webster Lake",
     "status": "pending_review",
-    "notes": "Audit only (acre-title mismatch class): frac=1.000 proxy_iou=0.419; OSM shore=637.4ac vs PDF title=774.0ac ratio=0.823; Contours already on open water \u2014 no georef site error; acre gap is OSM/title/marsh mismatch"
+    "notes": "Audit only (acre-title mismatch): frac=0.9896 proxy_iou=0.419; OSM shore=637.4ac vs PDF title=774ac; Contours already on open water \u2014 no georef site error; acre gap is OSM/title/marsh mismatch"
   }
 ]
