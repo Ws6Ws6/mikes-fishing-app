@@ -1,158 +1,62 @@
 [
   {
-    "id": "atwood-lake-lagrange",
-    "name": "Atwood Lake",
-    "county": "LaGrange",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm_clip_linemerge_v2",
-    "review_priority": "medium",
-    "shore_iou": 0.51,
-    "issues": [
-      "Kept needs_review: frac=1.0 shore_ac=292.2 pdf_ac=170 (clear bar not met)"
-    ],
-    "status": "pending_review"
-  },
-  {
     "id": "big-long-lake-lagrange",
     "name": "Big Long Lake",
-    "county": "LaGrange",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm:way/149472200+osm_open_water_core(buf=-110m)",
-    "review_priority": "low",
-    "shore_iou": 0.606,
-    "issues": [
-      "Audit frac=0.9998149176383491; shore_ac=692.9; pdf_ac=365; iou=0.606; clear bar not met"
-    ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes": "PDF water\u2192OSM affine fit_iou=0.648 water_iou=0.655 proxy=0.545; scale=0.847 shore_ac=387.7 pdf=365.0 osm_full=387.7; frac=0.993 n=682 depths via nested_ring_pdf_intervals; style=lare_yellow; clear_bar=iou=0.6547658694300067<0.75"
   },
   {
     "id": "cedar-lake-lagrange",
     "name": "Cedar Lake",
-    "county": "LaGrange",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm:way/177971829+osm_open_water_core(buf=-68m)",
-    "review_priority": "low",
-    "shore_iou": 0.61,
-    "issues": [
-      "Audit frac=1.0; shore_ac=229.3; pdf_ac=120; iou=0.61; clear bar not met"
-    ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes": "PDF water\u2192OSM affine fit_iou=0.613 water_iou=0.613 proxy=0.583; scale=1.002 shore_ac=127.6 pdf=120.0 osm_full=127.6; frac=1.000 n=106 depths via nested_ring_pdf_intervals; style=biobase_yellow; clear_bar=iou=0.6125283527796094<0.75"
   },
   {
-    "id": "fish-lake-elkhart",
-    "name": "Fish Lake",
-    "county": "Elkhart",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "low",
-    "shore_iou": 0.621,
-    "issues": [
-      "Audit frac=0.9743589743589743; shore_ac=63.8; pdf_ac=34.0; iou=0.621; clear bar not met"
-    ],
-    "status": "pending_review"
+    "id": "indian-lake-dekalb",
+    "name": "Indian Lake",
+    "status": "pending_review",
+    "notes": "Audit only (acre-title mismatch class): frac=0.997 proxy_iou=0.519; OSM shore=56.7ac vs PDF title=101.0ac ratio=0.561; Contours already on open water \u2014 no georef site error; acre gap is OSM/title/marsh mismatch"
   },
   {
-    "id": "lake-arrowhead-steuben",
-    "name": "Lake Arrowhead",
-    "county": "Steuben",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm_clip_linemerge_v2",
-    "review_priority": "medium",
-    "shore_iou": 0.962,
-    "issues": [
-      "Still low frac_inside=0.8627450980392157 after osm_clip_linemerge_v2"
-    ],
-    "status": "pending_review"
+    "id": "little-cedar-lake-whitley",
+    "name": "Little Cedar Lake",
+    "status": "pending_review",
+    "notes": "Audit only (acre-title mismatch class): frac=0.987 proxy_iou=0.548; OSM shore=46.6ac vs PDF title=82.5ac ratio=0.565; Contours already on open water \u2014 no georef site error; acre gap is OSM/title/marsh mismatch"
   },
   {
     "id": "little-turkey-lake-lagrange",
     "name": "Little Turkey Lake",
-    "county": "LaGrange",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm_clip_linemerge_v2",
-    "review_priority": "medium",
-    "shore_iou": 0.437,
-    "issues": [
-      "Kept needs_review: frac=0.9620253164556962 shore_ac=241.9 pdf_ac=135 (clear bar not met)"
-    ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes": "PDF water\u2192OSM affine fit_iou=0.694 water_iou=0.685 proxy=0.557; scale=0.973 shore_ac=135.2 pdf=135.0 osm_full=135.2; frac=0.986 n=47 depths via nested_ring_pdf_intervals; style=lare_yellow; clear_bar=iou=0.6854275406343457<0.75"
   },
   {
     "id": "messick-lake",
     "name": "Messick Lake",
-    "county": "LaGrange",
-    "contour_method": "vector_featureserver",
-    "georef_method": "featureserver",
-    "review_priority": "low",
-    "shore_iou": 0.434,
-    "issues": [
-      "Audit frac=1.0; shore_ac=116.2; pdf_ac=68; iou=0.434; clear bar not met"
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "oliver-lake",
-    "name": "Oliver Lake",
-    "county": "LaGrange",
-    "contour_method": "vector_featureserver",
-    "georef_method": "featureserver",
-    "review_priority": "low",
-    "shore_iou": 0.675,
-    "issues": [
-      "Audit frac=0.9602272727272727; shore_ac=666.1; pdf_ac=371; iou=0.675; clear bar not met"
-    ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes": "PDF water\u2192OSM affine fit_iou=0.536 water_iou=0.536 proxy=0.550; scale=1.103 shore_ac=65.0 pdf=68.0 osm_full=65.0; frac=0.990 n=92 depths via nested_ring_pdf_intervals; style=biobase_yellow; clear_bar=iou=0.5498582208304306<0.75"
   },
   {
     "id": "oswego-lake",
     "name": "Oswego Lake",
-    "county": "Kosciusko",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm_clip_linemerge_v2",
-    "review_priority": "medium",
-    "shore_iou": 1.0,
-    "issues": [
-      "Still low frac_inside=0.8636363636363636 after osm_clip_linemerge_v2"
-    ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes": "Audit only (acre-title mismatch class): frac=1.000 proxy_iou=0.110; OSM shore=74.3ac vs PDF title=83.0ac ratio=0.895; Contours already on open water \u2014 no georef site error; acre gap is OSM/title/marsh mismatch"
   },
   {
     "id": "simonton-lake-elkhart",
     "name": "Simonton Lake",
-    "county": "Elkhart",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm_open_water_core(buf=-64m)",
-    "review_priority": "medium",
-    "shore_iou": 0.674,
-    "issues": [
-      "Audit frac=0.9910714285714286; shore_ac=544.1; pdf_ac=303.0; iou=0.674; clear bar not met"
-    ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes": "West-basin affine fit_iou=0.645 west_water_iou=0.606; warped all yellow incl. east; east_basin_contour_features=5; proxy_full=0.168 frac=0.990; PDF east only labels sparse 5ft loops (canals have no contours) \u2014 IoU vs full shore limited; depths via nested_ring_pdf_intervals; no invented depths; clear_bar=iou=0.6057832831349063<0.75; east_n=5"
   },
   {
-    "id": "stone-lake-lagrange",
-    "name": "Stone Lake",
-    "county": "LaGrange",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm_clip_linemerge_v2",
-    "review_priority": "medium",
-    "shore_iou": 0.59,
-    "issues": [
-      "Kept needs_review: frac=0.9743589743589743 shore_ac=205.2 pdf_ac=116 (clear bar not met)"
-    ],
-    "status": "pending_review"
+    "id": "sylvan-lake-east-west-noble",
+    "name": "Sylvan Lake",
+    "status": "pending_review",
+    "notes": "East+West DNR PDF digitize; anisotropic template-match GCPs locked to open-water core (~676 ac, OSM eroded -60m); hard soft-clip contours to core+25m. iou_open_water=0.555 iou_osm=0.642 frac_inside=0.999 core_acres=675.7 pdf_acres=669.0. west_iou_ow=0.548 west_iou_osm=0.590 east_iou_ow=0.549 east_iou_osm=0.638. west_params=(np.float64(0.365), np.float64(0.37785714285714284), np.float64(-0.5), 464, 433) east_params=(np.float64(0.48), np.float64(0.563409090909091), np.float64(-2.0), 1000, 869). Depths from PDF labeled intervals only (west<=20 east<=25). No FeatureServer. needs_review: IoU_ow 0.555<0.75 (PDF survey water includes marsh beyond open-water core; cannot invent shoreline without inventing depths)"
   },
   {
     "id": "webster-lake-kosciusko",
     "name": "Webster Lake",
-    "county": "Kosciusko",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "medium",
-    "shore_iou": 1.0,
-    "issues": [
-      "Audit frac=0.9895769466584917; shore_ac=1131.2; pdf_ac=774; iou=1.0; clear bar not met"
-    ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes": "Audit only (acre-title mismatch class): frac=1.000 proxy_iou=0.419; OSM shore=637.4ac vs PDF title=774.0ac ratio=0.823; Contours already on open water \u2014 no georef site error; acre gap is OSM/title/marsh mismatch"
   }
 ]
