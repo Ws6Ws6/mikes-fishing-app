@@ -1,0 +1,3754 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.21323,
+          41.622953
+        ]
+      },
+      "properties": {
+        "id": "appleman-lake",
+        "name": "Appleman Lake",
+        "source_lake_name": "Appleman Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": 52,
+        "max_depth_ft": null,
+        "survey_date": "2017-07-25",
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 25.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.215893,
+          41.620859,
+          -85.21037,
+          41.625716
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.063657,
+          41.75491
+        ]
+      },
+      "properties": {
+        "id": "barton-lake",
+        "name": "Barton Lake",
+        "source_lake_name": "Barton Lake",
+        "county": "Steuben",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 0.0,
+        "max_contour_ft": 30.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.067029,
+          41.748153,
+          -85.054786,
+          41.756316
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.608108,
+          41.314652
+        ]
+      },
+      "properties": {
+        "id": "baugher-lake",
+        "name": "Baugher Lake",
+        "source_lake_name": "Baugher Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 30.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.610219,
+          41.312808,
+          -85.605711,
+          41.316673
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.519163,
+          41.324436
+        ]
+      },
+      "properties": {
+        "id": "bear-lake",
+        "name": "Bear Lake",
+        "source_lake_name": "Bear Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 55.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.525766,
+          41.319304,
+          -85.512006,
+          41.326109
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.084396,
+          41.715697
+        ]
+      },
+      "properties": {
+        "id": "bell-lake",
+        "name": "Bell Lake",
+        "source_lake_name": "Bell Lake",
+        "county": "Steuben",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2015-07-30",
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 25.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.089096,
+          41.713322,
+          -85.079661,
+          41.718019
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.786504,
+          41.287591
+        ]
+      },
+      "properties": {
+        "id": "big-chapman-lake",
+        "name": "Big Chapman Lake",
+        "source_lake_name": "Big Chapman Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 35.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.801599,
+          41.27987,
+          -85.778772,
+          41.296144
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.363344,
+          41.239798
+        ]
+      },
+      "properties": {
+        "id": "blue-lake",
+        "name": "Blue Lake",
+        "source_lake_name": "Blue Lake",
+        "county": "Whitley",
+        "county2": null,
+        "acres": 239,
+        "max_depth_ft": null,
+        "survey_date": "2018-08-02",
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 45.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.372278,
+          41.234389,
+          -85.3528,
+          41.242884
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.641889,
+          41.698367
+        ]
+      },
+      "properties": {
+        "id": "cass-lake",
+        "name": "Cass Lake",
+        "source_lake_name": "Cass Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 3.0,
+        "min_contour_ft": 6.0,
+        "max_contour_ft": 21.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.64218,
+          41.688613,
+          -85.635141,
+          41.699016
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 3.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.281965,
+          41.658396
+        ]
+      },
+      "properties": {
+        "id": "cedar-lake",
+        "name": "Cedar Lake",
+        "source_lake_name": "Cedar Lake",
+        "county": "DeKalb",
+        "county2": null,
+        "acres": 28,
+        "max_depth_ft": 13,
+        "survey_date": "2009-07-20",
+        "contour_interval_ft": 2.0,
+        "min_contour_ft": 2.0,
+        "max_contour_ft": 25.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.371612,
+          41.459207,
+          -85.071999,
+          41.741103
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 2.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.009926,
+          41.213541
+        ]
+      },
+      "properties": {
+        "id": "cedarville-reservoir",
+        "name": "Cedarville Reservoir",
+        "source_lake_name": "Cedarville Reservoir",
+        "county": "Allen",
+        "county2": null,
+        "acres": 245,
+        "max_depth_ft": null,
+        "survey_date": "2017-07-24",
+        "contour_interval_ft": 6.0,
+        "min_contour_ft": 6.0,
+        "max_contour_ft": 12.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.019075,
+          41.198902,
+          -84.993485,
+          41.227615
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 6.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.08201,
+          41.691547
+        ]
+      },
+      "properties": {
+        "id": "crooked-lake",
+        "name": "Crooked Lake",
+        "source_lake_name": "Crooked Lake",
+        "county": "Steuben",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 3.0,
+        "min_contour_ft": 0.0,
+        "max_contour_ft": 81.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.085236,
+          41.66721,
+          -85.034326,
+          41.694953
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 3.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.419258,
+          41.549687
+        ]
+      },
+      "properties": {
+        "id": "dallas-lake",
+        "name": "Dallas Lake",
+        "source_lake_name": "Dallas Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 10.0,
+        "min_contour_ft": 10.0,
+        "max_contour_ft": 100.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.436613,
+          41.546726,
+          -85.410814,
+          41.556777
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 10.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.775617,
+          41.372297
+        ]
+      },
+      "properties": {
+        "id": "dewart-lake",
+        "name": "Dewart Lake",
+        "source_lake_name": "Dewart Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 10.0,
+        "min_contour_ft": 10.0,
+        "max_contour_ft": 70.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.784046,
+          41.36311,
+          -85.760071,
+          41.376767
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 10.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.525728,
+          41.43634
+        ]
+      },
+      "properties": {
+        "id": "diamond-lake",
+        "name": "Diamond Lake",
+        "source_lake_name": "Diamond Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 10.0,
+        "min_contour_ft": 10.0,
+        "max_contour_ft": 70.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.528486,
+          41.43599,
+          -85.518159,
+          41.440825
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 10.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.631774,
+          41.357668
+        ]
+      },
+      "properties": {
+        "id": "duely-lake",
+        "name": "Duely Lake",
+        "source_lake_name": "Duely Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": 21,
+        "max_depth_ft": null,
+        "survey_date": "2019-07-24",
+        "contour_interval_ft": 3.0,
+        "min_contour_ft": 3.0,
+        "max_contour_ft": 18.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.634037,
+          41.355776,
+          -85.630111,
+          41.360235
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 3.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.541423,
+          41.602182
+        ]
+      },
+      "properties": {
+        "id": "emma-lake",
+        "name": "Emma Lake",
+        "source_lake_name": "Emma Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": 42,
+        "max_depth_ft": null,
+        "survey_date": "2015-07-14",
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 30.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.542755,
+          41.598384,
+          -85.540238,
+          41.608062
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.319933,
+          41.561317
+        ]
+      },
+      "properties": {
+        "id": "eve-lake",
+        "name": "Eve Lake",
+        "source_lake_name": "Eve Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 45.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.322312,
+          41.558969,
+          -85.317699,
+          41.562502
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.329677,
+          41.623381
+        ]
+      },
+      "properties": {
+        "id": "fish-lake",
+        "name": "Fish Lake",
+        "source_lake_name": "Fish Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": 100,
+        "max_depth_ft": 82,
+        "survey_date": "2019-07-18",
+        "contour_interval_ft": 10.0,
+        "min_contour_ft": 10.0,
+        "max_contour_ft": 70.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.333914,
+          41.619328,
+          -85.325025,
+          41.627041
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 10.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.999648,
+          41.705204
+        ]
+      },
+      "properties": {
+        "id": "gentian-failing-lake",
+        "name": "Gentian/Failing Lake",
+        "source_lake_name": "Gentian/Failing Lake",
+        "county": "Steuben",
+        "county2": null,
+        "acres": 23,
+        "max_depth_ft": 49,
+        "survey_date": "2018-09-13",
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 45.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.002332,
+          41.703953,
+          -84.996209,
+          41.706846
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.626725,
+          41.349522
+        ]
+      },
+      "properties": {
+        "id": "gordy-lake",
+        "name": "Gordy Lake",
+        "source_lake_name": "Gordy Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": 31,
+        "max_depth_ft": 34,
+        "survey_date": "2019-07-24",
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 30.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.62902,
+          41.347225,
+          -85.625014,
+          41.351908
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.432834,
+          41.55842
+        ]
+      },
+      "properties": {
+        "id": "hackleburg-lake",
+        "name": "Hackleburg Lake",
+        "source_lake_name": "Hackleburg Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 35.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.436424,
+          41.556275,
+          -85.425947,
+          41.559932
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.987594,
+          41.277394
+        ]
+      },
+      "properties": {
+        "id": "hoffman-lake",
+        "name": "Hoffman Lake",
+        "source_lake_name": "Hoffman Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 3.0,
+        "min_contour_ft": 3.0,
+        "max_contour_ft": 30.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.990895,
+          41.266726,
+          -85.982909,
+          41.280949
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 3.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.665433,
+          41.722386
+        ]
+      },
+      "properties": {
+        "id": "hunter-lake",
+        "name": "Hunter Lake",
+        "source_lake_name": "Hunter Lake",
+        "county": "Elkhart",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 3.0,
+        "min_contour_ft": 3.0,
+        "max_contour_ft": 24.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.670798,
+          41.718383,
+          -85.663904,
+          41.724973
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 3.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.729031,
+          41.318901
+        ]
+      },
+      "properties": {
+        "id": "james-lake",
+        "name": "James Lake",
+        "source_lake_name": "JAMES LAKE",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": 282,
+        "max_depth_ft": 62,
+        "survey_date": "2017-08-10",
+        "contour_interval_ft": 20.0,
+        "min_contour_ft": 40.0,
+        "max_contour_ft": 60.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.734449,
+          41.314738,
+          -85.72539,
+          41.324607
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 20.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.656612,
+          41.308134
+        ]
+      },
+      "properties": {
+        "id": "kiser-lake",
+        "name": "Kiser Lake",
+        "source_lake_name": "Kiser Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": 8,
+        "max_depth_ft": null,
+        "survey_date": "2018-04-12",
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 20.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.657542,
+          41.306572,
+          -85.655538,
+          41.309383
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.701035,
+          41.397377
+        ]
+      },
+      "properties": {
+        "id": "lake-wawasee",
+        "name": "Lake Wawasee",
+        "source_lake_name": "Lake Wawasee",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 75.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.742982,
+          41.376196,
+          -85.667419,
+          41.418461
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.199888,
+          41.545175
+        ]
+      },
+      "properties": {
+        "id": "lake-of-the-woods",
+        "name": "Lake of the Woods",
+        "source_lake_name": "Lake of the Woods",
+        "county": "LaGrange",
+        "county2": "Steuben",
+        "acres": 136,
+        "max_depth_ft": 84,
+        "survey_date": "2018-08-08",
+        "contour_interval_ft": 10.0,
+        "min_contour_ft": 10.0,
+        "max_contour_ft": 80.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.207987,
+          41.541308,
+          -85.191274,
+          41.548593
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 10.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.623187,
+          41.17283
+        ]
+      },
+      "properties": {
+        "id": "larwill-lake",
+        "name": "Larwill Lake",
+        "source_lake_name": "Larwill Lake",
+        "county": "Whitley",
+        "county2": null,
+        "acres": 9,
+        "max_depth_ft": null,
+        "survey_date": "2019-05-28",
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 35.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.624536,
+          41.171655,
+          -85.621656,
+          41.174021
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.791363,
+          41.272762
+        ]
+      },
+      "properties": {
+        "id": "little-chapman-lake",
+        "name": "Little Chapman Lake",
+        "source_lake_name": "Little Chapman Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": 177,
+        "max_depth_ft": 29,
+        "survey_date": "2018-08-01",
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 25.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.794914,
+          41.267493,
+          -85.786647,
+          41.277277
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.26001,
+          41.464074
+        ]
+      },
+      "properties": {
+        "id": "little-long-lake",
+        "name": "Little Long Lake",
+        "source_lake_name": "Little Long Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": 71,
+        "max_depth_ft": 63,
+        "survey_date": "2017-07-27",
+        "contour_interval_ft": 10.0,
+        "min_contour_ft": 10.0,
+        "max_contour_ft": 40.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.266865,
+          41.462313,
+          -85.249663,
+          41.466272
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 10.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.847806,
+          41.261334
+        ]
+      },
+      "properties": {
+        "id": "little-pike-lake",
+        "name": "Little Pike Lake",
+        "source_lake_name": "Little Pike Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 1.0,
+        "min_contour_ft": 3.0,
+        "max_contour_ft": 10.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.850347,
+          41.25465,
+          -85.846477,
+          41.262012
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 1.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.80483,
+          41.74774
+        ]
+      },
+      "properties": {
+        "id": "long-lake",
+        "name": "Long Lake",
+        "source_lake_name": "Long Lake",
+        "county": "Steuben",
+        "county2": null,
+        "acres": 154,
+        "max_depth_ft": null,
+        "survey_date": "2017-08-01",
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 35.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -84.814599,
+          41.743917,
+          -84.799767,
+          41.750542
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.489357,
+          41.375711
+        ]
+      },
+      "properties": {
+        "id": "lower-long-lake",
+        "name": "Lower Long Lake",
+        "source_lake_name": "Lower Long Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": 66,
+        "max_depth_ft": 54,
+        "survey_date": "2017-08-02",
+        "contour_interval_ft": 10.0,
+        "min_contour_ft": 10.0,
+        "max_contour_ft": 50.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.492634,
+          41.369714,
+          -85.48694,
+          41.377916
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 10.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.384681,
+          41.564359
+        ]
+      },
+      "properties": {
+        "id": "martin-lake",
+        "name": "Martin Lake",
+        "source_lake_name": "Martin Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": 26,
+        "max_depth_ft": 55,
+        "survey_date": "2018-08-08",
+        "contour_interval_ft": 10.0,
+        "min_contour_ft": 10.0,
+        "max_contour_ft": 50.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.387088,
+          41.562465,
+          -85.381073,
+          41.56586
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 10.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.192358,
+          41.539694
+        ]
+      },
+      "properties": {
+        "id": "mcclish-lake",
+        "name": "McClish Lake",
+        "source_lake_name": "McClish Lake",
+        "county": "Steuben",
+        "county2": "LaGrange",
+        "acres": 35,
+        "max_depth_ft": 58,
+        "survey_date": "2017-07-19",
+        "contour_interval_ft": 10.0,
+        "min_contour_ft": 10.0,
+        "max_contour_ft": 50.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.195694,
+          41.538334,
+          -85.188654,
+          41.541302
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 10.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.442432,
+          41.551455
+        ]
+      },
+      "properties": {
+        "id": "messick-lake",
+        "name": "Messick Lake",
+        "source_lake_name": "Messick Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": 68,
+        "max_depth_ft": 56,
+        "survey_date": "2018-07-23",
+        "contour_interval_ft": 10.0,
+        "min_contour_ft": 10.0,
+        "max_contour_ft": 50.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.447159,
+          41.549,
+          -85.440255,
+          41.55373
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 10.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.469131,
+          41.169962
+        ]
+      },
+      "properties": {
+        "id": "morsches-park-pond",
+        "name": "Morsches Park Pond",
+        "source_lake_name": "Morsches Park Pond",
+        "county": "Whitley",
+        "county2": null,
+        "acres": 1,
+        "max_depth_ft": null,
+        "survey_date": "2015-05-04",
+        "contour_interval_ft": 1.0,
+        "min_contour_ft": 1.0,
+        "max_contour_ft": 5.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.469503,
+          41.169658,
+          -85.468754,
+          41.170312
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 1.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.458162,
+          41.730499
+        ]
+      },
+      "properties": {
+        "id": "north-twin-lake",
+        "name": "North Twin Lake",
+        "source_lake_name": "North Twin Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 35.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.462345,
+          41.728289,
+          -85.452095,
+          41.73341
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.393618,
+          41.563338
+        ]
+      },
+      "properties": {
+        "id": "olin-lake",
+        "name": "Olin Lake",
+        "source_lake_name": "Olin Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": 103,
+        "max_depth_ft": 81,
+        "survey_date": "2018-07-31",
+        "contour_interval_ft": 10.0,
+        "min_contour_ft": 10.0,
+        "max_contour_ft": 70.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.398169,
+          41.559087,
+          -85.387182,
+          41.56512
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 10.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.40547,
+          41.571847
+        ]
+      },
+      "properties": {
+        "id": "oliver-lake",
+        "name": "Oliver Lake",
+        "source_lake_name": "Oliver Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": 371,
+        "max_depth_ft": 90,
+        "survey_date": "2018-08-02",
+        "contour_interval_ft": 10.0,
+        "min_contour_ft": 10.0,
+        "max_contour_ft": 80.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.4147,
+          41.565933,
+          -85.395725,
+          41.576105
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 10.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.785948,
+          41.325054
+        ]
+      },
+      "properties": {
+        "id": "oswego-lake",
+        "name": "Oswego Lake",
+        "source_lake_name": "Oswego Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": 83,
+        "max_depth_ft": 35,
+        "survey_date": "2017-08-17",
+        "contour_interval_ft": null,
+        "min_contour_ft": 30.0,
+        "max_contour_ft": 30.0,
+        "has_contours": true,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps",
+        "bbox": [
+          -85.786906,
+          41.324522,
+          -85.784949,
+          41.325659
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "FeatureServer currently includes only a single contour line for this lake \u2014 vector coverage looks incomplete. Check DNR PDF maps for fuller bathymetry. Contours are feet below surface.",
+        "data_quality": "incomplete_contours"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.843527,
+          41.247966
+        ]
+      },
+      "properties": {
+        "id": "pike-lake",
+        "name": "Pike Lake",
+        "source_lake_name": "Pike Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 3.0,
+        "min_contour_ft": 3.0,
+        "max_contour_ft": 30.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.848229,
+          41.244975,
+          -85.83701,
+          41.253843
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 3.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.250309,
+          41.575607
+        ]
+      },
+      "properties": {
+        "id": "pretty-lake",
+        "name": "Pretty Lake",
+        "source_lake_name": "Pretty Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": 184,
+        "max_depth_ft": 85,
+        "survey_date": "2018-08-08",
+        "contour_interval_ft": 10.0,
+        "min_contour_ft": 10.0,
+        "max_contour_ft": 80.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.25516,
+          41.571234,
+          -85.244401,
+          41.579436
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 10.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.630443,
+          41.353255
+        ]
+      },
+      "properties": {
+        "id": "rider-lake",
+        "name": "Rider Lake",
+        "source_lake_name": "Rider Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": 6,
+        "max_depth_ft": 15,
+        "survey_date": "2019-07-24",
+        "contour_interval_ft": 3.0,
+        "min_contour_ft": 3.0,
+        "max_contour_ft": 12.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.631019,
+          41.35258,
+          -85.629814,
+          41.354011
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 3.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.410546,
+          41.332543
+        ]
+      },
+      "properties": {
+        "id": "rivir-lake",
+        "name": "Rivir Lake",
+        "source_lake_name": "Rivir Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": 24,
+        "max_depth_ft": 36,
+        "survey_date": "2019-07-29",
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 35.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.415208,
+          41.331475,
+          -85.406782,
+          41.333352
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.650512,
+          41.225179
+        ]
+      },
+      "properties": {
+        "id": "robinson-lake",
+        "name": "Robinson Lake",
+        "source_lake_name": "Robinson Lake",
+        "county": "Kosciusko",
+        "county2": "Whitley",
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 10.0,
+        "min_contour_ft": 0.0,
+        "max_contour_ft": 50.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.652595,
+          41.221918,
+          -85.647297,
+          41.229222
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 10.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.424585,
+          41.247608
+        ]
+      },
+      "properties": {
+        "id": "round-lake",
+        "name": "Round Lake",
+        "source_lake_name": "Round Lake",
+        "county": "Whitley",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": 62,
+        "survey_date": "2016-07-21",
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 60.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.436351,
+          41.243229,
+          -85.423593,
+          41.250128
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.33784,
+          41.611448
+        ]
+      },
+      "properties": {
+        "id": "royer-lake",
+        "name": "Royer Lake",
+        "source_lake_name": "Royer Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": 69,
+        "max_depth_ft": 57,
+        "survey_date": "2019-07-23",
+        "contour_interval_ft": 10.0,
+        "min_contour_ft": 10.0,
+        "max_contour_ft": 50.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.341836,
+          41.606561,
+          -85.333509,
+          41.617452
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 10.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.319737,
+          41.43531
+        ]
+      },
+      "properties": {
+        "id": "sacarider-lake",
+        "name": "Sacarider Lake",
+        "source_lake_name": "Sacarider Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 10.0,
+        "min_contour_ft": 10.0,
+        "max_contour_ft": 50.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.323715,
+          41.433055,
+          -85.316939,
+          41.438355
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 10.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.389691,
+          41.332391
+        ]
+      },
+      "properties": {
+        "id": "sand-lake",
+        "name": "Sand Lake",
+        "source_lake_name": "Sand Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": 47,
+        "max_depth_ft": 53,
+        "survey_date": "2017-08-01",
+        "contour_interval_ft": null,
+        "min_contour_ft": 30.0,
+        "max_contour_ft": 30.0,
+        "has_contours": true,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps",
+        "bbox": [
+          -85.391431,
+          41.331669,
+          -85.388074,
+          41.333193
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "FeatureServer currently includes only a single contour line for this lake \u2014 vector coverage looks incomplete. Check DNR PDF maps for fuller bathymetry. Contours are feet below surface.",
+        "data_quality": "incomplete_contours"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.691492,
+          41.353548
+        ]
+      },
+      "properties": {
+        "id": "shock-lake",
+        "name": "Shock Lake",
+        "source_lake_name": "Shock Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": 37,
+        "max_depth_ft": null,
+        "survey_date": "2018-08-01",
+        "contour_interval_ft": 10.0,
+        "min_contour_ft": 10.0,
+        "max_contour_ft": 60.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.694283,
+          41.351299,
+          -85.687074,
+          41.355681
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 10.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.465383,
+          41.725015
+        ]
+      },
+      "properties": {
+        "id": "south-twin-lake",
+        "name": "South Twin Lake",
+        "source_lake_name": "South Twin Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 50.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.471538,
+          41.721482,
+          -85.461898,
+          41.728736
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.666399,
+          41.35471
+        ]
+      },
+      "properties": {
+        "id": "spear-lake",
+        "name": "Spear Lake",
+        "source_lake_name": "Spear Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 0.0,
+        "max_contour_ft": 40.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.668721,
+          41.352018,
+          -85.664083,
+          41.357738
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.144866,
+          41.517666
+        ]
+      },
+      "properties": {
+        "id": "story-lake",
+        "name": "Story Lake",
+        "source_lake_name": "Story Lake",
+        "county": "DeKalb",
+        "county2": null,
+        "acres": 77,
+        "max_depth_ft": 30,
+        "survey_date": "2019-07-25",
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 25.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.148216,
+          41.510869,
+          -85.132837,
+          41.519543
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.664493,
+          41.318348
+        ]
+      },
+      "properties": {
+        "id": "the-backwaters",
+        "name": "The Backwaters",
+        "source_lake_name": "The Backwaters",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": 153,
+        "max_depth_ft": null,
+        "survey_date": "2018-04-12",
+        "contour_interval_ft": 1.0,
+        "min_contour_ft": 1.0,
+        "max_contour_ft": 6.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.671364,
+          41.303592,
+          -85.655752,
+          41.319652
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 1.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.769136,
+          41.335546
+        ]
+      },
+      "properties": {
+        "id": "tippecanoe-lake",
+        "name": "Tippecanoe Lake",
+        "source_lake_name": "Tippecanoe Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": 768,
+        "max_depth_ft": 123,
+        "survey_date": "2018-08-10",
+        "contour_interval_ft": null,
+        "min_contour_ft": 40.0,
+        "max_contour_ft": 40.0,
+        "has_contours": true,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps",
+        "bbox": [
+          -85.769451,
+          41.335361,
+          -85.768829,
+          41.33574
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "FeatureServer currently includes only a single 40 ft contour for Tippecanoe despite max depth 123 ft \u2014 vector bathymetry appears incomplete. Prefer DNR PDF depth map for full Tippecanoe bathymetry. Contours are feet below surface.",
+        "data_quality": "incomplete_contours"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.577962,
+          41.239083
+        ]
+      },
+      "properties": {
+        "id": "troy-cedar-lake",
+        "name": "Troy-Cedar Lake",
+        "source_lake_name": "TROY-CEDAR LAKE",
+        "county": "Whitley",
+        "county2": null,
+        "acres": 93,
+        "max_depth_ft": 84,
+        "survey_date": "2019-07-26",
+        "contour_interval_ft": 10.0,
+        "min_contour_ft": 10.0,
+        "max_contour_ft": 80.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.581554,
+          41.23575,
+          -85.572139,
+          41.242443
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 10.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.63643,
+          41.362867
+        ]
+      },
+      "properties": {
+        "id": "village-lake",
+        "name": "Village Lake",
+        "source_lake_name": "Village Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 3.0,
+        "min_contour_ft": 3.0,
+        "max_contour_ft": 21.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.638134,
+          41.361943,
+          -85.634986,
+          41.364137
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 3.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.201639,
+          41.729428
+        ]
+      },
+      "properties": {
+        "id": "wall-lake",
+        "name": "Wall Lake",
+        "source_lake_name": "Wall Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": null,
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 30.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.207674,
+          41.725541,
+          -85.196538,
+          41.732688
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.402713,
+          41.541859
+        ]
+      },
+      "properties": {
+        "id": "westler-lake",
+        "name": "Westler Lake",
+        "source_lake_name": "Westler Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": 88,
+        "max_depth_ft": 33,
+        "survey_date": "2018-09-10",
+        "contour_interval_ft": 10.0,
+        "min_contour_ft": 10.0,
+        "max_contour_ft": 30.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.41187,
+          41.536988,
+          -85.395387,
+          41.545969
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 10.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.460482,
+          41.333385
+        ]
+      },
+      "properties": {
+        "id": "williams-lake",
+        "name": "Williams Lake",
+        "source_lake_name": "Williams Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": 46,
+        "max_depth_ft": 43,
+        "survey_date": "2019-07-26",
+        "contour_interval_ft": 5.0,
+        "min_contour_ft": 5.0,
+        "max_contour_ft": 40.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.463294,
+          41.33084,
+          -85.457109,
+          41.335755
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 5.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.390571,
+          41.533734
+        ]
+      },
+      "properties": {
+        "id": "witmer-lake",
+        "name": "Witmer Lake",
+        "source_lake_name": "Witmer Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": 204,
+        "max_depth_ft": 55,
+        "survey_date": "2013-07-23",
+        "contour_interval_ft": 10.0,
+        "min_contour_ft": 10.0,
+        "max_contour_ft": 50.0,
+        "has_contours": true,
+        "pdf_url": null,
+        "bbox": [
+          -85.400815,
+          41.528093,
+          -85.382532,
+          41.536689
+        ],
+        "source": "Indiana DNR Division of Fish & Wildlife \u2013 Lake Bathymetry (IndianaMap)",
+        "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+        "precision_note": "Surveyed bathymetric contours; typical interval 10.0 ft. Contours are feet below surface. Not a real-time sonar product."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "bower-lake-steuben",
+        "name": "Bower Lake",
+        "county": "Steuben",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2023",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "loon-lake-steuben",
+        "name": "Loon Lake",
+        "county": "Steuben",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2011",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "meserve-lake-steuben",
+        "name": "Meserve Lake",
+        "county": "Steuben",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2009",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "ball-lake-steuben",
+        "name": "Ball Lake",
+        "county": "Steuben",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2013",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "beaverdam-lake-steuben",
+        "name": "Beaverdam Lake",
+        "county": "Steuben",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2013",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "gooseneck-lake-steuben",
+        "name": "Gooseneck Lake",
+        "county": "Steuben",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2014",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "green-lake-steuben",
+        "name": "Green Lake",
+        "county": "Steuben",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2013",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "henry-lake-steuben",
+        "name": "Henry Lake",
+        "county": "Steuben",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2014",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "lake-arrowhead-steuben",
+        "name": "Lake Arrowhead",
+        "county": "Steuben",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2014",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "lime-lake-steuben",
+        "name": "Lime Lake",
+        "county": "Steuben",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2014",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "little-otter-lake-steuben",
+        "name": "Little Otter Lake",
+        "county": "Steuben",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2013",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "silver-lake-steuben",
+        "name": "Silver Lake",
+        "county": "Steuben",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2014",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "big-otter-lake-steuben",
+        "name": "Big Otter Lake",
+        "county": "Steuben",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2015",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "fox-lake-steuben",
+        "name": "Fox Lake",
+        "county": "Steuben",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2015",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "gage-lake-steuben",
+        "name": "Gage Lake",
+        "county": "Steuben",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2015",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "hamilton-lake-steuben",
+        "name": "Hamilton Lake",
+        "county": "Steuben",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2022",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "west-otter-lake-steuben",
+        "name": "West Otter Lake",
+        "county": "Steuben",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2015",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "atwood-lake-lagrange",
+        "name": "Atwood Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2010",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "big-long-lake-lagrange",
+        "name": "Big Long Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2008",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "little-turkey-lake-lagrange",
+        "name": "Little Turkey Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2007",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "shipshewana-lake-lagrange",
+        "name": "Shipshewana Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2011",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "stone-lake-lagrange",
+        "name": "Stone Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2011",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "adams-lake-lagrange",
+        "name": "Adams Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2014",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "meteer-lake-lagrange",
+        "name": "Meteer Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2013",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "nauvoo-lake-lagrange",
+        "name": "Nauvoo Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2014",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "troxel-lake-lagrange",
+        "name": "Troxel Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2014",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "brokesha-lake-lagrange",
+        "name": "Brokesha Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2015",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "cedar-lake-lagrange",
+        "name": "Cedar Lake",
+        "county": "LaGrange",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2017",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": "LaGrange Cedar (distinct from DeKalb Cedar with contours)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "bixler-lake-noble",
+        "name": "Bixler Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2022",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "cree-lake-noble",
+        "name": "Cree Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2007",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "hindman-lake-noble",
+        "name": "Hindman Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2012",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "jones-lake-noble",
+        "name": "Jones Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2007",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "latta-lake-noble",
+        "name": "Latta Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2007",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "mud-lake-noble",
+        "name": "Mud Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2011",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "steinbarger-lake-noble",
+        "name": "Steinbarger Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2007",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "tamarack-lake-noble",
+        "name": "Tamarack Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2011",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "waldron-lake-noble",
+        "name": "Waldron Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2011",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "harper-lake-noble",
+        "name": "Harper Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2013",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "big-lake-noble",
+        "name": "Big Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2013",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "crane-lake-noble",
+        "name": "Crane Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2014",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "lindsey-lake-noble",
+        "name": "Lindsey Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2014",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "loon-lake-noble",
+        "name": "Loon Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2013",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "miller-lake-noble",
+        "name": "Miller Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2013",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "moss-lake-noble",
+        "name": "Moss Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2013",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "pleasant-lake-noble",
+        "name": "Pleasant Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2014",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "summit-lake-noble",
+        "name": "Summit Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2014",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "upper-long-lake-noble",
+        "name": "Upper Long Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2013",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "eagle-lake-noble",
+        "name": "Eagle Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2015",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "engle-lake-noble",
+        "name": "Engle Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2015",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "skinner-lake-noble",
+        "name": "Skinner Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2015",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "crooked-lake-noble",
+        "name": "Crooked Lake",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2017",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "sylvan-lake-east-west-noble",
+        "name": "Sylvan Lake (East/West)",
+        "county": "Noble",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2021",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "irish-lake-kosciusko",
+        "name": "Irish Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2023",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "hill-lake-kosciusko",
+        "name": "Hill Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2011",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "little-barbee-lake-kosciusko",
+        "name": "Little Barbee Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2008",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "north-little-lake-kosciusko",
+        "name": "North Little Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2012",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "banning-lake-kosciusko",
+        "name": "Banning Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2013",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "beaver-dam-lake-kosciusko",
+        "name": "Beaver Dam Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2014",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "center-lake-kosciusko",
+        "name": "Center Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2014",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "kuhn-lake-kosciusko",
+        "name": "Kuhn Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2013",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "mcclures-lake-kosciusko",
+        "name": "McClures Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2014",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "silver-lake-kosciusko",
+        "name": "Silver Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2013",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "waubee-lake-kosciusko",
+        "name": "Waubee Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2014",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "sechrist-lake-kosciusko",
+        "name": "Sechrist Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2015",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "sellers-lake-kosciusko",
+        "name": "Sellers Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2015",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "webster-lake-kosciusko",
+        "name": "Webster Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2017",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "winona-lake-kosciusko",
+        "name": "Winona Lake",
+        "county": "Kosciusko",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2017",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "fish-lake-elkhart",
+        "name": "Fish Lake",
+        "county": "Elkhart",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2023",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "heaton-lake-elkhart",
+        "name": "Heaton Lake",
+        "county": "Elkhart",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2010",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "simonton-lake-elkhart",
+        "name": "Simonton Lake",
+        "county": "Elkhart",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2009",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "fidler's-pond-elkhart",
+        "name": "Fidler's Pond",
+        "county": "Elkhart",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2014",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "indiana-lake-elkhart",
+        "name": "Indiana Lake",
+        "county": "Elkhart",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2014",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "indian-lake-dekalb",
+        "name": "Indian Lake",
+        "county": "DeKalb",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2014",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "little-cedar-lake-whitley",
+        "name": "Little Cedar Lake",
+        "county": "Whitley",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2012",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "old-lake-whitley",
+        "name": "Old Lake",
+        "county": "Whitley",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2015",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "crooked-lake-whitley",
+        "name": "Crooked Lake",
+        "county": "Whitley",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2017",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "lake-everett-allen",
+        "name": "Lake Everett",
+        "county": "Allen",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2012",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": "hurshtown-lake-allen",
+        "name": "Hurshtown Lake",
+        "county": "Allen",
+        "county2": null,
+        "acres": null,
+        "max_depth_ft": null,
+        "survey_date": "2015",
+        "contour_interval_ft": null,
+        "has_contours": false,
+        "pdf_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "bbox": null,
+        "source": "Indiana DNR Fish & Wildlife Lake Depth Maps (PDF only \u2014 no vector contours in FeatureServer)",
+        "source_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps/",
+        "precision_note": "PDF/scanned bathymetry map only; open DNR page to view/download.",
+        "note": null
+      }
+    }
+  ]
+}

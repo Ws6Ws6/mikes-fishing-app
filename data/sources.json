@@ -1,0 +1,32 @@
+{
+  "generated": "2026-09-24T02:14:37.635216+00:00",
+  "region": "Northeast Indiana",
+  "counties": [
+    "Steuben",
+    "LaGrange",
+    "Noble",
+    "DeKalb",
+    "Kosciusko",
+    "Elkhart",
+    "Whitley",
+    "Allen"
+  ],
+  "lakes_with_contours": 62,
+  "lakes_pdf_only": 78,
+  "contour_features": 1019,
+  "sources": [
+    {
+      "name": "IndianaMap / Indiana DNR Lake Bathymetry Contours",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/0",
+      "outlines": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry_RO/FeatureServer/1",
+      "also": "https://gisdata.in.gov/server/rest/services/Hosted/Lake_Bathymetry/FeatureServer/0",
+      "attribution": "Indiana Department of Natural Resources, Division of Fish and Wildlife",
+      "notes": "Polyline bathymetric contours; shoreline = elevation 0; contour values are feet below surface. Surveyed with Biosonics DTX echosounder. Contour intervals vary by lake (commonly 5 or 10 ft). Updated ~2019 in FeatureServer; some newer PDF surveys not yet in vector layer."
+    },
+    {
+      "name": "Indiana DNR Lake Depth Maps (PDF)",
+      "url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps",
+      "attribution": "Indiana Department of Natural Resources"
+    }
+  ]
+}
