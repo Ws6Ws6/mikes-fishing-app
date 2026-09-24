@@ -11,9 +11,9 @@
     "Whitley",
     "Allen"
   ],
-  "lakes_with_contours": 62,
-  "lakes_pdf_only": 78,
-  "contour_features": 1019,
+  "lakes_with_contours": 63,
+  "lakes_pdf_only": 77,
+  "contour_features": 1201,
   "sources": [
     {
       "name": "IndianaMap / Indiana DNR Lake Bathymetry Contours",
@@ -28,5 +28,63 @@
       "url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/lake-depth-maps",
       "attribution": "Indiana Department of Natural Resources"
     }
-  ]
+  ],
+  "notes_sylvan": "Sylvan Lake (Noble) contours added 2026-09-23 from DNR West+East basin PDFs via raster digitization; not present in IndianaMap FeatureServer vector layer.",
+  "launches": {
+    "generated": "2026-09-24T03:52:16.859321+00:00",
+    "region": "Northeast Indiana",
+    "counties": [
+      "Steuben",
+      "LaGrange",
+      "Noble",
+      "DeKalb",
+      "Kosciusko",
+      "Kosciusko",
+      "Elkhart",
+      "Whitley",
+      "Allen"
+    ],
+    "counts": {
+      "total": 248,
+      "public": 178,
+      "private": 54,
+      "unknown": 16
+    },
+    "by_county": {
+      "Noble": 43,
+      "Steuben": 51,
+      "Whitley": 12,
+      "Allen": 15,
+      "LaGrange": 42,
+      "Elkhart": 25,
+      "Kosciusko": 56,
+      "DeKalb": 4
+    },
+    "sources": [
+      {
+        "name": "Indiana DNR Fish & Wildlife \u2014 Fishing Access Sites",
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Fish_Access_RO/FeatureServer/0",
+        "access": "public",
+        "notes": "Official public access sites; boat_ramp=Yes / Boat Ramp / Carry Down / Canoe Ramp."
+      },
+      {
+        "name": "IndianaMap Recreational Facility Locations",
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Recreational_Facility_Locations/FeatureServer/0",
+        "access": "private (areatype Private or Commercial with rampnu>0)",
+        "notes": "State inventory of private/commercial facilities that report boat ramps. Not a guarantee of public entry."
+      },
+      {
+        "name": "OpenStreetMap (leisure=slipway, marina, amenity=boat_rental)",
+        "url": "https://www.openstreetmap.org/",
+        "access": "from OSM access=* tag (private/customers/members \u2192 private; yes/public \u2192 public; else unknown)",
+        "notes": "Deduped against DNR/rec within ~120 m. Untagged slipways labeled unknown. Private club launches not in OSM/state inventories are intentionally omitted."
+      }
+    ],
+    "caveats": [
+      "Private launch coverage is limited to sites published in the state recreational facilities inventory or OSM with access=private/customers/members.",
+      "Do not treat private/commercial markers as guaranteed guest access \u2014 confirm with the operator.",
+      "No gated club directories were scraped; absence of a private ramp does not mean none exist."
+    ],
+    "rebuild": "python3 scripts/rebuild_launches.py  # requires shapely; copies to public/data/"
+  }
 }

@@ -1,8 +1,6 @@
-# Mike's Fishing App
+# Mike's Fishing App (prototype)
 
 Mobile-friendly web map of **Northeast Indiana** lake depth contours for Joey / Mike.
-
-**Live:** https://ws6ws6.github.io/mikes-fishing-app/
 
 ## Features
 
@@ -11,11 +9,12 @@ Mobile-friendly web map of **Northeast Indiana** lake depth contours for Joey / 
 - Lake search/list for Steuben, LaGrange, Noble, DeKalb, Kosciusko, Elkhart, Whitley, Allen
 - Lake card: name, county, max depth, acres, Drive here (Google Maps), Next nearest lake
 - **Trolling mode**: live/demo GPS boat marker + heading, follow-me, breadcrumb track, speed (mph), approximate depth from nearest survey contour, Screen Wake Lock
+- **Boat launches / ramps**: public DNR access sites + private/commercial sites from Indiana recreational inventory and OSM (tagged), with map toggle, clusters, and nearby list on lake cards
 
 ## Run locally
 
 ```bash
-# From repo root — serve the static site (public/ already includes data/)
+cd /workspace/mikes-fishing-app
 python3 -m http.server 8899 --directory public
 # open http://127.0.0.1:8899/
 ```
@@ -25,22 +24,38 @@ python3 -m http.server 8899 --directory public
 ```bash
 python3 -m venv .venv && .venv/bin/pip install shapely
 .venv/bin/python scripts/rebuild_data.py
-# Copy rebuilt files into public/data for local serving and Pages:
-cp data/lakes.geojson data/contours.geojson data/sources.json public/data/
 ```
 
-Then commit and push `main`. Redeploy Pages by updating the `gh-pages` branch with the contents of `public/` (plus `.nojekyll`).
+## Rebuild boat launches
 
-## Data attribution
+```bash
+.venv/bin/python scripts/rebuild_launches.py
+# writes data/launches.geojson and copies to public/data/ (real file, no symlink)
+```
 
-Bathymetric contours and lake survey attributes come from the **Indiana Department of Natural Resources (DNR) Fish & Wildlife** surveys published on **IndianaMap**. Contour intervals are typically **5 or 10 ft** (varies by lake). Suitable for planning / relative structure, **not** a substitute for boat sonar. Some lakes only have PDF maps on the DNR site (listed in-app without contours).
+Sources: Indiana DNR Fish_Access_RO (public), IndianaMap Recreational Facility Locations (Private/Commercial with ramps), OpenStreetMap slipways. Private coverage is only what appears in those open datasets — gated club directories are not scraped.
 
-No invented depths.
+## Data honesty
 
-## Contour precision (source limits)
-
-Indiana DNR bathymetry (IndianaMap FeatureServer): surveyed with Biosonics DTX echosounder; shoreline = 0; values are **feet below surface**. Contour **intervals commonly 5 or 10 ft** (some lakes 1–3 ft). Suitable for structure / relative depth while trolling, **not** centimeter-accurate navigation or a substitute for live sonar. A few named lakes (e.g. Tippecanoe) have incomplete vector coverage in the FeatureServer even when a PDF survey exists — the app flags that.
+No invented depths. Contours come from Indiana DNR Fish & Wildlife surveys published on IndianaMap. Contour intervals are typically **5 or 10 ft** (varies by lake). Suitable for planning / relative structure, **not** a substitute for boat sonar. Some lakes only have PDF maps on the DNR site (listed in-app without contours).
 
 ## Screenshots
 
 See `screenshots/`.
+
+## Trolling mode
+
+- Max zoom 22 (basemap tiles overzoom past native 19 so the map never goes blank)
+- Vector contour lines + repeated depth labels when zoomed in
+- Boat GPS marker with heading arrow, follow-me, breadcrumb track, speed (mph)
+- Approximate depth from nearest survey contour (labeled as approximate; not sonar)
+- Screen Wake Lock while trolling is active
+- Demo GPS: open a lake → **Troll here** (or boat button) when geolocation is unavailable
+
+## Contour precision (source limits)
+
+Indiana DNR bathymetry (IndianaMap FeatureServer): surveyed with Biosonics DTX echosounder;
+shoreline = 0; values are **feet below surface**. Contour **intervals commonly 5 or 10 ft**
+(some lakes 1–3 ft). Suitable for structure / relative depth while trolling, **not** centimeter-accurate
+navigation or a substitute for live sonar. A few named lakes (e.g. Tippecanoe) have incomplete
+vector coverage in the FeatureServer even when a PDF survey exists — the app flags that.

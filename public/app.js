@@ -64,6 +64,15 @@
   let lakeMarkers = L.layerGroup().addTo(map);
   let selectedLake = null;
   let wakeLock = null;
+  let launches = [];
+  let launchCluster = null;
+  let launchesVisible = true;
+
+  const ACCESS_COLORS = {
+    public: { fill: "#1a7f4b", stroke: "#0e4d2c" },
+    private: { fill: "#d97706", stroke: "#92400e" },
+    unknown: { fill: "#6b7280", stroke: "#374151" },
+  };
 
   // Trolling state
   const troll = {
@@ -205,6 +214,131 @@
     }
   }
 
+
+  function launchIcon(access) {
+    const c = ACCESS_COLORS[access] || ACCESS_COLORS.unknown;
+    return L.divIcon({
+      className: "launch-marker",
+      html: `<span class="launch-pin" style="--fill:${c.fill};--stroke:${c.stroke}" title="${access}"></span>`,
+      iconSize: [18, 18],
+      iconAnchor: [9, 9],
+    });
+  }
+
+  function escapeHtml(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function launchPopupHtml(p) {
+    const dest = `${p.lat},${p.lng}`;
+    const accessLabel =
+      p.access === "public"
+        ? "Public"
+        : p.access === "private"
+          ? "Private / commercial"
+          : "Unknown access";
+    const badgeClass = p.access || "unknown";
+    const lake = p.lake ? `<div><strong>Lake</strong> ${escapeHtml(p.lake)}</div>` : "";
+    const county = p.county
+      ? `<div><strong>County</strong> ${escapeHtml(p.county)}</div>`
+      : "";
+    const notes = p.notes
+      ? `<p class="launch-notes">${escapeHtml(p.notes)}</p>`
+      : "";
+    return `<div class="launch-popup">
+      <strong>${escapeHtml(p.name)}</strong>
+      <span class="access-badge ${badgeClass}">${accessLabel}</span>
+      ${lake}${county}
+      <div class="launch-actions">
+        <a href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(dest)}" target="_blank" rel="noopener">Drive here</a>
+        <a class="secondary" href="${escapeHtml(p.source_url)}" target="_blank" rel="noopener">Source</a>
+      </div>
+      <p class="launch-source">${escapeHtml(p.source)}</p>
+      ${notes}
+    </div>`;
+  }
+
+  function nearestLaunches(lake, limit = 6, maxMi = 8) {
+    if (!lake || lake.lat == null) return [];
+    const scored = [];
+    for (const Lch of launches) {
+      const d = haversineM([lake.lat, lake.lng], [Lch.lat, Lch.lng]);
+      const mi = d / 1609.34;
+      if (mi <= maxMi) scored.push({ ...Lch, miles: mi });
+    }
+    scored.sort((a, b) => a.miles - b.miles);
+    // Prefer same-named lake matches first
+    const lakeName = (lake.name || "").toLowerCase();
+    scored.sort((a, b) => {
+      const aHit = a.lake && a.lake.toLowerCase().includes(lakeName.split(" ")[0]) ? 0 : 1;
+      const bHit = b.lake && b.lake.toLowerCase().includes(lakeName.split(" ")[0]) ? 0 : 1;
+      if (aHit !== bHit) return aHit - bHit;
+      return a.miles - b.miles;
+    });
+    return scored.slice(0, limit);
+  }
+
+  function setLaunchesVisible(on) {
+    launchesVisible = !!on;
+    const btn = document.getElementById("btnLaunches");
+    const chk = document.getElementById("filterLaunches");
+    if (btn) {
+      btn.classList.toggle("active", launchesVisible);
+      btn.setAttribute("aria-pressed", launchesVisible ? "true" : "false");
+    }
+    if (chk) chk.checked = launchesVisible;
+    if (!launchCluster) return;
+    if (launchesVisible) {
+      if (!map.hasLayer(launchCluster)) map.addLayer(launchCluster);
+    } else if (map.hasLayer(launchCluster)) {
+      map.removeLayer(launchCluster);
+    }
+  }
+
+  function placeLaunchMarkers() {
+    if (launchCluster) {
+      map.removeLayer(launchCluster);
+      launchCluster = null;
+    }
+    if (typeof L.markerClusterGroup !== "function") {
+      console.warn("MarkerCluster not loaded; using plain layer group");
+      launchCluster = L.layerGroup();
+    } else {
+      launchCluster = L.markerClusterGroup({
+        maxClusterRadius: (zoom) => (zoom <= 9 ? 70 : zoom <= 11 ? 50 : zoom <= 13 ? 36 : 28),
+        showCoverageOnHover: false,
+        spiderfyOnMaxZoom: true,
+        disableClusteringAtZoom: 15,
+        iconCreateFunction(cluster) {
+          const n = cluster.getChildCount();
+          const size = n > 40 ? "lg" : n > 15 ? "md" : "sm";
+          return L.divIcon({
+            html: `<div><span>${n}</span></div>`,
+            className: `launch-cluster launch-cluster-${size}`,
+            iconSize: L.point(40, 40),
+          });
+        },
+      });
+    }
+    for (const Lch of launches) {
+      const m = L.marker([Lch.lat, Lch.lng], {
+        icon: launchIcon(Lch.access),
+        keyboard: false,
+      });
+      m.bindPopup(launchPopupHtml(Lch), { maxWidth: 280 });
+      m.bindTooltip(
+        `${Lch.name} (${Lch.access})`,
+        { direction: "top", opacity: 0.9, offset: [0, -6] }
+      );
+      launchCluster.addLayer(m);
+    }
+    if (launchesVisible) launchCluster.addTo(map);
+  }
+
   function showLakeCard(lake) {
     const card = document.getElementById("lakeCard");
     const maxD =
@@ -238,6 +372,7 @@
         <div><strong>Survey</strong>${survey}</div>
       </div>
       <div class="actions">${actions}</div>
+      <div id="nearbyLaunches" class="nearby-launches"></div>
       <p class="source">${lake.source || ""} · <a href="${lake.source_url}" target="_blank" rel="noopener">source</a><br/>${lake.precision_note || ""}</p>
     `;
     card.classList.remove("hidden");
@@ -253,6 +388,46 @@
         }
         startTrolling({ simulateAt: lake });
       };
+    const nearEl = document.getElementById("nearbyLaunches");
+    const near = nearestLaunches(lake);
+    if (nearEl && near.length) {
+      nearEl.innerHTML =
+        `<div class="nearby-title">Nearby launches</div>` +
+        near
+          .map((x) => {
+            const badge =
+              x.access === "public"
+                ? "public"
+                : x.access === "private"
+                  ? "private"
+                  : "unknown";
+            return `<button type="button" class="nearby-item" data-lat="${x.lat}" data-lng="${x.lng}">
+              <span class="dot ${badge}"></span>
+              <span class="nearby-name">${escapeHtml(x.name)}</span>
+              <span class="nearby-mi">${x.miles < 0.1 ? "<0.1" : x.miles.toFixed(1)} mi</span>
+            </button>`;
+          })
+          .join("");
+      nearEl.querySelectorAll(".nearby-item").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const lat = parseFloat(btn.dataset.lat);
+          const lng = parseFloat(btn.dataset.lng);
+          setLaunchesVisible(true);
+          map.setView([lat, lng], 15);
+          // open matching popup if possible
+          if (launchCluster) {
+            launchCluster.eachLayer((layer) => {
+              const ll = layer.getLatLng && layer.getLatLng();
+              if (ll && Math.abs(ll.lat - lat) < 1e-5 && Math.abs(ll.lng - lng) < 1e-5) {
+                launchCluster.zoomToShowLayer(layer, () => layer.openPopup());
+              }
+            });
+          }
+        });
+      });
+    } else if (nearEl) {
+      nearEl.innerHTML = "";
+    }
   }
 
   function goNextNearest(from) {
@@ -315,13 +490,21 @@
     labelLayer = L.layerGroup().addTo(map);
     const bounds = map.getBounds().pad(0.05);
     const zoom = map.getZoom();
-    // denser labels when zoomed in for trolling
-    const step = zoom >= 18 ? 1 : zoom >= 16 ? 2 : 3;
+    // Spacing along each contour (meters). Much denser when fully zoomed in for trolling.
+    const spacingM =
+      zoom >= 21 ? 25 :
+      zoom >= 20 ? 40 :
+      zoom >= 19 ? 60 :
+      zoom >= 18 ? 90 :
+      zoom >= 16 ? 160 :
+      320;
+    const maxLabels = zoom >= 20 ? 600 : zoom >= 18 ? 400 : zoom >= 16 ? 200 : 100;
     let count = 0;
     contourLayer.eachLayer((layer) => {
+      if (count >= maxLabels) return;
       const depth = layer.feature && layer.feature.properties.depth_ft;
       if (depth == null || depth === 0) return;
-      // label index depths more often
+      // Below z16, only label 10-ft index contours to reduce clutter
       if (zoom < 16 && depth % 10 !== 0) return;
       const latlngs = layer.getLatLngs();
       const flat = [];
@@ -335,27 +518,42 @@
       };
       walk(latlngs);
       if (flat.length < 2) return;
-      for (let i = Math.floor(flat.length / 4); i < flat.length; i += Math.max(8, Math.floor(flat.length / step))) {
-        const ll = flat[i];
-        if (!bounds.contains(ll)) continue;
-        const icon = L.divIcon({
-          className: "contour-label",
-          html: `<span>${depth}</span>`,
-          iconSize: [28, 14],
-          iconAnchor: [14, 7],
-        });
-        L.marker(ll, { icon, interactive: false, keyboard: false }).addTo(labelLayer);
-        count++;
-        if (count > (zoom >= 18 ? 220 : 90)) return;
+      let traveled = 0;
+      let nextAt = spacingM * 0.35; // first label a bit into the line
+      for (let i = 1; i < flat.length; i++) {
+        const a = flat[i - 1];
+        const b = flat[i];
+        const seg = map.distance(a, b);
+        const prev = traveled;
+        traveled += seg;
+        while (nextAt <= traveled && count < maxLabels) {
+          const t = seg > 0 ? (nextAt - prev) / seg : 0;
+          const ll = L.latLng(
+            a.lat + (b.lat - a.lat) * t,
+            a.lng + (b.lng - a.lng) * t
+          );
+          if (bounds.contains(ll)) {
+            const icon = L.divIcon({
+              className: "contour-label",
+              html: `<span>${depth}</span>`,
+              iconSize: [28, 14],
+              iconAnchor: [14, 7],
+            });
+            L.marker(ll, { icon, interactive: false, keyboard: false }).addTo(labelLayer);
+            count++;
+          }
+          nextAt += spacingM;
+        }
       }
     });
   }
 
   async function loadData() {
-    const [lakesGj, contoursGj, sources] = await Promise.all([
+    const [lakesGj, contoursGj, sources, launchesGj] = await Promise.all([
       fetch("./data/lakes.geojson").then((r) => r.json()),
       fetch("./data/contours.geojson").then((r) => r.json()),
       fetch("./data/sources.json").then((r) => r.json()).catch(() => null),
+      fetch("./data/launches.geojson").then((r) => r.json()).catch(() => null),
     ]);
 
     lakes = lakesGj.features.map((f) => {
@@ -393,6 +591,19 @@
     syncContourVis();
 
     placeLakeMarkers();
+    if (launchesGj && launchesGj.features) {
+      launches = launchesGj.features.map((f) => {
+        const p = f.properties || {};
+        const g = f.geometry;
+        return {
+          ...p,
+          lat: p.lat != null ? p.lat : g ? g.coordinates[1] : null,
+          lng: p.lng != null ? p.lng : g ? g.coordinates[0] : null,
+        };
+      }).filter((x) => x.lat != null && x.lng != null);
+      placeLaunchMarkers();
+      console.info("Launches:", launchesGj.properties && launchesGj.properties.counts);
+    }
     renderLakeList();
     if (sources) {
       console.info("Data sources:", sources);
@@ -618,6 +829,14 @@
   document.getElementById("lakeSearch").addEventListener("input", renderLakeList);
   document.getElementById("filterContours").addEventListener("change", renderLakeList);
   document.getElementById("filterPdf").addEventListener("change", renderLakeList);
+  const filterLaunches = document.getElementById("filterLaunches");
+  if (filterLaunches) {
+    filterLaunches.addEventListener("change", (e) => setLaunchesVisible(e.target.checked));
+  }
+  const btnLaunches = document.getElementById("btnLaunches");
+  if (btnLaunches) {
+    btnLaunches.addEventListener("click", () => setLaunchesVisible(!launchesVisible));
+  }
 
   document.getElementById("btnLocate").addEventListener("click", () => {
     if (!navigator.geolocation) {
@@ -661,6 +880,8 @@
       return true;
     },
     getLakes: () => lakes,
+    getLaunches: () => launches,
+    setLaunchesVisible,
   };
 
   loadData().catch((e) => {

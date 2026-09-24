@@ -7,6 +7,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>Mike's Fishing App</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -22,6 +24,7 @@
       <button id="btnLocate" type="button" title="My location">📍</button>
       <button id="btnSearch" type="button" title="Find a lake">🔍</button>
       <button id="btnLayers" type="button" title="Basemap">🗺</button>
+      <button id="btnLaunches" type="button" class="active" title="Toggle boat launches" aria-pressed="true">🛶</button>
       <button id="btnTroll" type="button" class="troll-btn" title="Trolling mode">🚤</button>
     </div>
   </header>
@@ -34,6 +37,7 @@
     <div class="filters">
       <label><input type="checkbox" id="filterContours" checked /> Contours</label>
       <label><input type="checkbox" id="filterPdf" checked /> PDF maps</label>
+      <label><input type="checkbox" id="filterLaunches" checked /> Boat launches</label>
     </div>
     <ul id="lakeList"></ul>
     <footer class="panel-foot">
@@ -75,11 +79,17 @@
     <div class="legend-title">Depth (ft)</div>
     <div class="ramp"></div>
     <div class="legend-scale"><span>0</span><span>30</span><span>60+</span></div>
+    <div class="legend-launches">
+      <div><span class="dot public"></span> Public launch</div>
+      <div><span class="dot private"></span> Private / commercial</div>
+      <div><span class="dot unknown"></span> Unknown access</div>
+    </div>
   </div>
 
   <div id="toast" class="toast hidden"></div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

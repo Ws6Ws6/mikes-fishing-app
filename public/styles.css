@@ -137,6 +137,9 @@ body.trolling .legend { bottom: calc(150px + var(--safe-bottom)); }
   text-shadow: 0 0 3px #fff, 0 0 3px #fff, 1px 1px 0 #fff, -1px -1px 0 #fff;
   box-shadow: none !important;
 }
+.contour-label span { font-size: inherit; }
+/* When the map is deeply zoomed (trolling), Leaflet still uses these markers —
+   bump readability a touch via a larger default size set from JS if needed. */
 .boat-marker {
   width: 0; height: 0;
 }
@@ -151,3 +154,66 @@ body.trolling .legend { bottom: calc(150px + var(--safe-bottom)); }
   .card { left: 16px; right: auto; bottom: 24px; width: 380px; margin: 0; }
   .panel { top: 78px; left: 16px; }
 }
+
+.top-actions button.active { outline: 2px solid #f0b429; outline-offset: 1px; }
+.legend { width: 130px; }
+.legend-launches { margin-top: 8px; padding-top: 6px; border-top: 1px solid #e5eef4; line-height: 1.45; }
+.legend-launches .dot, .nearby-item .dot, .access-badge::before {
+  display: inline-block; width: 9px; height: 9px; border-radius: 50%;
+  margin-right: 5px; vertical-align: middle; border: 1px solid rgba(0,0,0,.25);
+}
+.dot.public, .access-badge.public { --c: #1a7f4b; }
+.dot.private, .access-badge.private { --c: #d97706; }
+.dot.unknown, .access-badge.unknown { --c: #6b7280; }
+.dot.public, .dot.private, .dot.unknown { background: var(--c); }
+
+.launch-marker { background: transparent !important; border: 0 !important; }
+.launch-pin {
+  display: block; width: 14px; height: 14px; border-radius: 50% 50% 50% 0;
+  background: var(--fill); border: 2px solid var(--stroke);
+  transform: rotate(-45deg);
+  box-shadow: 0 1px 3px rgba(0,0,0,.35);
+}
+.launch-cluster {
+  background: transparent !important; border: 0 !important;
+}
+.launch-cluster div {
+  background: rgba(11, 61, 92, .92); color: #fff; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; border: 2px solid #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,.35);
+}
+.launch-cluster-sm div { width: 34px; height: 34px; font-size: 12px; }
+.launch-cluster-md div { width: 40px; height: 40px; font-size: 13px; }
+.launch-cluster-lg div { width: 46px; height: 46px; font-size: 14px; }
+
+.launch-popup strong { display: block; margin-bottom: 4px; font-size: .95rem; }
+.access-badge {
+  display: inline-block; font-size: .7rem; font-weight: 700; padding: 2px 7px;
+  border-radius: 999px; margin-bottom: 6px; color: #fff; background: var(--c, #6b7280);
+}
+.access-badge.public { background: #1a7f4b; }
+.access-badge.private { background: #d97706; }
+.access-badge.unknown { background: #6b7280; }
+.launch-popup .launch-actions { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+.launch-popup .launch-actions a {
+  flex: 1; text-align: center; text-decoration: none; background: var(--accent);
+  color: #fff; font-weight: 650; border-radius: 8px; padding: 8px 10px; font-size: .82rem;
+}
+.launch-popup .launch-actions a.secondary { background: #e8f2f8; color: var(--deep); }
+.launch-source { margin: 6px 0 0; font-size: .68rem; color: var(--muted); }
+.launch-notes { margin: 4px 0 0; font-size: .72rem; color: var(--muted); line-height: 1.3; }
+
+.nearby-launches { margin-top: 10px; }
+.nearby-title {
+  font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em;
+  color: var(--muted); margin-bottom: 4px;
+}
+.nearby-item {
+  display: flex; align-items: center; gap: 6px; width: 100%;
+  border: 0; background: #f3f8fb; border-radius: 8px; padding: 7px 8px;
+  margin-bottom: 4px; cursor: pointer; text-align: left; font-size: .82rem;
+}
+.nearby-item:hover { background: #e5f1f8; }
+.nearby-name { flex: 1; font-weight: 600; color: var(--ink); }
+.nearby-mi { color: var(--muted); font-variant-numeric: tabular-nums; }
