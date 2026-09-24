@@ -666,17 +666,20 @@
     "name": "Winona Lake",
     "county": "Kosciusko",
     "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "medium",
-    "shore_iou": 0.997,
+    "georef_method": "osm",
+    "review_priority": "low",
+    "shore_iou": 0.515,
     "issues": [
-      "Georef IoU=0.997 OK. Acre mismatch shoreline 218.5 vs PDF 562 (ratio=0.39). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
+      "Re-locked to real Warsaw Winona Lake (was wrong 218ac pond)",
+      "IoU=0.52 vs OSM (acre ceiling ~0.56; PDF 562 vs OSM 1006)",
+      "Contour containment 97%"
     ],
     "status": "pending_review",
     "notes_fix": [
       "depths_from_pdf_labels",
       "georef_improved_iou_0.66"
-    ]
+    ],
+    "georef_source": "osm:relation/10921189"
   },
   {
     "id": "fish-lake-elkhart",

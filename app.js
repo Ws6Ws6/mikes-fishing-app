@@ -20,6 +20,12 @@
   });
   L.control.zoom({ position: "bottomright" }).addTo(map);
 
+  // Dedicated high pane for boat launches (above contours/overlays)
+  if (!map.getPane("launchesPane")) {
+    map.createPane("launchesPane");
+    map.getPane("launchesPane").style.zIndex = 650; // markers=600, tooltip=650, popup=700
+  }
+
   const osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: MAX_ZOOM,
     maxNativeZoom: 19,
@@ -145,7 +151,15 @@
         ? (Array.isArray(latlngs[0][0]) ? latlngs.flat() : latlngs)
         : [latlngs];
       for (const line of rings) {
-        const pts = line.map((ll) => (ll.lat != null ? [ll.lat, ll.lng] : [ll[0], ll[1]]));
+        const pts = [];
+        for (const ll of line) {
+          if (!ll) continue;
+          if (ll.lat != null && ll.lng != null && Number.isFinite(ll.lat) && Number.isFinite(ll.lng)) {
+            pts.push([ll.lat, ll.lng]);
+          } else if (Array.isArray(ll) && Number.isFinite(+ll[0]) && Number.isFinite(+ll[1])) {
+            pts.push([+ll[0], +ll[1]]);
+          }
+        }
         for (let i = 0; i < pts.length - 1; i++) {
           const d = distPointToSegM(p, pts[i], pts[i + 1]);
           if (d < bestD) {
@@ -160,23 +174,37 @@
     return best;
   }
 
-  function renderLakeList() {
-    const q = (document.getElementById("lakeSearch").value || "").trim().toLowerCase();
+  function normSearch(s) {
+    return String(s || "").trim().toLowerCase().replace(/\s+/g, " ");
+  }
+
+  function lakeMatchesQuery(l, q) {
+    if (!q) return true;
+    const name = normSearch(l.name);
+    const county = normSearch(l.county);
+    const county2 = normSearch(l.county2);
+    const hay = `${name} ${county} ${county2}`.trim();
+    // Require every whitespace-separated token to appear (name and/or county)
+    return q.split(/\s+/).every((tok) => hay.includes(tok));
+  }
+
+  function filteredLakes() {
+    const q = normSearch(document.getElementById("lakeSearch").value);
     const showC = document.getElementById("filterContours").checked;
     const showP = document.getElementById("filterPdf").checked;
-    const ul = document.getElementById("lakeList");
-    ul.innerHTML = "";
-    const filtered = lakes
+    return lakes
       .filter((l) => {
         if (l.has_contours && !showC) return false;
         if (!l.has_contours && !showP) return false;
-        if (!q) return true;
-        return (
-          l.name.toLowerCase().includes(q) ||
-          (l.county || "").toLowerCase().includes(q)
-        );
+        return lakeMatchesQuery(l, q);
       })
       .sort((a, b) => a.name.localeCompare(b.name));
+  }
+
+  function renderLakeList() {
+    const ul = document.getElementById("lakeList");
+    ul.innerHTML = "";
+    const filtered = filteredLakes();
 
     for (const l of filtered) {
       const li = document.createElement("li");
@@ -201,6 +229,24 @@
 
   function openPanel(open) {
     document.getElementById("panel").classList.toggle("hidden", !open);
+    if (open) {
+      const input = document.getElementById("lakeSearch");
+      // Defer focus so it works after display:none → visible on mobile
+      requestAnimationFrame(() => {
+        try { input.focus({ preventScroll: true }); } catch (_) { input.focus(); }
+      });
+    }
+  }
+
+  function goToTopSearchMatch() {
+    const matches = filteredLakes();
+    if (!matches.length) {
+      toast("No lakes match");
+      return false;
+    }
+    selectLake(matches[0], true);
+    toast(matches[0].name);
+    return true;
   }
 
   function selectLake(lake, fly) {
@@ -302,9 +348,17 @@
       btn.setAttribute("aria-pressed", launchesVisible ? "true" : "false");
     }
     if (chk) chk.checked = launchesVisible;
-    if (!launchCluster) return;
+    if (!launchCluster) {
+      if (launchesVisible) {
+        if (launches.length) placeLaunchMarkers();
+        else toast("Boat launches not loaded yet");
+      }
+      return;
+    }
     if (launchesVisible) {
       if (!map.hasLayer(launchCluster)) map.addLayer(launchCluster);
+      const n = typeof launchCluster.getLayers === "function" ? launchCluster.getLayers().length : launches.length;
+      if (!n) toast("No boat launches to show");
     } else if (map.hasLayer(launchCluster)) {
       map.removeLayer(launchCluster);
     }
@@ -315,11 +369,13 @@
       map.removeLayer(launchCluster);
       launchCluster = null;
     }
+    const paneOpts = { pane: "launchesPane" };
     if (typeof L.markerClusterGroup !== "function") {
       console.warn("MarkerCluster not loaded; using plain layer group");
       launchCluster = L.layerGroup();
     } else {
       launchCluster = L.markerClusterGroup({
+        ...paneOpts,
         maxClusterRadius: (zoom) => (zoom <= 9 ? 70 : zoom <= 11 ? 50 : zoom <= 13 ? 36 : 28),
         showCoverageOnHover: false,
         spiderfyOnMaxZoom: true,
@@ -335,10 +391,13 @@
         },
       });
     }
+    let placed = 0;
     for (const Lch of launches) {
+      if (!Number.isFinite(Lch.lat) || !Number.isFinite(Lch.lng)) continue;
       const m = L.marker([Lch.lat, Lch.lng], {
         icon: launchIcon(Lch.access),
         keyboard: false,
+        pane: "launchesPane",
       });
       m.bindPopup(launchPopupHtml(Lch), { maxWidth: 280 });
       m.bindTooltip(
@@ -346,8 +405,13 @@
         { direction: "top", opacity: 0.9, offset: [0, -6] }
       );
       launchCluster.addLayer(m);
+      placed++;
     }
-    if (launchesVisible) launchCluster.addTo(map);
+    if (launchesVisible) {
+      launchCluster.addTo(map);
+      if (placed === 0) toast("No boat launches to show");
+    }
+    console.info("Launch markers placed:", placed);
   }
 
   function showLakeCard(lake) {
@@ -482,7 +546,7 @@
   function placeLakeMarkers() {
     lakeMarkers.clearLayers();
     for (const l of lakes) {
-      if (!l.has_contours || l.lat == null) continue;
+      if (!l.has_contours || !Number.isFinite(l.lat) || !Number.isFinite(l.lng)) continue;
       const m = L.circleMarker([l.lat, l.lng], {
         radius: 5,
         color: "#0b3d5c",
@@ -589,21 +653,45 @@
   }
 
   async function loadData() {
-    const [lakesGj, contoursGj, sources, launchesGj] = await Promise.all([
+    // Launches load on their own so a huge contours fetch cannot block or abort them.
+    const launchesPromise = fetch("./data/launches.geojson")
+      .then((r) => (r.ok ? r.json() : null))
+      .catch((e) => {
+        console.warn("Launches fetch failed", e);
+        return null;
+      });
+
+    const [lakesGj, contoursGj, sources] = await Promise.all([
       fetch("./data/lakes.geojson").then((r) => r.json()),
       fetch("./data/contours.geojson").then((r) => r.json()),
       fetch("./data/sources.json").then((r) => r.json()).catch(() => null),
-      fetch("./data/launches.geojson").then((r) => r.json()).catch(() => null),
     ]);
 
     lakes = lakesGj.features.map((f) => {
-      const p = f.properties;
+      const p = f.properties || {};
       const g = f.geometry;
-      return {
-        ...p,
-        lat: g ? g.coordinates[1] : null,
-        lng: g ? g.coordinates[0] : null,
-      };
+      // Lakes may be Point or Polygon (shore lock). Always derive a numeric lat/lng —
+      // Polygon coordinates[0]/[1] are rings, which crash Leaflet circleMarkers.
+      let lat = null;
+      let lng = null;
+      if (g && g.type === "Point" && Array.isArray(g.coordinates) && g.coordinates.length >= 2) {
+        lng = +g.coordinates[0];
+        lat = +g.coordinates[1];
+      } else if (p.bbox && p.bbox.length >= 4) {
+        lng = (+p.bbox[0] + +p.bbox[2]) / 2;
+        lat = (+p.bbox[1] + +p.bbox[3]) / 2;
+      } else if (g && g.type === "Polygon" && g.coordinates && g.coordinates[0] && g.coordinates[0].length) {
+        const ring = g.coordinates[0];
+        let sx = 0, sy = 0, n = 0;
+        for (const pt of ring) {
+          if (pt && pt.length >= 2 && Number.isFinite(+pt[0]) && Number.isFinite(+pt[1])) {
+            sx += +pt[0]; sy += +pt[1]; n++;
+          }
+        }
+        if (n) { lng = sx / n; lat = sy / n; }
+      }
+      if (!Number.isFinite(lat) || !Number.isFinite(lng)) { lat = null; lng = null; }
+      return { ...p, lat, lng };
     });
 
     // SVG renderer (not canvas): canvas overlays were drifting so lakes/contours
@@ -614,6 +702,14 @@
       style: styleContour,
       renderer: contourRenderer,
     }).addTo(map);
+    // Leaflet 1.9 SVG renderer ignores renderer className — tag the container ourselves
+    // so fill:none CSS only hits contour strokes, not lake circleMarkers.
+    const tagContourSvg = () => {
+      const el = contourRenderer && contourRenderer._container;
+      if (el) el.classList.add("contour-svg");
+    };
+    tagContourSvg();
+    contourLayer.on("add", tagContourSvg);
 
     // Visibility + marker sizing depend on zoom only.
     const syncContourVis = () => {
@@ -624,6 +720,8 @@
         map.removeLayer(contourLayer);
       }
       lakeMarkers.eachLayer((m) => {
+        const ll = m.getLatLng && m.getLatLng();
+        if (!ll || !Number.isFinite(ll.lat) || !Number.isFinite(ll.lng)) return;
         if (z >= 13) m.setStyle({ radius: 4, opacity: 0.35, fillOpacity: 0.35 });
         else m.setStyle({ radius: 5, opacity: 1, fillOpacity: 0.9 });
       });
@@ -670,22 +768,34 @@
     requestAnimationFrame(invalidate);
 
     placeLakeMarkers();
-    if (launchesGj && launchesGj.features) {
-      launches = launchesGj.features.map((f) => {
-        const p = f.properties || {};
-        const g = f.geometry;
-        return {
-          ...p,
-          lat: p.lat != null ? p.lat : g ? g.coordinates[1] : null,
-          lng: p.lng != null ? p.lng : g ? g.coordinates[0] : null,
-        };
-      }).filter((x) => x.lat != null && x.lng != null);
-      placeLaunchMarkers();
-      console.info("Launches:", launchesGj.properties && launchesGj.properties.counts);
-    }
     renderLakeList();
     if (sources) {
       console.info("Data sources:", sources);
+    }
+
+    // Always place launches (even if contours were slow/heavy)
+    try {
+      const launchesGj = await launchesPromise;
+      if (launchesGj && launchesGj.features) {
+        launches = launchesGj.features.map((f) => {
+          const p = f.properties || {};
+          const g = f.geometry;
+          const lat = p.lat != null ? +p.lat : g && g.coordinates ? +g.coordinates[1] : NaN;
+          const lng = p.lng != null ? +p.lng : g && g.coordinates ? +g.coordinates[0] : NaN;
+          return { ...p, lat, lng };
+        }).filter((x) => Number.isFinite(x.lat) && Number.isFinite(x.lng));
+        placeLaunchMarkers();
+        console.info("Launches:", launches.length, launchesGj.properties && launchesGj.properties.counts);
+        if (launchesVisible && launches.length === 0) {
+          toast("No boat launches in dataset");
+        }
+      } else {
+        console.warn("Launches GeoJSON missing or empty");
+        if (launchesVisible) toast("Boat launches unavailable");
+      }
+    } catch (e) {
+      console.error("Launches place failed", e);
+      toast("Boat launches failed to load");
     }
   }
 
@@ -901,11 +1011,26 @@
   });
 
   document.getElementById("btnSearch").addEventListener("click", () => {
-    const panel = document.getElementById("panel");
-    openPanel(panel.classList.contains("hidden"));
+    // Magnifier always opens the panel and focuses search (mobile-friendly)
+    openPanel(true);
   });
   document.getElementById("btnClosePanel").addEventListener("click", () => openPanel(false));
-  document.getElementById("lakeSearch").addEventListener("input", renderLakeList);
+  const lakeSearch = document.getElementById("lakeSearch");
+  lakeSearch.addEventListener("input", () => {
+    // Typing should open the panel if it was closed
+    const panel = document.getElementById("panel");
+    if (panel.classList.contains("hidden")) openPanel(true);
+    renderLakeList();
+  });
+  lakeSearch.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      const panel = document.getElementById("panel");
+      if (panel.classList.contains("hidden")) openPanel(true);
+      renderLakeList();
+      goToTopSearchMatch();
+    }
+  });
   document.getElementById("filterContours").addEventListener("change", renderLakeList);
   document.getElementById("filterPdf").addEventListener("change", renderLakeList);
   const filterLaunches = document.getElementById("filterLaunches");
