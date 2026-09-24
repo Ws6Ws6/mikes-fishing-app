@@ -1,690 +1,16 @@
 [
   {
-    "id": "ball-lake-steuben",
-    "name": "Ball Lake",
-    "county": "Steuben",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "medium",
-    "shore_iou": 0.991,
-    "issues": [
-      "Georef IoU=0.991 OK. Acre mismatch shoreline 160.4 vs PDF 87 (ratio=1.84). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "beaverdam-lake-steuben",
-    "name": "Beaverdam Lake",
-    "county": "Steuben",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "medium",
-    "shore_iou": 1.0,
-    "issues": [
-      "Georef IoU=1.000 OK. Acre mismatch shoreline 58.2 vs PDF 32.4 (ratio=1.80). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "bower-lake-steuben",
-    "name": "Bower Lake",
-    "county": "Steuben",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "medium",
-    "shore_iou": 0.992,
-    "issues": [
-      "Georef IoU=0.992 OK. Acre mismatch shoreline 47.2 vs PDF 25 (ratio=1.89). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "gage-lake-steuben",
-    "name": "Gage Lake",
-    "county": "Steuben",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "medium",
-    "shore_iou": 0.998,
-    "issues": [
-      "Georef IoU=0.998 OK. Acre mismatch shoreline 599.4 vs PDF 334.1 (ratio=1.79). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "gooseneck-lake-steuben",
-    "name": "Gooseneck Lake",
-    "county": "Steuben",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "medium",
-    "shore_iou": 0.99,
-    "issues": [
-      "Georef IoU=0.990 OK. Acre mismatch shoreline 40.4 vs PDF 22.6 (ratio=1.79). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "green-lake-steuben",
-    "name": "Green Lake",
-    "county": "Steuben",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "medium",
-    "shore_iou": 0.991,
-    "issues": [
-      "Georef IoU=0.991 OK. Acre mismatch shoreline 45.3 vs PDF 25.3 (ratio=1.79). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "hamilton-lake-steuben",
-    "name": "Hamilton Lake",
-    "county": "Steuben",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "medium",
-    "shore_iou": 0.982,
-    "issues": [
-      "Georef IoU=0.982 OK. Acre mismatch shoreline 1429.5 vs PDF 802 (ratio=1.78). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "henry-lake-steuben",
-    "name": "Henry Lake",
-    "county": "Steuben",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "medium",
-    "shore_iou": 0.994,
-    "issues": [
-      "Georef IoU=0.994 OK. Acre mismatch shoreline 41.0 vs PDF 22.9 (ratio=1.79). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "lake-arrowhead-steuben",
-    "name": "Lake Arrowhead",
-    "county": "Steuben",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "medium",
-    "shore_iou": 0.962,
-    "issues": [
-      "Georef IoU=0.962 OK. Acre mismatch shoreline 5.7 vs PDF 3.4 (ratio=1.67). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "lime-lake-steuben",
-    "name": "Lime Lake",
-    "county": "Steuben",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "medium",
-    "shore_iou": 0.997,
-    "issues": [
-      "Georef IoU=0.997 OK. Acre mismatch shoreline 49.9 vs PDF 27.8 (ratio=1.80). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "little-otter-lake-steuben",
-    "name": "Little Otter Lake",
-    "county": "Steuben",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "medium",
-    "shore_iou": 0.989,
-    "issues": [
-      "Georef IoU=0.989 OK. Acre mismatch shoreline 57.4 vs PDF 31.9 (ratio=1.80). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "loon-lake-steuben",
-    "name": "Loon Lake",
-    "county": "Steuben",
+    "id": "indian-lake-dekalb",
+    "name": "Indian Lake",
+    "county": "DeKalb",
     "contour_method": "traced_from_pdf",
     "georef_method": "osm",
     "review_priority": "medium",
     "shore_iou": 0.999,
     "issues": [
-      "Georef IoU=0.999 OK. Acre mismatch shoreline 217.9 vs PDF 138 (ratio=1.58). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
+      "method=traced_from_pdf; n=135; in-OSM=0.9986522911051213; geo acres=56.7 vs PDF 101.0 ratio=0.561; Indian: OSM 57 ac vs PDF 101.0 \u2014 contours lock; honest acre gap retained as review"
     ],
     "status": "pending_review"
-  },
-  {
-    "id": "meserve-lake-steuben",
-    "name": "Meserve Lake",
-    "county": "Steuben",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "medium",
-    "shore_iou": 0.991,
-    "issues": [
-      "Georef IoU=0.991 OK. Acre mismatch shoreline 32.5 vs PDF 16 (ratio=2.03). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "silver-lake-steuben",
-    "name": "Silver Lake",
-    "county": "Steuben",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "medium",
-    "shore_iou": 0.9047222332506165,
-    "issues": [
-      "Restored Steuben Silver digitized contours; georef nhd:Silver Lake; Warp IoU=0.905; PDF acres 202 vs OSM/NHD ~360 \u2014 likely marsh inclusion; left review if acre gate fails; Acre mismatch shoreline 383.2 vs PDF 202.0 (ratio=1.90)"
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "west-otter-lake-steuben",
-    "name": "West Otter Lake",
-    "county": "Steuben",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "medium",
-    "shore_iou": 0.4703832328409302,
-    "issues": [
-      "Re-locked West Otter to NHD Big Otter Lake (126.2 ac vs PDF 112); Dense warp IoU=0.470"
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "cree-lake-noble",
-    "name": "Cree Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "done",
-    "shore_iou": 0.9963610148845597,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified",
-    "notes_fix": [
-      "depths_from_pdf_labels",
-      "georef_improved_iou_0.57"
-    ]
-  },
-  {
-    "id": "hindman-lake-noble",
-    "name": "Hindman Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "done",
-    "shore_iou": 0.9952158623784471,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified",
-    "notes_fix": [
-      "depths_from_pdf_labels",
-      "georef_improved_iou_0.74"
-    ]
-  },
-  {
-    "id": "jones-lake-noble",
-    "name": "Jones Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "done",
-    "shore_iou": 0.9775876019311466,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified",
-    "notes_fix": [
-      "depths_from_pdf_labels",
-      "replaced_synthetic_georef"
-    ]
-  },
-  {
-    "id": "latta-lake-noble",
-    "name": "Latta Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "done",
-    "shore_iou": 0.9808442978609212,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified",
-    "notes_fix": [
-      "depths_from_pdf_labels",
-      "georef_improved_iou_0.67"
-    ]
-  },
-  {
-    "id": "mud-lake-noble",
-    "name": "Mud Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "medium",
-    "shore_iou": 0.993,
-    "issues": [
-      "Georef IoU=0.993 OK. Acre mismatch shoreline 30.5 vs PDF 8 (ratio=3.82). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "steinbarger-lake-noble",
-    "name": "Steinbarger Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "done",
-    "shore_iou": 0.996,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified",
-    "notes_fix": [
-      "depths_from_pdf_labels",
-      "georef_improved_iou_0.63",
-      "replaced_synthetic_georef"
-    ]
-  },
-  {
-    "id": "tamarack-lake-noble",
-    "name": "Tamarack Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "medium",
-    "shore_iou": 0.997,
-    "issues": [
-      "Georef IoU=0.997 OK. Acre mismatch shoreline 85.3 vs PDF 50 (ratio=1.71). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
-    ],
-    "status": "pending_review",
-    "notes_fix": [
-      "depths_from_pdf_labels",
-      "georef_improved_iou_0.71"
-    ]
-  },
-  {
-    "id": "waldron-lake-noble",
-    "name": "Waldron Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "done",
-    "shore_iou": 0.9146354628441427,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified",
-    "notes_fix": [
-      "depths_from_pdf_labels",
-      "georef_improved_iou_0.60",
-      "replaced_synthetic_georef"
-    ]
-  },
-  {
-    "id": "harper-lake-noble",
-    "name": "Harper Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "done",
-    "shore_iou": 0.9995357532540391,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified",
-    "notes_fix": [
-      "georef_improved_iou_0.83"
-    ]
-  },
-  {
-    "id": "big-lake-noble",
-    "name": "Big Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "medium",
-    "shore_iou": 0.5284,
-    "issues": [
-      "Translated PDF contours +10m N +7m E onto osm:way/31027854",
-      "PDF water\u2192OSM IoU=0.528 (shape mismatch); claimed 0.997 was OSM depth-0 artifact",
-      "in-lake frac 0.991; proxy IoU 0.54\u21920.55"
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "crane-lake-noble",
-    "name": "Crane Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "done",
-    "shore_iou": 0.997,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified"
-  },
-  {
-    "id": "lindsey-lake-noble",
-    "name": "Lindsey Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "done",
-    "shore_iou": 0.7550202806867956,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified",
-    "notes_fix": [
-      "replaced_synthetic_georef"
-    ]
-  },
-  {
-    "id": "loon-lake-noble",
-    "name": "Loon Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "done",
-    "shore_iou": 0.853,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified"
-  },
-  {
-    "id": "miller-lake-noble",
-    "name": "Miller Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "done",
-    "shore_iou": 0.994,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified"
-  },
-  {
-    "id": "moss-lake-noble",
-    "name": "Moss Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "done",
-    "shore_iou": 0.983,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified"
-  },
-  {
-    "id": "pleasant-lake-noble",
-    "name": "Pleasant Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "done",
-    "shore_iou": 0.997,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified"
-  },
-  {
-    "id": "summit-lake-noble",
-    "name": "Summit Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "done",
-    "shore_iou": 0.975,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified"
-  },
-  {
-    "id": "upper-long-lake-noble",
-    "name": "Upper Long Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "done",
-    "shore_iou": 0.751,
-    "issues": [
-      "Re-georef north/affine to osm:way/31027941 (claimed IoU=0.999 was OSM depth-0 artifact)",
-      "PDF water\u2192OSM affine IoU=0.751; shore acres=152.1 vs PDF 152.1",
-      "Before: contours ~-66m south of shore centroid (proxy IoU 0.40)",
-      "Depths from PDF intervals [5, 10, 15, 20, 25, 30, 35, 40, 45, 50] via nested_interval_pdf"
-    ],
-    "status": "verified"
-  },
-  {
-    "id": "eagle-lake-noble",
-    "name": "Eagle Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "done",
-    "shore_iou": 0.7518637264231701,
-    "issues": [
-      "Verified 2026-09-24: depths from PDF labels; georef IoU OK"
-    ],
-    "status": "verified"
-  },
-  {
-    "id": "engle-lake-noble",
-    "name": "Engle Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "done",
-    "shore_iou": 0.7588965880594836,
-    "issues": [
-      "Verified 2026-09-24: depths from PDF labels; georef IoU OK"
-    ],
-    "status": "verified"
-  },
-  {
-    "id": "skinner-lake-noble",
-    "name": "Skinner Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "done",
-    "shore_iou": 0.9765185682190112,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified",
-    "notes_fix": null
-  },
-  {
-    "id": "crooked-lake-noble",
-    "name": "Crooked Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "featureserver",
-    "review_priority": "low",
-    "shore_iou": 0.917864476386037,
-    "issues": [
-      "Replaced with official FeatureServer vectors; Whitley duplicate removed"
-    ],
-    "status": "pending_review",
-    "notes_fix": [
-      "depths_from_pdf_labels",
-      "georef_improved_iou_0.51",
-      "replaced_synthetic_georef"
-    ]
-  },
-  {
-    "id": "sand-lake",
-    "name": "Sand Lake",
-    "county": "Noble",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "done",
-    "shore_iou": 0.9970946119725975,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified",
-    "notes_fix": [
-      "depths_from_pdf_labels",
-      "georef_improved_iou_0.71"
-    ]
-  },
-  {
-    "id": "banning-lake-kosciusko",
-    "name": "Banning Lake",
-    "county": "Kosciusko",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "done",
-    "shore_iou": 0.99964398603202,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified",
-    "notes_fix": [
-      "georef_improved_iou_0.65"
-    ]
-  },
-  {
-    "id": "hill-lake-kosciusko",
-    "name": "Hill Lake",
-    "county": "Kosciusko",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "done",
-    "shore_iou": 0.9943259426382677,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified",
-    "notes_fix": [
-      "depths_from_pdf_labels",
-      "georef_improved_iou_0.79"
-    ]
-  },
-  {
-    "id": "little-barbee-lake-kosciusko",
-    "name": "Little Barbee Lake",
-    "county": "Kosciusko",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "done",
-    "shore_iou": 0.9952094418317631,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified",
-    "notes_fix": [
-      "depths_from_pdf_labels",
-      "georef_improved_iou_0.74"
-    ]
-  },
-  {
-    "id": "north-little-lake-kosciusko",
-    "name": "North Little Lake",
-    "county": "Kosciusko",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "done",
-    "shore_iou": 0.8231065735135517,
-    "issues": [
-      "Verified 2026-09-24: depths from PDF labels; georef IoU OK"
-    ],
-    "status": "verified"
-  },
-  {
-    "id": "oswego-lake",
-    "name": "Oswego Lake",
-    "county": "Kosciusko",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "medium",
-    "shore_iou": 0.995,
-    "issues": [
-      "Georef IoU=0.995 OK. Acre mismatch shoreline 131.8 vs PDF 83 (ratio=1.59). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "sechrist-lake-kosciusko",
-    "name": "Sechrist Lake",
-    "county": "Kosciusko",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "done",
-    "shore_iou": 0.9886205380670685,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified",
-    "notes_fix": [
-      "depths_from_pdf_labels",
-      "georef_improved_iou_0.67"
-    ]
-  },
-  {
-    "id": "silver-lake-kosciusko",
-    "name": "Silver Lake",
-    "county": "Kosciusko",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "done",
-    "shore_iou": 0.9987968825652102,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified",
-    "notes_fix": [
-      "georef_improved_iou_0.55"
-    ]
-  },
-  {
-    "id": "tippecanoe-lake",
-    "name": "Tippecanoe Lake",
-    "county": "Kosciusko",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "medium",
-    "shore_iou": 0.989,
-    "issues": [
-      "Georef IoU=0.989 OK. Acre mismatch shoreline 1381.7 vs PDF 768 (ratio=1.80). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "winona-lake-kosciusko",
-    "name": "Winona Lake",
-    "county": "Kosciusko",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "low",
-    "shore_iou": 0.515,
-    "issues": [
-      "Re-locked to real Warsaw Winona Lake (was wrong 218ac pond)",
-      "IoU=0.52 vs OSM (acre ceiling ~0.56; PDF 562 vs OSM 1006)",
-      "Contour containment 97%"
-    ],
-    "status": "pending_review",
-    "notes_fix": [
-      "depths_from_pdf_labels",
-      "georef_improved_iou_0.66"
-    ],
-    "georef_source": "osm:relation/10921189"
   },
   {
     "id": "fish-lake-elkhart",
@@ -693,22 +19,9 @@
     "contour_method": "traced_from_pdf",
     "georef_method": "osm",
     "review_priority": "low",
-    "shore_iou": 0.999,
+    "shore_iou": 0.621,
     "issues": [
-      "Georef IoU=0.999 OK. Acre mismatch shoreline 63.8 vs PDF 34.0 (ratio=1.88). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "heaton-lake-elkhart",
-    "name": "Heaton Lake",
-    "county": "Elkhart",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "medium",
-    "shore_iou": 0.999,
-    "issues": [
-      "Georef IoU=0.999 OK. Acre mismatch shoreline 157.7 vs PDF 87.0 (ratio=1.81). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
+      "water-mask IoU=0.621; proxy=0.0; frac=0.704; Fixed overlapping bbox vs LaGrange Fish Lake"
     ],
     "status": "pending_review"
   },
@@ -717,107 +30,168 @@
     "name": "Simonton Lake",
     "county": "Elkhart",
     "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
+    "georef_method": "osm_open_water_core(buf=-64m)",
     "review_priority": "medium",
-    "shore_iou": 0.998,
+    "shore_iou": 0.674,
     "issues": [
-      "Georef IoU=0.998 OK. Acre mismatch shoreline 130.2 vs PDF 303.0 (ratio=0.43). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
+      "Acre mismatch shore 227.9 vs survey 303.0 (ratio=0.75); water-mask IoU=0.674; proxy=0.4003870130605069; frac=0.962"
     ],
-    "status": "pending_review",
-    "notes_fix": null
+    "status": "pending_review"
   },
   {
-    "id": "old-lake-whitley",
-    "name": "Old Lake",
-    "county": "Whitley",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "done",
-    "shore_iou": 0.995,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified"
-  },
-  {
-    "id": "crooked-lake-whitley",
-    "name": "Crooked Lake",
-    "county": "Whitley",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "done",
-    "shore_iou": 0.99,
-    "issues": [
-      "Duplicate of crooked-lake-noble \u2014 removed"
-    ],
-    "status": "removed_duplicate"
-  },
-  {
-    "id": "lake-everett-allen",
-    "name": "Lake Everett",
-    "county": "Allen",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "done",
-    "shore_iou": 0.99,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified"
-  },
-  {
-    "id": "hurshtown-lake-allen",
-    "name": "Hurshtown Lake",
-    "county": "Allen",
-    "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "done",
-    "shore_iou": 0.987,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified"
-  },
-  {
-    "id": "james-lake",
-    "name": "James Lake",
+    "id": "webster-lake-kosciusko",
+    "name": "Webster Lake",
     "county": "Kosciusko",
     "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "done",
-    "shore_iou": 0.993,
-    "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
-    ],
-    "status": "verified",
-    "notes_fix": [
-      "depths_from_pdf_labels",
-      "georef_improved_iou_0.60"
-    ]
-  },
-  {
-    "id": "shipshewana-lake-lagrange",
-    "name": "Shipshewana Lake",
-    "county": "LaGrange",
-    "needs_review": true,
-    "review_priority": "low",
-    "shore_iou": 0.74,
     "georef_method": "osm",
-    "depth_assignment": "nested_ring_order_pdf_intervals",
+    "review_priority": "medium",
+    "shore_iou": 1.0,
     "issues": [
-      "IoU 0.740 after re-georef; verify on imagery"
+      "Spot-check vs OSM; claimed water-mask IoU=0.606; contour-in-OSM=1.0; geo acres=637.4 vs PDF 774 (ratio=0.823); Webster: OSM relation smaller than PDF 774 ac (possible marsh/basin difference); contours lock to OSM but acre gap >15% \u2014 keep needs_review"
     ],
-    "status": "improved-still-review"
+    "status": "pending_review"
   },
   {
-    "id": "dallas-lake",
-    "name": "Dallas Lake",
+    "id": "atwood-lake-lagrange",
+    "name": "Atwood Lake",
     "county": "LaGrange",
-    "needs_review": true,
-    "review_priority": "low",
+    "contour_method": "traced_from_pdf",
+    "georef_method": "osm",
+    "review_priority": "medium",
+    "shore_iou": 0.51,
     "issues": [
-      "Visual verify 10\u201320ft rings vs open water; OSM may over-extend"
+      "water-mask IoU=0.51; proxy=0.5338751014838641; frac=0.862"
     ],
-    "status": "flagged"
+    "status": "pending_review"
+  },
+  {
+    "id": "big-long-lake-lagrange",
+    "name": "Big Long Lake",
+    "county": "LaGrange",
+    "contour_method": "traced_from_pdf",
+    "georef_method": "osm:way/149472200+osm_open_water_core(buf=-110m)",
+    "review_priority": "low",
+    "shore_iou": 0.606,
+    "issues": [
+      "water-mask IoU=0.606; proxy=None; frac=0.994"
+    ],
+    "status": "pending_review"
+  },
+  {
+    "id": "cedar-lake-lagrange",
+    "name": "Cedar Lake",
+    "county": "LaGrange",
+    "contour_method": "traced_from_pdf",
+    "georef_method": "osm:way/177971829+osm_open_water_core(buf=-68m)",
+    "review_priority": "low",
+    "shore_iou": 0.61,
+    "issues": [
+      "water-mask IoU=0.61; proxy=0.5673943702210855; frac=1.000"
+    ],
+    "status": "pending_review"
+  },
+  {
+    "id": "hackleburg-lake",
+    "name": "Hackleburg Lake",
+    "county": "LaGrange",
+    "contour_method": "vector_featureserver",
+    "georef_method": "featureserver",
+    "review_priority": "low",
+    "shore_iou": 0.807,
+    "issues": [
+      "FS weak lock frac=0.748 proxy=0.8072254178801934"
+    ],
+    "status": "pending_review"
+  },
+  {
+    "id": "little-turkey-lake-lagrange",
+    "name": "Little Turkey Lake",
+    "county": "LaGrange",
+    "contour_method": "traced_from_pdf",
+    "georef_method": "osm",
+    "review_priority": "medium",
+    "shore_iou": 0.437,
+    "issues": [
+      "water-mask IoU=0.437; proxy=0.46174387189829036; frac=0.723"
+    ],
+    "status": "pending_review"
+  },
+  {
+    "id": "messick-lake",
+    "name": "Messick Lake",
+    "county": "LaGrange",
+    "contour_method": "vector_featureserver",
+    "georef_method": "featureserver",
+    "review_priority": "low",
+    "shore_iou": 0.434,
+    "issues": [
+      "FS weak lock frac=0.929 proxy=0.4335859541499004"
+    ],
+    "status": "pending_review"
+  },
+  {
+    "id": "nauvoo-lake-lagrange",
+    "name": "Nauvoo Lake",
+    "county": "LaGrange",
+    "contour_method": "traced_from_pdf",
+    "georef_method": "osm:way/149488014",
+    "review_priority": "medium",
+    "shore_iou": 0.572,
+    "issues": [
+      "water-mask IoU=0.572; proxy=None; frac=0.806"
+    ],
+    "status": "pending_review"
+  },
+  {
+    "id": "oliver-lake",
+    "name": "Oliver Lake",
+    "county": "LaGrange",
+    "contour_method": "vector_featureserver",
+    "georef_method": "featureserver",
+    "review_priority": "low",
+    "shore_iou": 0.675,
+    "issues": [
+      "FS weak lock frac=0.868 proxy=0.674705635248937"
+    ],
+    "status": "pending_review"
+  },
+  {
+    "id": "stone-lake-lagrange",
+    "name": "Stone Lake",
+    "county": "LaGrange",
+    "contour_method": "traced_from_pdf",
+    "georef_method": "osm",
+    "review_priority": "medium",
+    "shore_iou": 0.59,
+    "issues": [
+      "water-mask IoU=0.59; proxy=0.6103494941622565; frac=0.713"
+    ],
+    "status": "pending_review"
+  },
+  {
+    "id": "troxel-lake-lagrange",
+    "name": "Troxel Lake",
+    "county": "LaGrange",
+    "contour_method": "traced_from_pdf",
+    "georef_method": "osm:way/966612130",
+    "review_priority": "medium",
+    "shore_iou": 0.67,
+    "issues": [
+      "water-mask IoU=0.67; proxy=None; frac=1.000"
+    ],
+    "status": "pending_review"
+  },
+  {
+    "id": "little-cedar-lake-whitley",
+    "name": "Little Cedar Lake",
+    "county": "Whitley",
+    "contour_method": "traced_from_pdf",
+    "georef_method": "osm",
+    "review_priority": "medium",
+    "shore_iou": 0.982,
+    "issues": [
+      "Shore water-mask IoU=0.719; OSM open-water 46.6 ac vs PDF 82.5 (ratio=0.565). Contour-in-OSM frac=0.982 \u2014 absolute scale vs survey acres uncertain; left needs_review."
+    ],
+    "status": "pending_review"
   }
 ]

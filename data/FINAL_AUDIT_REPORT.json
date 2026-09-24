@@ -1,267 +1,1859 @@
 {
-  "generated": "2026-09-24T11:45:00-04:00",
-  "with_contours": 140,
-  "total_lakes": 140,
-  "needs_review": 25,
-  "review_by_priority": {
-    "medium": 24,
-    "low": 1
+  "merged_at": "2026-09-24T11:19:00-04:00",
+  "source": "contour-batches/_all_fix/bucket{0,1,2,3}",
+  "before": {
+    "lakes": 139,
+    "contour_features": 7968,
+    "needs_review": 27
   },
-  "queue_by_priority": {
-    "medium": 24,
-    "done": 30,
-    "low": 1
+  "after": {
+    "lakes": 139,
+    "contour_features": 9741,
+    "needs_review": 15
   },
-  "contour_features": 7501,
-  "dashed_features": 0,
-  "pdf_label_depth_features": 432,
-  "hand_visual_depth_features": 1127,
-  "synthetic_georef_lakes": [],
-  "high_priority_all_verified": [
-    "harper-lake-noble",
-    "lindsey-lake-noble",
-    "banning-lake-kosciusko",
-    "silver-lake-kosciusko"
+  "removed_lake_ids": [],
+  "contour_replace": {
+    "lakes_updated": 50,
+    "contours_removed": 2588,
+    "contours_appended": 4361,
+    "per_lake": {
+      "adams-lake-lagrange": {
+        "name": "Adams Lake",
+        "bucket": 1,
+        "appended": 236,
+        "removal_bboxes": [
+          [
+            -85.341557,
+            41.548245,
+            -85.318696,
+            41.55972
+          ],
+          [
+            -85.341792,
+            41.548346,
+            -85.318551,
+            41.55972
+          ]
+        ],
+        "old_bbox": [
+          -85.341792,
+          41.548346,
+          -85.318551,
+          41.55972
+        ],
+        "new_bbox": [
+          -85.341557,
+          41.548245,
+          -85.318696,
+          41.55972
+        ]
+      },
+      "appleman-lake": {
+        "name": "Appleman Lake",
+        "bucket": 1,
+        "appended": 8,
+        "removal_bboxes": [
+          [
+            -85.215893,
+            41.620859,
+            -85.209789,
+            41.625716
+          ],
+          [
+            -85.215893,
+            41.620859,
+            -85.21037,
+            41.625716
+          ]
+        ],
+        "old_bbox": [
+          -85.215893,
+          41.620859,
+          -85.21037,
+          41.625716
+        ],
+        "new_bbox": [
+          -85.215893,
+          41.620859,
+          -85.209789,
+          41.625716
+        ]
+      },
+      "atwood-lake-lagrange": {
+        "name": "Atwood Lake",
+        "bucket": 1,
+        "appended": 73,
+        "removal_bboxes": [
+          [
+            -85.419427,
+            41.532898,
+            -85.406232,
+            41.540751
+          ],
+          [
+            -85.419447,
+            41.532886,
+            -85.406232,
+            41.540751
+          ]
+        ],
+        "old_bbox": [
+          -85.419447,
+          41.532886,
+          -85.406232,
+          41.540751
+        ],
+        "new_bbox": [
+          -85.419427,
+          41.532898,
+          -85.406232,
+          41.540751
+        ]
+      },
+      "big-lake-noble": {
+        "name": "Big Lake",
+        "bucket": 0,
+        "appended": 328,
+        "removal_bboxes": [
+          [
+            -85.512649,
+            41.269889,
+            -85.493304,
+            41.281887
+          ],
+          [
+            -85.512649,
+            41.269889,
+            -85.493304,
+            41.281887
+          ]
+        ],
+        "old_bbox": [
+          -85.512649,
+          41.269889,
+          -85.493304,
+          41.281887
+        ],
+        "new_bbox": [
+          -85.512649,
+          41.269889,
+          -85.493304,
+          41.281887
+        ]
+      },
+      "big-long-lake-lagrange": {
+        "name": "Big Long Lake",
+        "bucket": 1,
+        "appended": 653,
+        "removal_bboxes": [
+          [
+            -85.245761,
+            41.546775,
+            -85.219559,
+            41.566272
+          ],
+          [
+            -85.251749,
+            41.546015,
+            -85.218147,
+            41.569305
+          ]
+        ],
+        "old_bbox": [
+          -85.251749,
+          41.546015,
+          -85.218147,
+          41.569305
+        ],
+        "new_bbox": [
+          -85.245761,
+          41.546775,
+          -85.219559,
+          41.566272
+        ]
+      },
+      "brokesha-lake-lagrange": {
+        "name": "Brokesha Lake",
+        "bucket": 1,
+        "appended": 44,
+        "removal_bboxes": [
+          [
+            -85.658244,
+            41.736731,
+            -85.652852,
+            41.740882
+          ],
+          [
+            -85.658244,
+            41.736731,
+            -85.653127,
+            41.740925
+          ]
+        ],
+        "old_bbox": [
+          -85.658244,
+          41.736731,
+          -85.653127,
+          41.740925
+        ],
+        "new_bbox": [
+          -85.658244,
+          41.736731,
+          -85.652852,
+          41.740882
+        ]
+      },
+      "cass-lake": {
+        "name": "Cass Lake",
+        "bucket": 1,
+        "appended": 13,
+        "removal_bboxes": [
+          [
+            -85.64393,
+            41.688304,
+            -85.634581,
+            41.699525
+          ],
+          [
+            -85.64218,
+            41.688613,
+            -85.635141,
+            41.699016
+          ]
+        ],
+        "old_bbox": [
+          -85.64218,
+          41.688613,
+          -85.635141,
+          41.699016
+        ],
+        "new_bbox": [
+          -85.64393,
+          41.688304,
+          -85.634581,
+          41.699525
+        ]
+      },
+      "cedar-lake": {
+        "name": "Cedar Lake",
+        "bucket": 2,
+        "appended": 18,
+        "removal_bboxes": [
+          [
+            -85.076451,
+            41.459207,
+            -85.071999,
+            41.466098
+          ]
+        ],
+        "old_bbox": [
+          -85.371612,
+          41.459207,
+          -85.071999,
+          41.741103
+        ],
+        "new_bbox": [
+          -85.076451,
+          41.459207,
+          -85.071999,
+          41.466098
+        ]
+      },
+      "cedar-lake-lagrange": {
+        "name": "Cedar Lake",
+        "bucket": 1,
+        "appended": 40,
+        "removal_bboxes": [
+          [
+            -85.372546,
+            41.7354,
+            -85.363722,
+            41.742454
+          ],
+          [
+            -85.373184,
+            41.730508,
+            -85.362517,
+            41.742792
+          ]
+        ],
+        "old_bbox": [
+          -85.373184,
+          41.730508,
+          -85.362517,
+          41.742792
+        ],
+        "new_bbox": [
+          -85.372546,
+          41.7354,
+          -85.363722,
+          41.742454
+        ]
+      },
+      "crooked-lake-noble": {
+        "name": "Crooked Lake",
+        "bucket": 0,
+        "appended": 304,
+        "removal_bboxes": [
+          [
+            -85.488908,
+            41.256671,
+            -85.469699,
+            41.270672
+          ],
+          [
+            -85.488908,
+            41.256671,
+            -85.469699,
+            41.270672
+          ]
+        ],
+        "old_bbox": [
+          -85.488908,
+          41.256671,
+          -85.469699,
+          41.270672
+        ],
+        "new_bbox": [
+          -85.488908,
+          41.256671,
+          -85.469699,
+          41.270672
+        ]
+      },
+      "dallas-lake": {
+        "name": "Dallas Lake",
+        "bucket": 1,
+        "appended": 17,
+        "removal_bboxes": [
+          [
+            -85.43776,
+            41.546126,
+            -85.408071,
+            41.557018
+          ],
+          [
+            -85.436613,
+            41.546726,
+            -85.410814,
+            41.556777
+          ]
+        ],
+        "old_bbox": [
+          -85.436613,
+          41.546726,
+          -85.410814,
+          41.556777
+        ],
+        "new_bbox": [
+          -85.43776,
+          41.546126,
+          -85.408071,
+          41.557018
+        ]
+      },
+      "emma-lake": {
+        "name": "Emma Lake",
+        "bucket": 1,
+        "appended": 10,
+        "removal_bboxes": [
+          [
+            -85.542914,
+            41.598188,
+            -85.539968,
+            41.608062
+          ],
+          [
+            -85.542755,
+            41.598384,
+            -85.540238,
+            41.608062
+          ]
+        ],
+        "old_bbox": [
+          -85.542755,
+          41.598384,
+          -85.540238,
+          41.608062
+        ],
+        "new_bbox": [
+          -85.542914,
+          41.598188,
+          -85.539968,
+          41.608062
+        ]
+      },
+      "eve-lake": {
+        "name": "Eve Lake",
+        "bucket": 1,
+        "appended": 13,
+        "removal_bboxes": [
+          [
+            -85.322548,
+            41.558628,
+            -85.317313,
+            41.562658
+          ],
+          [
+            -85.322312,
+            41.558969,
+            -85.317699,
+            41.562502
+          ]
+        ],
+        "old_bbox": [
+          -85.322312,
+          41.558969,
+          -85.317699,
+          41.562502
+        ],
+        "new_bbox": [
+          -85.322548,
+          41.558628,
+          -85.317313,
+          41.562658
+        ]
+      },
+      "fidler's-pond-elkhart": {
+        "name": "Fidler's Pond",
+        "bucket": 1,
+        "appended": 640,
+        "removal_bboxes": [
+          [
+            -85.810743,
+            41.57013,
+            -85.802494,
+            41.576897
+          ],
+          [
+            -85.810702,
+            41.570201,
+            -85.802494,
+            41.576897
+          ]
+        ],
+        "old_bbox": [
+          -85.810702,
+          41.570201,
+          -85.802494,
+          41.576897
+        ],
+        "new_bbox": [
+          -85.810743,
+          41.57013,
+          -85.802494,
+          41.576897
+        ]
+      },
+      "fish-lake": {
+        "name": "Fish Lake",
+        "bucket": 1,
+        "appended": 7,
+        "removal_bboxes": [
+          [
+            -85.333914,
+            41.619328,
+            -85.325025,
+            41.627041
+          ],
+          [
+            -85.333914,
+            41.619328,
+            -85.325025,
+            41.627041
+          ]
+        ],
+        "old_bbox": [
+          -85.333914,
+          41.619328,
+          -85.325025,
+          41.627041
+        ],
+        "new_bbox": [
+          -85.333914,
+          41.619328,
+          -85.325025,
+          41.627041
+        ]
+      },
+      "fish-lake-elkhart": {
+        "name": "Fish Lake",
+        "bucket": 1,
+        "appended": 27,
+        "removal_bboxes": [
+          [
+            -85.666026,
+            41.575839,
+            -85.661064,
+            41.582057
+          ]
+        ],
+        "old_bbox": [
+          -85.666026,
+          41.575839,
+          -85.325026,
+          41.627041
+        ],
+        "new_bbox": [
+          -85.666026,
+          41.575839,
+          -85.661064,
+          41.582057
+        ]
+      },
+      "hackleburg-lake": {
+        "name": "Hackleburg Lake",
+        "bucket": 1,
+        "appended": 14,
+        "removal_bboxes": [
+          [
+            -85.436424,
+            41.556275,
+            -85.425947,
+            41.559932
+          ],
+          [
+            -85.436424,
+            41.556275,
+            -85.425947,
+            41.559932
+          ]
+        ],
+        "old_bbox": [
+          -85.436424,
+          41.556275,
+          -85.425947,
+          41.559932
+        ],
+        "new_bbox": [
+          -85.436424,
+          41.556275,
+          -85.425947,
+          41.559932
+        ]
+      },
+      "heaton-lake-elkhart": {
+        "name": "Heaton Lake",
+        "bucket": 1,
+        "appended": 10,
+        "removal_bboxes": [
+          [
+            -85.912686,
+            41.73172,
+            -85.900763,
+            41.736402
+          ],
+          [
+            -85.913665,
+            41.731136,
+            -85.900039,
+            41.736943
+          ]
+        ],
+        "old_bbox": [
+          -85.913665,
+          41.731136,
+          -85.900039,
+          41.736943
+        ],
+        "new_bbox": [
+          -85.912686,
+          41.73172,
+          -85.900763,
+          41.736402
+        ]
+      },
+      "hill-lake-kosciusko": {
+        "name": "Hill Lake",
+        "bucket": 2,
+        "appended": 13,
+        "removal_bboxes": [
+          [
+            -85.910259,
+            41.104251,
+            -85.898353,
+            41.108801
+          ],
+          [
+            -85.956859,
+            41.078515,
+            -85.950298,
+            41.083747
+          ]
+        ],
+        "old_bbox": [
+          -85.956859,
+          41.078515,
+          -85.950298,
+          41.083747
+        ],
+        "new_bbox": [
+          -85.910259,
+          41.104251,
+          -85.898353,
+          41.108801
+        ]
+      },
+      "hunter-lake": {
+        "name": "Hunter Lake",
+        "bucket": 1,
+        "appended": 11,
+        "removal_bboxes": [
+          [
+            -85.672133,
+            41.71785,
+            -85.662243,
+            41.725494
+          ],
+          [
+            -85.670798,
+            41.718383,
+            -85.663904,
+            41.724973
+          ]
+        ],
+        "old_bbox": [
+          -85.670798,
+          41.718383,
+          -85.663904,
+          41.724973
+        ],
+        "new_bbox": [
+          -85.672133,
+          41.71785,
+          -85.662243,
+          41.725494
+        ]
+      },
+      "indiana-lake-elkhart": {
+        "name": "Indiana Lake",
+        "bucket": 1,
+        "appended": 713,
+        "removal_bboxes": [
+          [
+            -85.836819,
+            41.754619,
+            -85.828997,
+            41.76583
+          ],
+          [
+            -85.836772,
+            41.754619,
+            -85.828997,
+            41.765725
+          ]
+        ],
+        "old_bbox": [
+          -85.836772,
+          41.754619,
+          -85.828997,
+          41.765725
+        ],
+        "new_bbox": [
+          -85.836819,
+          41.754619,
+          -85.828997,
+          41.76583
+        ]
+      },
+      "james-lake": {
+        "name": "James Lake",
+        "bucket": 2,
+        "appended": 53,
+        "removal_bboxes": [
+          [
+            -85.736331,
+            41.311455,
+            -85.715479,
+            41.326032
+          ],
+          [
+            -85.744563,
+            41.289991,
+            -85.724189,
+            41.299364
+          ]
+        ],
+        "old_bbox": [
+          -85.744563,
+          41.289991,
+          -85.724189,
+          41.299364
+        ],
+        "new_bbox": [
+          -85.736331,
+          41.311455,
+          -85.715479,
+          41.326032
+        ]
+      },
+      "lake-of-the-woods": {
+        "name": "Lake of the Woods",
+        "bucket": 1,
+        "appended": 20,
+        "removal_bboxes": [
+          [
+            -85.207987,
+            41.541308,
+            -85.191274,
+            41.548593
+          ],
+          [
+            -85.207987,
+            41.541308,
+            -85.191274,
+            41.548593
+          ]
+        ],
+        "old_bbox": [
+          -85.207987,
+          41.541308,
+          -85.191274,
+          41.548593
+        ],
+        "new_bbox": [
+          -85.207987,
+          41.541308,
+          -85.191274,
+          41.548593
+        ]
+      },
+      "little-barbee-lake-kosciusko": {
+        "name": "Little Barbee Lake",
+        "bucket": 2,
+        "appended": 30,
+        "removal_bboxes": [
+          [
+            -85.727358,
+            41.28655,
+            -85.714193,
+            41.29506
+          ],
+          [
+            -85.753224,
+            41.305548,
+            -85.744195,
+            41.310243
+          ]
+        ],
+        "old_bbox": [
+          -85.753224,
+          41.305548,
+          -85.744195,
+          41.310243
+        ],
+        "new_bbox": [
+          -85.727358,
+          41.28655,
+          -85.714193,
+          41.29506
+        ]
+      },
+      "little-turkey-lake-lagrange": {
+        "name": "Little Turkey Lake",
+        "bucket": 1,
+        "appended": 76,
+        "removal_bboxes": [
+          [
+            -85.226461,
+            41.593094,
+            -85.211577,
+            41.601703
+          ],
+          [
+            -85.226461,
+            41.593094,
+            -85.211577,
+            41.601703
+          ]
+        ],
+        "old_bbox": [
+          -85.226461,
+          41.593094,
+          -85.211577,
+          41.601703
+        ],
+        "new_bbox": [
+          -85.226461,
+          41.593094,
+          -85.211577,
+          41.601703
+        ]
+      },
+      "martin-lake": {
+        "name": "Martin Lake",
+        "bucket": 1,
+        "appended": 7,
+        "removal_bboxes": [
+          [
+            -85.387088,
+            41.562465,
+            -85.381073,
+            41.56586
+          ],
+          [
+            -85.387088,
+            41.562465,
+            -85.381073,
+            41.56586
+          ]
+        ],
+        "old_bbox": [
+          -85.387088,
+          41.562465,
+          -85.381073,
+          41.56586
+        ],
+        "new_bbox": [
+          -85.387088,
+          41.562465,
+          -85.381073,
+          41.56586
+        ]
+      },
+      "messick-lake": {
+        "name": "Messick Lake",
+        "bucket": 1,
+        "appended": 6,
+        "removal_bboxes": [
+          [
+            -85.447159,
+            41.548776,
+            -85.440013,
+            41.555197
+          ],
+          [
+            -85.447159,
+            41.549,
+            -85.440255,
+            41.55373
+          ]
+        ],
+        "old_bbox": [
+          -85.447159,
+          41.549,
+          -85.440255,
+          41.55373
+        ],
+        "new_bbox": [
+          -85.447159,
+          41.548776,
+          -85.440013,
+          41.555197
+        ]
+      },
+      "meteer-lake-lagrange": {
+        "name": "Meteer Lake",
+        "bucket": 1,
+        "appended": 92,
+        "removal_bboxes": [
+          [
+            -85.373511,
+            41.717477,
+            -85.3699,
+            41.720881
+          ],
+          [
+            -85.373554,
+            41.717477,
+            -85.3699,
+            41.720881
+          ]
+        ],
+        "old_bbox": [
+          -85.373554,
+          41.717477,
+          -85.3699,
+          41.720881
+        ],
+        "new_bbox": [
+          -85.373511,
+          41.717477,
+          -85.3699,
+          41.720881
+        ]
+      },
+      "mud-lake-noble": {
+        "name": "Mud Lake",
+        "bucket": 0,
+        "appended": 7,
+        "removal_bboxes": [
+          [
+            -85.328488,
+            41.523631,
+            -85.32625,
+            41.525286
+          ],
+          [
+            -85.329639,
+            41.522258,
+            -85.324889,
+            41.525857
+          ]
+        ],
+        "old_bbox": [
+          -85.329639,
+          41.522258,
+          -85.324889,
+          41.525857
+        ],
+        "new_bbox": [
+          -85.328488,
+          41.523631,
+          -85.32625,
+          41.525286
+        ]
+      },
+      "nauvoo-lake-lagrange": {
+        "name": "Nauvoo Lake",
+        "bucket": 1,
+        "appended": 129,
+        "removal_bboxes": [
+          [
+            -85.336208,
+            41.525816,
+            -85.328826,
+            41.530628
+          ],
+          [
+            -85.336208,
+            41.525589,
+            -85.328826,
+            41.530855
+          ]
+        ],
+        "old_bbox": [
+          -85.336208,
+          41.525589,
+          -85.328826,
+          41.530855
+        ],
+        "new_bbox": [
+          -85.336208,
+          41.525816,
+          -85.328826,
+          41.530628
+        ]
+      },
+      "north-little-lake-kosciusko": {
+        "name": "North Little Lake",
+        "bucket": 2,
+        "appended": 32,
+        "removal_bboxes": [
+          [
+            -85.903929,
+            41.085175,
+            -85.899732,
+            41.087314
+          ],
+          [
+            -85.889357,
+            41.126546,
+            -85.886768,
+            41.128284
+          ]
+        ],
+        "old_bbox": [
+          -85.889357,
+          41.126546,
+          -85.886768,
+          41.128284
+        ],
+        "new_bbox": [
+          -85.903929,
+          41.085175,
+          -85.899732,
+          41.087314
+        ]
+      },
+      "north-twin-lake": {
+        "name": "North Twin Lake",
+        "bucket": 1,
+        "appended": 8,
+        "removal_bboxes": [
+          [
+            -85.463688,
+            41.728182,
+            -85.449106,
+            41.734395
+          ],
+          [
+            -85.462345,
+            41.728289,
+            -85.452095,
+            41.73341
+          ]
+        ],
+        "old_bbox": [
+          -85.462345,
+          41.728289,
+          -85.452095,
+          41.73341
+        ],
+        "new_bbox": [
+          -85.463688,
+          41.728182,
+          -85.449106,
+          41.734395
+        ]
+      },
+      "olin-lake": {
+        "name": "Olin Lake",
+        "bucket": 1,
+        "appended": 10,
+        "removal_bboxes": [
+          [
+            -85.398169,
+            41.559087,
+            -85.387182,
+            41.56512
+          ],
+          [
+            -85.398169,
+            41.559087,
+            -85.387182,
+            41.56512
+          ]
+        ],
+        "old_bbox": [
+          -85.398169,
+          41.559087,
+          -85.387182,
+          41.56512
+        ],
+        "new_bbox": [
+          -85.398169,
+          41.559087,
+          -85.387182,
+          41.56512
+        ]
+      },
+      "oliver-lake": {
+        "name": "Oliver Lake",
+        "bucket": 1,
+        "appended": 27,
+        "removal_bboxes": [
+          [
+            -85.4147,
+            41.565933,
+            -85.395725,
+            41.576375
+          ],
+          [
+            -85.4147,
+            41.565933,
+            -85.395725,
+            41.576105
+          ]
+        ],
+        "old_bbox": [
+          -85.4147,
+          41.565933,
+          -85.395725,
+          41.576105
+        ],
+        "new_bbox": [
+          -85.4147,
+          41.565933,
+          -85.395725,
+          41.576375
+        ]
+      },
+      "pretty-lake": {
+        "name": "Pretty Lake",
+        "bucket": 1,
+        "appended": 13,
+        "removal_bboxes": [
+          [
+            -85.25516,
+            41.571234,
+            -85.244401,
+            41.579436
+          ],
+          [
+            -85.25516,
+            41.571234,
+            -85.244401,
+            41.579436
+          ]
+        ],
+        "old_bbox": [
+          -85.25516,
+          41.571234,
+          -85.244401,
+          41.579436
+        ],
+        "new_bbox": [
+          -85.25516,
+          41.571234,
+          -85.244401,
+          41.579436
+        ]
+      },
+      "royer-lake": {
+        "name": "Royer Lake",
+        "bucket": 1,
+        "appended": 7,
+        "removal_bboxes": [
+          [
+            -85.341836,
+            41.606561,
+            -85.333509,
+            41.617711
+          ],
+          [
+            -85.341836,
+            41.606561,
+            -85.333509,
+            41.617452
+          ]
+        ],
+        "old_bbox": [
+          -85.341836,
+          41.606561,
+          -85.333509,
+          41.617452
+        ],
+        "new_bbox": [
+          -85.341836,
+          41.606561,
+          -85.333509,
+          41.617711
+        ]
+      },
+      "sechrist-lake-kosciusko": {
+        "name": "Sechrist Lake",
+        "bucket": 2,
+        "appended": 28,
+        "removal_bboxes": [
+          [
+            -85.725554,
+            41.292149,
+            -85.710656,
+            41.301235
+          ],
+          [
+            -85.678316,
+            41.272711,
+            -85.676243,
+            41.274826
+          ]
+        ],
+        "old_bbox": [
+          -85.678316,
+          41.272711,
+          -85.676243,
+          41.274826
+        ],
+        "new_bbox": [
+          -85.725554,
+          41.292149,
+          -85.710656,
+          41.301235
+        ]
+      },
+      "shipshewana-lake-lagrange": {
+        "name": "Shipshewana Lake",
+        "bucket": 1,
+        "appended": 16,
+        "removal_bboxes": [
+          [
+            -85.613456,
+            41.68196,
+            -85.601797,
+            41.691422
+          ],
+          [
+            -85.61345573183067,
+            41.681960234453456,
+            -85.60179747871676,
+            41.69142199194543
+          ]
+        ],
+        "old_bbox": [
+          -85.61345573183067,
+          41.681960234453456,
+          -85.60179747871676,
+          41.69142199194543
+        ],
+        "new_bbox": [
+          -85.613456,
+          41.68196,
+          -85.601797,
+          41.691422
+        ]
+      },
+      "silver-lake-kosciusko": {
+        "name": "Silver Lake",
+        "bucket": 2,
+        "appended": 49,
+        "removal_bboxes": [
+          [
+            -85.909058,
+            41.074026,
+            -85.897053,
+            41.085468
+          ],
+          [
+            -85.909058,
+            41.074026,
+            -85.896985,
+            41.085468
+          ]
+        ],
+        "old_bbox": [
+          -85.909058,
+          41.074026,
+          -85.896985,
+          41.085468
+        ],
+        "new_bbox": [
+          -85.909058,
+          41.074026,
+          -85.897053,
+          41.085468
+        ]
+      },
+      "simonton-lake-elkhart": {
+        "name": "Simonton Lake",
+        "bucket": 1,
+        "appended": 9,
+        "removal_bboxes": [
+          [
+            -85.974144,
+            41.747096,
+            -85.959205,
+            41.755154
+          ],
+          [
+            -86.011011,
+            41.746863,
+            -86.000002,
+            41.751737
+          ]
+        ],
+        "old_bbox": [
+          -86.011011,
+          41.746863,
+          -86.000002,
+          41.751737
+        ],
+        "new_bbox": [
+          -85.974144,
+          41.747096,
+          -85.959205,
+          41.755154
+        ]
+      },
+      "south-twin-lake": {
+        "name": "South Twin Lake",
+        "bucket": 1,
+        "appended": 11,
+        "removal_bboxes": [
+          [
+            -85.47238,
+            41.72112,
+            -85.461466,
+            41.728969
+          ],
+          [
+            -85.471538,
+            41.721482,
+            -85.461898,
+            41.728736
+          ]
+        ],
+        "old_bbox": [
+          -85.471538,
+          41.721482,
+          -85.461898,
+          41.728736
+        ],
+        "new_bbox": [
+          -85.47238,
+          41.72112,
+          -85.461466,
+          41.728969
+        ]
+      },
+      "stone-lake-lagrange": {
+        "name": "Stone Lake",
+        "bucket": 1,
+        "appended": 73,
+        "removal_bboxes": [
+          [
+            -85.660053,
+            41.741803,
+            -85.649752,
+            41.748707
+          ],
+          [
+            -85.660189,
+            41.741803,
+            -85.649752,
+            41.748723
+          ]
+        ],
+        "old_bbox": [
+          -85.660189,
+          41.741803,
+          -85.649752,
+          41.748723
+        ],
+        "new_bbox": [
+          -85.660053,
+          41.741803,
+          -85.649752,
+          41.748707
+        ]
+      },
+      "tamarack-lake-noble": {
+        "name": "Tamarack Lake",
+        "bucket": 0,
+        "appended": 9,
+        "removal_bboxes": [
+          [
+            -85.128348,
+            41.727522,
+            -85.1229,
+            41.731446
+          ],
+          [
+            -85.128962,
+            41.727012,
+            -85.122376,
+            41.732039
+          ]
+        ],
+        "old_bbox": [
+          -85.128962,
+          41.727012,
+          -85.122376,
+          41.732039
+        ],
+        "new_bbox": [
+          -85.128348,
+          41.727522,
+          -85.1229,
+          41.731446
+        ]
+      },
+      "troxel-lake-lagrange": {
+        "name": "Troxel Lake",
+        "bucket": 1,
+        "appended": 140,
+        "removal_bboxes": [
+          [
+            -85.354465,
+            41.710434,
+            -85.351901,
+            41.714054
+          ],
+          [
+            -85.354465,
+            41.710434,
+            -85.351866,
+            41.714148
+          ]
+        ],
+        "old_bbox": [
+          -85.354465,
+          41.710434,
+          -85.351866,
+          41.714148
+        ],
+        "new_bbox": [
+          -85.354465,
+          41.710434,
+          -85.351901,
+          41.714054
+        ]
+      },
+      "troy-cedar-lake": {
+        "name": "Troy-Cedar Lake",
+        "bucket": 3,
+        "appended": 12,
+        "removal_bboxes": [
+          [
+            -85.581554,
+            41.23575,
+            -85.572139,
+            41.242443
+          ],
+          [
+            -85.581554,
+            41.23575,
+            -85.572139,
+            41.242443
+          ]
+        ],
+        "old_bbox": [
+          -85.581554,
+          41.23575,
+          -85.572139,
+          41.242443
+        ],
+        "new_bbox": [
+          -85.581554,
+          41.23575,
+          -85.572139,
+          41.242443
+        ]
+      },
+      "upper-long-lake-noble": {
+        "name": "Upper Long Lake",
+        "bucket": 0,
+        "appended": 247,
+        "removal_bboxes": [
+          [
+            -85.489289,
+            41.348429,
+            -85.481545,
+            41.36157
+          ],
+          [
+            -85.489289,
+            41.348429,
+            -85.481545,
+            41.36157
+          ]
+        ],
+        "old_bbox": [
+          -85.489289,
+          41.348429,
+          -85.481545,
+          41.36157
+        ],
+        "new_bbox": [
+          -85.489289,
+          41.348429,
+          -85.481545,
+          41.36157
+        ]
+      },
+      "wall-lake": {
+        "name": "Wall Lake",
+        "bucket": 1,
+        "appended": 10,
+        "removal_bboxes": [
+          [
+            -85.208073,
+            41.724775,
+            -85.196157,
+            41.733578
+          ],
+          [
+            -85.207674,
+            41.725541,
+            -85.196538,
+            41.732688
+          ]
+        ],
+        "old_bbox": [
+          -85.207674,
+          41.725541,
+          -85.196538,
+          41.732688
+        ],
+        "new_bbox": [
+          -85.208073,
+          41.724775,
+          -85.196157,
+          41.733578
+        ]
+      },
+      "west-otter-lake-steuben": {
+        "name": "West Otter Lake",
+        "bucket": 3,
+        "appended": 33,
+        "removal_bboxes": [
+          [
+            -85.172348,
+            41.630739,
+            -85.164483,
+            41.643848
+          ],
+          [
+            -85.016963,
+            41.722598,
+            -85.007406,
+            41.727942
+          ]
+        ],
+        "old_bbox": [
+          -85.016963,
+          41.722598,
+          -85.007406,
+          41.727942
+        ],
+        "new_bbox": [
+          -85.172348,
+          41.630739,
+          -85.164483,
+          41.643848
+        ]
+      },
+      "westler-lake": {
+        "name": "Westler Lake",
+        "bucket": 1,
+        "appended": 5,
+        "removal_bboxes": [
+          [
+            -85.41187,
+            41.536988,
+            -85.395387,
+            41.545969
+          ],
+          [
+            -85.41187,
+            41.536988,
+            -85.395387,
+            41.545969
+          ]
+        ],
+        "old_bbox": [
+          -85.41187,
+          41.536988,
+          -85.395387,
+          41.545969
+        ],
+        "new_bbox": [
+          -85.41187,
+          41.536988,
+          -85.395387,
+          41.545969
+        ]
+      },
+      "witmer-lake": {
+        "name": "Witmer Lake",
+        "bucket": 1,
+        "appended": 10,
+        "removal_bboxes": [
+          [
+            -85.400815,
+            41.528093,
+            -85.382532,
+            41.536689
+          ],
+          [
+            -85.400815,
+            41.528093,
+            -85.382532,
+            41.536689
+          ]
+        ],
+        "old_bbox": [
+          -85.400815,
+          41.528093,
+          -85.382532,
+          41.536689
+        ],
+        "new_bbox": [
+          -85.400815,
+          41.528093,
+          -85.382532,
+          41.536689
+        ]
+      }
+    }
+  },
+  "name_collision_notes": [
+    "bucket1: 'Fish Lake' split by bbox \u2192 fish-lake got 7 contours",
+    "bucket1: 'Fish Lake' split by bbox \u2192 fish-lake-elkhart got 27 contours",
+    "fish-lake-elkhart (Fish Lake): skipped unsafe OLD bbox [-85.666026, 41.575839, -85.325026, 41.627041] (would hit another same-named lake); using NEW only [-85.666026, 41.575839, -85.661064, 41.582057]",
+    "cedar-lake (Cedar Lake): skipped unsafe OLD bbox [-85.371612, 41.459207, -85.071999, 41.741103] (would hit another same-named lake); using NEW only [-85.076451, 41.459207, -85.071999, 41.466098]"
+  ],
+  "per_bucket": [
+    {
+      "bucket": 0,
+      "counties": [
+        "Noble"
+      ],
+      "verified": 37,
+      "still_needs_review": 0,
+      "fixed": 4,
+      "n_lakes": 37,
+      "removed_lake_ids": [],
+      "fixed_lakes_upserted": 6,
+      "fixed_contour_features": 895,
+      "needs_review_ids_in_fixed": [],
+      "raw_summary": {
+        "bucket": 0,
+        "counties": [
+          "Noble"
+        ],
+        "n_lakes": 37,
+        "verified": 37,
+        "still_needs_review": 0,
+        "fixed_this_run": 4,
+        "fixed_this_run_ids": [
+          "big-lake-noble",
+          "crooked-lake-noble",
+          "mud-lake-noble",
+          "tamarack-lake-noble"
+        ],
+        "changed_lake_ids": [
+          "big-lake-noble",
+          "bixler-lake-noble",
+          "crooked-lake-noble",
+          "mud-lake-noble",
+          "tamarack-lake-noble",
+          "upper-long-lake-noble"
+        ],
+        "removed_lake_ids": [],
+        "errors": 0
+      }
+    },
+    {
+      "bucket": 1,
+      "counties": [
+        "LaGrange",
+        "Elkhart"
+      ],
+      "verified": 24,
+      "still_needs_review": 12,
+      "fixed": 11,
+      "n_lakes": 36,
+      "removed_lake_ids": [],
+      "fixed_lakes_upserted": 36,
+      "fixed_contour_features": 3198,
+      "needs_review_ids_in_fixed": [
+        "little-turkey-lake-lagrange",
+        "stone-lake-lagrange",
+        "atwood-lake-lagrange",
+        "troxel-lake-lagrange",
+        "simonton-lake-elkhart",
+        "cedar-lake-lagrange",
+        "fish-lake-elkhart",
+        "nauvoo-lake-lagrange",
+        "big-long-lake-lagrange",
+        "hackleburg-lake",
+        "messick-lake",
+        "oliver-lake"
+      ],
+      "raw_summary": {
+        "total": 36,
+        "verified": 24,
+        "still_needs_review": 12,
+        "fixed_this_run": 11,
+        "removed_duplicates": 0,
+        "bar": "PDF IoU>=0.75 + acres~10% (near-band>=0.72); FS frac_inside>=0.95; no fake depth0 IoU",
+        "cleared_needs_review": [
+          "shipshewana-lake-lagrange",
+          "dallas-lake",
+          "heaton-lake-elkhart"
+        ],
+        "improved_still_review": [
+          "big-long-lake-lagrange"
+        ],
+        "notes": [
+          "Shipshewana: re-verified prior open-water-core fix IoU=0.740 near-band cleared",
+          "Dallas: FeatureServer vectors frac_inside=1.0 verified (OSM oversize noted)",
+          "Heaton: PDF re-georef IoU 0.826 cleared",
+          "Simonton/Big Long/Cedar: improved water-mask IoU but still under 0.75 bar",
+          "Hackleburg OSM is spelled Hackenburg \u2014 shore resolved; frac 0.75 keeps review",
+          "Fish Lake name collision: LaGrange FS + Elkhart PDF both lake=\"Fish Lake\"; merge by bbox"
+        ],
+        "contour_features": 3198,
+        "screenshots": 36
+      }
+    },
+    {
+      "bucket": 2,
+      "counties": [
+        "Kosciusko",
+        "DeKalb"
+      ],
+      "verified": 24,
+      "still_needs_review": 2,
+      "fixed": 7,
+      "n_lakes": 33,
+      "removed_lake_ids": [],
+      "fixed_lakes_upserted": 33,
+      "fixed_contour_features": 223,
+      "needs_review_ids_in_fixed": [
+        "webster-lake-kosciusko",
+        "indian-lake-dekalb"
+      ],
+      "raw_summary": {
+        "summary": {
+          "fixed": 7,
+          "verified": 24,
+          "still_needs_review": 2
+        },
+        "counts_for_parent": {
+          "verified": 24,
+          "still_needs_review": 2,
+          "fixed_this_run": 7,
+          "total_bucket": 33
+        }
+      }
+    },
+    {
+      "bucket": 3,
+      "counties": [
+        "Steuben",
+        "Whitley",
+        "Allen"
+      ],
+      "verified": 16,
+      "still_needs_review": 1,
+      "fixed": 16,
+      "n_lakes": 33,
+      "removed_lake_ids": [],
+      "fixed_lakes_upserted": 18,
+      "fixed_contour_features": 45,
+      "needs_review_ids_in_fixed": [
+        "little-cedar-lake-whitley"
+      ],
+      "raw_summary": {
+        "counts": {
+          "fixed_this_run": 16,
+          "verified_or_already_ok": 16,
+          "still_needs_review": 1
+        },
+        "fixed_this_run_ids": [
+          "troy-cedar-lake",
+          "west-otter-lake-steuben",
+          "bower-lake-steuben",
+          "ball-lake-steuben",
+          "beaverdam-lake-steuben",
+          "gooseneck-lake-steuben",
+          "green-lake-steuben",
+          "henry-lake-steuben",
+          "lake-arrowhead-steuben",
+          "lime-lake-steuben",
+          "little-otter-lake-steuben",
+          "silver-lake-steuben",
+          "gage-lake-steuben",
+          "hamilton-lake-steuben",
+          "meserve-lake-steuben",
+          "loon-lake-steuben"
+        ],
+        "still_needs_review_ids": [
+          "little-cedar-lake-whitley"
+        ],
+        "notes": [
+          "Prior Steuben 'acre mismatch' needs_review flags were false positives from Web-Mercator area (sec\u00b2\u03c6\u22481.78 at 41.5\u00b0N).",
+          "West Otter contours were wrongly locked to Big Otter; restored correct OSM lock from Steuben work/out.",
+          "Troy-Cedar had 0 contours despite FeatureServer availability; imported FS vectors.",
+          "Crooked Steuben FeatureServer restore verified in-OSM frac\u22481.0.",
+          "Staging only \u2014 no git push, no public/app.js edits.",
+          "Little Cedar Whitley left needs_review (PDF 82.5 vs OSM 46.6 acres; water-mask IoU 0.719)."
+        ]
+      }
+    }
   ],
   "still_needs_review": [
     {
-      "id": "oswego-lake",
-      "name": "Oswego Lake",
-      "priority": "medium",
-      "shore_iou": 0.995,
-      "acres": 83,
-      "depth_assignment": "distance_from_shore_bins",
-      "reason": "Georef IoU=0.995 OK. Acre mismatch shoreline 131.8 vs PDF 83 (ratio=1.59). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths ret"
-    },
-    {
-      "id": "tippecanoe-lake",
-      "name": "Tippecanoe Lake",
-      "priority": "medium",
-      "shore_iou": 0.989,
-      "acres": 768,
-      "depth_assignment": "distance_from_shore_bins",
-      "reason": "Georef IoU=0.989 OK. Acre mismatch shoreline 1381.7 vs PDF 768 (ratio=1.80). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths r"
-    },
-    {
-      "id": "bower-lake-steuben",
-      "name": "Bower Lake",
-      "priority": "medium",
-      "shore_iou": 0.992,
-      "acres": 25,
-      "depth_assignment": "distance_from_shore_bins",
-      "reason": "Georef IoU=0.992 OK. Acre mismatch shoreline 47.2 vs PDF 25 (ratio=1.89). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths reta"
-    },
-    {
-      "id": "loon-lake-steuben",
-      "name": "Loon Lake",
-      "priority": "medium",
-      "shore_iou": 0.999,
-      "acres": 138,
-      "depth_assignment": "distance_from_shore_bins",
-      "reason": "Georef IoU=0.999 OK. Acre mismatch shoreline 217.9 vs PDF 138 (ratio=1.58). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths re"
-    },
-    {
-      "id": "meserve-lake-steuben",
-      "name": "Meserve Lake",
-      "priority": "medium",
-      "shore_iou": 0.991,
-      "acres": 16,
-      "depth_assignment": "distance_from_shore_bins",
-      "reason": "Georef IoU=0.991 OK. Acre mismatch shoreline 32.5 vs PDF 16 (ratio=2.03). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths reta"
-    },
-    {
-      "id": "ball-lake-steuben",
-      "name": "Ball Lake",
-      "priority": "medium",
-      "shore_iou": 0.991,
-      "acres": 87,
-      "depth_assignment": "distance_from_shore_bins",
-      "reason": "Georef IoU=0.991 OK. Acre mismatch shoreline 160.4 vs PDF 87 (ratio=1.84). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths ret"
-    },
-    {
-      "id": "beaverdam-lake-steuben",
-      "name": "Beaverdam Lake",
-      "priority": "medium",
-      "shore_iou": 1.0,
-      "acres": 32.4,
-      "depth_assignment": "distance_from_shore_bins",
-      "reason": "Georef IoU=1.000 OK. Acre mismatch shoreline 58.2 vs PDF 32.4 (ratio=1.80). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths re"
-    },
-    {
-      "id": "gooseneck-lake-steuben",
-      "name": "Gooseneck Lake",
-      "priority": "medium",
-      "shore_iou": 0.99,
-      "acres": 22.6,
-      "depth_assignment": "distance_from_shore_bins",
-      "reason": "Georef IoU=0.990 OK. Acre mismatch shoreline 40.4 vs PDF 22.6 (ratio=1.79). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths re"
-    },
-    {
-      "id": "green-lake-steuben",
-      "name": "Green Lake",
-      "priority": "medium",
-      "shore_iou": 0.991,
-      "acres": 25.3,
-      "depth_assignment": "distance_from_shore_bins",
-      "reason": "Georef IoU=0.991 OK. Acre mismatch shoreline 45.3 vs PDF 25.3 (ratio=1.79). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths re"
-    },
-    {
-      "id": "henry-lake-steuben",
-      "name": "Henry Lake",
-      "priority": "medium",
-      "shore_iou": 0.994,
-      "acres": 22.9,
-      "depth_assignment": "distance_from_shore_bins",
-      "reason": "Georef IoU=0.994 OK. Acre mismatch shoreline 41.0 vs PDF 22.9 (ratio=1.79). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths re"
-    },
-    {
-      "id": "lake-arrowhead-steuben",
-      "name": "Lake Arrowhead",
-      "priority": "medium",
-      "shore_iou": 0.962,
-      "acres": 3.4,
-      "depth_assignment": "distance_from_shore_bins",
-      "reason": "Georef IoU=0.962 OK. Acre mismatch shoreline 5.7 vs PDF 3.4 (ratio=1.67). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths reta"
-    },
-    {
-      "id": "lime-lake-steuben",
-      "name": "Lime Lake",
-      "priority": "medium",
-      "shore_iou": 0.997,
-      "acres": 27.8,
-      "depth_assignment": "distance_from_shore_bins",
-      "reason": "Georef IoU=0.997 OK. Acre mismatch shoreline 49.9 vs PDF 27.8 (ratio=1.80). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths re"
-    },
-    {
-      "id": "little-otter-lake-steuben",
-      "name": "Little Otter Lake",
-      "priority": "medium",
-      "shore_iou": 0.989,
-      "acres": 31.9,
-      "depth_assignment": "distance_from_shore_bins",
-      "reason": "Georef IoU=0.989 OK. Acre mismatch shoreline 57.4 vs PDF 31.9 (ratio=1.80). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths re"
-    },
-    {
-      "id": "silver-lake-steuben",
-      "name": "Silver Lake",
-      "priority": "medium",
-      "shore_iou": 0.905,
-      "acres": 202.0,
-      "depth_assignment": "hand_visual_confirmed_intervals",
-      "reason": "Restored Steuben Silver digitized contours; georef nhd:Silver Lake; Warp IoU=0.905; PDF acres 202 vs OSM/NHD ~360 \u2014 likely marsh inclusion; left review if acre gate fails; Acre mismatch shoreline 383.2 vs PDF 202.0 (ratio=1.90)"
-    },
-    {
-      "id": "gage-lake-steuben",
-      "name": "Gage Lake",
-      "priority": "medium",
-      "shore_iou": 0.998,
-      "acres": 334.1,
-      "depth_assignment": "distance_from_shore_bins",
-      "reason": "Georef IoU=0.998 OK. Acre mismatch shoreline 599.4 vs PDF 334.1 (ratio=1.79). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths "
-    },
-    {
-      "id": "hamilton-lake-steuben",
-      "name": "Hamilton Lake",
-      "priority": "medium",
-      "shore_iou": 0.982,
-      "acres": 802,
-      "depth_assignment": "distance_from_shore_bins",
-      "reason": "Georef IoU=0.982 OK. Acre mismatch shoreline 1429.5 vs PDF 802 (ratio=1.78). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths r"
-    },
-    {
-      "id": "west-otter-lake-steuben",
-      "name": "West Otter Lake",
-      "priority": "medium",
-      "shore_iou": 0.47,
-      "acres": 112.1,
-      "depth_assignment": "hand_visual_confirmed_intervals",
-      "reason": "Re-locked West Otter to NHD Big Otter Lake (126.2 ac vs PDF 112); Dense warp IoU=0.470"
-    },
-    {
-      "id": "mud-lake-noble",
-      "name": "Mud Lake",
-      "priority": "medium",
-      "shore_iou": 0.993,
-      "acres": 8,
-      "depth_assignment": "distance_from_shore_bins",
-      "reason": "Georef IoU=0.993 OK. Acre mismatch shoreline 30.5 vs PDF 8 (ratio=3.82). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retai"
-    },
-    {
-      "id": "tamarack-lake-noble",
-      "name": "Tamarack Lake",
-      "priority": "medium",
-      "shore_iou": 0.997,
-      "acres": 50,
-      "depth_assignment": "pdf_label",
-      "reason": "Georef IoU=0.997 OK. Acre mismatch shoreline 85.3 vs PDF 50 (ratio=1.71). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths reta"
-    },
-    {
-      "id": "crooked-lake-noble",
-      "name": "Crooked Lake",
-      "priority": "medium",
-      "shore_iou": 0.99,
-      "acres": 206,
-      "depth_assignment": "pdf_label",
-      "reason": "Georef IoU=0.990 OK. Acre mismatch shoreline 365.3 vs PDF 206 (ratio=1.77). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths re"
-    },
-    {
-      "id": "winona-lake-kosciusko",
-      "name": "Winona Lake",
-      "priority": "medium",
-      "shore_iou": 0.997,
-      "acres": 562,
-      "depth_assignment": "pdf_label",
-      "reason": "Georef IoU=0.997 OK. Acre mismatch shoreline 218.5 vs PDF 562 (ratio=0.39). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths re"
+      "id": "indian-lake-dekalb",
+      "name": "Indian Lake",
+      "county": "DeKalb",
+      "review_notes": "method=traced_from_pdf; n=135; in-OSM=0.9986522911051213; geo acres=56.7 vs PDF 101.0 ratio=0.561; Indian: OSM 57 ac vs PDF 101.0 \u2014 contours lock; honest acre gap retained as review",
+      "review_priority": "medium"
     },
     {
       "id": "fish-lake-elkhart",
       "name": "Fish Lake",
-      "priority": "low",
-      "shore_iou": 0.999,
-      "acres": 34.0,
-      "depth_assignment": "distance_from_shore_bins",
-      "reason": "Georef IoU=0.999 OK. Acre mismatch shoreline 63.8 vs PDF 34.0 (ratio=1.88). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths re"
-    },
-    {
-      "id": "heaton-lake-elkhart",
-      "name": "Heaton Lake",
-      "priority": "medium",
-      "shore_iou": 0.999,
-      "acres": 87.0,
-      "depth_assignment": "distance_from_shore_bins",
-      "reason": "Georef IoU=0.999 OK. Acre mismatch shoreline 157.7 vs PDF 87.0 (ratio=1.81). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths r"
+      "county": "Elkhart",
+      "review_notes": "water-mask IoU=0.621; proxy=0.0; frac=0.704; Fixed overlapping bbox vs LaGrange Fish Lake",
+      "review_priority": "low"
     },
     {
       "id": "simonton-lake-elkhart",
       "name": "Simonton Lake",
-      "priority": "medium",
-      "shore_iou": 0.998,
-      "acres": 303.0,
-      "depth_assignment": "pdf_label",
-      "reason": "Georef IoU=0.998 OK. Acre mismatch shoreline 130.2 vs PDF 303.0 (ratio=0.43). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths "
+      "county": "Elkhart",
+      "review_notes": "Acre mismatch shore 227.9 vs survey 303.0 (ratio=0.75); water-mask IoU=0.674; proxy=0.4003870130605069; frac=0.962",
+      "review_priority": "medium"
     },
     {
-      "id": "crooked-lake-whitley",
-      "name": "Crooked Lake",
-      "priority": "medium",
-      "shore_iou": 0.99,
-      "acres": 206,
-      "depth_assignment": "pdf_label",
-      "reason": "Georef IoU=0.990 OK. Acre mismatch shoreline 365.3 vs PDF 206 (ratio=1.77). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths re"
+      "id": "webster-lake-kosciusko",
+      "name": "Webster Lake",
+      "county": "Kosciusko",
+      "review_notes": "Spot-check vs OSM; claimed water-mask IoU=0.606; contour-in-OSM=1.0; geo acres=637.4 vs PDF 774 (ratio=0.823); Webster: OSM relation smaller than PDF 774 ac (possible marsh/basin difference); contours lock to OSM but acre gap >15% \u2014 keep needs_review",
+      "review_priority": "medium"
+    },
+    {
+      "id": "atwood-lake-lagrange",
+      "name": "Atwood Lake",
+      "county": "LaGrange",
+      "review_notes": "water-mask IoU=0.51; proxy=0.5338751014838641; frac=0.862",
+      "review_priority": "medium"
+    },
+    {
+      "id": "big-long-lake-lagrange",
+      "name": "Big Long Lake",
+      "county": "LaGrange",
+      "review_notes": "water-mask IoU=0.606; proxy=None; frac=0.994",
+      "review_priority": "low"
+    },
+    {
+      "id": "cedar-lake-lagrange",
+      "name": "Cedar Lake",
+      "county": "LaGrange",
+      "review_notes": "water-mask IoU=0.61; proxy=0.5673943702210855; frac=1.000",
+      "review_priority": "low"
+    },
+    {
+      "id": "hackleburg-lake",
+      "name": "Hackleburg Lake",
+      "county": "LaGrange",
+      "review_notes": "FS weak lock frac=0.748 proxy=0.8072254178801934",
+      "review_priority": "low"
+    },
+    {
+      "id": "little-turkey-lake-lagrange",
+      "name": "Little Turkey Lake",
+      "county": "LaGrange",
+      "review_notes": "water-mask IoU=0.437; proxy=0.46174387189829036; frac=0.723",
+      "review_priority": "medium"
+    },
+    {
+      "id": "messick-lake",
+      "name": "Messick Lake",
+      "county": "LaGrange",
+      "review_notes": "FS weak lock frac=0.929 proxy=0.4335859541499004",
+      "review_priority": "low"
+    },
+    {
+      "id": "nauvoo-lake-lagrange",
+      "name": "Nauvoo Lake",
+      "county": "LaGrange",
+      "review_notes": "water-mask IoU=0.572; proxy=None; frac=0.806",
+      "review_priority": "medium"
+    },
+    {
+      "id": "oliver-lake",
+      "name": "Oliver Lake",
+      "county": "LaGrange",
+      "review_notes": "FS weak lock frac=0.868 proxy=0.674705635248937",
+      "review_priority": "low"
+    },
+    {
+      "id": "stone-lake-lagrange",
+      "name": "Stone Lake",
+      "county": "LaGrange",
+      "review_notes": "water-mask IoU=0.59; proxy=0.6103494941622565; frac=0.713",
+      "review_priority": "medium"
+    },
+    {
+      "id": "troxel-lake-lagrange",
+      "name": "Troxel Lake",
+      "county": "LaGrange",
+      "review_notes": "water-mask IoU=0.67; proxy=None; frac=1.000",
+      "review_priority": "medium"
+    },
+    {
+      "id": "little-cedar-lake-whitley",
+      "name": "Little Cedar Lake",
+      "county": "Whitley",
+      "review_notes": "Shore water-mask IoU=0.719; OSM open-water 46.6 ac vs PDF 82.5 (ratio=0.565). Contour-in-OSM frac=0.982 \u2014 absolute scale vs survey acres uncertain; left needs_review.",
+      "review_priority": "medium"
     }
   ],
-  "start_counts": {
-    "high": 4,
-    "medium": 39,
-    "low": 9,
-    "total": 52
-  },
-  "end_counts": {
-    "needs_review": 25,
-    "by_priority": {
-      "medium": 24,
-      "low": 1
-    }
-  },
-  "notes": "Cleared only when IoU>=0.75 AND acres within ~10% of PDF (or documented near-band exception). Remaining are mostly OSM/NHD shoreline acres systematically ~1.6-1.9x PDF open-water acres despite excellent IoU \u2014 left flagged honestly."
+  "totals": {
+    "verified_sum": 101,
+    "still_needs_review_sum": 15,
+    "fixed_sum": 38
+  }
 }
