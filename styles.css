@@ -219,3 +219,17 @@ body.trolling .legend { bottom: calc(150px + var(--safe-bottom)); }
 .nearby-item:hover { background: #e5f1f8; }
 .nearby-name { flex: 1; font-weight: 600; color: var(--ink); }
 .nearby-mi { color: var(--muted); font-variant-numeric: tabular-nums; }
+
+
+.badge.review-high { background: #ffedd5; color: #9a3412; border: 1px solid #fb923c; }
+.approx-banner {
+  margin: 0.5rem 0 0.65rem;
+  padding: 0.55rem 0.7rem;
+  background: #fff7ed;
+  border: 1px solid #fb923c;
+  border-left: 4px solid #ea580c;
+  border-radius: 6px;
+  font-size: 0.86rem;
+  color: #7c2d12;
+  line-height: 1.35;
+}
