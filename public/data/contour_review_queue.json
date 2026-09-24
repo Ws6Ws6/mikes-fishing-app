@@ -1,0 +1,313 @@
+[
+  {
+    "id": "lake-everett-allen",
+    "name": "Lake Everett",
+    "county": "Allen",
+    "issues": [
+      "Shoreline IoU=0.59 vs OSM \u2014 georef imperfect",
+      "Shoreline IoU=0.59; visual QA recommended before trusting absolute positions"
+    ],
+    "shore_iou": 0.593,
+    "status": "pending_review"
+  },
+  {
+    "id": "hurshtown-lake-allen",
+    "name": "Hurshtown Lake",
+    "county": "Allen",
+    "issues": [
+      "Shoreline IoU=0.92 vs OSM",
+      "PDF labels lake as Hurshtown Pond; OSM Reservoir ~large \u2014 verify footprint",
+      "Depth label glyphs may still contaminate some contour strokes"
+    ],
+    "shore_iou": 0.924,
+    "status": "pending_review"
+  },
+  {
+    "id": "old-lake-whitley",
+    "name": "Old Lake",
+    "county": "Whitley",
+    "issues": [
+      "Shoreline IoU=0.70; visual QA recommended before trusting absolute positions",
+      "Georef shows residual shoreline offset vs OSM; contours useful for relative structure but positions need review"
+    ],
+    "shore_iou": 0.702,
+    "status": "pending_review"
+  },
+  {
+    "id": "crooked-lake-whitley",
+    "name": "Crooked Lake",
+    "county": "Whitley",
+    "issues": [
+      "Shoreline IoU=0.52 vs OSM",
+      "PDF acres 206 vs OSM 307",
+      "PDF titled Noble County / 206 acres / 15 ft contours / max 108 ft",
+      "May be same physical lake as Noble Crooked Lake entry \u2014 merge carefully"
+    ],
+    "shore_iou": 0.519,
+    "status": "pending_review"
+  },
+  {
+    "id": "fish-lake-elkhart",
+    "name": "Fish Lake",
+    "county": "Elkhart",
+    "issues": [
+      "Acre mismatch OSM 63.8 vs PDF 34.0 (PDF acres used in patch",
+      "OSM for 0-ft shoreline)"
+    ],
+    "shore_iou": 0.621,
+    "status": "pending_review"
+  },
+  {
+    "id": "heaton-lake-elkhart",
+    "name": "Heaton Lake",
+    "county": "Elkhart",
+    "issues": [
+      "Acre mismatch OSM 157.7 vs PDF 87.0 (PDF acres used in patch",
+      "OSM for 0-ft shoreline)",
+      "sparse contour extraction (10 features) \u2014 verify against PDF rings"
+    ],
+    "shore_iou": 0.822,
+    "status": "pending_review"
+  },
+  {
+    "id": "simonton-lake-elkhart",
+    "name": "Simonton Lake",
+    "county": "Elkhart",
+    "issues": [
+      "low shoreline IoU=0.44 vs OSM \u2014 georef uncertain",
+      "Acre mismatch OSM 544.1 vs PDF 303.0 (PDF acres used in patch",
+      "OSM for 0-ft shoreline)",
+      "Simonton georef weak",
+      "dual-basin LARE map \u2014 manual QA recommended",
+      "Shoreline IoU=0.44"
+    ],
+    "shore_iou": 0.441,
+    "status": "pending_review"
+  },
+  {
+    "id": "adams-lake-lagrange",
+    "name": "Adams Lake",
+    "county": "LaGrange",
+    "issues": [],
+    "shore_iou": null,
+    "status": "pending_review"
+  },
+  {
+    "id": "big-long-lake-lagrange",
+    "name": "Big Long Lake",
+    "county": "LaGrange",
+    "issues": [],
+    "shore_iou": null,
+    "status": "pending_review"
+  },
+  {
+    "id": "cedar-lake-lagrange",
+    "name": "Cedar Lake",
+    "county": "LaGrange",
+    "issues": [],
+    "shore_iou": null,
+    "status": "pending_review"
+  },
+  {
+    "id": "little-turkey-lake-lagrange",
+    "name": "Little Turkey Lake",
+    "county": "LaGrange",
+    "issues": [],
+    "shore_iou": null,
+    "status": "pending_review"
+  },
+  {
+    "id": "meteer-lake-lagrange",
+    "name": "Meteer Lake",
+    "county": "LaGrange",
+    "issues": [],
+    "shore_iou": null,
+    "status": "pending_review"
+  },
+  {
+    "id": "nauvoo-lake-lagrange",
+    "name": "Nauvoo Lake",
+    "county": "LaGrange",
+    "issues": [],
+    "shore_iou": null,
+    "status": "pending_review"
+  },
+  {
+    "id": "troxel-lake-lagrange",
+    "name": "Troxel Lake",
+    "county": "LaGrange",
+    "issues": [],
+    "shore_iou": null,
+    "status": "pending_review"
+  },
+  {
+    "id": "indian-lake-dekalb",
+    "name": "Indian Lake",
+    "county": "DeKalb",
+    "issues": [
+      "Visual QA shoreline bay mismatch vs OSM"
+    ],
+    "shore_iou": 0.787,
+    "status": "pending_review"
+  },
+  {
+    "id": "cree-lake-noble",
+    "name": "Cree Lake",
+    "county": "Noble",
+    "issues": [
+      "Shoreline IoU=0.42"
+    ],
+    "shore_iou": 0.422,
+    "status": "pending_review"
+  },
+  {
+    "id": "hindman-lake-noble",
+    "name": "Hindman Lake",
+    "county": "Noble",
+    "issues": [
+      "Low water-mask IoU 0.33 vs OSM shoreline; Shoreline IoU=0.33"
+    ],
+    "shore_iou": 0.326,
+    "status": "pending_review"
+  },
+  {
+    "id": "latta-lake-noble",
+    "name": "Latta Lake",
+    "county": "Noble",
+    "issues": [
+      "Low water-mask IoU 0.28 vs OSM shoreline; Shoreline IoU=0.28"
+    ],
+    "shore_iou": 0.277,
+    "status": "pending_review"
+  },
+  {
+    "id": "tamarack-lake-noble",
+    "name": "Tamarack Lake",
+    "county": "Noble",
+    "issues": [
+      "Low water-mask IoU 0.34 vs OSM shoreline; Shoreline IoU=0.34"
+    ],
+    "shore_iou": 0.339,
+    "status": "pending_review"
+  },
+  {
+    "id": "harper-lake-noble",
+    "name": "Harper Lake",
+    "county": "Noble",
+    "issues": [
+      "Low water-mask IoU 0.27 vs OSM shoreline; Early BioBase white-contour style; acres not on map header; Shoreline IoU=0.27"
+    ],
+    "shore_iou": 0.271,
+    "status": "pending_review"
+  },
+  {
+    "id": "big-lake-noble",
+    "name": "Big Lake",
+    "county": "Noble",
+    "issues": [
+      "Acres not on map header; white-contour BioBase style"
+    ],
+    "shore_iou": 0.722,
+    "status": "pending_review"
+  },
+  {
+    "id": "crane-lake-noble",
+    "name": "Crane Lake",
+    "county": "Noble",
+    "issues": [
+      "Acres not on map header"
+    ],
+    "shore_iou": 0.654,
+    "status": "pending_review"
+  },
+  {
+    "id": "loon-lake-noble",
+    "name": "Loon Lake",
+    "county": "Noble",
+    "issues": [
+      "May straddle Noble/Whitley; labeled contours appear 10 ft; acres unknown"
+    ],
+    "shore_iou": 0.853,
+    "status": "pending_review"
+  },
+  {
+    "id": "moss-lake-noble",
+    "name": "Moss Lake",
+    "county": "Noble",
+    "issues": [
+      "2 ft interval unusual; acres unknown; white-contour style"
+    ],
+    "shore_iou": 0.653,
+    "status": "pending_review"
+  },
+  {
+    "id": "pleasant-lake-noble",
+    "name": "Pleasant Lake",
+    "county": "Noble",
+    "issues": [
+      "Common name \u2014 verify OSM polygon; acres unknown"
+    ],
+    "shore_iou": 0.97,
+    "status": "pending_review"
+  },
+  {
+    "id": "summit-lake-noble",
+    "name": "Summit Lake",
+    "county": "Noble",
+    "issues": [
+      "Acres unknown; confirm OSM match (not Henry Co Summit Lake)"
+    ],
+    "shore_iou": 0.929,
+    "status": "pending_review"
+  },
+  {
+    "id": "upper-long-lake-noble",
+    "name": "Upper Long Lake",
+    "county": "Noble",
+    "issues": [
+      "Acres unknown"
+    ],
+    "shore_iou": 0.724,
+    "status": "pending_review"
+  },
+  {
+    "id": "eagle-lake-noble",
+    "name": "Eagle Lake",
+    "county": "Noble",
+    "issues": [
+      "Acres unknown; Shoreline IoU=0.42"
+    ],
+    "shore_iou": 0.416,
+    "status": "pending_review"
+  },
+  {
+    "id": "engle-lake-noble",
+    "name": "Engle Lake",
+    "county": "Noble",
+    "issues": [
+      "Low water-mask IoU 0.23 vs OSM shoreline; Acres unknown; Shoreline IoU=0.23"
+    ],
+    "shore_iou": 0.234,
+    "status": "pending_review"
+  },
+  {
+    "id": "skinner-lake-noble",
+    "name": "Skinner Lake",
+    "county": "Noble",
+    "issues": [
+      "Acres unknown; outermost may be 3 ft unlabeled \u2014 using labeled 6\u201330; Shoreline IoU=0.42"
+    ],
+    "shore_iou": 0.422,
+    "status": "pending_review"
+  },
+  {
+    "id": "sand-lake",
+    "name": "Sand Lake",
+    "county": "Noble",
+    "issues": [
+      "Low water-mask IoU 0.27 vs OSM shoreline; Shoreline IoU=0.27"
+    ],
+    "shore_iou": 0.266,
+    "status": "pending_review"
+  }
+]
