@@ -599,29 +599,68 @@
       };
     });
 
+    // SVG renderer (not canvas): canvas overlays were drifting so lakes/contours
+    // sat in the wrong geographic place after pan, wheel-zoom, or touch scroll.
+    // padding keeps nearby lines drawn while panning without a full redraw race.
+    const contourRenderer = L.svg({ padding: 0.5 });
     contourLayer = L.geoJSON(contoursGj, {
       style: styleContour,
-      // crisp vectors at all zooms
-      renderer: L.canvas({ padding: 0.5 }),
+      renderer: contourRenderer,
     }).addTo(map);
 
-    // Only show contours when reasonably zoomed
+    // Visibility + marker sizing depend on zoom only.
     const syncContourVis = () => {
       const z = map.getZoom();
       if (z >= 11) {
         if (!map.hasLayer(contourLayer)) contourLayer.addTo(map);
-        contourLayer.setStyle(styleContour);
       } else if (map.hasLayer(contourLayer)) {
         map.removeLayer(contourLayer);
       }
-      updateLabels();
       lakeMarkers.eachLayer((m) => {
         if (z >= 13) m.setStyle({ radius: 4, opacity: 0.35, fillOpacity: 0.35 });
         else m.setStyle({ radius: 5, opacity: 1, fillOpacity: 0.9 });
       });
     };
-    map.on("zoomend moveend", syncContourVis);
+    // Restyle only on zoom — setStyle on every moveend forced a full redraw while
+    // Leaflet was still settling the pan transform (worsened canvas drift).
+    const syncContourStyle = () => {
+      if (map.hasLayer(contourLayer)) contourLayer.setStyle(styleContour);
+    };
+    // Labels depend on viewport bounds; throttle during inertial pan / follow-me.
+    let _labelTimer = null;
+    const scheduleLabels = (immediate) => {
+      if (_labelTimer != null) {
+        clearTimeout(_labelTimer);
+        _labelTimer = null;
+      }
+      if (immediate) {
+        updateLabels();
+        return;
+      }
+      _labelTimer = setTimeout(() => {
+        _labelTimer = null;
+        updateLabels();
+      }, 120);
+    };
+    map.on("zoomend", () => {
+      syncContourVis();
+      syncContourStyle();
+      scheduleLabels(true);
+    });
+    map.on("moveend", () => scheduleLabels(false));
     syncContourVis();
+    syncContourStyle();
+    scheduleLabels(true);
+
+    // Mobile browser chrome / orientation / keyboard can resize the map without
+    // Leaflet noticing — overlays then look shifted until invalidateSize.
+    const invalidate = () => map.invalidateSize({ pan: false });
+    window.addEventListener("resize", invalidate);
+    window.addEventListener("orientationchange", invalidate);
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener("resize", invalidate);
+    }
+    requestAnimationFrame(invalidate);
 
     placeLakeMarkers();
     if (launchesGj && launchesGj.features) {

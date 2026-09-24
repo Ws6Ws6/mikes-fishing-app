@@ -14,8 +14,21 @@
   --safe-bottom: env(safe-area-inset-bottom, 0px);
 }
 * { box-sizing: border-box; }
-html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color: var(--ink); background: #041824; }
-#map { position: absolute; inset: 0; z-index: 0; }
+html, body {
+  height: 100%; width: 100%; margin: 0; overflow: hidden;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--ink); background: #041824;
+}
+/* Leaflet owns transforms on its panes. Never put transform/filter/perspective
+   on #map or ancestors — that desyncs overlays from tiles when panning/zooming. */
+#map {
+  position: absolute; inset: 0; z-index: 0;
+  transform: none !important;
+  filter: none !important;
+  perspective: none !important;
+  will-change: auto !important;
+}
+.leaflet-container { background: #041824; }
 
 #topbar {
   position: absolute; top: 0; left: 0; right: 0; z-index: 1000;
