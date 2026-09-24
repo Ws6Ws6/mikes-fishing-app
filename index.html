@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b3d5c" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Mike's Fishing App</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header id="topbar">
+    <div class="brand">
+      <span class="hook" aria-hidden="true">🎣</span>
+      <div>
+        <h1>Mike's Fishing App</h1>
+        <p class="tag">Indiana boat launches · NE Indiana depth maps</p>
+      </div>
+    </div>
+    <div class="top-actions">
+      <button id="btnLocate" type="button" title="My location">📍</button>
+      <button id="btnSearch" type="button" title="Find a lake">🔍</button>
+      <button id="btnLayers" type="button" title="Basemap">🗺</button>
+      <button id="btnLaunches" type="button" class="active" title="Toggle boat launches" aria-pressed="true">🛶</button>
+      <button id="btnTroll" type="button" class="troll-btn" title="Trolling mode">🚤</button>
+    </div>
+  </header>
+
+  <aside id="panel" class="panel hidden" aria-label="Lake list">
+    <div class="panel-head">
+      <input id="lakeSearch" type="search" placeholder="Search lakes…" autocomplete="off" />
+      <button id="btnClosePanel" type="button" aria-label="Close">✕</button>
+    </div>
+    <div class="filters">
+      <label><input type="checkbox" id="filterContours" checked /> Contours</label>
+      <label><input type="checkbox" id="filterPdf" checked /> PDF maps</label>
+      <label><input type="checkbox" id="filterLaunches" checked /> Boat launches</label>
+    </div>
+    <ul id="lakeList"></ul>
+    <footer class="panel-foot">
+      <small>Depth data: Indiana DNR / IndianaMap. Contours are survey feet below surface — not live sonar.</small>
+    </footer>
+  </aside>
+
+  <div id="map"></div>
+
+  <div id="lakeCard" class="card hidden"></div>
+
+  <div id="trollHud" class="troll-hud hidden">
+    <div class="troll-row">
+      <div class="metric">
+        <span class="label">Speed</span>
+        <span id="trollSpeed" class="value">—</span>
+        <span class="unit">mph</span>
+      </div>
+      <div class="metric">
+        <span class="label">Approx depth</span>
+        <span id="trollDepth" class="value">—</span>
+        <span class="unit">ft</span>
+      </div>
+      <div class="metric">
+        <span class="label">Heading</span>
+        <span id="trollHeading" class="value">—</span>
+        <span class="unit">°</span>
+      </div>
+    </div>
+    <div class="troll-controls">
+      <label class="toggle"><input type="checkbox" id="followMe" checked /> Follow me</label>
+      <button id="btnClearTrack" type="button">Clear track</button>
+      <button id="btnExitTroll" type="button">Exit</button>
+    </div>
+    <p class="troll-note">Depth ≈ nearest DNR survey contour (not sonar). Wake lock on while trolling.</p>
+  </div>
+
+  <div id="legend" class="legend">
+    <div class="legend-title">Depth (ft)</div>
+    <div class="ramp"></div>
+    <div class="legend-scale"><span>0</span><span>30</span><span>60+</span></div>
+    <div class="legend-launches">
+      <div><span class="dot public"></span> Public launch</div>
+      <div><span class="dot private"></span> Private / commercial</div>
+      <div><span class="dot unknown"></span> Unknown access</div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
