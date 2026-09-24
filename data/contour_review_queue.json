@@ -6,9 +6,9 @@
     "contour_method": "traced_from_pdf",
     "georef_method": "osm",
     "review_priority": "medium",
-    "shore_iou": 0.999,
+    "shore_iou": 0.963,
     "issues": [
-      "method=traced_from_pdf; n=135; in-OSM=0.9986522911051213; geo acres=56.7 vs PDF 101.0 ratio=0.561; Indian: OSM 57 ac vs PDF 101.0 \u2014 contours lock; honest acre gap retained as review"
+      "PRIORITY: before_frac=0.9626288659793815; after_frac=0.9626288659793815; geo_acres=56.663820973214406; pdf_acres=101.0; ratio=0.5610279304278654; No shoreline overflow (frac_inside\u22650.92); contours lock to open water; Honest acre gap vs PDF title \u2014 keep needs_review (open-water polygon / bathymetry core smaller than survey acreage)"
     ],
     "status": "pending_review"
   },
@@ -45,9 +45,9 @@
     "contour_method": "traced_from_pdf",
     "georef_method": "osm",
     "review_priority": "medium",
-    "shore_iou": 1.0,
+    "shore_iou": 0.989,
     "issues": [
-      "Spot-check vs OSM; claimed water-mask IoU=0.606; contour-in-OSM=1.0; geo acres=637.4 vs PDF 774 (ratio=0.823); Webster: OSM relation smaller than PDF 774 ac (possible marsh/basin difference); contours lock to OSM but acre gap >15% \u2014 keep needs_review"
+      "PRIORITY: before_frac=0.9892879647132955; after_frac=0.9892879647132955; geo_acres=637.3621421226044; pdf_acres=774; ratio=0.8234652999000056; No shoreline overflow (frac_inside\u22650.92); contours lock to open water; Honest acre gap vs PDF title \u2014 keep needs_review (open-water polygon / bathymetry core smaller than survey acreage)"
     ],
     "status": "pending_review"
   },
@@ -91,19 +91,6 @@
     "status": "pending_review"
   },
   {
-    "id": "hackleburg-lake",
-    "name": "Hackleburg Lake",
-    "county": "LaGrange",
-    "contour_method": "vector_featureserver",
-    "georef_method": "featureserver",
-    "review_priority": "low",
-    "shore_iou": 0.807,
-    "issues": [
-      "FS weak lock frac=0.748 proxy=0.8072254178801934"
-    ],
-    "status": "pending_review"
-  },
-  {
     "id": "little-turkey-lake-lagrange",
     "name": "Little Turkey Lake",
     "county": "LaGrange",
@@ -117,19 +104,6 @@
     "status": "pending_review"
   },
   {
-    "id": "messick-lake",
-    "name": "Messick Lake",
-    "county": "LaGrange",
-    "contour_method": "vector_featureserver",
-    "georef_method": "featureserver",
-    "review_priority": "low",
-    "shore_iou": 0.434,
-    "issues": [
-      "FS weak lock frac=0.929 proxy=0.4335859541499004"
-    ],
-    "status": "pending_review"
-  },
-  {
     "id": "nauvoo-lake-lagrange",
     "name": "Nauvoo Lake",
     "county": "LaGrange",
@@ -139,19 +113,6 @@
     "shore_iou": 0.572,
     "issues": [
       "water-mask IoU=0.572; proxy=None; frac=0.806"
-    ],
-    "status": "pending_review"
-  },
-  {
-    "id": "oliver-lake",
-    "name": "Oliver Lake",
-    "county": "LaGrange",
-    "contour_method": "vector_featureserver",
-    "georef_method": "featureserver",
-    "review_priority": "low",
-    "shore_iou": 0.675,
-    "issues": [
-      "FS weak lock frac=0.868 proxy=0.674705635248937"
     ],
     "status": "pending_review"
   },
@@ -182,15 +143,41 @@
     "status": "pending_review"
   },
   {
+    "id": "barton-lake",
+    "name": "Barton Lake",
+    "county": "Steuben",
+    "contour_method": "vector_featureserver",
+    "georef_method": "featureserver",
+    "review_priority": "medium",
+    "shore_iou": 1.0,
+    "issues": [
+      "OSM open-water absent at FS footprint; shoreline frac_inside unverifiable"
+    ],
+    "status": "pending_review"
+  },
+  {
+    "id": "lake-arrowhead-steuben",
+    "name": "Lake Arrowhead",
+    "county": "Steuben",
+    "contour_method": "traced_from_pdf",
+    "georef_method": "osm",
+    "review_priority": "medium",
+    "shore_iou": 0.962,
+    "issues": [
+      "Point/OSM at [-86.18663900000001, 39.644166999999996] (~Indianapolis) \u2014 NOT Steuben Lake Arrowhead (~16ac near Angola)"
+    ],
+    "status": "pending_review"
+  },
+  {
     "id": "little-cedar-lake-whitley",
     "name": "Little Cedar Lake",
     "county": "Whitley",
     "contour_method": "traced_from_pdf",
     "georef_method": "osm",
     "review_priority": "medium",
-    "shore_iou": 0.982,
+    "shore_iou": 0.99,
     "issues": [
-      "Shore water-mask IoU=0.719; OSM open-water 46.6 ac vs PDF 82.5 (ratio=0.565). Contour-in-OSM frac=0.982 \u2014 absolute scale vs survey acres uncertain; left needs_review."
+      "OSM acres=46.6 vs PDF 82.5 (ratio=0.565) \u2014 acre gate still fails"
     ],
     "status": "pending_review"
   }
