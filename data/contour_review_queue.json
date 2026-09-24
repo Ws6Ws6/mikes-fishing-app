@@ -267,65 +267,68 @@
     "name": "Cree Lake",
     "county": "Noble",
     "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "high",
-    "shore_iou": 0.422,
+    "georef_method": "nhd",
+    "review_priority": "medium",
+    "shore_iou": 0.5710303639201799,
     "issues": [
-      "Moderate water-mask IoU 0.42 \u2014 check horizontal fit",
-      "Weak shoreline IoU=0.42 vs OSM \u2014 georef uncertain",
-      "Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label)",
-      "occasional band swaps possible in multi-basin lakes."
+      "2 labels not snapped to any contour: 5@616,1183, 20@824,459; Shoreline IoU=0.57 below 0.75 verify threshold (source=nhd_near:unnamed_390_49ac); Acre mismatch shoreline 49.4 vs PDF 58"
     ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes_fix": [
+      "depths_from_pdf_labels",
+      "georef_improved_iou_0.57"
+    ]
   },
   {
     "id": "hindman-lake-noble",
     "name": "Hindman Lake",
     "county": "Noble",
     "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "high",
-    "shore_iou": 0.326,
+    "georef_method": "nhd",
+    "review_priority": "medium",
+    "shore_iou": 0.7407171659302632,
     "issues": [
-      "Moderate water-mask IoU 0.33 \u2014 check horizontal fit",
-      "Weak shoreline IoU=0.33 vs OSM \u2014 georef uncertain",
-      "Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label)",
-      "occasional band swaps possible in multi-basin lakes."
+      "Shoreline IoU=0.74 below 0.75 verify threshold (source=nhd_near:unnamed_390_11ac)"
     ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes_fix": [
+      "depths_from_pdf_labels",
+      "georef_improved_iou_0.74"
+    ]
   },
   {
     "id": "jones-lake-noble",
     "name": "Jones Lake",
     "county": "Noble",
     "contour_method": "traced_from_pdf",
-    "georef_method": "synthetic",
-    "review_priority": "high",
-    "shore_iou": 0.582,
+    "georef_method": "nhd",
+    "review_priority": "medium",
+    "shore_iou": 0.5538155542804196,
     "issues": [
-      "Georeferencing is synthetic (no OSM shoreline lock \u2014 PDF water mask scaled/centered from map header). Contour strokes were traced from the survey PDF, but absolute position and scale are approximate and not reliable.",
-      "Map-center lat/lon approximate (OSM polygon missing or provisional)",
-      "georef needs review",
-      "Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label)",
-      "occasional band swaps possible in multi-basin lakes."
+      "Shoreline IoU=0.55 below 0.75 verify threshold (source=nhd_cache)"
     ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes_fix": [
+      "depths_from_pdf_labels",
+      "replaced_synthetic_georef"
+    ]
   },
   {
     "id": "latta-lake-noble",
     "name": "Latta Lake",
     "county": "Noble",
     "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "high",
-    "shore_iou": 0.277,
+    "georef_method": "nhd",
+    "review_priority": "medium",
+    "shore_iou": 0.6733345825431877,
     "issues": [
-      "Low water-mask IoU 0.28",
-      "Weak shoreline IoU=0.28 vs OSM \u2014 georef uncertain",
-      "Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label)",
-      "occasional band swaps possible in multi-basin lakes."
+      "1 labels not snapped to any contour: 15@1310,1510; Shoreline IoU=0.67 below 0.75 verify threshold (source=nhd_near:unnamed_466_49ac); Acre mismatch shoreline 48.9 vs PDF 42"
     ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes_fix": [
+      "depths_from_pdf_labels",
+      "georef_improved_iou_0.67"
+    ]
   },
   {
     "id": "mud-lake-noble",
@@ -349,52 +352,53 @@
     "name": "Steinbarger Lake",
     "county": "Noble",
     "contour_method": "traced_from_pdf",
-    "georef_method": "synthetic",
-    "review_priority": "high",
-    "shore_iou": 0.448,
+    "georef_method": "nhd",
+    "review_priority": "medium",
+    "shore_iou": 0.6256978871139078,
     "issues": [
-      "Georeferencing is synthetic (no OSM shoreline lock \u2014 PDF water mask scaled/centered from map header). Contour strokes were traced from the survey PDF, but absolute position and scale are approximate and not reliable.",
-      "Moderate water-mask IoU 0.45 \u2014 check horizontal fit",
-      "Map-center lat/lon approximate (OSM polygon missing or provisional)",
-      "georef needs review",
-      "Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label)",
-      "occasional band swaps possible in multi-basin lakes."
+      "1 labels not snapped to any contour: 35@1114,1288; Shoreline IoU=0.63 below 0.75 verify threshold (source=nhd_near:unnamed_466_58ac); Acre mismatch shoreline 58.1 vs PDF 73"
     ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes_fix": [
+      "depths_from_pdf_labels",
+      "georef_improved_iou_0.63",
+      "replaced_synthetic_georef"
+    ]
   },
   {
     "id": "tamarack-lake-noble",
     "name": "Tamarack Lake",
     "county": "Noble",
     "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "high",
-    "shore_iou": 0.339,
+    "georef_method": "nhd",
+    "review_priority": "medium",
+    "shore_iou": 0.7095039504355867,
     "issues": [
-      "Moderate water-mask IoU 0.34 \u2014 check horizontal fit",
-      "Weak shoreline IoU=0.34 vs OSM \u2014 georef uncertain",
-      "Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label)",
-      "occasional band swaps possible in multi-basin lakes."
+      "Shoreline IoU=0.71 below 0.75 verify threshold (source=nhd:Tamarack Lake); Acre mismatch shoreline 85.4 vs PDF 50"
     ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes_fix": [
+      "depths_from_pdf_labels",
+      "georef_improved_iou_0.71"
+    ]
   },
   {
     "id": "waldron-lake-noble",
     "name": "Waldron Lake",
     "county": "Noble",
     "contour_method": "traced_from_pdf",
-    "georef_method": "synthetic",
-    "review_priority": "high",
-    "shore_iou": 0.33,
+    "georef_method": "nhd",
+    "review_priority": "medium",
+    "shore_iou": 0.5997704368086956,
     "issues": [
-      "Georeferencing is synthetic (no OSM shoreline lock \u2014 PDF water mask scaled/centered from map header). Contour strokes were traced from the survey PDF, but absolute position and scale are approximate and not reliable.",
-      "Moderate water-mask IoU 0.33 \u2014 check horizontal fit",
-      "Map-center lat/lon approximate (OSM polygon missing or provisional)",
-      "georef needs review",
-      "Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label)",
-      "occasional band swaps possible in multi-basin lakes."
+      "2 labels not snapped to any contour: 10@251,1051, 25@331,1107; Shoreline IoU=0.60 below 0.75 verify threshold (source=nhd_cache)"
     ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes_fix": [
+      "depths_from_pdf_labels",
+      "georef_improved_iou_0.60",
+      "replaced_synthetic_georef"
+    ]
   },
   {
     "id": "harper-lake-noble",
@@ -403,17 +407,14 @@
     "contour_method": "traced_from_pdf",
     "georef_method": "osm",
     "review_priority": "high",
-    "shore_iou": 0.271,
+    "shore_iou": 0.825,
     "issues": [
-      "Low water-mask IoU 0.27",
-      "Acres not stated on map header",
-      "Early BioBase white-contour style",
-      "acres not on map header",
-      "Weak shoreline IoU=0.27 vs OSM \u2014 georef uncertain",
-      "Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label)",
-      "occasional band swaps possible in multi-basin lakes."
+      "cBioBase map: white depth-label OCR failed \u2014 depths still distance-binned; georef IoU~0.83 OK"
     ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes_fix": [
+      "georef_improved_iou_0.83"
+    ]
   },
   {
     "id": "big-lake-noble",
@@ -457,17 +458,16 @@
     "name": "Lindsey Lake",
     "county": "Noble",
     "contour_method": "traced_from_pdf",
-    "georef_method": "synthetic",
+    "georef_method": "nhd",
     "review_priority": "high",
-    "shore_iou": 0.987,
+    "shore_iou": 0.671,
     "issues": [
-      "Georeferencing is synthetic (no OSM shoreline lock \u2014 PDF water mask scaled/centered from map header). Contour strokes were traced from the survey PDF, but absolute position and scale are approximate and not reliable.",
-      "Acres not stated on map header",
-      "Acres not on map header",
-      "Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label)",
-      "occasional band swaps possible in multi-basin lakes."
+      "cBioBase map: white depth-label OCR failed \u2014 depths still distance-binned; synthetic georef replaced with NHD Lindsey (IoU~0.67)"
     ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes_fix": [
+      "replaced_synthetic_georef"
+    ]
   },
   {
     "id": "loon-lake-noble",
@@ -581,162 +581,138 @@
     "name": "Eagle Lake",
     "county": "Noble",
     "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "high",
-    "shore_iou": 0.416,
+    "georef_method": "nhd",
+    "review_priority": "done",
+    "shore_iou": 0.7518637264231701,
     "issues": [
-      "Moderate water-mask IoU 0.42 \u2014 check horizontal fit",
-      "Acres not stated on map header",
-      "Acres unknown",
-      "Weak shoreline IoU=0.42 vs OSM \u2014 georef uncertain",
-      "Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label)",
-      "occasional band swaps possible in multi-basin lakes."
+      "Verified 2026-09-24: depths from PDF labels; georef IoU OK"
     ],
-    "status": "pending_review"
+    "status": "verified"
   },
   {
     "id": "engle-lake-noble",
     "name": "Engle Lake",
     "county": "Noble",
     "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "high",
-    "shore_iou": 0.234,
+    "georef_method": "nhd",
+    "review_priority": "done",
+    "shore_iou": 0.7588965880594836,
     "issues": [
-      "Low water-mask IoU 0.23",
-      "Acres not stated on map header",
-      "Acres unknown",
-      "Weak shoreline IoU=0.23 vs OSM \u2014 georef uncertain",
-      "Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label)",
-      "occasional band swaps possible in multi-basin lakes."
+      "Verified 2026-09-24: depths from PDF labels; georef IoU OK"
     ],
-    "status": "pending_review"
+    "status": "verified"
   },
   {
     "id": "skinner-lake-noble",
     "name": "Skinner Lake",
     "county": "Noble",
     "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "high",
-    "shore_iou": 0.422,
+    "georef_method": "nhd",
+    "review_priority": "medium",
+    "shore_iou": 0.6332460310710453,
     "issues": [
-      "Moderate water-mask IoU 0.42 \u2014 check horizontal fit",
-      "Acres not stated on map header",
-      "Acres unknown",
-      "outermost may be 3 ft unlabeled \u2014 using labeled 6\u201330",
-      "Weak shoreline IoU=0.42 vs OSM \u2014 georef uncertain",
-      "Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label)",
-      "occasional band swaps possible in multi-basin lakes."
+      "Shoreline IoU=0.63 below 0.75"
     ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes_fix": null
   },
   {
     "id": "crooked-lake-noble",
     "name": "Crooked Lake",
     "county": "Noble",
     "contour_method": "traced_from_pdf",
-    "georef_method": "synthetic",
-    "review_priority": "high",
-    "shore_iou": 0.409,
+    "georef_method": "nhd",
+    "review_priority": "medium",
+    "shore_iou": 0.512,
     "issues": [
-      "Georeferencing is synthetic (no OSM shoreline lock \u2014 PDF water mask scaled/centered from map header). Contour strokes were traced from the survey PDF, but absolute position and scale are approximate and not reliable.",
-      "Moderate water-mask IoU 0.41 \u2014 check horizontal fit",
-      "Distinct from Steuben Crooked Lake \u2014 verify OSM is Rome City / Noble",
-      "Map-center lat/lon approximate (OSM polygon missing or provisional)",
-      "georef needs review",
-      "Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label)",
-      "occasional band swaps possible in multi-basin lakes."
+      "Label depths applied; georef moved to NHD Crooked Lake (south Noble, IoU~0.51, acres 363 vs PDF 206). Old synthetic Sylvan-area placement removed. Still needs review for shoreline fit/acres."
     ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes_fix": [
+      "depths_from_pdf_labels",
+      "georef_improved_iou_0.51",
+      "replaced_synthetic_georef"
+    ]
   },
   {
     "id": "sand-lake",
     "name": "Sand Lake",
     "county": "Noble",
     "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "high",
-    "shore_iou": 0.266,
+    "georef_method": "nhd",
+    "review_priority": "medium",
+    "shore_iou": 0.7080838056991854,
     "issues": [
-      "Low water-mask IoU 0.27",
-      "Weak shoreline IoU=0.27 vs OSM \u2014 georef uncertain",
-      "Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label)",
-      "occasional band swaps possible in multi-basin lakes."
+      "Shoreline IoU=0.71 below 0.75 verify threshold (source=nhd_near:Norman Lake)"
     ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes_fix": [
+      "depths_from_pdf_labels",
+      "georef_improved_iou_0.71"
+    ]
   },
   {
     "id": "banning-lake-kosciusko",
     "name": "Banning Lake",
     "county": "Kosciusko",
     "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
+    "georef_method": "nhd",
     "review_priority": "high",
-    "shore_iou": 0.381,
+    "shore_iou": 0.649,
     "issues": [
-      "pdf_only",
-      "Shoreline IoU=0.38",
-      "Shoreline IoU=0.38 below 0.45 threshold",
-      "Weak shoreline IoU=0.38 vs OSM \u2014 georef uncertain",
-      "Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label)",
-      "occasional band swaps possible in multi-basin lakes."
+      "Contour re-extract failed on LARE render (empty water mask); restored prior contours; depths still distance-binned; IoU~0.65"
     ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes_fix": [
+      "georef_improved_iou_0.65"
+    ]
   },
   {
     "id": "hill-lake-kosciusko",
     "name": "Hill Lake",
     "county": "Kosciusko",
     "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "high",
-    "shore_iou": 0.03,
+    "georef_method": "nhd",
+    "review_priority": "medium",
+    "shore_iou": 0.7874133897820675,
     "issues": [
-      "pdf digitize",
-      "Shoreline IoU=0.03",
-      "Shoreline IoU=0.03 below 0.45 threshold",
-      "Weak shoreline IoU=0.03 vs OSM \u2014 georef uncertain",
-      "Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label)",
-      "occasional band swaps possible in multi-basin lakes."
+      "1 labels not snapped to any contour: 20@396,801; Acre mismatch shoreline 58.4 vs PDF 67"
     ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes_fix": [
+      "depths_from_pdf_labels",
+      "georef_improved_iou_0.79"
+    ]
   },
   {
     "id": "little-barbee-lake-kosciusko",
     "name": "Little Barbee Lake",
     "county": "Kosciusko",
     "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "high",
-    "shore_iou": 0.14,
+    "georef_method": "nhd",
+    "review_priority": "medium",
+    "shore_iou": 0.7381599872013577,
     "issues": [
-      "pdf digitize",
-      "Shoreline IoU=0.14",
-      "Shoreline IoU=0.14 below 0.45 threshold",
-      "Weak shoreline IoU=0.14 vs OSM \u2014 georef uncertain",
-      "Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label)",
-      "occasional band swaps possible in multi-basin lakes."
+      "Shoreline IoU=0.74 below 0.75 verify threshold (source=nhd_near:Shoe Lake)"
     ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes_fix": [
+      "depths_from_pdf_labels",
+      "georef_improved_iou_0.74"
+    ]
   },
   {
     "id": "north-little-lake-kosciusko",
     "name": "North Little Lake",
     "county": "Kosciusko",
     "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "high",
-    "shore_iou": 0.128,
+    "georef_method": "nhd",
+    "review_priority": "done",
+    "shore_iou": 0.8231065735135517,
     "issues": [
-      "pdf digitize",
-      "Shoreline IoU=0.13",
-      "Shoreline IoU=0.13 below 0.45 threshold",
-      "Weak shoreline IoU=0.13 vs OSM \u2014 georef uncertain",
-      "Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label)",
-      "occasional band swaps possible in multi-basin lakes."
+      "Verified 2026-09-24: depths from PDF labels; georef IoU OK"
     ],
-    "status": "pending_review"
+    "status": "verified"
   },
   {
     "id": "oswego-lake",
@@ -763,36 +739,33 @@
     "name": "Sechrist Lake",
     "county": "Kosciusko",
     "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "high",
-    "shore_iou": 0.311,
+    "georef_method": "nhd",
+    "review_priority": "medium",
+    "shore_iou": 0.6684107110857326,
     "issues": [
-      "pdf digitize",
-      "Shoreline IoU=0.31",
-      "Shoreline IoU=0.31 below 0.45 threshold",
-      "Weak shoreline IoU=0.31 vs OSM \u2014 georef uncertain",
-      "Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label)",
-      "occasional band swaps possible in multi-basin lakes."
+      "Shoreline IoU=0.67 below 0.75 verify threshold (source=nhd_near:unnamed_466_10ac)"
     ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes_fix": [
+      "depths_from_pdf_labels",
+      "georef_improved_iou_0.67"
+    ]
   },
   {
     "id": "silver-lake-kosciusko",
     "name": "Silver Lake",
     "county": "Kosciusko",
     "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
+    "georef_method": "nhd",
     "review_priority": "high",
-    "shore_iou": 0.31,
+    "shore_iou": 0.55,
     "issues": [
-      "pdf_only",
-      "Shoreline IoU=0.31",
-      "Shoreline IoU=0.31 below 0.45 threshold",
-      "Weak shoreline IoU=0.31 vs OSM \u2014 georef uncertain",
-      "Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label)",
-      "occasional band swaps possible in multi-basin lakes."
+      "cBioBase map: white depth-label OCR failed \u2014 depths still distance-binned; georef IoU~0.55"
     ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes_fix": [
+      "georef_improved_iou_0.55"
+    ]
   },
   {
     "id": "tippecanoe-lake",
@@ -818,18 +791,17 @@
     "name": "Winona Lake",
     "county": "Kosciusko",
     "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "high",
-    "shore_iou": 0.287,
+    "georef_method": "nhd",
+    "review_priority": "medium",
+    "shore_iou": 0.6582082016191954,
     "issues": [
-      "pdf digitize",
-      "Shoreline IoU=0.29",
-      "Shoreline IoU=0.29 below 0.45 threshold",
-      "Weak shoreline IoU=0.29 vs OSM \u2014 georef uncertain",
-      "Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label)",
-      "occasional band swaps possible in multi-basin lakes."
+      "Shoreline IoU=0.66 below 0.75 verify threshold (source=nhd_near:unnamed_390_219ac); Acre mismatch shoreline 218.6 vs PDF 562"
     ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes_fix": [
+      "depths_from_pdf_labels",
+      "georef_improved_iou_0.66"
+    ]
   },
   {
     "id": "fish-lake-elkhart",
@@ -871,20 +843,14 @@
     "name": "Simonton Lake",
     "county": "Elkhart",
     "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "high",
-    "shore_iou": 0.441,
+    "georef_method": "nhd",
+    "review_priority": "medium",
+    "shore_iou": 0.6970129259026824,
     "issues": [
-      "low shoreline IoU=0.44 vs OSM \u2014 georef uncertain",
-      "Acre mismatch OSM 544.1 vs PDF 303.0 (PDF acres used in patch",
-      "OSM for 0-ft shoreline)",
-      "Simonton georef weak",
-      "dual-basin LARE map \u2014 manual QA recommended",
-      "Weak shoreline IoU=0.44 vs OSM \u2014 georef uncertain",
-      "Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label)",
-      "occasional band swaps possible in multi-basin lakes."
+      "2 labels not snapped to any contour: 5@1234,994, 15@700,1619; Shoreline IoU=0.70 below 0.75; Acre mismatch 130.3 vs PDF 303.0"
     ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes_fix": null
   },
   {
     "id": "old-lake-whitley",
@@ -983,12 +949,16 @@
     "name": "James Lake",
     "county": "Kosciusko",
     "contour_method": "traced_from_pdf",
-    "georef_method": "osm",
-    "review_priority": "high",
-    "shore_iou": 0.41,
+    "georef_method": "nhd",
+    "review_priority": "medium",
+    "shore_iou": 0.5984107832662265,
     "issues": [
-      "Shoreline IoU=0.41; visual QA recommended. Depth labels on traced lines were assigned by distance-from-shore binning to survey intervals (not OCR of each label); occasional band swaps possible in multi-basin lakes."
+      "Shoreline IoU=0.60 below 0.75 verify threshold (source=nhd_near:unnamed_390_326ac); Acre mismatch shoreline 325.7 vs PDF 282"
     ],
-    "status": "pending_review"
+    "status": "pending_review",
+    "notes_fix": [
+      "depths_from_pdf_labels",
+      "georef_improved_iou_0.60"
+    ]
   }
 ]

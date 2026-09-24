@@ -1,0 +1,40 @@
+{
+  "with_contours": 140,
+  "total_lakes": 140,
+  "without": 0,
+  "without_list": [],
+  "needs_review": 52,
+  "review_by_priority": {
+    "medium": 39,
+    "high": 4,
+    "low": 9
+  },
+  "queue_by_priority": {
+    "medium": 39,
+    "high": 4,
+    "low": 9,
+    "done": 3
+  },
+  "by_contour_method": {
+    "vector_featureserver": 58,
+    "traced_from_pdf": 82
+  },
+  "synthetic_georef_lakes": [],
+  "contour_features": 8011,
+  "dashed_features": 0,
+  "pdf_label_depth_features": 434,
+  "high_priority_review_fix_2026_09_24": {
+    "verified": [
+      "eagle-lake-noble",
+      "engle-lake-noble",
+      "north-little-lake-kosciusko"
+    ],
+    "still_high": [
+      "harper-lake-noble",
+      "lindsey-lake-noble",
+      "banning-lake-kosciusko",
+      "silver-lake-kosciusko"
+    ],
+    "script": "scripts/fix_depth_labels.py + scripts/fix_high_priority_review.py"
+  }
+}
