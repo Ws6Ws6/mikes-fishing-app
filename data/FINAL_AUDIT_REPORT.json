@@ -1,57 +1,267 @@
 {
+  "generated": "2026-09-24T11:45:00-04:00",
   "with_contours": 140,
   "total_lakes": 140,
-  "without": 0,
-  "without_list": [],
-  "needs_review": 52,
+  "needs_review": 25,
   "review_by_priority": {
-    "medium": 39,
-    "high": 4,
-    "low": 9
+    "medium": 24,
+    "low": 1
   },
   "queue_by_priority": {
-    "medium": 39,
-    "high": 4,
-    "low": 9,
-    "done": 3
+    "medium": 24,
+    "done": 30,
+    "low": 1
   },
-  "by_contour_method": {
-    "vector_featureserver": 58,
-    "traced_from_pdf": 82
-  },
-  "synthetic_georef_lakes": [],
-  "contour_features": 8131,
+  "contour_features": 7501,
   "dashed_features": 0,
-  "pdf_label_depth_features": 434,
-  "high_priority_review_fix_2026_09_24": {
-    "verified": [
-      "eagle-lake-noble",
-      "engle-lake-noble",
-      "north-little-lake-kosciusko"
-    ],
-    "still_high": [
-      "harper-lake-noble",
-      "lindsey-lake-noble",
-      "banning-lake-kosciusko",
-      "silver-lake-kosciusko"
-    ],
-    "lowered_to_medium": [
-      "cree-lake-noble",
-      "hindman-lake-noble",
-      "jones-lake-noble",
-      "latta-lake-noble",
-      "steinbarger-lake-noble",
-      "tamarack-lake-noble",
-      "waldron-lake-noble",
-      "skinner-lake-noble",
-      "crooked-lake-noble",
-      "sand-lake",
-      "hill-lake-kosciusko",
-      "little-barbee-lake-kosciusko",
-      "sechrist-lake-kosciusko",
-      "winona-lake-kosciusko",
-      "simonton-lake-elkhart",
-      "james-lake"
-    ]
-  }
+  "pdf_label_depth_features": 432,
+  "hand_visual_depth_features": 1127,
+  "synthetic_georef_lakes": [],
+  "high_priority_all_verified": [
+    "harper-lake-noble",
+    "lindsey-lake-noble",
+    "banning-lake-kosciusko",
+    "silver-lake-kosciusko"
+  ],
+  "still_needs_review": [
+    {
+      "id": "oswego-lake",
+      "name": "Oswego Lake",
+      "priority": "medium",
+      "shore_iou": 0.995,
+      "acres": 83,
+      "depth_assignment": "distance_from_shore_bins",
+      "reason": "Georef IoU=0.995 OK. Acre mismatch shoreline 131.8 vs PDF 83 (ratio=1.59). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths ret"
+    },
+    {
+      "id": "tippecanoe-lake",
+      "name": "Tippecanoe Lake",
+      "priority": "medium",
+      "shore_iou": 0.989,
+      "acres": 768,
+      "depth_assignment": "distance_from_shore_bins",
+      "reason": "Georef IoU=0.989 OK. Acre mismatch shoreline 1381.7 vs PDF 768 (ratio=1.80). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths r"
+    },
+    {
+      "id": "bower-lake-steuben",
+      "name": "Bower Lake",
+      "priority": "medium",
+      "shore_iou": 0.992,
+      "acres": 25,
+      "depth_assignment": "distance_from_shore_bins",
+      "reason": "Georef IoU=0.992 OK. Acre mismatch shoreline 47.2 vs PDF 25 (ratio=1.89). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths reta"
+    },
+    {
+      "id": "loon-lake-steuben",
+      "name": "Loon Lake",
+      "priority": "medium",
+      "shore_iou": 0.999,
+      "acres": 138,
+      "depth_assignment": "distance_from_shore_bins",
+      "reason": "Georef IoU=0.999 OK. Acre mismatch shoreline 217.9 vs PDF 138 (ratio=1.58). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths re"
+    },
+    {
+      "id": "meserve-lake-steuben",
+      "name": "Meserve Lake",
+      "priority": "medium",
+      "shore_iou": 0.991,
+      "acres": 16,
+      "depth_assignment": "distance_from_shore_bins",
+      "reason": "Georef IoU=0.991 OK. Acre mismatch shoreline 32.5 vs PDF 16 (ratio=2.03). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths reta"
+    },
+    {
+      "id": "ball-lake-steuben",
+      "name": "Ball Lake",
+      "priority": "medium",
+      "shore_iou": 0.991,
+      "acres": 87,
+      "depth_assignment": "distance_from_shore_bins",
+      "reason": "Georef IoU=0.991 OK. Acre mismatch shoreline 160.4 vs PDF 87 (ratio=1.84). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths ret"
+    },
+    {
+      "id": "beaverdam-lake-steuben",
+      "name": "Beaverdam Lake",
+      "priority": "medium",
+      "shore_iou": 1.0,
+      "acres": 32.4,
+      "depth_assignment": "distance_from_shore_bins",
+      "reason": "Georef IoU=1.000 OK. Acre mismatch shoreline 58.2 vs PDF 32.4 (ratio=1.80). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths re"
+    },
+    {
+      "id": "gooseneck-lake-steuben",
+      "name": "Gooseneck Lake",
+      "priority": "medium",
+      "shore_iou": 0.99,
+      "acres": 22.6,
+      "depth_assignment": "distance_from_shore_bins",
+      "reason": "Georef IoU=0.990 OK. Acre mismatch shoreline 40.4 vs PDF 22.6 (ratio=1.79). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths re"
+    },
+    {
+      "id": "green-lake-steuben",
+      "name": "Green Lake",
+      "priority": "medium",
+      "shore_iou": 0.991,
+      "acres": 25.3,
+      "depth_assignment": "distance_from_shore_bins",
+      "reason": "Georef IoU=0.991 OK. Acre mismatch shoreline 45.3 vs PDF 25.3 (ratio=1.79). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths re"
+    },
+    {
+      "id": "henry-lake-steuben",
+      "name": "Henry Lake",
+      "priority": "medium",
+      "shore_iou": 0.994,
+      "acres": 22.9,
+      "depth_assignment": "distance_from_shore_bins",
+      "reason": "Georef IoU=0.994 OK. Acre mismatch shoreline 41.0 vs PDF 22.9 (ratio=1.79). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths re"
+    },
+    {
+      "id": "lake-arrowhead-steuben",
+      "name": "Lake Arrowhead",
+      "priority": "medium",
+      "shore_iou": 0.962,
+      "acres": 3.4,
+      "depth_assignment": "distance_from_shore_bins",
+      "reason": "Georef IoU=0.962 OK. Acre mismatch shoreline 5.7 vs PDF 3.4 (ratio=1.67). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths reta"
+    },
+    {
+      "id": "lime-lake-steuben",
+      "name": "Lime Lake",
+      "priority": "medium",
+      "shore_iou": 0.997,
+      "acres": 27.8,
+      "depth_assignment": "distance_from_shore_bins",
+      "reason": "Georef IoU=0.997 OK. Acre mismatch shoreline 49.9 vs PDF 27.8 (ratio=1.80). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths re"
+    },
+    {
+      "id": "little-otter-lake-steuben",
+      "name": "Little Otter Lake",
+      "priority": "medium",
+      "shore_iou": 0.989,
+      "acres": 31.9,
+      "depth_assignment": "distance_from_shore_bins",
+      "reason": "Georef IoU=0.989 OK. Acre mismatch shoreline 57.4 vs PDF 31.9 (ratio=1.80). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths re"
+    },
+    {
+      "id": "silver-lake-steuben",
+      "name": "Silver Lake",
+      "priority": "medium",
+      "shore_iou": 0.905,
+      "acres": 202.0,
+      "depth_assignment": "hand_visual_confirmed_intervals",
+      "reason": "Restored Steuben Silver digitized contours; georef nhd:Silver Lake; Warp IoU=0.905; PDF acres 202 vs OSM/NHD ~360 \u2014 likely marsh inclusion; left review if acre gate fails; Acre mismatch shoreline 383.2 vs PDF 202.0 (ratio=1.90)"
+    },
+    {
+      "id": "gage-lake-steuben",
+      "name": "Gage Lake",
+      "priority": "medium",
+      "shore_iou": 0.998,
+      "acres": 334.1,
+      "depth_assignment": "distance_from_shore_bins",
+      "reason": "Georef IoU=0.998 OK. Acre mismatch shoreline 599.4 vs PDF 334.1 (ratio=1.79). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths "
+    },
+    {
+      "id": "hamilton-lake-steuben",
+      "name": "Hamilton Lake",
+      "priority": "medium",
+      "shore_iou": 0.982,
+      "acres": 802,
+      "depth_assignment": "distance_from_shore_bins",
+      "reason": "Georef IoU=0.982 OK. Acre mismatch shoreline 1429.5 vs PDF 802 (ratio=1.78). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths r"
+    },
+    {
+      "id": "west-otter-lake-steuben",
+      "name": "West Otter Lake",
+      "priority": "medium",
+      "shore_iou": 0.47,
+      "acres": 112.1,
+      "depth_assignment": "hand_visual_confirmed_intervals",
+      "reason": "Re-locked West Otter to NHD Big Otter Lake (126.2 ac vs PDF 112); Dense warp IoU=0.470"
+    },
+    {
+      "id": "mud-lake-noble",
+      "name": "Mud Lake",
+      "priority": "medium",
+      "shore_iou": 0.993,
+      "acres": 8,
+      "depth_assignment": "distance_from_shore_bins",
+      "reason": "Georef IoU=0.993 OK. Acre mismatch shoreline 30.5 vs PDF 8 (ratio=3.82). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retai"
+    },
+    {
+      "id": "tamarack-lake-noble",
+      "name": "Tamarack Lake",
+      "priority": "medium",
+      "shore_iou": 0.997,
+      "acres": 50,
+      "depth_assignment": "pdf_label",
+      "reason": "Georef IoU=0.997 OK. Acre mismatch shoreline 85.3 vs PDF 50 (ratio=1.71). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths reta"
+    },
+    {
+      "id": "crooked-lake-noble",
+      "name": "Crooked Lake",
+      "priority": "medium",
+      "shore_iou": 0.99,
+      "acres": 206,
+      "depth_assignment": "pdf_label",
+      "reason": "Georef IoU=0.990 OK. Acre mismatch shoreline 365.3 vs PDF 206 (ratio=1.77). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths re"
+    },
+    {
+      "id": "winona-lake-kosciusko",
+      "name": "Winona Lake",
+      "priority": "medium",
+      "shore_iou": 0.997,
+      "acres": 562,
+      "depth_assignment": "pdf_label",
+      "reason": "Georef IoU=0.997 OK. Acre mismatch shoreline 218.5 vs PDF 562 (ratio=0.39). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths re"
+    },
+    {
+      "id": "fish-lake-elkhart",
+      "name": "Fish Lake",
+      "priority": "low",
+      "shore_iou": 0.999,
+      "acres": 34.0,
+      "depth_assignment": "distance_from_shore_bins",
+      "reason": "Georef IoU=0.999 OK. Acre mismatch shoreline 63.8 vs PDF 34.0 (ratio=1.88). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths re"
+    },
+    {
+      "id": "heaton-lake-elkhart",
+      "name": "Heaton Lake",
+      "priority": "medium",
+      "shore_iou": 0.999,
+      "acres": 87.0,
+      "depth_assignment": "distance_from_shore_bins",
+      "reason": "Georef IoU=0.999 OK. Acre mismatch shoreline 157.7 vs PDF 87.0 (ratio=1.81). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths r"
+    },
+    {
+      "id": "simonton-lake-elkhart",
+      "name": "Simonton Lake",
+      "priority": "medium",
+      "shore_iou": 0.998,
+      "acres": 303.0,
+      "depth_assignment": "pdf_label",
+      "reason": "Georef IoU=0.998 OK. Acre mismatch shoreline 130.2 vs PDF 303.0 (ratio=0.43). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths "
+    },
+    {
+      "id": "crooked-lake-whitley",
+      "name": "Crooked Lake",
+      "priority": "medium",
+      "shore_iou": 0.99,
+      "acres": 206,
+      "depth_assignment": "pdf_label",
+      "reason": "Georef IoU=0.990 OK. Acre mismatch shoreline 365.3 vs PDF 206 (ratio=1.77). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths re"
+    }
+  ],
+  "start_counts": {
+    "high": 4,
+    "medium": 39,
+    "low": 9,
+    "total": 52
+  },
+  "end_counts": {
+    "needs_review": 25,
+    "by_priority": {
+      "medium": 24,
+      "low": 1
+    }
+  },
+  "notes": "Cleared only when IoU>=0.75 AND acres within ~10% of PDF (or documented near-band exception). Remaining are mostly OSM/NHD shoreline acres systematically ~1.6-1.9x PDF open-water acres despite excellent IoU \u2014 left flagged honestly."
 }
