@@ -1,0 +1,40 @@
+{
+  "with_contours": 140,
+  "total_lakes": 140,
+  "without": 0,
+  "without_list": [],
+  "needs_review": 55,
+  "review_by_priority": {
+    "high": 23,
+    "medium": 23,
+    "low": 9
+  },
+  "by_contour_method": {
+    "vector_featureserver": 58,
+    "traced_from_pdf": 82
+  },
+  "synthetic_georef_lakes": [
+    "Crooked Lake",
+    "Jones Lake",
+    "Lindsey Lake",
+    "Steinbarger Lake",
+    "Waldron Lake"
+  ],
+  "synthetic_or_distance_based_shape_lakes": [],
+  "sylvan": {
+    "id": "sylvan-lake-east-west-noble",
+    "contour_method": "traced_from_pdf",
+    "georef_method": "osm",
+    "depth_assignment": "distance_from_shore_bins",
+    "verdict": "traced_from_pdf (yellow survey lines traced; depths via distance-from-shore bins to labeled 5 ft intervals)"
+  },
+  "contour_features": 8624,
+  "dashed_features": 386,
+  "contours_mb": 5.27,
+  "honesty": {
+    "shape_generation": "No lake used buffer/inward-offset to invent contour SHAPES. All PDF lakes skeletonize yellow/dark survey strokes \u2192 traced_from_pdf.",
+    "depth_assignment": "PDF lakes: depth_ft assigned by distance-from-shore binning onto labeled survey intervals (not per-vertex OCR).",
+    "synthetic_georef": "Noble: Jones, Steinbarger, Waldron, Lindsey, Crooked \u2014 traced strokes placed via synthetic shoreline (PDF water mask \u00d7 m/px at map lat/lon). Flagged review_priority=high, dashed on map, orange banner. Warning text is honest about placement (not falsely claiming shapes untraced).",
+    "mandated_generated_warning": "Reserved for true shape-generation; zero lakes qualified. Synthetic-georef lakes use accurate placement warning instead."
+  }
+}

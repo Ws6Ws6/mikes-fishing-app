@@ -181,7 +181,12 @@
     for (const l of filtered) {
       const li = document.createElement("li");
       let badge;
-      if (l.needs_review) badge = '<span class="badge review">Needs review</span>';
+      if (l.georef_method === "synthetic" || l.contour_method === "synthetic_or_distance_based")
+        badge = '<span class="badge review-high">Approx. contours</span>';
+      else if (l.needs_review && l.review_priority === "high")
+        badge = '<span class="badge review-high">Needs review</span>';
+      else if (l.needs_review)
+        badge = '<span class="badge review">Needs review</span>';
       else if (l.has_contours) badge = '<span class="badge contour">contours</span>';
       else badge = '<span class="badge pdf">PDF map</span>';
       const depth =
@@ -370,8 +375,25 @@
     card.innerHTML = `
       <button class="close" id="btnCloseCard" type="button" aria-label="Close">✕</button>
       <h2>${lake.name}</h2>
-      <div class="county">${lake.county || ""}${lake.county2 ? " / " + lake.county2 : ""} · ${lake.needs_review ? "Needs review" : (lake.has_contours ? "Vector contours" : "PDF map only")}</div>
-      ${lake.needs_review && lake.review_notes ? `<div class="review-notes"><strong>Review:</strong> ${lake.review_notes}</div>` : ""}
+      <div class="county">${lake.county || ""}${lake.county2 ? " / " + lake.county2 : ""} · ${
+        lake.georef_method === "synthetic" || lake.contour_method === "synthetic_or_distance_based"
+          ? "Approximate contours (review)"
+          : lake.needs_review
+            ? "Needs review"
+            : lake.has_contours
+              ? (lake.contour_method === "vector_featureserver" ? "Vector contours" : "Digitized PDF contours")
+              : "PDF map only"
+      }</div>
+      ${
+        (lake.georef_method === "synthetic" || lake.contour_method === "synthetic_or_distance_based")
+          ? `<div class="approx-banner"><strong>Approximate contours.</strong> ${
+              lake.review_notes
+                || "Georeferencing is synthetic or shapes are approximate. Depth values come from the survey, but line positions are not reliable."
+            } Contours draw dashed on the map.</div>`
+          : lake.needs_review && lake.review_notes
+            ? `<div class="review-notes"><strong>Review${lake.review_priority ? " ("+lake.review_priority+")" : ""}:</strong> ${lake.review_notes}</div>`
+            : ""
+      }
       <div class="stats">
         <div><strong>Max depth</strong>${maxD}</div>
         <div><strong>Acres</strong>${acres}</div>
@@ -477,14 +499,18 @@
   function styleContour(feature) {
     const d = feature.properties.depth_ft;
     const index = feature.properties.line_type === "INDEX";
+    const dashed = feature.properties.line_style === "dashed"
+      || feature.properties.georef_method === "synthetic"
+      || feature.properties.contour_method === "synthetic_or_distance_based";
     const z = map.getZoom();
     const base = z >= 18 ? 3.2 : z >= 16 ? 2.4 : z >= 14 ? 1.8 : 1.3;
     return {
       color: depthColor(d),
       weight: index ? base + 0.8 : base,
-      opacity: 0.98,
+      opacity: dashed ? 0.85 : 0.98,
       lineJoin: "round",
       lineCap: "round",
+      dashArray: dashed ? "6 5" : null,
     };
   }
 
