@@ -77,7 +77,10 @@
   let wakeLock = null;
   let launches = [];
   let launchCluster = null;
-  let launchesVisible = false; // off by default — user toggles on
+  // Off at statewide / county zoom; auto-on at lake-level zoom (see LAKE_ZOOM).
+  // Manual canoe toggle still works; next zoomend re-syncs to zoom policy.
+  let launchesVisible = false;
+  const LAKE_ZOOM = 13; // fitBounds maxZoom is 15; contours detail ~11+
 
   const ACCESS_COLORS = {
     public: { fill: "#1a7f4b", stroke: "#0e4d2c" },
@@ -178,14 +181,54 @@
     return String(s || "").trim().toLowerCase().replace(/\s+/g, " ");
   }
 
+  // Common misspellings / aliases so "silvan" finds Sylvan Lake, etc.
+  const SEARCH_ALIASES = {
+    silvan: "sylvan",
+    silvon: "sylvan",
+    sylvn: "sylvan",
+    shipshewanna: "shipshewana",
+    tippecano: "tippecanoe",
+  };
+
+  function expandSearchToken(tok) {
+    const t = SEARCH_ALIASES[tok] || tok;
+    return t;
+  }
+
+  function tokenFuzzyIn(hay, tok) {
+    if (!tok) return true;
+    if (hay.includes(tok)) return true;
+    // Allow one-char typo for tokens length >= 5 (silvan ↔ sylvan)
+    if (tok.length >= 5) {
+      const words = hay.split(/[^a-z0-9]+/).filter(Boolean);
+      for (const w of words) {
+        if (Math.abs(w.length - tok.length) > 1) continue;
+        let i = 0, j = 0, miss = 0;
+        while (i < w.length && j < tok.length) {
+          if (w[i] === tok[j]) { i++; j++; continue; }
+          miss++;
+          if (miss > 1) break;
+          if (w.length > tok.length) i++;
+          else if (tok.length > w.length) j++;
+          else { i++; j++; }
+        }
+        miss += w.length - i + tok.length - j;
+        if (miss <= 1) return true;
+      }
+    }
+    return false;
+  }
+
   function lakeMatchesQuery(l, q) {
     if (!q) return true;
     const name = normSearch(l.name);
     const county = normSearch(l.county);
     const county2 = normSearch(l.county2);
     const hay = `${name} ${county} ${county2}`.trim();
-    // Require every whitespace-separated token to appear (name and/or county)
-    return q.split(/\s+/).every((tok) => hay.includes(tok));
+    return q.split(/\s+/).every((tok) => {
+      const t = expandSearchToken(tok);
+      return tokenFuzzyIn(hay, t) || tokenFuzzyIn(hay, tok);
+    });
   }
 
   function filteredLakes() {
@@ -362,6 +405,13 @@
     } else if (map.hasLayer(launchCluster)) {
       map.removeLayer(launchCluster);
     }
+  }
+
+  function syncLaunchesForZoom() {
+    // Default off when zoomed out; auto-on at lake-level zoom.
+    const want = map.getZoom() >= LAKE_ZOOM;
+    if (want !== launchesVisible) setLaunchesVisible(want);
+    else if (want && launchCluster && !map.hasLayer(launchCluster)) setLaunchesVisible(true);
   }
 
   function placeLaunchMarkers() {
@@ -751,11 +801,13 @@
       syncContourVis();
       syncContourStyle();
       scheduleLabels(true);
+      syncLaunchesForZoom();
     });
     map.on("moveend", () => scheduleLabels(false));
     syncContourVis();
     syncContourStyle();
     scheduleLabels(true);
+    syncLaunchesForZoom();
 
     // Mobile browser chrome / orientation / keyboard can resize the map without
     // Leaflet noticing — overlays then look shifted until invalidateSize.
