@@ -21,7 +21,7 @@
     "id": "messick-lake",
     "name": "Messick Lake",
     "status": "pending_review",
-    "notes": "aniso+TPS mask=style sm=60 fit_iou=0.570 water_iou=0.721 proxy=0.644; sx=0.900 sy=1.180 shore_ac=65.0 pdf=68.0 osm_full=65.0; frac=1.000 n=156 depths via nested_ring_pdf_intervals; style=biobase_yellow; clear_bar=iou=0.7214868541497567<0.75"
+    "notes": "Restored b1f93ec n=6 real FS contours (was 156 synthetic nested rings). Still needs_review: weak FS lock frac\u22480.93 IoU\u22480.43."
   },
   {
     "id": "oswego-lake",
