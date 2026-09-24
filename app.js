@@ -180,9 +180,10 @@
 
     for (const l of filtered) {
       const li = document.createElement("li");
-      const badge = l.has_contours
-        ? '<span class="badge contour">contours</span>'
-        : '<span class="badge pdf">PDF map</span>';
+      let badge;
+      if (l.needs_review) badge = '<span class="badge review">Needs review</span>';
+      else if (l.has_contours) badge = '<span class="badge contour">contours</span>';
+      else badge = '<span class="badge pdf">PDF map</span>';
       const depth =
         l.max_depth_ft != null ? ` · max ${l.max_depth_ft} ft` : "";
       const acres = l.acres != null ? ` · ${l.acres} ac` : "";
@@ -369,7 +370,8 @@
     card.innerHTML = `
       <button class="close" id="btnCloseCard" type="button" aria-label="Close">✕</button>
       <h2>${lake.name}</h2>
-      <div class="county">${lake.county || ""}${lake.county2 ? " / " + lake.county2 : ""} · ${lake.has_contours ? "Vector contours" : "PDF map only"}</div>
+      <div class="county">${lake.county || ""}${lake.county2 ? " / " + lake.county2 : ""} · ${lake.needs_review ? "Needs review" : (lake.has_contours ? "Vector contours" : "PDF map only")}</div>
+      ${lake.needs_review && lake.review_notes ? `<div class="review-notes"><strong>Review:</strong> ${lake.review_notes}</div>` : ""}
       <div class="stats">
         <div><strong>Max depth</strong>${maxD}</div>
         <div><strong>Acres</strong>${acres}</div>
