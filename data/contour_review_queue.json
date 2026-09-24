@@ -139,5 +139,175 @@
     "issues": [],
     "shore_iou": null,
     "status": "pending_review"
+  },
+  {
+    "id": "indian-lake-dekalb",
+    "name": "Indian Lake",
+    "county": "DeKalb",
+    "issues": [
+      "Visual QA shoreline bay mismatch vs OSM"
+    ],
+    "shore_iou": 0.787,
+    "status": "pending_review"
+  },
+  {
+    "id": "cree-lake-noble",
+    "name": "Cree Lake",
+    "county": "Noble",
+    "issues": [
+      "Shoreline IoU=0.42"
+    ],
+    "shore_iou": 0.422,
+    "status": "pending_review"
+  },
+  {
+    "id": "hindman-lake-noble",
+    "name": "Hindman Lake",
+    "county": "Noble",
+    "issues": [
+      "Low water-mask IoU 0.33 vs OSM shoreline; Shoreline IoU=0.33"
+    ],
+    "shore_iou": 0.326,
+    "status": "pending_review"
+  },
+  {
+    "id": "latta-lake-noble",
+    "name": "Latta Lake",
+    "county": "Noble",
+    "issues": [
+      "Low water-mask IoU 0.28 vs OSM shoreline; Shoreline IoU=0.28"
+    ],
+    "shore_iou": 0.277,
+    "status": "pending_review"
+  },
+  {
+    "id": "tamarack-lake-noble",
+    "name": "Tamarack Lake",
+    "county": "Noble",
+    "issues": [
+      "Low water-mask IoU 0.34 vs OSM shoreline; Shoreline IoU=0.34"
+    ],
+    "shore_iou": 0.339,
+    "status": "pending_review"
+  },
+  {
+    "id": "harper-lake-noble",
+    "name": "Harper Lake",
+    "county": "Noble",
+    "issues": [
+      "Low water-mask IoU 0.27 vs OSM shoreline; Early BioBase white-contour style; acres not on map header; Shoreline IoU=0.27"
+    ],
+    "shore_iou": 0.271,
+    "status": "pending_review"
+  },
+  {
+    "id": "big-lake-noble",
+    "name": "Big Lake",
+    "county": "Noble",
+    "issues": [
+      "Acres not on map header; white-contour BioBase style"
+    ],
+    "shore_iou": 0.722,
+    "status": "pending_review"
+  },
+  {
+    "id": "crane-lake-noble",
+    "name": "Crane Lake",
+    "county": "Noble",
+    "issues": [
+      "Acres not on map header"
+    ],
+    "shore_iou": 0.654,
+    "status": "pending_review"
+  },
+  {
+    "id": "loon-lake-noble",
+    "name": "Loon Lake",
+    "county": "Noble",
+    "issues": [
+      "May straddle Noble/Whitley; labeled contours appear 10 ft; acres unknown"
+    ],
+    "shore_iou": 0.853,
+    "status": "pending_review"
+  },
+  {
+    "id": "moss-lake-noble",
+    "name": "Moss Lake",
+    "county": "Noble",
+    "issues": [
+      "2 ft interval unusual; acres unknown; white-contour style"
+    ],
+    "shore_iou": 0.653,
+    "status": "pending_review"
+  },
+  {
+    "id": "pleasant-lake-noble",
+    "name": "Pleasant Lake",
+    "county": "Noble",
+    "issues": [
+      "Common name \u2014 verify OSM polygon; acres unknown"
+    ],
+    "shore_iou": 0.97,
+    "status": "pending_review"
+  },
+  {
+    "id": "summit-lake-noble",
+    "name": "Summit Lake",
+    "county": "Noble",
+    "issues": [
+      "Acres unknown; confirm OSM match (not Henry Co Summit Lake)"
+    ],
+    "shore_iou": 0.929,
+    "status": "pending_review"
+  },
+  {
+    "id": "upper-long-lake-noble",
+    "name": "Upper Long Lake",
+    "county": "Noble",
+    "issues": [
+      "Acres unknown"
+    ],
+    "shore_iou": 0.724,
+    "status": "pending_review"
+  },
+  {
+    "id": "eagle-lake-noble",
+    "name": "Eagle Lake",
+    "county": "Noble",
+    "issues": [
+      "Acres unknown; Shoreline IoU=0.42"
+    ],
+    "shore_iou": 0.416,
+    "status": "pending_review"
+  },
+  {
+    "id": "engle-lake-noble",
+    "name": "Engle Lake",
+    "county": "Noble",
+    "issues": [
+      "Low water-mask IoU 0.23 vs OSM shoreline; Acres unknown; Shoreline IoU=0.23"
+    ],
+    "shore_iou": 0.234,
+    "status": "pending_review"
+  },
+  {
+    "id": "skinner-lake-noble",
+    "name": "Skinner Lake",
+    "county": "Noble",
+    "issues": [
+      "Acres unknown; outermost may be 3 ft unlabeled \u2014 using labeled 6\u201330; Shoreline IoU=0.42"
+    ],
+    "shore_iou": 0.422,
+    "status": "pending_review"
+  },
+  {
+    "id": "sand-lake",
+    "name": "Sand Lake",
+    "county": "Noble",
+    "issues": [
+      "Low water-mask IoU 0.27 vs OSM shoreline; Shoreline IoU=0.27"
+    ],
+    "shore_iou": 0.266,
+    "status": "pending_review"
   }
 ]
