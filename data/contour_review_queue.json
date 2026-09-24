@@ -786,5 +786,30 @@
       "depths_from_pdf_labels",
       "georef_improved_iou_0.60"
     ]
+  },
+  {
+    "id": "shipshewana-lake-lagrange",
+    "name": "Shipshewana Lake",
+    "county": "LaGrange",
+    "needs_review": true,
+    "review_priority": "low",
+    "shore_iou": 0.74,
+    "georef_method": "osm",
+    "depth_assignment": "nested_ring_order_pdf_intervals",
+    "issues": [
+      "IoU 0.740 after re-georef; verify on imagery"
+    ],
+    "status": "improved-still-review"
+  },
+  {
+    "id": "dallas-lake",
+    "name": "Dallas Lake",
+    "county": "LaGrange",
+    "needs_review": true,
+    "review_priority": "low",
+    "issues": [
+      "Visual verify 10\u201320ft rings vs open water; OSM may over-extend"
+    ],
+    "status": "flagged"
   }
 ]

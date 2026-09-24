@@ -503,14 +503,21 @@
       || feature.properties.georef_method === "synthetic"
       || feature.properties.contour_method === "synthetic_or_distance_based";
     const z = map.getZoom();
-    const base = z >= 18 ? 3.2 : z >= 16 ? 2.4 : z >= 14 ? 1.8 : 1.3;
+    // Thinner at mid-zoom so dense rings read as lines, not a watercolor haze.
+    // Keep a bit of weight at high zoom for trolling readability.
+    const base = z >= 18 ? 2.4 : z >= 16 ? 1.7 : z >= 14 ? 1.25 : z >= 12 ? 1.0 : 0.85;
+    const opacity = dashed ? 0.8 : (z >= 16 ? 0.95 : z >= 14 ? 0.88 : 0.78);
     return {
       color: depthColor(d),
-      weight: index ? base + 0.8 : base,
-      opacity: dashed ? 0.85 : 0.98,
-      lineJoin: "round",
-      lineCap: "round",
+      weight: index ? base + 0.55 : base,
+      opacity,
+      fill: false,
+      fillOpacity: 0,
+      fillColor: "transparent",
+      lineJoin: "miter",
+      lineCap: "butt",
       dashArray: dashed ? "6 5" : null,
+      stroke: true,
     };
   }
 
