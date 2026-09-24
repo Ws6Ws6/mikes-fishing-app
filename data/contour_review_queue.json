@@ -350,12 +350,14 @@
     "county": "Noble",
     "contour_method": "traced_from_pdf",
     "georef_method": "osm",
-    "review_priority": "done",
-    "shore_iou": 0.997,
+    "review_priority": "medium",
+    "shore_iou": 0.5284,
     "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
+      "Translated PDF contours +10m N +7m E onto osm:way/31027854",
+      "PDF water\u2192OSM IoU=0.528 (shape mismatch); claimed 0.997 was OSM depth-0 artifact",
+      "in-lake frac 0.991; proxy IoU 0.54\u21920.55"
     ],
-    "status": "verified"
+    "status": "pending_review"
   },
   {
     "id": "crane-lake-noble",
@@ -458,9 +460,12 @@
     "contour_method": "traced_from_pdf",
     "georef_method": "osm",
     "review_priority": "done",
-    "shore_iou": 0.999,
+    "shore_iou": 0.751,
     "issues": [
-      "Verified 2026-09-24: hand/PDF depths; georef IoU OK"
+      "Re-georef north/affine to osm:way/31027941 (claimed IoU=0.999 was OSM depth-0 artifact)",
+      "PDF water\u2192OSM affine IoU=0.751; shore acres=152.1 vs PDF 152.1",
+      "Before: contours ~-66m south of shore centroid (proxy IoU 0.40)",
+      "Depths from PDF intervals [5, 10, 15, 20, 25, 30, 35, 40, 45, 50] via nested_interval_pdf"
     ],
     "status": "verified"
   },
@@ -509,11 +514,11 @@
     "name": "Crooked Lake",
     "county": "Noble",
     "contour_method": "traced_from_pdf",
-    "georef_method": "nhd",
-    "review_priority": "medium",
-    "shore_iou": 0.99,
+    "georef_method": "featureserver",
+    "review_priority": "low",
+    "shore_iou": 0.917864476386037,
     "issues": [
-      "Georef IoU=0.990 OK. Acre mismatch shoreline 365.3 vs PDF 206 (ratio=1.77). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
+      "Replaced with official FeatureServer vectors; Whitley duplicate removed"
     ],
     "status": "pending_review",
     "notes_fix": [
@@ -740,12 +745,12 @@
     "county": "Whitley",
     "contour_method": "traced_from_pdf",
     "georef_method": "nhd",
-    "review_priority": "medium",
+    "review_priority": "done",
     "shore_iou": 0.99,
     "issues": [
-      "Georef IoU=0.990 OK. Acre mismatch shoreline 365.3 vs PDF 206 (ratio=1.77). Shoreline georef IoU OK vs OSM/NHD, but shoreline acres differ >10% from PDF survey acres (often OSM/NHD includes marsh/wetland or a dual-basin neighbor). Depths retained; needs_review kept."
+      "Duplicate of crooked-lake-noble \u2014 removed"
     ],
-    "status": "pending_review"
+    "status": "removed_duplicate"
   },
   {
     "id": "lake-everett-allen",
