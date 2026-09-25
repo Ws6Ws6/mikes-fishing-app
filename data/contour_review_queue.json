@@ -2,8 +2,8 @@
   {
     "id": "big-long-lake-lagrange",
     "name": "Big Long Lake",
-    "status": "pending_review",
-    "notes": "aniso-only (TPS hurts multi-arm) fit=0.697 wiou=0.697 proxy=0.598 sx=0.890 sy=0.920; frac=0.992 n=672 shore_ac=387.7 pdf=365.0; BLOCKER: multi-arm PDF water vs OSM cannot honestly reach IoU>=0.75 under global/TPS warp; clear_bar=iou=0.6971044737023709<0.75; clear_bar=iou=0.6971044737023709<0.75"
+    "status": "cleared",
+    "notes": "pdf_aniso_closest_tps + pdf_label; wiou=0.866 frac=1.000 n=890 shore_ac=387.7 pdf=365; no FS coverage; cleared IoU/acres/frac bars"
   },
   {
     "id": "indian-lake-dekalb",
