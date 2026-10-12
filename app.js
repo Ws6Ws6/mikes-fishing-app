@@ -508,6 +508,7 @@
             ? `<div class="review-notes"><strong>Review${lake.review_priority ? " ("+lake.review_priority+")" : ""}:</strong> ${lake.review_notes}</div>`
             : ""
       }
+      ${lake.exceeds_dnr_max ? `<div class="review-notes dnr-warn"><strong>⚠ Exceeds DNR max contour:</strong> ${lake.exceeds_dnr_note || ""}</div>` : ""}
       <div class="stats">
         <div><strong>Max depth</strong>${maxD}</div>
         <div><strong>Acres</strong>${acres}</div>

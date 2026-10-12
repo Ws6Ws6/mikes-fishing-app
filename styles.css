@@ -260,3 +260,5 @@ body.trolling .legend { bottom: calc(150px + var(--safe-bottom)); }
   color: #7c2d12;
   line-height: 1.35;
 }
+
+.dnr-warn{border-left:4px solid #d97706;background:#fff7ed;}
