@@ -80,6 +80,7 @@
   // Off at statewide / county zoom; auto-on at lake-level zoom (see LAKE_ZOOM).
   // Manual canoe toggle still works; next zoomend re-syncs to zoom policy.
   let launchesVisible = false;
+  let _launchZoomBand = null;
   const LAKE_ZOOM = 13; // fitBounds maxZoom is 15; contours detail ~11+
 
   const ACCESS_COLORS = {
@@ -409,9 +410,12 @@
 
   function syncLaunchesForZoom() {
     // Default off when zoomed out; auto-on at lake-level zoom.
-    const want = map.getZoom() >= LAKE_ZOOM;
-    if (want !== launchesVisible) setLaunchesVisible(want);
-    else if (want && launchCluster && !map.hasLayer(launchCluster)) setLaunchesVisible(true);
+    // Only auto-switch when crossing the lake-zoom threshold; otherwise respect the user's toggle.
+    const band = map.getZoom() >= LAKE_ZOOM;
+    if (band !== _launchZoomBand) {
+      _launchZoomBand = band;
+      setLaunchesVisible(band);
+    } else if (launchesVisible && launchCluster && !map.hasLayer(launchCluster)) setLaunchesVisible(true);
   }
 
   function placeLaunchMarkers() {
