@@ -12,6 +12,7 @@ PASS={
  'indian-lake-dekalb':dict(m='pdf_color_ramp_isolines',src='osm:way/702471901',iou=0.961,note='Isolines from the DNR cBioBase depth color ramp, calibrated to the drawn contour lines (resid 0.7 ft); georef OSM shoreline match (IoU 0.96).'),
  'dillards-pit':dict(m='pdf_color_ramp_isolines',src='osm:way/145076913',iou=0.86,note='Isolines from the DNR cBioBase depth color ramp, calibrated to drawn contour lines (resid 0.2 ft); georef OSM (IoU 0.86).'),
  'little-cedar-lake-whitley':dict(m='pdf_color_ramp_isolines',src='osm',iou=0.899,interval=5,note='Isolines from the DNR cBioBase depth color ramp; drawn lines are every 5 ft (calibration resid 0.2 ft); georef OSM (IoU 0.90).'),
+ 'messick-lake':dict(m='pdf_vector_label_nesting',src='osm:way/966279065',iou=0.936,pdf='https://www.in.gov/dnr/fish-and-wildlife/files/depth/fw-Messick_Lake_Bathymetric_LaGrange_County_July_2018.pdf',note='DNR BioBase 2018 PDF vector contours, every line carries a PDF depth label; georef scale bar + OSM (IoU 0.94). Replaces sparse FeatureServer lines.'),
  'loon-lake-noble':dict(m='pdf_color_ramp_isolines',src='osm:way/31012503',iou=0.967,note='Isolines from the DNR cBioBase depth color ramp, calibrated to drawn contour lines (resid 1.0 ft); georef OSM way 31012503 (IoU 0.97). Replaces noisy earlier digitization.'),
 }
 ids=sys.argv[1:] or list(PASS)
@@ -35,5 +36,6 @@ for root in ['.']:
         max_contour_ft=max(lv),min_contour_ft=0,precision_note=c['note']+' Re-traced 2026-10-12; structure aid only, not a sonar substitute.',
         bbox=[round(min(xs),6),round(min(ys),6),round(max(xs),6),round(max(ys),6)],data_quality='ok')
       if c.get('interval'): p['contour_interval_ft']=c['interval']
+      if c.get('pdf'): p['pdf_url']=c['pdf'];p['survey_date']=p.get('survey_date') or '2018-07-23'
     json.dump(D,open(lp,'w'),separators=(',',':'))
 print('merged',ids)
