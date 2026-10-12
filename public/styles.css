@@ -30,6 +30,20 @@ html, body {
 }
 .leaflet-container { background: #041824; }
 
+/* Crisp SVG contour strokes — scoped to contour layer only.
+   Do NOT apply fill:none to all overlay-pane paths: that nukes lake circleMarker fills. */
+.leaflet-overlay-pane svg.contour-svg {
+  shape-rendering: geometricPrecision;
+  filter: none !important;
+}
+.leaflet-overlay-pane svg.contour-svg path {
+  shape-rendering: geometricPrecision;
+  fill: none !important;
+  fill-opacity: 0 !important;
+  paint-order: stroke;
+}
+
+
 #topbar {
   position: absolute; top: 0; left: 0; right: 0; z-index: 1000;
   display: flex; align-items: center; justify-content: space-between;
@@ -246,3 +260,5 @@ body.trolling .legend { bottom: calc(150px + var(--safe-bottom)); }
   color: #7c2d12;
   line-height: 1.35;
 }
+
+.dnr-warn{border-left:4px solid #d97706;background:#fff7ed;}
