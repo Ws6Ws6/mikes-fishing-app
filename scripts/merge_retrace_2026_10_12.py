@@ -14,6 +14,8 @@ PASS={
  'little-cedar-lake-whitley':dict(m='pdf_color_ramp_isolines',src='osm',iou=0.899,interval=5,note='Isolines from the DNR cBioBase depth color ramp; drawn lines are every 5 ft (calibration resid 0.2 ft); georef OSM (IoU 0.90).'),
  'messick-lake':dict(m='pdf_vector_label_nesting',src='osm:way/966279065',iou=0.936,pdf='https://www.in.gov/dnr/fish-and-wildlife/files/depth/fw-Messick_Lake_Bathymetric_LaGrange_County_July_2018.pdf',note='DNR BioBase 2018 PDF vector contours, every line carries a PDF depth label; georef scale bar + OSM (IoU 0.94). Replaces sparse FeatureServer lines.'),
  'loon-lake-noble':dict(m='pdf_color_ramp_isolines',src='osm:way/31012503',iou=0.967,note='Isolines from the DNR cBioBase depth color ramp, calibrated to drawn contour lines (resid 1.0 ft); georef OSM way 31012503 (IoU 0.97). Replaces noisy earlier digitization.'),
+ 'round-lake-steuben':dict(m='pdf_color_ramp_isolines',src='DNR PDF survey outline; manual georef to Esri World Imagery control points',iou=None,note='Isolines from the DNR cBioBase depth color ramp; georeferenced by manual control points on satellite imagery (OSM/NHD outlines too crude/include marsh); shoreline is the DNR survey outline. Some shallow 5 ft lines in the south marsh are approximate.'),
+ 'simonton-lake-elkhart':dict(m='pdf_raster_trace_manual_regions',src='osm:way/197731498',iou=0.67,note='Raster trace of the DNR LARE PDF contour lines (1:12,500 map ratio), depths assigned per region by manual review against the PDF labels; georef OSM way 197731498 checked visually on satellite.'),
 }
 ids=sys.argv[1:] or list(PASS)
 for root in ['.']:
