@@ -520,7 +520,7 @@
       }</div>
       ${
         lake.no_depth_map
-          ? `<div class="nomap-banner"><strong>No depth map yet.</strong> No published depth survey was found for this lake, so no contours or depths are shown.</div>`
+          ? `<div class="nomap-banner"><strong>No depth map yet.</strong> ${lake.nomap_banner ? escapeHtml(lake.nomap_banner) : "No published depth survey was found for this lake, so no contours or depths are shown."}</div>`
           : (lake.georef_method === "synthetic" || lake.contour_method === "synthetic_or_distance_based")
           ? `<div class="approx-banner"><strong>Approximate contours.</strong> ${
               lake.review_notes
@@ -533,7 +533,7 @@
       ${lake.exceeds_dnr_max ? `<div class="review-notes dnr-warn"><strong>⚠ Exceeds DNR max contour:</strong> ${lake.exceeds_dnr_note || ""}</div>` : ""}
       ${lake.no_depth_map ? `<div class="stats">
         <div><strong>Acres</strong>${acres}</div>
-        <div><strong>Depth map</strong>Not available</div>
+        <div><strong>Depth map</strong>${lake.nomap_depth_label ? escapeHtml(lake.nomap_depth_label) : "Not available"}</div>
       </div>` : `<div class="stats">
         <div><strong>Max depth</strong>${maxD}</div>
         <div><strong>Acres</strong>${acres}</div>
