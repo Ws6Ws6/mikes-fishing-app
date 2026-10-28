@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#0b3d5c" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>Mike's Fishing App</title>
@@ -22,18 +22,18 @@
       </div>
     </div>
     <div class="top-actions">
-      <button id="btnLocate" type="button" title="My location">📍</button>
-      <button id="btnSearch" type="button" title="Find a lake">🔍</button>
-      <button id="btnLayers" type="button" title="Basemap">🗺</button>
-      <button id="btnLaunches" type="button" title="Toggle boat launches" aria-pressed="false">🛶</button>
-      <button id="btnTroll" type="button" class="troll-btn" title="Trolling mode">🚤</button>
+      <button id="btnLocate" type="button" aria-label="Show my location" title="My location">📍</button>
+      <button id="btnSearch" type="button" aria-label="Find a lake" title="Find a lake">🔍</button>
+      <button id="btnLayers" type="button" aria-label="Switch basemap" title="Basemap">🗺</button>
+      <button id="btnLaunches" type="button" aria-label="Toggle boat launches" title="Toggle boat launches" aria-pressed="false">🛶</button>
+      <button id="btnTroll" type="button" class="troll-btn" aria-label="Trolling mode" title="Trolling mode">🚤</button>
     </div>
   </header>
 
   <aside id="panel" class="panel hidden" aria-label="Lake list">
     <div class="panel-head">
-      <input id="lakeSearch" type="search" placeholder="Search lakes…" autocomplete="off" />
-      <button id="btnClosePanel" type="button" aria-label="Close">✕</button>
+      <input id="lakeSearch" type="search" placeholder="Search lakes…" autocomplete="off" aria-label="Search lakes" />
+      <button id="btnClosePanel" type="button" aria-label="Close lake list">✕</button>
     </div>
     <div class="filters">
       <label><input type="checkbox" id="filterContours" checked /> Contours</label>
@@ -48,7 +48,7 @@
 
   <div id="map"></div>
 
-  <div id="lakeCard" class="card hidden"></div>
+  <div id="lakeCard" class="card hidden" role="dialog" aria-label="Lake details"></div>
 
   <div id="trollHud" class="troll-hud hidden">
     <div class="troll-row">
@@ -76,10 +76,10 @@
     <p class="troll-note">Depth ≈ nearest DNR survey contour (not sonar). Wake lock on while trolling.</p>
   </div>
 
-  <div id="legend" class="legend">
+  <div id="legend" class="legend" role="note" aria-label="Map legend">
     <div class="legend-title">Depth (ft)</div>
     <div class="ramp"></div>
-    <div class="legend-scale"><span>0</span><span>30</span><span>60+</span></div>
+    <div class="legend-scale"><span>0</span><span>40</span><span>80+</span></div>
     <div class="legend-launches">
       <div><span class="dot public"></span> Public launch</div>
       <div><span class="dot private"></span> Private / commercial</div>
@@ -87,7 +87,7 @@
     </div>
   </div>
 
-  <div id="toast" class="toast hidden"></div>
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
