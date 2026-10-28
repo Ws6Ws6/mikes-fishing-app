@@ -262,7 +262,8 @@
       else if (l.has_contours) badge = '<span class="badge contour">contours</span>';
       else badge = '<span class="badge pdf">PDF map</span>';
       const depth =
-        l.max_depth_ft != null ? ` · max ${l.max_depth_ft} ft` : "";
+        l.max_depth_ft != null ? ` · max ${l.max_depth_ft} ft`
+          : l.max_contour_ft != null ? ` · max ≥${l.max_contour_ft} ft` : "";
       const acres = l.acres != null ? ` · ${l.acres} ac` : "";
       li.innerHTML = `<div class="name">${l.name}${badge}</div>
         <div class="meta">${l.county || "—"}${acres}${depth}</div>`;
@@ -471,7 +472,11 @@
   function showLakeCard(lake) {
     const card = document.getElementById("lakeCard");
     const maxD =
-      lake.max_depth_ft != null ? `${lake.max_depth_ft} ft` : "—";
+      lake.max_depth_ft != null
+        ? `${lake.max_depth_ft} ft`
+        : lake.max_contour_ft != null
+          ? `≥ ${lake.max_contour_ft} ft <small>(deepest contour; DNR max not published)</small>`
+          : "—";
     const acres = lake.acres != null ? `${lake.acres}` : "—";
     const interval =
       lake.contour_interval_ft != null
@@ -521,7 +526,7 @@
       </div>
       <div class="actions">${actions}</div>
       <div id="nearbyLaunches" class="nearby-launches"></div>
-      <p class="source">${lake.source || ""} · <a href="${lake.source_url}" target="_blank" rel="noopener">source</a><br/>${lake.precision_note || ""}</p>
+      <p class="source">${escapeHtml(lake.source || "")}${lake.source_url ? ` · <a href="${lake.source_url}" target="_blank" rel="noopener">source</a>` : ""}${lake.accuracy_note ? `<br/>${escapeHtml(lake.accuracy_note)}` : ""}</p>
     `;
     card.classList.remove("hidden");
     document.getElementById("btnCloseCard").onclick = () =>
