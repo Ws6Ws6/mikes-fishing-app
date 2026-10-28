@@ -3,8 +3,8 @@
   "use strict";
 
   const MAX_ZOOM = 22;
-  // Default view stays NE Indiana (depth maps); pan/zoom freely for statewide launches.
-  const NE_CENTER = [41.45, -85.35];
+  // Default view covers NE Indiana (Peru/Muncie north to MI/OH lines); pan/zoom freely for statewide launches.
+  const NE_CENTER = [41.0, -85.4];
   const NE_ZOOM = 9;
   const STATE_BOUNDS = L.latLngBounds([37.75, -88.12], [41.78, -84.75]);
 
