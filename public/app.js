@@ -253,7 +253,9 @@
     for (const l of filtered) {
       const li = document.createElement("li");
       let badge;
-      if (l.georef_method === "synthetic" || l.contour_method === "synthetic_or_distance_based")
+      if (l.no_depth_map)
+        badge = '<span class="badge nomap">No depth map yet</span>';
+      else if (l.georef_method === "synthetic" || l.contour_method === "synthetic_or_distance_based")
         badge = '<span class="badge review-high">Approx. contours</span>';
       else if (l.needs_review && l.review_priority === "high")
         badge = '<span class="badge review-high">Needs review</span>';
@@ -264,7 +266,8 @@
       const depth =
         l.max_depth_ft != null ? ` · max ${l.max_depth_ft} ft`
           : l.max_contour_ft != null ? ` · max ≥${l.max_contour_ft} ft` : "";
-      const acres = l.acres != null ? ` · ${l.acres} ac` : "";
+      const acres = l.acres != null ? ` · ${l.acres} ac`
+        : Array.isArray(l.acres_range) ? ` · ~${l.acres_range[0]}–${l.acres_range[1]} ac` : "";
       li.innerHTML = `<div class="name">${l.name}${badge}</div>
         <div class="meta">${l.county || "—"}${acres}${depth}</div>`;
       li.addEventListener("click", () => selectLake(l, true));
@@ -298,7 +301,7 @@
     selectedLake = lake;
     showLakeCard(lake);
     openPanel(false);
-    if (lake.has_contours && lake.bbox) {
+    if ((lake.has_contours || lake.no_depth_map) && lake.bbox) {
       const b = lake.bbox;
       if (fly) {
         map.fitBounds(
@@ -373,6 +376,12 @@
       if (mi <= maxMi) scored.push({ ...Lch, miles: mi });
     }
     scored.sort((a, b) => a.miles - b.miles);
+    const linked = new Set(Array.isArray(lake.launch_ids) ? lake.launch_ids : []);
+    if (linked.size) {
+      for (const s of scored) if (linked.has(s.id)) s.onLake = true;
+      scored.sort((a, b) => (a.onLake ? 0 : 1) - (b.onLake ? 0 : 1) || a.miles - b.miles);
+      return scored.slice(0, limit);
+    }
     // Prefer same-named lake matches first
     const lakeName = (lake.name || "").toLowerCase();
     scored.sort((a, b) => {
@@ -477,7 +486,8 @@
         : lake.max_contour_ft != null
           ? `≥ ${lake.max_contour_ft} ft <small>(deepest contour; DNR max not published)</small>`
           : "—";
-    const acres = lake.acres != null ? `${lake.acres}` : "—";
+    const acres = lake.acres != null ? `${lake.acres}`
+      : Array.isArray(lake.acres_range) ? `~${lake.acres_range[0]}–${lake.acres_range[1]} <small>(outlines differ)</small>` : "—";
     const interval =
       lake.contour_interval_ft != null
         ? `${lake.contour_interval_ft} ft`
@@ -499,6 +509,7 @@
       <button class="close" id="btnCloseCard" type="button" aria-label="Close">✕</button>
       <h2>${lake.name}</h2>
       <div class="county">${lake.county || ""}${lake.county2 ? " / " + lake.county2 : ""} · ${
+        lake.no_depth_map ? "No depth map yet" :
         lake.georef_method === "synthetic" || lake.contour_method === "synthetic_or_distance_based"
           ? "Approximate contours (review)"
           : lake.needs_review
@@ -508,7 +519,9 @@
               : "PDF map only"
       }</div>
       ${
-        (lake.georef_method === "synthetic" || lake.contour_method === "synthetic_or_distance_based")
+        lake.no_depth_map
+          ? `<div class="nomap-banner"><strong>No depth map yet.</strong> No published depth survey was found for this lake, so no contours or depths are shown.</div>`
+          : (lake.georef_method === "synthetic" || lake.contour_method === "synthetic_or_distance_based")
           ? `<div class="approx-banner"><strong>Approximate contours.</strong> ${
               lake.review_notes
                 || "Georeferencing is synthetic or shapes are approximate. Depth values come from the survey, but line positions are not reliable."
@@ -518,12 +531,15 @@
             : ""
       }
       ${lake.exceeds_dnr_max ? `<div class="review-notes dnr-warn"><strong>⚠ Exceeds DNR max contour:</strong> ${lake.exceeds_dnr_note || ""}</div>` : ""}
-      <div class="stats">
+      ${lake.no_depth_map ? `<div class="stats">
+        <div><strong>Acres</strong>${acres}</div>
+        <div><strong>Depth map</strong>Not available</div>
+      </div>` : `<div class="stats">
         <div><strong>Max depth</strong>${maxD}</div>
         <div><strong>Acres</strong>${acres}</div>
         <div><strong>Contour interval</strong>${interval}</div>
         <div><strong>Survey</strong>${survey}</div>
-      </div>
+      </div>`}
       <div class="actions">${actions}</div>
       <div id="nearbyLaunches" class="nearby-launches"></div>
       <p class="source">${escapeHtml(lake.source || "")}${lake.source_url ? ` · <a href="${lake.source_url}" target="_blank" rel="noopener">source</a>` : ""}${lake.accuracy_note ? `<br/>${escapeHtml(lake.accuracy_note)}` : ""}</p>
@@ -556,7 +572,7 @@
                   : "unknown";
             return `<button type="button" class="nearby-item" data-lat="${x.lat}" data-lng="${x.lng}">
               <span class="dot ${badge}"></span>
-              <span class="nearby-name">${escapeHtml(x.name)}</span>
+              <span class="nearby-name">${escapeHtml(x.name)}${x.onLake ? ' <small class="on-lake">on this lake</small>' : ""}</span>
               <span class="nearby-mi">${x.miles < 0.1 ? "<0.1" : x.miles.toFixed(1)} mi</span>
             </button>`;
           })
@@ -606,15 +622,23 @@
   function placeLakeMarkers() {
     lakeMarkers.clearLayers();
     for (const l of lakes) {
-      if (!l.has_contours || !Number.isFinite(l.lat) || !Number.isFinite(l.lng)) continue;
-      const m = L.circleMarker([l.lat, l.lng], {
+      if (!(l.has_contours || l.no_depth_map) || !Number.isFinite(l.lat) || !Number.isFinite(l.lng)) continue;
+      const nomap = !l.has_contours;
+      const m = L.circleMarker([l.lat, l.lng], nomap ? {
+        radius: 5,
+        color: "#4b5563",
+        weight: 1.5,
+        fillColor: "#ffffff",
+        fillOpacity: 0.85,
+        nomap: true,
+      } : {
         radius: 5,
         color: "#0b3d5c",
         weight: 1,
         fillColor: "#3aa0d8",
         fillOpacity: 0.9,
       });
-      m.bindTooltip(l.name, { direction: "top", opacity: 0.9 });
+      m.bindTooltip(nomap ? `${l.name} (no depth map yet)` : l.name, { direction: "top", opacity: 0.9 });
       m.on("click", () => selectLake(l, false));
       lakeMarkers.addLayer(m);
     }
@@ -782,7 +806,10 @@
       lakeMarkers.eachLayer((m) => {
         const ll = m.getLatLng && m.getLatLng();
         if (!ll || !Number.isFinite(ll.lat) || !Number.isFinite(ll.lng)) return;
-        if (z >= 13) m.setStyle({ radius: 4, opacity: 0.35, fillOpacity: 0.35 });
+        if (m.options && m.options.nomap) {
+          if (z >= 13) m.setStyle({ radius: 5, opacity: 0.8, fillOpacity: 0.7 });
+          else m.setStyle({ radius: 5, opacity: 1, fillOpacity: 0.85 });
+        } else if (z >= 13) m.setStyle({ radius: 4, opacity: 0.35, fillOpacity: 0.35 });
         else m.setStyle({ radius: 5, opacity: 1, fillOpacity: 0.9 });
       });
     };
