@@ -477,3 +477,6 @@ body.trolling .radar-bar { bottom: calc(var(--troll-hud-h, 196px) + 22px + var(-
 .launch-popup .launch-attrs strong { display: inline; font-size: inherit; margin: 0; font-weight: 600; }
 .launch-popup .launch-attrs strong::after { content: ":"; }
 .launch-popup .launch-attrs > div { margin: 1px 0; }
+/* Depth range highlight (F9) */
+.db-row label { display: flex; flex-direction: column; font-size: .8rem; gap: 2px; flex: 1 1 100px; }
+.db-in { width: 100%; font: inherit; font-size: 1rem; }
