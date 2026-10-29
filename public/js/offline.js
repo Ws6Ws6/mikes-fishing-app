@@ -253,6 +253,7 @@
     cardLake = e.detail.lake;
     cardBox = document.createElement("div");
     cardBox.className = "offline-box";
+    cardBox.dataset.order = 90;
     e.detail.extras.appendChild(cardBox);
     refreshCardButton();
   });
