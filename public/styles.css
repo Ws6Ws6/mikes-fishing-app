@@ -395,3 +395,12 @@ body.trolling .legend { bottom: calc(178px + var(--safe-bottom)); }
 .tool-btn.hidden { display: none; }
 .file-btn { display: inline-flex; align-items: center; position: relative; overflow: hidden; }
 .file-btn input[type=file] { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+
+/* Feature 3: track recording */
+#btnRecTrack { min-height: 44px; }
+#btnRecTrack.rec-on { background: #c92a2a; color: #fff; }
+.track-stat { margin: 6px 0 0; font-size: .75rem; font-weight: 600; }
+.track-stat:empty { display: none; }
+.trk-popup div { margin-top: 3px; font-size: .85rem; }
+/* Legend sits 12px above the Trolling HUD, using its measured height (set in app.js). */
+body.trolling .legend { bottom: calc(var(--troll-hud-h, 196px) + 22px + var(--safe-bottom)); }
