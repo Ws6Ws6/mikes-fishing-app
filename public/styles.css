@@ -323,3 +323,58 @@ body.trolling .legend { bottom: calc(178px + var(--safe-bottom)); }
 .launch-kind-tag { color: #8a4b00; font-weight: 600; }
 .card .source .stat-sources { color: #6b7280; }
 .troll-note #trollDepthSrc { font-weight: 600; }
+
+/* 2026-10-29: Tools menu + feature sections */
+.top-actions #btnTools { width: 44px; height: 44px; font-size: 1.25rem; font-weight: 700; }
+.top-actions #btnTools.active { background: #f0b429; }
+.tools-panel { left: auto; right: 10px; width: min(380px, calc(100vw - 20px)); max-height: calc(100vh - 90px - var(--safe-top)); }
+.tools-head { align-items: center; justify-content: space-between; }
+.tools-head h2 { margin: 0 0 0 4px; font-size: 1.05rem; }
+#btnCloseTools, #btnClosePanel { min-width: 44px; min-height: 44px; }
+.tools-body { overflow-y: auto; flex: 1; padding: 4px 0 10px; }
+.tool-section { border-bottom: 1px solid #eef3f7; }
+.tool-section > summary {
+  list-style: none; cursor: pointer; min-height: 48px; display: flex; align-items: center;
+  padding: 0 14px; font-weight: 650; font-size: .95rem; color: var(--deep);
+}
+.tool-section > summary::-webkit-details-marker { display: none; }
+.tool-section > summary::after { content: "▸"; margin-left: auto; color: var(--muted); transition: transform .15s; }
+.tool-section[open] > summary::after { transform: rotate(90deg); }
+.tool-body { padding: 0 14px 12px; font-size: .88rem; }
+.tool-fieldset { border: 0; margin: 0 0 6px; padding: 0; }
+.tool-fieldset legend, .tool-sub { font-size: .72rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; margin: 6px 0 4px; }
+.tool-radio, .tool-check { display: flex; align-items: center; gap: 8px; min-height: 44px; cursor: pointer; }
+.tool-radio input, .tool-check input { width: 20px; height: 20px; }
+.tool-note { font-size: .76rem; color: var(--muted); line-height: 1.35; margin: 6px 0; }
+.tool-list { list-style: none; margin: 4px 0; padding: 0; }
+.tool-item { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding: 8px 0; border-top: 1px solid #eef3f7; }
+.tool-item-main { flex: 1 1 180px; min-width: 0; }
+.tool-item-main small { display: block; color: var(--muted); font-size: .74rem; margin-top: 2px; }
+.tool-item-btns { display: flex; gap: 6px; flex-wrap: wrap; }
+.tool-empty { color: var(--muted); font-size: .82rem; padding: 6px 0; }
+.tool-btn {
+  min-height: 44px; min-width: 44px; padding: 0 12px; border: 0; border-radius: 10px; cursor: pointer;
+  background: #e8f2f8; color: var(--deep); font-weight: 650; font-size: .86rem;
+}
+.tool-btn.primary { background: var(--accent); color: #fff; }
+.tool-btn.danger { background: #fdecec; color: #9b1c1c; }
+.tool-btn.wide { width: 100%; }
+.tool-btn small { font-weight: 500; opacity: .8; }
+.tool-btn:disabled { opacity: .5; cursor: default; }
+.tool-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin: 6px 0; }
+.tool-input { min-height: 44px; border: 1px solid #c9d8e3; border-radius: 10px; padding: 0 10px; font-size: 1rem; }
+.card { overflow-y: auto; }
+@media (min-width: 800px) { .card { max-height: calc(100vh - 110px); } }
+.card-extras { margin-top: 10px; display: flex; flex-direction: column; gap: 8px; }
+.card-extras:empty { display: none; }
+.offline-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.offline-ok { flex: 1 1 160px; font-size: .82rem; color: var(--ok); font-weight: 600; }
+.offline-prog { flex: 1 1 160px; font-size: .84rem; color: var(--deep); }
+.card-sec { border: 1px solid #e6eef4; border-radius: 10px; }
+.card-sec > summary { list-style: none; cursor: pointer; min-height: 44px; display: flex; align-items: center; padding: 0 12px; font-weight: 650; font-size: .9rem; color: var(--deep); }
+.card-sec > summary::-webkit-details-marker { display: none; }
+.card-sec > summary::after { content: "▸"; margin-left: auto; color: var(--muted); }
+.card-sec[open] > summary::after { transform: rotate(90deg); }
+.card-sec .sec-body { padding: 0 12px 10px; font-size: .86rem; }
+.sec-src { font-size: .72rem; color: var(--muted); margin-top: 6px; line-height: 1.35; }
+.sec-unavail { color: #7b271c; }
