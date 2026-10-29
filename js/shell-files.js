@@ -1,6 +1,6 @@
 /* Files the service worker keeps for offline use (shared by sw.js and offline.js). */
 (function (g) {
-  g.MFA_SHELL_VERSION = "2026-10-29g";
+  g.MFA_SHELL_VERSION = "2026-10-29h";
   g.MFA_SHELL = [
     "./",
     "./index.html",
@@ -19,6 +19,7 @@
     "./js/sunmoon.js",
     "./js/dnrfish.js",
     "./js/regs.js",
+    "./js/launchfilter.js",
   ];
   g.MFA_DATA = [
     "./data/lakes.geojson",
@@ -27,6 +28,7 @@
     "./data/sources.json",
     "./data/dnr_fish.json",
     "./data/regs.json",
+    "./data/launch_attrs.json",
   ];
   g.MFA_CDN = [
     "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",

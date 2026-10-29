@@ -435,6 +435,7 @@
       <strong>${escapeHtml(p.name)}</strong>
       <span class="access-badge ${badgeClass}">${accessLabel}</span>
       ${kindHtml}${lake}${county}
+      ${typeof window.mfaLaunchAttrs === "function" ? `<div class="launch-attrs">${window.mfaLaunchAttrs(p)}</div>` : ""}
       <div class="launch-actions">
         <a href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(dest)}" target="_blank" rel="noopener">Drive here</a>
         <a class="secondary" href="${escapeHtml(p.source_url)}" target="_blank" rel="noopener">Source</a>
@@ -535,6 +536,7 @@
     let placed = 0;
     for (const Lch of launches) {
       if (!Number.isFinite(Lch.lat) || !Number.isFinite(Lch.lng)) continue;
+      if (typeof window.mfaLaunchFilter === "function" && !window.mfaLaunchFilter(Lch)) continue;
       const m = L.marker([Lch.lat, Lch.lng], {
         icon: launchIcon(Lch.access),
         keyboard: false,
@@ -550,7 +552,7 @@
     }
     if (launchesVisible) {
       launchCluster.addTo(map);
-      if (placed === 0) toast("No boat launches to show");
+      if (placed === 0) toast(launches.length ? "No launches match the launch filters" : "No boat launches to show");
     }
     console.info("Launch markers placed:", placed);
   }
@@ -1345,6 +1347,8 @@
     },
     getLakes: () => lakes,
     getLaunches: () => launches,
+    refreshLaunches() { if (launches.length) placeLaunchMarkers(); },
+    getLaunchMarkerCount: () => (launchCluster ? launchCluster.getLayers().length : 0),
     setLaunchesVisible,
     setBasemap,
     getBasemap: () => basemap,

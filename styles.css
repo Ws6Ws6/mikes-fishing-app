@@ -468,3 +468,12 @@ body.trolling .radar-bar { bottom: calc(var(--troll-hud-h, 196px) + 22px + var(-
 .reg-links { flex-wrap: wrap; gap: 6px; margin-top: 6px; }
 .reg-links a { min-height: 44px; display: inline-flex; align-items: center; padding: 0 12px; border: 1px solid #c9d8e3; border-radius: 10px; text-decoration: none; font-size: .86rem; background: #fff; }
 .reg-items { margin: 4px 0 2px 18px; padding: 0; }
+/* Launch filters (F8) */
+.lf-row { display: flex; flex-direction: column; gap: 2px; margin: 6px 0; font-size: .84rem; }
+.lf-row select { width: 100%; font: inherit; font-size: 1rem; background: #fff; }
+.launch-attrs { margin: 4px 0; font-size: .8rem; }
+.launch-attrs .unk { color: var(--muted); font-style: italic; }
+.launch-attr-src { color: var(--muted); font-size: .72rem; margin-top: 2px; }
+.launch-popup .launch-attrs strong { display: inline; font-size: inherit; margin: 0; font-weight: 600; }
+.launch-popup .launch-attrs strong::after { content: ":"; }
+.launch-popup .launch-attrs > div { margin: 1px 0; }
