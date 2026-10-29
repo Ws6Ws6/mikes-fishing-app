@@ -452,3 +452,19 @@ body.trolling .radar-bar { bottom: calc(var(--troll-hud-h, 196px) + 22px + var(-
 .dnr-older ul, .dnr-reports { margin: 2px 0 4px 18px; padding: 0; font-size: .8rem; }
 .dnr-older li, .dnr-reports li { margin: 3px 0; }
 .dnr-reports a { display: inline-block; padding: 6px 0; word-break: break-word; }
+/* Regulations (F7) */
+.reg-h { margin: 6px 0 4px; font-size: .86rem; }
+.reg-quote { margin: 6px 0; padding: 6px 10px; border-left: 4px solid #0b6e99; background: #f2f8fc; font-size: .84rem; }
+.reg-label { font-weight: 600; }
+.reg-cite { display: block; margin-top: 4px; font-style: normal; font-size: .76rem; color: var(--muted); }
+.reg-cite a { display: inline-block; padding: 6px 0; }
+.reg-state > summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; font-size: .84rem; font-weight: 600; }
+.reg-table { width: 100%; border-collapse: collapse; font-size: .78rem; }
+.reg-table th { text-align: left; color: var(--muted); font-weight: 600; padding: 2px 4px; border-bottom: 1px solid #e6eef4; }
+.reg-table td { padding: 3px 4px; border-bottom: 1px solid #f0f4f7; vertical-align: top; }
+.reg-foot { margin: 6px 0 4px 18px; padding: 0; font-size: .74rem; color: var(--muted); }
+.reg-p { font-size: .8rem; margin: 4px 0; }
+.reg-src a { display: inline-block; padding: 4px 0; }
+.reg-links { flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.reg-links a { min-height: 44px; display: inline-flex; align-items: center; padding: 0 12px; border: 1px solid #c9d8e3; border-radius: 10px; text-decoration: none; font-size: .86rem; background: #fff; }
+.reg-items { margin: 4px 0 2px 18px; padding: 0; }
