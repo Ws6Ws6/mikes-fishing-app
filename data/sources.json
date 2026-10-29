@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T03:54:40+00:00",
+ "generated": "2026-10-29T03:57:15+00:00",
  "region": "Northeast Indiana",
  "counties": [
   "Steuben",
@@ -11,8 +11,8 @@
   "Whitley",
   "Allen"
  ],
- "lakes_with_contours": 144,
- "contour_features": 6949,
+ "lakes_with_contours": 145,
+ "contour_features": 6957,
  "sources": [
   {
    "name": "IndianaMap / Indiana DNR Lake Bathymetry Contours",
@@ -272,8 +272,8 @@
   ],
   "rebuild": "python3 scripts/rebuild_launches.py  # requires shapely; copies to public/data/"
  },
- "lakes_no_depth_map": 168,
- "lakes_retrace_pending": 26,
+ "lakes_no_depth_map": 167,
+ "lakes_retrace_pending": 25,
  "lakes_total": 312,
  "launch_count": 1062
 }
