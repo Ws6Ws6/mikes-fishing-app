@@ -42,19 +42,44 @@
         "Tiles &copy; Esri — Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community",
     }
   );
+  // USGS The National Map basemaps — public domain, no usage restrictions
+  // (USGS asks for attribution). Used for "Save lake for offline" because the
+  // OSM tile policy forbids bulk downloading and Esri imagery terms do not allow
+  // offline caching without a license. Native tiles exist to zoom 16.
+  const USGS_ATTR = 'Map services and data available from <a href="https://www.usgs.gov/programs/national-geospatial-program/national-map" target="_blank" rel="noopener">U.S. Geological Survey, National Geospatial Program</a>';
+  const usgsTopo = L.tileLayer(
+    "https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/{z}/{y}/{x}",
+    { maxZoom: MAX_ZOOM, maxNativeZoom: 16, attribution: USGS_ATTR }
+  );
+  const usgsImagery = L.tileLayer(
+    "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}",
+    { maxZoom: MAX_ZOOM, maxNativeZoom: 16, attribution: USGS_ATTR }
+  );
+  const BASEMAPS = {
+    street: { layer: osm, label: "Street (OpenStreetMap)" },
+    sat: { layer: sat, label: "Satellite (Esri)" },
+    usgsTopo: { layer: usgsTopo, label: "USGS Topo (works offline)" },
+    usgsImagery: { layer: usgsImagery, label: "USGS Imagery (works offline)" },
+  };
   osm.addTo(map);
 
   let basemap = "street";
+  function setBasemap(name, quiet) {
+    if (!BASEMAPS[name] || name === basemap) return basemap;
+    map.removeLayer(BASEMAPS[basemap].layer);
+    BASEMAPS[name].layer.addTo(map);
+    basemap = name;
+    if (!quiet) toast(BASEMAPS[name].label.replace(/ \(.*\)$/, "") + " basemap");
+    document.dispatchEvent(new CustomEvent("mfa:basemap", { detail: { name } }));
+    return basemap;
+  }
   document.getElementById("btnLayers").addEventListener("click", () => {
+    // Quick toggle: street <-> satellite (other basemaps live in the Tools menu).
     if (basemap === "street") {
-      map.removeLayer(osm);
-      sat.addTo(map);
-      basemap = "sat";
+      setBasemap("sat", true);
       toast("Satellite basemap");
     } else {
-      map.removeLayer(sat);
-      osm.addTo(map);
-      basemap = "street";
+      setBasemap("street", true);
       toast("Street basemap");
     }
   });
@@ -650,6 +675,13 @@
     } else if (nearEl) {
       nearEl.innerHTML = "";
     }
+    // Feature modules (offline, weather, sun/moon, fish, regs…) add their sections here.
+    const extra = document.createElement("div");
+    extra.id = "cardExtras";
+    extra.className = "card-extras";
+    const srcP = card.querySelector("p.source");
+    card.insertBefore(extra, srcP);
+    document.dispatchEvent(new CustomEvent("mfa:lakecard", { detail: { lake, card, extras: extra } }));
   }
 
   function goNextNearest(from) {
@@ -939,6 +971,8 @@
       console.error("Launches place failed", e);
       toast("Boat launches failed to load");
     }
+    window.__mfaDataLoaded = true;
+    document.dispatchEvent(new CustomEvent("mfa:data"));
   }
 
   // ----- Geolocation / trolling -----
@@ -1289,7 +1323,15 @@
     getLakes: () => lakes,
     getLaunches: () => launches,
     setLaunchesVisible,
+    setBasemap,
+    getBasemap: () => basemap,
+    basemaps: BASEMAPS,
+    toast,
+    escapeHtml,
+    lakeById,
+    selectLake: (l, fly) => selectLake(l, fly),
   };
+  document.dispatchEvent(new CustomEvent("mfa:ready"));
 
   loadData().catch((e) => {
     console.error(e);

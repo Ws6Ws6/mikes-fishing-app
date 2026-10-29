@@ -26,6 +26,7 @@
       <button id="btnSearch" type="button" aria-label="Find a lake" title="Find a lake">🔍</button>
       <button id="btnLayers" type="button" aria-label="Switch basemap" title="Basemap">🗺</button>
       <button id="btnLaunches" type="button" aria-label="Toggle boat launches" title="Toggle boat launches" aria-pressed="false">🛶</button>
+      <button id="btnTools" type="button" aria-label="Tools menu: offline maps and more" title="Tools" aria-expanded="false" aria-controls="toolsPanel">☰</button>
     </div>
   </header>
 
@@ -43,6 +44,14 @@
     <footer class="panel-foot">
       <small>Depth lines: Indiana DNR surveys (IndianaMap) and DNR depth-map PDFs; a few lakes are unofficial traces of 1922–1954 Indiana Dept. of Conservation / USGS maps (marked on each lake). Lake outlines: USGS NHD and OpenStreetMap. Launches: Indiana DNR, IndianaMap and OpenStreetMap. Depths are feet below the surface on the survey date — not live sonar.</small>
     </footer>
+  </aside>
+
+  <aside id="toolsPanel" class="panel tools-panel hidden" role="dialog" aria-label="Tools">
+    <div class="panel-head tools-head">
+      <h2>Tools</h2>
+      <button id="btnCloseTools" type="button" aria-label="Close tools">✕</button>
+    </div>
+    <div id="toolsBody" class="tools-body"></div>
   </aside>
 
   <div id="map"></div>
@@ -91,5 +100,8 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
   <script src="app.js"></script>
+  <script src="js/shell-files.js"></script>
+  <script src="js/tools.js"></script>
+  <script src="js/offline.js"></script>
 </body>
 </html>
