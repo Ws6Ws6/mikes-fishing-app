@@ -1,0 +1,397 @@
+{
+ "guide": {
+  "title": "2026-2027 Indiana Fishing Regulations Guide",
+  "year": "2026-2027",
+  "dnr_url": "https://www.in.gov/dnr/fish-and-wildlife/fishing/fishing-guide-and-regulations/",
+  "online_url": "https://www.eregulations.com/indiana/fishing/",
+  "pdf_url": "https://www.eregulations.com/indiana/fishing/pdf",
+  "note": "The DNR guide is published on eRegulations (linked from the DNR page). It is a summary; the full rules are in Indiana Administrative Code Title 312."
+ },
+ "statewide": {
+  "title": "Indiana’s Statewide Size & Bag Limits",
+  "url": "https://www.eregulations.com/indiana/fishing/fishing-regulations",
+  "page_updated": "October 20, 2026",
+  "rows": [
+   {
+    "species": "Bluegill",
+    "bag": "Unlimited (exceptions: Basic Fishing Information)",
+    "size": "None"
+   },
+   {
+    "species": "Redear Sunfish",
+    "bag": "25 (exceptions: Basic Fishing Information)",
+    "size": "None"
+   },
+   {
+    "species": "Black Bass: largemouth, smallmouth, and spotted bass (in lakes)",
+    "bag": "5, any combination of largemouth, smallmouth, or spotted bass",
+    "size": "14 inches (exceptions: Bass Regulations)"
+   },
+   {
+    "species": "Black Bass: largemouth, smallmouth, and spotted bass (in rivers and streams)",
+    "bag": "5, any combination of largemouth, smallmouth, or spotted bass",
+    "size": "No fish 12 to 15 inches may be kept, and no more than two fish over 15 inches may be kept (exceptions: Bass Regulations)"
+   },
+   {
+    "species": "Black Bass: largemouth, smallmouth, and spotted bass (in Lake Michigan)",
+    "bag": "3, any combination of largemouth, smallmouth, or spotted bass",
+    "size": "14 inches"
+   },
+   {
+    "species": "Yellow Bass",
+    "bag": "Unlimited",
+    "size": "None"
+   },
+   {
+    "species": "White Bass, Hybrid Striped Bass",
+    "bag": "12, any combination of white bass or hybrid striped bass",
+    "size": "No more than two fish may exceed 17 inches"
+   },
+   {
+    "species": "Striped Bass",
+    "bag": "2",
+    "size": "None"
+   },
+   {
+    "species": "Rock Bass",
+    "bag": "25",
+    "size": "None"
+   },
+   {
+    "species": "Crappie",
+    "bag": "25 (exceptions: Basic Fishing Information)",
+    "size": "None"
+   },
+   {
+    "species": "Walleye, Walleye-Sauger Hybrid (Saugeye), Sauger",
+    "bag": "6, any combination of walleye, walleye-sauger hybrid, and sauger",
+    "size": "For walleye: 14 inches south of SR 26; 16 inches north of SR 26 For sauger and saugeye: No size limit (exceptions: Basic Fishing Information)"
+   },
+   {
+    "species": "Muskellunge and Tiger Muskellunge",
+    "bag": "1 muskellunge or 1 tiger muskellunge",
+    "size": "36 inches"
+   },
+   {
+    "species": "Northern Pike",
+    "bag": "3",
+    "size": "24 inches; no more than one 30 inches or longer"
+   },
+   {
+    "species": "Yellow Perch",
+    "bag": "Unlimited (15 only on Lake Michigan)",
+    "size": "None"
+   },
+   {
+    "species": "Catfish: Channel, Blue, Flathead (in rivers and streams)",
+    "bag": "Unlimited",
+    "size": "13 inches; not more than one blue catfish that’s at least 35 inches, one flathead catfish at least 35 inches, and one channel catfish at least 28 inches or longer may be kept"
+   },
+   {
+    "species": "Catfish: Channel, Blue, Flathead (in lakes)",
+    "bag": "10 (exceptions: Basic Fishing Information)",
+    "size": "None; not more than one blue catfish that’s at least 35 inches, one flathead catfish at least 35 inches, and one channel catfish at least 28 inches or longer may be kept"
+   },
+   {
+    "species": "Bullhead",
+    "bag": "Unlimited",
+    "size": "None"
+   },
+   {
+    "species": "Shovelnose Sturgeon",
+    "bag": "Unlimited",
+    "size": "25 inches (fork length)"
+   }
+  ],
+  "footnotes": [
+   {
+    "n": 1,
+    "text": "9-inch minimum size at Dogwood Lake (Daviess County) and Hardy Lake (Scott County)."
+   },
+   {
+    "n": 2,
+    "text": "44-inch minimum size at Backwater, Kiser, and Webster lakes (Kosciusko County)."
+   },
+   {
+    "n": 3,
+    "text": "No more than 6 per day from Hamilton Lake (Steuben County)."
+   },
+   {
+    "n": 4,
+    "text": "No minimum size limit for Northern pike at Hamilton Lake (Steuben County), with no more than 1 per day more than 30 inches long."
+   },
+   {
+    "n": 5,
+    "text": "No bag limit for channel catfish at Turtle Creek Reservoir."
+   },
+   {
+    "n": 6,
+    "text": "See Ohio River Regulations."
+   },
+   {
+    "n": 7,
+    "text": "Daily bag limit at J.C. Murphey Lake (Newton County) is 25 singly or in aggregate."
+   }
+  ],
+  "possession": "The possession limit is two times the daily bag limit and does not apply to a wild fish that is processed and stored at an individual’s primary residence."
+ },
+ "extras": [
+  {
+   "quote": "On State-owned, leased, or managed lakes smaller than 300 acres, only electric trolling motors may be used. No more than two 12-volt batteries or one 24-volt battery can be used to power trolling motors on these waters.",
+   "page": "Basic Fishing Information",
+   "url": "https://www.eregulations.com/indiana/fishing/basic-fishing-information",
+   "page_updated": "February 19, 2026"
+  },
+  {
+   "quote": "You may not fish with more than three poles or hand lines at a time.",
+   "page": "Size & Bag Limits",
+   "url": "https://www.eregulations.com/indiana/fishing/fishing-regulations",
+   "page_updated": "October 20, 2026"
+  }
+ ],
+ "special": {
+  "ball-lake-steuben": [
+   {
+    "quote": "18-inch minimum size limit and two fish daily bag limit: Ball Lake (Steuben County)",
+    "page": "Bass Regulations",
+    "url": "https://www.eregulations.com/indiana/fishing/bass-regulations",
+    "page_updated": "February 19, 2026"
+   }
+  ],
+  "fidler's-pond-elkhart": [
+   {
+    "quote": "18-inch minimum size limit and two fish daily bag limit: … Fidler Pond (Elkhart County)",
+    "page": "Bass Regulations",
+    "url": "https://www.eregulations.com/indiana/fishing/bass-regulations",
+    "page_updated": "February 19, 2026"
+   },
+   {
+    "quote": "On Fidler Pond in Elkhart County, Failing Lake (also known as Gentian Lake) in Steuben County, and Flat Fork Creek Park ponds A and B in Hamilton County, a person cannot take more than:",
+    "page": "Size & Bag Limits",
+    "url": "https://www.eregulations.com/indiana/fishing/fishing-regulations",
+    "page_updated": "October 20, 2026",
+    "items": [
+     "5 channel catfish per day",
+     "2 largemouth bass per day, and the largemouth bass must be at least 18 inches long",
+     "15 of any combination of bluegill, redear sunfish, and crappie per day"
+    ]
+   }
+  ],
+  "gentian-failing-lake": [
+   {
+    "quote": "18-inch minimum size limit and two fish daily bag limit: … Failing Lake, also known as Gentian Lake (Steuben County)",
+    "page": "Bass Regulations",
+    "url": "https://www.eregulations.com/indiana/fishing/bass-regulations",
+    "page_updated": "February 19, 2026"
+   },
+   {
+    "quote": "On Fidler Pond in Elkhart County, Failing Lake (also known as Gentian Lake) in Steuben County, and Flat Fork Creek Park ponds A and B in Hamilton County, a person cannot take more than:",
+    "page": "Size & Bag Limits",
+    "url": "https://www.eregulations.com/indiana/fishing/fishing-regulations",
+    "page_updated": "October 20, 2026",
+    "items": [
+     "5 channel catfish per day",
+     "2 largemouth bass per day, and the largemouth bass must be at least 18 inches long",
+     "15 of any combination of bluegill, redear sunfish, and crappie per day"
+    ]
+   }
+  ],
+  "kunkel-lake-wells": [
+   {
+    "quote": "18-inch minimum size limit and two fish daily bag limit: … Kunkel Lake (Wells County)",
+    "page": "Bass Regulations",
+    "url": "https://www.eregulations.com/indiana/fishing/bass-regulations",
+    "page_updated": "February 19, 2026"
+   }
+  ],
+  "robinson-lake": [
+   {
+    "quote": "18-inch minimum size limit and two fish daily bag limit: … Robinson Lake (Whitley and Kosciusko counties)",
+    "page": "Bass Regulations",
+    "url": "https://www.eregulations.com/indiana/fishing/bass-regulations",
+    "page_updated": "February 19, 2026"
+   }
+  ],
+  "bixler-lake-noble": [
+   {
+    "quote": "18-inch minimum size limit and two fish daily bag limit: … Bixler Lake, Henderson Lake, Little Long Lake, and Round Lake (Noble County)",
+    "page": "Bass Regulations",
+    "url": "https://www.eregulations.com/indiana/fishing/bass-regulations",
+    "page_updated": "February 19, 2026"
+   }
+  ],
+  "henderson-lake-noble": [
+   {
+    "quote": "18-inch minimum size limit and two fish daily bag limit: … Bixler Lake, Henderson Lake, Little Long Lake, and Round Lake (Noble County)",
+    "page": "Bass Regulations",
+    "url": "https://www.eregulations.com/indiana/fishing/bass-regulations",
+    "page_updated": "February 19, 2026"
+   }
+  ],
+  "little-long-lake": [
+   {
+    "quote": "18-inch minimum size limit and two fish daily bag limit: … Bixler Lake, Henderson Lake, Little Long Lake, and Round Lake (Noble County)",
+    "page": "Bass Regulations",
+    "url": "https://www.eregulations.com/indiana/fishing/bass-regulations",
+    "page_updated": "February 19, 2026"
+   }
+  ],
+  "round-lake-noble": [
+   {
+    "quote": "18-inch minimum size limit and two fish daily bag limit: … Bixler Lake, Henderson Lake, Little Long Lake, and Round Lake (Noble County)",
+    "page": "Bass Regulations",
+    "url": "https://www.eregulations.com/indiana/fishing/bass-regulations",
+    "page_updated": "February 19, 2026"
+   }
+  ],
+  "big-long-lake-lagrange": [
+   {
+    "quote": "12- to 15-inch slot size limit (no more than two bass larger than 15 inches): Big Long Lake (LaGrange County)",
+    "page": "Bass Regulations",
+    "url": "https://www.eregulations.com/indiana/fishing/bass-regulations",
+    "page_updated": "February 19, 2026"
+   }
+  ],
+  "the-backwaters": [
+   {
+    "quote": "44-inch minimum size at Backwater, Kiser, and Webster lakes (Kosciusko County).",
+    "page": "Size & Bag Limits",
+    "url": "https://www.eregulations.com/indiana/fishing/fishing-regulations",
+    "page_updated": "October 20, 2026",
+    "label": "Muskellunge (Size & Bag Limits table, footnote 2)"
+   }
+  ],
+  "kiser-lake": [
+   {
+    "quote": "44-inch minimum size at Backwater, Kiser, and Webster lakes (Kosciusko County).",
+    "page": "Size & Bag Limits",
+    "url": "https://www.eregulations.com/indiana/fishing/fishing-regulations",
+    "page_updated": "October 20, 2026",
+    "label": "Muskellunge (Size & Bag Limits table, footnote 2)"
+   }
+  ],
+  "webster-lake-kosciusko": [
+   {
+    "quote": "44-inch minimum size at Backwater, Kiser, and Webster lakes (Kosciusko County).",
+    "page": "Size & Bag Limits",
+    "url": "https://www.eregulations.com/indiana/fishing/fishing-regulations",
+    "page_updated": "October 20, 2026",
+    "label": "Muskellunge (Size & Bag Limits table, footnote 2)"
+   }
+  ],
+  "hamilton-lake-steuben": [
+   {
+    "quote": "No more than 6 per day from Hamilton Lake (Steuben County).",
+    "page": "Size & Bag Limits",
+    "url": "https://www.eregulations.com/indiana/fishing/fishing-regulations",
+    "page_updated": "October 20, 2026",
+    "label": "Northern pike (footnote 3)"
+   },
+   {
+    "quote": "No minimum size limit for Northern pike at Hamilton Lake (Steuben County), with no more than 1 per day more than 30 inches long.",
+    "page": "Size & Bag Limits",
+    "url": "https://www.eregulations.com/indiana/fishing/fishing-regulations",
+    "page_updated": "October 20, 2026",
+    "label": "Northern pike (footnote 4)"
+   }
+  ],
+  "lake-george-steuben": [
+   {
+    "quote": "Walleye taken north of State Road 26 must be 16 inches in length or longer, except for: … Lake George (Steuben County); minimum size 15 inches",
+    "page": "Size & Bag Limits",
+    "url": "https://www.eregulations.com/indiana/fishing/fishing-regulations",
+    "page_updated": "October 20, 2026"
+   },
+   {
+    "quote": "Indiana and Michigan — Residents of Indiana or Michigan may fish the whole lake, but must abide by the regulations in the waters they are fishing. Nonresident license holders (for either state) may only fish in the waters under which the jurisdiction applies for that nonresident license. … Lake George — Indiana, Steuben Co./Michigan, Branch Co.",
+    "page": "Basic Fishing Information",
+    "url": "https://www.eregulations.com/indiana/fishing/basic-fishing-information",
+    "page_updated": "February 19, 2026"
+   }
+  ],
+  "wall-lake": [
+   {
+    "quote": "Walleye taken north of State Road 26 must be 16 inches in length or longer, except for: … Wall Lake (LaGrange County); minimum size 16 inches with a daily bag limit of two walleye",
+    "page": "Size & Bag Limits",
+    "url": "https://www.eregulations.com/indiana/fishing/fishing-regulations",
+    "page_updated": "October 20, 2026"
+   }
+  ],
+  "oliver-lake": [
+   {
+    "quote": "Brown Trout Minimum Size Limit Waters: There is an 18-inch minimum size limit at Oliver, Olin, and Martin lakes in LaGrange County, and the Brookville Lake tailwater in Franklin County.",
+    "page": "Inland Trout Regulations",
+    "url": "https://www.eregulations.com/indiana/fishing/inland-trout-regulations",
+    "page_updated": "February 19, 2026"
+   }
+  ],
+  "olin-lake": [
+   {
+    "quote": "Brown Trout Minimum Size Limit Waters: There is an 18-inch minimum size limit at Oliver, Olin, and Martin lakes in LaGrange County, and the Brookville Lake tailwater in Franklin County.",
+    "page": "Inland Trout Regulations",
+    "url": "https://www.eregulations.com/indiana/fishing/inland-trout-regulations",
+    "page_updated": "February 19, 2026"
+   }
+  ],
+  "martin-lake": [
+   {
+    "quote": "Brown Trout Minimum Size Limit Waters: There is an 18-inch minimum size limit at Oliver, Olin, and Martin lakes in LaGrange County, and the Brookville Lake tailwater in Franklin County.",
+    "page": "Inland Trout Regulations",
+    "url": "https://www.eregulations.com/indiana/fishing/inland-trout-regulations",
+    "page_updated": "February 19, 2026"
+   }
+  ],
+  "indiana-lake-elkhart": [
+   {
+    "quote": "Indiana and Michigan — Residents of Indiana or Michigan may fish the whole lake, but must abide by the regulations in the waters they are fishing. Nonresident license holders (for either state) may only fish in the waters under which the jurisdiction applies for that nonresident license. … Indiana Lake — Indiana, Elkhart Co./Michigan, Cass Co.",
+    "page": "Basic Fishing Information",
+    "url": "https://www.eregulations.com/indiana/fishing/basic-fishing-information",
+    "page_updated": "February 19, 2026"
+   }
+  ],
+  "shock-lake": [
+   {
+    "quote": "18-inch minimum size limit and two fish daily bag limit: … All lakes at Tri-County Fish & Wildlife Area (Kosciusko, Noble, and Elkhart counties)",
+    "page": "Bass Regulations",
+    "url": "https://www.eregulations.com/indiana/fishing/bass-regulations",
+    "page_updated": "February 19, 2026"
+   },
+   {
+    "quote": "Boat ramps are located on following lakes: Shock, Spear, Hammond, Allen, Barrel ½, Price, Wyland, Bass, and Goldeneye. … Lakes are limited to electric motors only.",
+    "page": "Tri-County Fish & Wildlife Area (Indiana DNR)",
+    "url": "https://www.in.gov/dnr/fish-and-wildlife/properties/tri-county-fwa",
+    "page_updated": null
+   }
+  ],
+  "spear-lake": [
+   {
+    "quote": "18-inch minimum size limit and two fish daily bag limit: … All lakes at Tri-County Fish & Wildlife Area (Kosciusko, Noble, and Elkhart counties)",
+    "page": "Bass Regulations",
+    "url": "https://www.eregulations.com/indiana/fishing/bass-regulations",
+    "page_updated": "February 19, 2026"
+   },
+   {
+    "quote": "Spear Lake is closed from youth waterfowl season until ice-up. Lakes are limited to electric motors only.",
+    "page": "Tri-County Fish & Wildlife Area (Indiana DNR)",
+    "url": "https://www.in.gov/dnr/fish-and-wildlife/properties/tri-county-fwa",
+    "page_updated": null
+   }
+  ],
+  "goldeneye-pond-kosciusko": [
+   {
+    "quote": "18-inch minimum size limit and two fish daily bag limit: … All lakes at Tri-County Fish & Wildlife Area (Kosciusko, Noble, and Elkhart counties)",
+    "page": "Bass Regulations",
+    "url": "https://www.eregulations.com/indiana/fishing/bass-regulations",
+    "page_updated": "February 19, 2026"
+   },
+   {
+    "quote": "Boat ramps are located on following lakes: Shock, Spear, Hammond, Allen, Barrel ½, Price, Wyland, Bass, and Goldeneye. Shoreline fishing is available on Goldeneye Pond and Wyland Pond. … Lakes are limited to electric motors only.",
+    "page": "Tri-County Fish & Wildlife Area (Indiana DNR)",
+    "url": "https://www.in.gov/dnr/fish-and-wildlife/properties/tri-county-fwa",
+    "page_updated": null
+   }
+  ]
+ },
+ "retrieved": "2026-10-29",
+ "special_scope": "Lake-specific entries are matched by name and county to the lakes named in the 2026-27 guide (Size & Bag Limits footnotes, Walleye and Special Regulation Waters sections; Bass Regulations lake limits; Inland Trout brown trout waters; Basic Fishing Information border waters) and the DNR Tri-County FWA property page."
+}
