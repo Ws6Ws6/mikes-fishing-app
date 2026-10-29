@@ -1010,9 +1010,20 @@
     }
   }
 
+  function emitTroll(type, detail) {
+    try { document.dispatchEvent(new CustomEvent(type, { detail })); } catch (_) {}
+  }
   function onTrollPosition(pos) {
     if (!troll.on) return;
     const { latitude: lat, longitude: lng, speed, heading } = pos.coords;
+    // Hook for track recording (js/tracks.js). Raw GPS values only.
+    emitTroll("mfa:trollpos", {
+      lat, lng,
+      t: pos.timestamp || Date.now(),
+      spd: speed != null && !Number.isNaN(speed) ? speed : null,
+      hdg: heading != null && !Number.isNaN(heading) ? heading : null,
+      acc: pos.coords.accuracy != null ? pos.coords.accuracy : null,
+    });
     troll.lat = lat;
     troll.lng = lng;
     if (speed != null && !Number.isNaN(speed)) {
@@ -1209,9 +1220,11 @@
     window.addEventListener("deviceorientation", onOrient, true);
     troll._onOrient = onOrient;
     toast("Trolling mode on: finding your GPS location…");
+    emitTroll("mfa:trollstart", {});
   }
 
   function stopTrolling() {
+    const wasOn = troll.on;
     troll.on = false;
     document.body.classList.remove("trolling");
     document.getElementById("trollHud").classList.add("hidden");
@@ -1228,6 +1241,16 @@
     releaseWakeLock();
     troll.follow = true;
     setTrollButton();
+    if (wasOn) emitTroll("mfa:trollstop", {});
+  }
+
+  // Keep the legend just above the Trolling HUD whatever its height (extra rows such
+  // as the track-recording status can make it taller).
+  if (window.ResizeObserver) {
+    const hudEl = document.getElementById("trollHud");
+    new ResizeObserver(() => {
+      if (hudEl.offsetHeight) document.body.style.setProperty("--troll-hud-h", hudEl.offsetHeight + "px");
+    }).observe(hudEl);
   }
 
   // Trolling mode always uses the device's real GPS.
