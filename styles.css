@@ -286,3 +286,33 @@ body.trolling .legend { bottom: calc(150px + var(--safe-bottom)); }
 @media (max-width: 340px) {
   .brand h1 { display: none; }
 }
+
+/* 2026-10-28: Trolling mode map control (top-right, below the header) */
+.leaflet-top.leaflet-right { top: calc(66px + var(--safe-top)); }
+.troll-control { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; margin: 0 10px 0 0 !important; }
+.troll-toggle, .troll-recenter {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 14px;
+  border: 2px solid transparent; border-radius: 12px; background: rgba(255,255,255,.96); color: var(--deep);
+  font: 700 .9rem system-ui, -apple-system, Segoe UI, Roboto, sans-serif; cursor: pointer; box-shadow: var(--shadow);
+  touch-action: manipulation;
+}
+.troll-toggle .troll-ico { font-size: 1.1rem; }
+.troll-toggle .troll-state:empty { display: none; }
+.troll-toggle .troll-state { font-size: .7rem; padding: 2px 6px; border-radius: 999px; background: #063552; color: #fff; }
+.troll-toggle.active { background: #f0b429; border-color: #063552; color: #1a2a36; }
+.troll-toggle:focus-visible, .troll-recenter:focus-visible { outline: 3px solid #1f8fbf; outline-offset: 2px; }
+.troll-recenter { background: #063552; color: #fff; }
+.troll-recenter.hidden { display: none; }
+@media (max-width: 480px) {
+  .leaflet-top.leaflet-right { top: calc(58px + var(--safe-top)); }
+  .troll-control { margin-right: 8px !important; }
+}
+@media (max-width: 799px) {
+  /* keep a tall lake card below the Trolling mode button */
+  .card { max-height: calc(100vh - 130px - var(--safe-top) - var(--safe-bottom)); }
+}
+@media (max-width: 480px) {
+  /* toasts sit below the Trolling mode / Re-centre buttons so they never cover them */
+  .toast { top: calc(170px + var(--safe-top)); }
+  body.trolling .legend { bottom: calc(172px + var(--safe-bottom)); }
+}
