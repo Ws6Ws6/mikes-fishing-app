@@ -1,6 +1,6 @@
 /* Files the service worker keeps for offline use (shared by sw.js and offline.js). */
 (function (g) {
-  g.MFA_SHELL_VERSION = "2026-10-29i";
+  g.MFA_SHELL_VERSION = "2026-10-29j";
   g.MFA_SHELL = [
     "./",
     "./index.html",
@@ -21,6 +21,13 @@
     "./js/regs.js",
     "./js/launchfilter.js",
     "./js/depthband.js",
+    "./js/install.js",
+    "./manifest.webmanifest",
+    "./icons/icon-192.png",
+    "./icons/icon-512.png",
+    "./icons/icon-maskable-192.png",
+    "./icons/icon-maskable-512.png",
+    "./icons/apple-touch-icon.png",
   ];
   g.MFA_DATA = [
     "./data/lakes.geojson",
