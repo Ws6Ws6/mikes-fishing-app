@@ -924,11 +924,14 @@
   }
 
   function onTrollPosition(pos) {
+    if (!troll.on) return;
     const { latitude: lat, longitude: lng, speed, heading } = pos.coords;
     troll.lat = lat;
     troll.lng = lng;
     if (speed != null && !Number.isNaN(speed)) {
       troll.speedMph = Math.max(0, speed * 2.23694);
+    } else {
+      troll.speedMph = null;
     }
     if (heading != null && !Number.isNaN(heading)) {
       troll.heading = heading;
@@ -952,7 +955,13 @@
     }
 
     updateBoatMarker(lat, lng, troll.heading);
-    if (troll.follow) {
+    updateAccuracy(lat, lng, pos.coords.accuracy);
+    if (!troll._fixed) {
+      // First fix: jump to the boat (zoom in only if zoomed far out).
+      troll._fixed = true;
+      if (troll.follow) map.setView([lat, lng], Math.max(map.getZoom(), 16), { animate: false });
+    } else if (troll.follow) {
+      // Later fixes keep the user's zoom.
       map.panTo([lat, lng], { animate: true, duration: 0.4 });
     }
 
@@ -967,15 +976,16 @@
   }
 
   async function requestWakeLock() {
+    // Keep the screen awake while trolling; fail silently where unsupported.
     try {
-      if ("wakeLock" in navigator) {
+      if ("wakeLock" in navigator && document.visibilityState === "visible") {
         wakeLock = await navigator.wakeLock.request("screen");
         wakeLock.addEventListener("release", () => {
           wakeLock = null;
         });
       }
-    } catch (e) {
-      console.warn("Wake lock unavailable", e);
+    } catch (_) {
+      wakeLock = null;
     }
   }
 
@@ -986,12 +996,101 @@
     wakeLock = null;
   }
 
+  // The OS drops the wake lock when the tab is hidden; take it back on return.
+  document.addEventListener("visibilitychange", () => {
+    if (troll.on && !wakeLock && document.visibilityState === "visible") requestWakeLock();
+  });
+
+  // ----- Trolling mode map control (follows your GPS) -----
+  const TrollControl = L.Control.extend({
+    options: { position: "topright" },
+    onAdd() {
+      const wrap = L.DomUtil.create("div", "leaflet-control troll-control");
+      wrap.innerHTML =
+        '<button id="btnTroll" type="button" class="troll-toggle" aria-label="Trolling mode: follow my GPS location" aria-pressed="false" title="Trolling mode: follow my GPS location">' +
+        '<span class="troll-ico" aria-hidden="true">🚤</span><span class="troll-text">Trolling mode</span><span class="troll-state" aria-hidden="true"></span></button>' +
+        '<button id="btnRecenter" type="button" class="troll-recenter hidden" aria-label="Re-centre on my location and resume following" title="Re-centre"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>Re-centre</button>';
+      L.DomEvent.disableClickPropagation(wrap);
+      L.DomEvent.disableScrollPropagation(wrap);
+      return wrap;
+    },
+  });
+  new TrollControl().addTo(map);
+
+  function setTrollButton() {
+    const btn = document.getElementById("btnTroll");
+    if (!btn) return;
+    btn.classList.toggle("active", troll.on);
+    btn.setAttribute("aria-pressed", troll.on ? "true" : "false");
+    const st = btn.querySelector(".troll-state");
+    if (st) st.textContent = troll.on ? (troll.follow ? "ON" : "PAUSED") : "";
+    const rc = document.getElementById("btnRecenter");
+    if (rc) rc.classList.toggle("hidden", !(troll.on && !troll.follow));
+    const fm = document.getElementById("followMe");
+    if (fm) fm.checked = troll.follow;
+  }
+
+  function setFollow(on) {
+    troll.follow = on;
+    if (on && troll.on && troll.lat != null) {
+      map.panTo([troll.lat, troll.lng], { animate: true, duration: 0.4 });
+    }
+    setTrollButton();
+  }
+
+  function updateAccuracy(lat, lng, acc) {
+    if (acc == null || Number.isNaN(acc)) return;
+    if (!troll.accCircle) {
+      troll.accCircle = L.circle([lat, lng], {
+        radius: acc,
+        color: "#1f8fbf",
+        weight: 1,
+        fillColor: "#1f8fbf",
+        fillOpacity: 0.12,
+        interactive: false,
+      }).addTo(map);
+    } else {
+      troll.accCircle.setLatLng([lat, lng]);
+      troll.accCircle.setRadius(acc);
+    }
+  }
+
+  function clearTrollLayers() {
+    if (troll.boatMarker) { map.removeLayer(troll.boatMarker); troll.boatMarker = null; }
+    if (troll.accCircle) { map.removeLayer(troll.accCircle); troll.accCircle = null; }
+    if (troll.trackLine) { map.removeLayer(troll.trackLine); troll.trackLine = null; }
+    troll.track = [];
+    troll.lat = troll.lng = null;
+    troll.heading = null;
+    troll.speedMph = null;
+    troll._fixed = false;
+    ["trollSpeed", "trollDepth", "trollHeading"].forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = "—";
+    });
+  }
+
+  function onTrollGeoError(err) {
+    if (!troll.on || troll.simulate) return;
+    if (err && err.code === 1) {
+      stopTrolling();
+      toast("Trolling mode needs your location. Allow location for this site in your browser settings, then try again.", 6000);
+    } else if (err && err.code === 3) {
+      toast("Still waiting for a GPS fix… (open sky helps)", 4000);
+    } else {
+      toast("Can't get your location right now. Check that location/GPS is on.", 5000);
+    }
+  }
+
   function startTrolling(opts = {}) {
+    if (troll.on) stopTrolling();
     troll.on = true;
+    troll.follow = true;
+    troll._fixed = false;
     document.body.classList.add("trolling");
     document.getElementById("trollHud").classList.remove("hidden");
-    document.getElementById("btnTroll").classList.add("active");
     document.getElementById("lakeCard").classList.add("hidden");
+    setTrollButton();
     requestWakeLock();
 
     if (opts.simulateAt) {
@@ -1025,6 +1124,7 @@
           },
         });
       };
+      troll._fixed = true;
       step();
       troll._simTimer = setInterval(step, 1000);
       if (map.getZoom() < 17) map.setView([lake.lat, lake.lng], 18);
@@ -1033,15 +1133,16 @@
     }
 
     troll.simulate = false;
-    if (!navigator.geolocation) {
-      toast("Geolocation not available — use Troll here on a lake for demo");
+    if (!window.isSecureContext || !navigator.geolocation) {
+      stopTrolling();
+      toast("Location isn't available in this browser, so Trolling mode can't follow you.", 5000);
       return;
     }
-    troll.watchId = navigator.geolocation.watchPosition(
-      onTrollPosition,
-      (err) => toast("GPS: " + err.message),
-      { enableHighAccuracy: true, maximumAge: 1000, timeout: 15000 }
-    );
+    troll.watchId = navigator.geolocation.watchPosition(onTrollPosition, onTrollGeoError, {
+      enableHighAccuracy: true,
+      maximumAge: 1000,
+      timeout: 20000,
+    });
     // DeviceOrientation for heading fallback
     const onOrient = (e) => {
       if (e.absolute || e.webkitCompassHeading != null) {
@@ -1049,20 +1150,20 @@
           e.webkitCompassHeading != null
             ? e.webkitCompassHeading
             : (360 - e.alpha) % 360;
-        troll.heading = h;
+        if (troll.speedMph == null || troll.speedMph < 0.5) troll.heading = h;
       }
     };
     window.addEventListener("deviceorientationabsolute", onOrient, true);
     window.addEventListener("deviceorientation", onOrient, true);
     troll._onOrient = onOrient;
-    toast("Trolling mode — follow me + wake lock");
+    toast("Trolling mode on: finding your GPS location…");
   }
 
   function stopTrolling() {
     troll.on = false;
+    troll.simulate = false;
     document.body.classList.remove("trolling");
     document.getElementById("trollHud").classList.add("hidden");
-    document.getElementById("btnTroll").classList.remove("active");
     if (troll.watchId != null) {
       navigator.geolocation.clearWatch(troll.watchId);
       troll.watchId = null;
@@ -1076,23 +1177,31 @@
       window.removeEventListener("deviceorientation", troll._onOrient, true);
       troll._onOrient = null;
     }
+    clearTrollLayers();
     releaseWakeLock();
+    troll.follow = true;
+    setTrollButton();
   }
 
+  // Map control always uses the real GPS ("Troll here" on a lake card is the demo).
   document.getElementById("btnTroll").addEventListener("click", () => {
-    if (troll.on) stopTrolling();
-    else {
-      // Prefer selected lake for demo if no GPS yet
-      if (selectedLake && selectedLake.has_contours) {
-        startTrolling({ simulateAt: selectedLake });
-      } else {
-        startTrolling();
-      }
+    if (troll.on) {
+      stopTrolling();
+      toast("Trolling mode off");
+    } else startTrolling();
+  });
+  document.getElementById("btnRecenter").addEventListener("click", () => setFollow(true));
+  // A user drag pauses following (programmatic panTo does not fire dragstart).
+  map.on("dragstart", () => {
+    if (troll.on && troll.follow) {
+      troll.follow = false;
+      setTrollButton();
+      toast("Following paused. Tap Re-centre to follow again.", 3000);
     }
   });
   document.getElementById("btnExitTroll").addEventListener("click", stopTrolling);
   document.getElementById("followMe").addEventListener("change", (e) => {
-    troll.follow = e.target.checked;
+    setFollow(e.target.checked);
   });
   document.getElementById("btnClearTrack").addEventListener("click", () => {
     troll.track = troll.lat != null ? [[troll.lat, troll.lng]] : [];
