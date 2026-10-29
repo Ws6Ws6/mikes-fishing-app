@@ -439,3 +439,16 @@ body.trolling .radar-bar { bottom: calc(var(--troll-hud-h, 196px) + 22px + var(-
 .sm-table { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: .84rem; }
 .sm-table th { text-align: left; font-weight: 600; color: var(--muted); padding: 3px 6px 3px 0; }
 .sm-table td { text-align: right; padding: 3px 0; font-variant-numeric: tabular-nums; }
+
+/* F6 DNR fish */
+.dnr-table { width: 100%; border-collapse: collapse; margin-top: 4px; font-size: .8rem; }
+.dnr-table th { text-align: left; color: var(--muted); font-weight: 600; padding: 2px 4px; border-bottom: 1px solid #e6eef4; }
+.dnr-table td { padding: 3px 4px; border-bottom: 1px solid #f0f4f7; }
+.dnr-table .num { text-align: right; font-variant-numeric: tabular-nums; }
+.dnr-h { margin: 8px 0 2px; font-size: .84rem; }
+.dnr-none { font-size: .86rem; }
+.dnr-showall { margin-top: 6px; min-height: 44px; }
+.dnr-older summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; font-size: .84rem; }
+.dnr-older ul, .dnr-reports { margin: 2px 0 4px 18px; padding: 0; font-size: .8rem; }
+.dnr-older li, .dnr-reports li { margin: 3px 0; }
+.dnr-reports a { display: inline-block; padding: 6px 0; word-break: break-word; }
