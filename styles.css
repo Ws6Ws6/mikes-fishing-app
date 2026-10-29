@@ -378,3 +378,20 @@ body.trolling .legend { bottom: calc(178px + var(--safe-bottom)); }
 .card-sec .sec-body { padding: 0 12px 10px; font-size: .86rem; }
 .sec-src { font-size: .72rem; color: var(--muted); margin-top: 6px; line-height: 1.35; }
 .sec-unavail { color: #7b271c; }
+/* Waypoints */
+.wp-marker { background: none; border: 0; }
+.wp-pin { font-size: 24px; line-height: 30px; filter: drop-shadow(0 2px 2px rgba(0,0,0,.45)); }
+.wp-popup p { margin: 4px 0; white-space: pre-wrap; }
+.wp-popup small { color: var(--muted); display: block; margin-top: 2px; }
+.wp-popup-btns { display: flex; gap: 6px; margin-top: 8px; }
+.wp-dialog { position: fixed; inset: 0; z-index: 2100; background: rgba(4,24,36,.45); display: flex; align-items: flex-end; justify-content: center; }
+.wp-dialog.hidden { display: none; }
+.wp-form { background: #fff; width: min(420px, 100vw); border-radius: 16px 16px 0 0; padding: 16px 16px calc(16px + var(--safe-bottom)); box-shadow: var(--shadow); }
+@media (min-width: 800px) { .wp-dialog { align-items: center; } .wp-form { border-radius: 16px; } }
+.wp-form h3 { margin: 0 0 10px; font-size: 1.05rem; }
+.wp-form label { display: block; font-size: .78rem; font-weight: 650; color: var(--muted); margin-bottom: 10px; }
+.wp-form .tool-input { display: block; width: 100%; margin-top: 4px; font: inherit; font-size: 1rem; color: var(--ink); }
+.wp-form textarea.tool-input { padding: 8px 10px; resize: vertical; }
+.tool-btn.hidden { display: none; }
+.file-btn { display: inline-flex; align-items: center; position: relative; overflow: hidden; }
+.file-btn input[type=file] { position: absolute; inset: 0; opacity: 0; cursor: pointer; }

@@ -1,6 +1,6 @@
 /* Files the service worker keeps for offline use (shared by sw.js and offline.js). */
 (function (g) {
-  g.MFA_SHELL_VERSION = "2026-10-29a";
+  g.MFA_SHELL_VERSION = "2026-10-29b";
   g.MFA_SHELL = [
     "./",
     "./index.html",
@@ -10,6 +10,8 @@
     "./js/shell-files.js",
     "./js/tools.js",
     "./js/offline.js",
+    "./js/gpx.js",
+    "./js/waypoints.js",
   ];
   g.MFA_DATA = [
     "./data/lakes.geojson",
