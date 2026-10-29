@@ -134,7 +134,7 @@ html, body {
   background: linear-gradient(90deg, rgb(200,230,255), rgb(115,140,215), rgb(30,50,175));
 }
 .legend-scale { display: flex; justify-content: space-between; margin-top: 3px; color: var(--muted); }
-body.trolling .legend { bottom: calc(150px + var(--safe-bottom)); }
+body.trolling .legend { bottom: calc(178px + var(--safe-bottom)); }
 
 .troll-hud {
   position: absolute; z-index: 1060; left: 10px; right: 10px;
@@ -314,5 +314,12 @@ body.trolling .legend { bottom: calc(150px + var(--safe-bottom)); }
 @media (max-width: 480px) {
   /* toasts sit below the Trolling mode / Re-centre buttons so they never cover them */
   .toast { top: calc(170px + var(--safe-top)); }
-  body.trolling .legend { bottom: calc(172px + var(--safe-bottom)); }
+  body.trolling .legend { bottom: calc(206px + var(--safe-bottom)); }
 }
+
+/* Phase 1 (2026-10-28): launch type + stat sources */
+.launch-popup .launch-kind { margin: 4px 0; font-size: 12px; font-weight: 600; color: #8a4b00; }
+.launch-popup .launch-kind.kind-shore { color: #7a2e2e; }
+.launch-kind-tag { color: #8a4b00; font-weight: 600; }
+.card .source .stat-sources { color: #6b7280; }
+.troll-note #trollDepthSrc { font-weight: 600; }

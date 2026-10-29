@@ -102,7 +102,6 @@
     track: [],
     boatMarker: null,
     trackLine: null,
-    simulate: false,
   };
 
   function toast(msg, ms = 2200) {
@@ -149,8 +148,12 @@
     const p = [lat, lng];
     contourLayer.eachLayer((layer) => {
       const latlngs = layer.getLatLngs();
-      const depth = layer.feature && layer.feature.properties.depth_ft;
-      if (depth == null) return;
+      const fp = layer.feature && layer.feature.properties;
+      const depth = fp && fp.depth_ft;
+      if (depth == null || depth <= 0) return;
+      const lk = lakeById(fp.lake_id);
+      if (!lk || !lk.has_contours || lk.no_depth_map) return;
+      if (/distance_from_shore/.test(fp.depth_assignment || lk.depth_assignment || "")) return;
       const rings = Array.isArray(latlngs[0]) && typeof latlngs[0][0] !== "number"
         ? (Array.isArray(latlngs[0][0]) ? latlngs.flat() : latlngs)
         : [latlngs];
@@ -168,7 +171,7 @@
           const d = distPointToSegM(p, pts[i], pts[i + 1]);
           if (d < bestD) {
             bestD = d;
-            best = { depth, distM: d };
+            best = { depth, distM: d, lakeId: fp.lake_id };
           }
         }
       }
@@ -176,6 +179,32 @@
     // Only report if within ~80 m of a contour (honest proximity)
     if (!best || best.distM > 80) return null;
     return best;
+  }
+
+  function lakeById(id) {
+    if (!lakeById._m || lakeById._n !== lakes.length) {
+      lakeById._m = new Map(lakes.map((l) => [l.id, l]));
+      lakeById._n = lakes.length;
+    }
+    return lakeById._m.get(id);
+  }
+
+  // Plain-language source for a lake's contour depths.
+  function depthSourceLabel(lk) {
+    if (!lk) return "";
+    const yr = (String(lk.source || "").match(/\b(1[89]\d\d|20\d\d)\b/) || [])[1];
+    switch (lk.contour_method) {
+      case "vector_featureserver":
+        return "DNR survey";
+      case "traced_from_pdf":
+        return "DNR map (traced)";
+      case "raster_color_band_trace":
+        return "DNR map (traced, approx.)";
+      case "historical_trace":
+        return `${yr ? yr + " " : ""}historic map (unofficial)`;
+      default:
+        return "unofficial";
+    }
   }
 
   function normSearch(s) {
@@ -253,7 +282,9 @@
     for (const l of filtered) {
       const li = document.createElement("li");
       let badge;
-      if (l.no_depth_map)
+      if (l.retrace_pending)
+        badge = '<span class="badge nomap">Re-tracing depths</span>';
+      else if (l.no_depth_map)
         badge = '<span class="badge nomap">No depth map yet</span>';
       else if (l.georef_method === "synthetic" || l.contour_method === "synthetic_or_distance_based")
         badge = '<span class="badge review-high">Approx. contours</span>';
@@ -315,7 +346,7 @@
     } else if (lake.lat != null) {
       if (fly) map.setView([lake.lat, lake.lng], 14);
     } else {
-      toast("PDF-only lake — open DNR map from the card (no map location yet)");
+      toast("No map location for this lake yet — use the DNR PDF on its card");
     }
   }
 
@@ -338,6 +369,24 @@
       .replace(/"/g, "&quot;");
   }
 
+  // Launch type as shown to anglers; shoreline / carry-down sites are not trailer ramps.
+  function launchKindLabel(t) {
+    if (t === "Shoreline") return { text: "Shoreline fishing only (no boat ramp)", short: "shore only", cls: "kind-shore" };
+    if (t === "Carry Down") return { text: "Carry-down launch (no trailer ramp)", short: "carry-down", cls: "kind-carry" };
+    if (t === "Canoe Ramp") return { text: "Canoe / kayak ramp", short: "canoe ramp", cls: "kind-carry" };
+    return null;
+  }
+
+  // Drop empty "Field: ;" entries from DNR notes (e.g. "Ramp:  ;").
+  function cleanLaunchNotes(s) {
+    if (!s) return "";
+    return String(s)
+      .split(";")
+      .map((x) => x.trim())
+      .filter((x) => x && !/^[^:]+:\s*$/.test(x) && !/^[^:]+:\s*(none listed|n\/a|null|undefined)$/i.test(x))
+      .join("; ");
+  }
+
   function launchPopupHtml(p) {
     const dest = `${p.lat},${p.lng}`;
     const accessLabel =
@@ -351,13 +400,16 @@
     const county = p.county
       ? `<div><strong>County</strong> ${escapeHtml(p.county)}</div>`
       : "";
-    const notes = p.notes
-      ? `<p class="launch-notes">${escapeHtml(p.notes)}</p>`
+    const notesClean = cleanLaunchNotes(p.notes);
+    const notes = notesClean
+      ? `<p class="launch-notes">${escapeHtml(notesClean)}</p>`
       : "";
+    const kind = launchKindLabel(p.launch_type);
+    const kindHtml = kind ? `<div class="launch-kind ${kind.cls}">${escapeHtml(kind.text)}</div>` : "";
     return `<div class="launch-popup">
       <strong>${escapeHtml(p.name)}</strong>
       <span class="access-badge ${badgeClass}">${accessLabel}</span>
-      ${lake}${county}
+      ${kindHtml}${lake}${county}
       <div class="launch-actions">
         <a href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(dest)}" target="_blank" rel="noopener">Drive here</a>
         <a class="secondary" href="${escapeHtml(p.source_url)}" target="_blank" rel="noopener">Source</a>
@@ -478,6 +530,16 @@
     console.info("Launch markers placed:", placed);
   }
 
+  // Small-print source for max depth / acres; says so plainly when not recorded.
+  function statSourcesHtml(lake) {
+    const parts = [];
+    if (lake.max_depth_ft != null)
+      parts.push(`Max depth: ${escapeHtml(lake.max_depth_source || "source not recorded")}`);
+    if (lake.acres != null || Array.isArray(lake.acres_range))
+      parts.push(`Acres: ${escapeHtml(lake.acres_source || "source not recorded")}`);
+    return parts.length ? `<br/><span class="stat-sources">${parts.join(" · ")}</span>` : "";
+  }
+
   function showLakeCard(lake) {
     const card = document.getElementById("lakeCard");
     const maxD =
@@ -502,13 +564,11 @@
     if (lake.pdf_url) {
       actions += `<a class="secondary" href="${lake.pdf_url}" target="_blank" rel="noopener">DNR PDF maps</a>`;
     }
-    if (lake.has_contours) {
-      actions += `<button type="button" class="secondary" id="btnTrollHere">Troll here</button>`;
-    }
     card.innerHTML = `
       <button class="close" id="btnCloseCard" type="button" aria-label="Close">✕</button>
       <h2>${lake.name}</h2>
       <div class="county">${lake.county || ""}${lake.county2 ? " / " + lake.county2 : ""} · ${
+        lake.retrace_pending ? "Depth map being re-traced" :
         lake.no_depth_map ? "No depth map yet" :
         lake.georef_method === "synthetic" || lake.contour_method === "synthetic_or_distance_based"
           ? "Approximate contours (review)"
@@ -520,7 +580,7 @@
       }</div>
       ${
         lake.no_depth_map
-          ? `<div class="nomap-banner"><strong>No depth map yet.</strong> ${lake.nomap_banner ? escapeHtml(lake.nomap_banner) : "No published depth survey was found for this lake, so no contours or depths are shown."}</div>`
+          ? `<div class="nomap-banner"><strong>${lake.retrace_pending ? "Depth map being re-traced." : "No depth map yet."}</strong> ${lake.nomap_banner ? escapeHtml(lake.nomap_banner) : "No published depth survey was found for this lake, so no contours or depths are shown."}</div>`
           : (lake.georef_method === "synthetic" || lake.contour_method === "synthetic_or_distance_based")
           ? `<div class="approx-banner"><strong>Approximate contours.</strong> ${
               lake.review_notes
@@ -533,6 +593,7 @@
       ${lake.exceeds_dnr_max ? `<div class="review-notes dnr-warn"><strong>⚠ Exceeds DNR max contour:</strong> ${lake.exceeds_dnr_note || ""}</div>` : ""}
       ${lake.no_depth_map ? `<div class="stats">
         <div><strong>Acres</strong>${acres}</div>
+        ${lake.max_depth_ft != null ? `<div><strong>Max depth</strong>${lake.max_depth_ft} ft</div>` : ""}
         <div><strong>Depth map</strong>${lake.nomap_depth_label ? escapeHtml(lake.nomap_depth_label) : "Not available"}</div>
       </div>` : `<div class="stats">
         <div><strong>Max depth</strong>${maxD}</div>
@@ -542,21 +603,13 @@
       </div>`}
       <div class="actions">${actions}</div>
       <div id="nearbyLaunches" class="nearby-launches"></div>
-      <p class="source">${escapeHtml(lake.source || "")}${lake.source_url ? ` · <a href="${lake.source_url}" target="_blank" rel="noopener">source</a>` : ""}${lake.accuracy_note ? `<br/>${escapeHtml(lake.accuracy_note)}` : ""}</p>
+      <p class="source">${escapeHtml(lake.source || "")}${lake.source_url ? ` · <a href="${lake.source_url}" target="_blank" rel="noopener">source</a>` : ""}${lake.accuracy_note ? `<br/>${escapeHtml(lake.accuracy_note)}` : ""}${statSourcesHtml(lake)}</p>
     `;
     card.classList.remove("hidden");
     document.getElementById("btnCloseCard").onclick = () =>
       card.classList.add("hidden");
     const next = document.getElementById("btnNextNearest");
     if (next) next.onclick = () => goNextNearest(lake);
-    const th = document.getElementById("btnTrollHere");
-    if (th)
-      th.onclick = () => {
-        if (lake.lat != null) {
-          map.setView([lake.lat, lake.lng], 17);
-        }
-        startTrolling({ simulateAt: lake });
-      };
     const nearEl = document.getElementById("nearbyLaunches");
     const near = nearestLaunches(lake);
     if (nearEl && near.length) {
@@ -572,7 +625,7 @@
                   : "unknown";
             return `<button type="button" class="nearby-item" data-lat="${x.lat}" data-lng="${x.lng}">
               <span class="dot ${badge}"></span>
-              <span class="nearby-name">${escapeHtml(x.name)}${x.onLake ? ' <small class="on-lake">on this lake</small>' : ""}</span>
+              <span class="nearby-name">${escapeHtml(x.name)}${x.onLake ? ' <small class="on-lake">on this lake</small>' : ""}${launchKindLabel(x.launch_type) ? ` <small class="launch-kind-tag">${launchKindLabel(x.launch_type).short}</small>` : ""}</span>
               <span class="nearby-mi">${x.miles < 0.1 ? "<0.1" : x.miles.toFixed(1)} mi</span>
             </button>`;
           })
@@ -970,9 +1023,12 @@
       troll.speedMph != null ? troll.speedMph.toFixed(1) : "—";
     document.getElementById("trollHeading").textContent =
       troll.heading != null ? Math.round(troll.heading) : "—";
-    document.getElementById("trollDepth").textContent = depthInfo
-      ? `~${depthInfo.depth}`
-      : "—";
+    document.getElementById("trollDepth").textContent = depthInfo ? `${depthInfo.depth}` : "—";
+    const srcEl = document.getElementById("trollDepthSrc");
+    if (srcEl)
+      srcEl.textContent = depthInfo
+        ? `Nearest contour: ${depthInfo.depth} ft · ${depthSourceLabel(lakeById(depthInfo.lakeId))} · ${Math.round(depthInfo.distM)} m away`
+        : "No verified depth line within 80 m";
   }
 
   async function requestWakeLock() {
@@ -1068,10 +1124,12 @@
       const el = document.getElementById(id);
       if (el) el.textContent = "—";
     });
+    const srcEl = document.getElementById("trollDepthSrc");
+    if (srcEl) srcEl.textContent = "";
   }
 
   function onTrollGeoError(err) {
-    if (!troll.on || troll.simulate) return;
+    if (!troll.on) return;
     if (err && err.code === 1) {
       stopTrolling();
       toast("Trolling mode needs your location. Allow location for this site in your browser settings, then try again.", 6000);
@@ -1082,7 +1140,7 @@
     }
   }
 
-  function startTrolling(opts = {}) {
+  function startTrolling() {
     if (troll.on) stopTrolling();
     troll.on = true;
     troll.follow = true;
@@ -1093,46 +1151,6 @@
     setTrollButton();
     requestWakeLock();
 
-    if (opts.simulateAt) {
-      troll.simulate = true;
-      const lake = opts.simulateAt;
-      // Simulate boat near lake center for screenshots / demos
-      let lat = lake.lat;
-      let lng = lake.lng;
-      let heading = 35;
-      let tick = 0;
-      if (troll._simTimer) clearInterval(troll._simTimer);
-      // seed track
-      troll.track = [];
-      const step = () => {
-        tick++;
-        heading = (heading + (Math.sin(tick / 8) * 4)) % 360;
-        const m = 4; // ~4 m per tick
-        const dLat = (m / 111320) * Math.cos((heading * Math.PI) / 180);
-        const dLng =
-          (m / (111320 * Math.cos((lat * Math.PI) / 180))) *
-          Math.sin((heading * Math.PI) / 180);
-        lat += dLat;
-        lng += dLng;
-        onTrollPosition({
-          coords: {
-            latitude: lat,
-            longitude: lng,
-            speed: 1.3, // ~2.9 mph in m/s
-            heading,
-            accuracy: 5,
-          },
-        });
-      };
-      troll._fixed = true;
-      step();
-      troll._simTimer = setInterval(step, 1000);
-      if (map.getZoom() < 17) map.setView([lake.lat, lake.lng], 18);
-      toast("Trolling mode (demo GPS) — depth from nearest survey contour");
-      return;
-    }
-
-    troll.simulate = false;
     if (!window.isSecureContext || !navigator.geolocation) {
       stopTrolling();
       toast("Location isn't available in this browser, so Trolling mode can't follow you.", 5000);
@@ -1161,16 +1179,11 @@
 
   function stopTrolling() {
     troll.on = false;
-    troll.simulate = false;
     document.body.classList.remove("trolling");
     document.getElementById("trollHud").classList.add("hidden");
     if (troll.watchId != null) {
       navigator.geolocation.clearWatch(troll.watchId);
       troll.watchId = null;
-    }
-    if (troll._simTimer) {
-      clearInterval(troll._simTimer);
-      troll._simTimer = null;
     }
     if (troll._onOrient) {
       window.removeEventListener("deviceorientationabsolute", troll._onOrient, true);
@@ -1183,7 +1196,7 @@
     setTrollButton();
   }
 
-  // Map control always uses the real GPS ("Troll here" on a lake card is the demo).
+  // Trolling mode always uses the device's real GPS.
   document.getElementById("btnTroll").addEventListener("click", () => {
     if (troll.on) {
       stopTrolling();
@@ -1272,14 +1285,6 @@
       const l = lakes.find((x) => x.name.toLowerCase() === name.toLowerCase());
       if (l) selectLake(l, true);
       return !!l;
-    },
-    startTrollDemo(name) {
-      const l = lakes.find((x) => x.name.toLowerCase() === name.toLowerCase());
-      if (!l) return false;
-      selectLake(l, false);
-      map.setView([l.lat, l.lng], 18);
-      startTrolling({ simulateAt: l });
-      return true;
     },
     getLakes: () => lakes,
     getLaunches: () => launches,

@@ -41,7 +41,7 @@
     </div>
     <ul id="lakeList"></ul>
     <footer class="panel-foot">
-      <small>Depth data: Indiana DNR / IndianaMap. Contours are survey feet below surface — not live sonar.</small>
+      <small>Depth lines: Indiana DNR surveys (IndianaMap) and DNR depth-map PDFs; a few lakes are unofficial traces of 1922–1954 Indiana Dept. of Conservation / USGS maps (marked on each lake). Lake outlines: USGS NHD and OpenStreetMap. Launches: Indiana DNR, IndianaMap and OpenStreetMap. Depths are feet below the surface on the survey date — not live sonar.</small>
     </footer>
   </aside>
 
@@ -57,7 +57,7 @@
         <span class="unit">mph</span>
       </div>
       <div class="metric">
-        <span class="label">Approx depth</span>
+        <span class="label">Nearest contour</span>
         <span id="trollDepth" class="value">—</span>
         <span class="unit">ft</span>
       </div>
@@ -72,7 +72,7 @@
       <button id="btnClearTrack" type="button">Clear track</button>
       <button id="btnExitTroll" type="button">Exit</button>
     </div>
-    <p class="troll-note">Depth ≈ nearest DNR survey contour (not sonar). Screen stays awake while trolling where supported.</p>
+    <p class="troll-note"><span id="trollDepthSrc"></span><br/>Depth shown is the closest mapped depth line, not sonar. Screen stays awake while trolling where supported.</p>
   </div>
 
   <div id="legend" class="legend" role="note" aria-label="Map legend">
