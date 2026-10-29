@@ -46,5 +46,21 @@
     sections.forEach((x) => body.appendChild(x));
     return content;
   }
-  window.mfaTools = { addSection, open };
+  // Collapsible section inside the lake card's extras box, kept in `order`.
+  function cardSection(extras, { id, title, order = 50, open: startOpen = false }) {
+    const d = document.createElement("details");
+    d.className = "card-sec";
+    d.id = id;
+    d.dataset.order = order;
+    if (startOpen) d.open = true;
+    const s = document.createElement("summary");
+    s.textContent = title;
+    const content = document.createElement("div");
+    content.className = "sec-body";
+    d.append(s, content);
+    const after = [...extras.children].find((c) => +(c.dataset.order || 50) > order);
+    extras.insertBefore(d, after || null);
+    return { details: d, body: content, summary: s };
+  }
+  window.mfaTools = { addSection, open, cardSection };
 })();
