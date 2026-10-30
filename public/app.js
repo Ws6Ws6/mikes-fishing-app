@@ -18,6 +18,8 @@
     maxBounds: STATE_BOUNDS.pad(0.35),
     maxBoundsViscosity: 0.4,
   });
+  // Drop Leaflet's default "Leaflet" prefix link (flag + leafletjs.com); provider credits stay.
+  map.attributionControl.setPrefix(false);
   L.control.zoom({ position: "bottomright" }).addTo(map);
 
   // Dedicated high pane for boat launches (above contours/overlays)
