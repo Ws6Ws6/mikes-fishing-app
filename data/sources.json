@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T04:27:36+00:00",
+ "generated": "2026-10-31T00:40:07+00:00",
  "region": "Northeast Indiana",
  "counties": [
   "Steuben",
@@ -11,8 +11,8 @@
   "Whitley",
   "Allen"
  ],
- "lakes_with_contours": 154,
- "contour_features": 7072,
+ "lakes_with_contours": 155,
+ "contour_features": 7213,
  "sources": [
   {
    "name": "IndianaMap / Indiana DNR Lake Bathymetry Contours",
@@ -32,6 +32,12 @@
    "url": "https://indianamemory.contentdm.oclc.org/digital/collection/p15078coll8",
    "attribution": "Indiana State Library, Indiana Division Map Collection",
    "notes": "Unofficial traces of 1920s-1950s blueprints, fit to today's shoreline; labelled per lake."
+  },
+  {
+   "name": "USGS 3DEP lidar elevation data (Indiana Statewide LiDAR 2017) - Salamonie Lake only",
+   "url": "https://prd-tnm.s3.amazonaws.com/index.html?prefix=StagedProducts/Elevation/1m/Projects/IN_Indiana_Statewide_LiDAR_2017_B17/",
+   "attribution": "U.S. Geological Survey 3D Elevation Program (public domain)",
+   "notes": "Unofficial: 5/10/15-ft lines contoured from the 1 m bare-earth DEM (NAVD88) of the lakebed exposed during the Mar 29-Apr 2, 2017 drawdown (pool ~734.6 ft NGVD29), kept only where lidar ground points (USGS EPT point cloud) confirm the elevation. Depths are below the USACE summer pool 755 ft NGVD29 (NAVD88 = NGVD29 - 0.42 ft, USACE CWMS). Pool levels and schedule: USACE Louisville District Salamonie Lake Water Control Manual (2024) https://water.usace.army.mil/cda/documents/wc/3375/Salamonie%20Lake%20WCM%20-%202024_Redacted.pdf and Indiana DNR Salamonie property map. Water deeper than ~20 ft at summer pool is not mapped."
   },
   {
    "name": "USGS National Hydrography Dataset (NHD) lake outlines",
@@ -272,8 +278,9 @@
   ],
   "rebuild": "python3 scripts/rebuild_launches.py  # requires shapely; copies to public/data/"
  },
- "lakes_no_depth_map": 158,
+ "lakes_no_depth_map": 157,
  "lakes_retrace_pending": 16,
  "lakes_total": 312,
- "launch_count": 1062
+ "launch_count": 1062,
+ "notes_salamonie": "Salamonie Lake contours added 2026-10-30 from USGS 3DEP lidar (no DNR bathymetry exists for Salamonie); depths below summer pool 755 ft NGVD29."
 }

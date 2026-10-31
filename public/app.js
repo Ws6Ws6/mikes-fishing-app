@@ -229,6 +229,8 @@
         return "DNR map (traced, approx.)";
       case "historical_trace":
         return `${yr ? yr + " " : ""}historic map (unofficial)`;
+      case "lidar_dem_contour":
+        return "USGS lidar (unofficial)";
       default:
         return "unofficial";
     }
@@ -319,7 +321,7 @@
         badge = '<span class="badge review-high">Needs review</span>';
       else if (l.needs_review)
         badge = '<span class="badge review">Needs review</span>';
-      else if (l.has_contours) badge = '<span class="badge contour">contours</span>';
+      else if (l.has_contours) badge = l.contour_method === "lidar_dem_contour" ? '<span class="badge contour">lidar contours</span>' : '<span class="badge contour">contours</span>';
       else badge = '<span class="badge pdf">PDF map</span>';
       const depth =
         l.max_depth_ft != null ? ` · max ${l.max_depth_ft} ft`
@@ -572,7 +574,9 @@
   function showLakeCard(lake) {
     const card = document.getElementById("lakeCard");
     const maxD =
-      lake.max_depth_ft != null
+      lake.max_depth_label
+        ? escapeHtml(lake.max_depth_label)
+        : lake.max_depth_ft != null
         ? `${lake.max_depth_ft} ft`
         : lake.max_contour_ft != null
           ? `≥ ${lake.max_contour_ft} ft <small>(deepest contour; DNR max not published)</small>`
@@ -604,7 +608,7 @@
           : lake.needs_review
             ? "Needs review"
             : lake.has_contours
-              ? (lake.contour_method === "vector_featureserver" ? "Vector contours" : "Digitized PDF contours")
+              ? (lake.contour_method === "vector_featureserver" ? "Vector contours" : lake.contour_method === "lidar_dem_contour" ? "Lidar contours (unofficial)" : "Digitized PDF contours")
               : "PDF map only"
       }</div>
       ${
@@ -619,6 +623,7 @@
             ? `<div class="review-notes"><strong>Review${lake.review_priority ? " ("+lake.review_priority+")" : ""}:</strong> ${lake.review_notes}</div>`
             : ""
       }
+      ${lake.depth_banner && !lake.no_depth_map ? `<div class="review-notes"><strong>${escapeHtml(lake.depth_banner_title || "Note")}:</strong> ${escapeHtml(lake.depth_banner)}</div>` : ""}
       ${lake.exceeds_dnr_max ? `<div class="review-notes dnr-warn"><strong>⚠ Exceeds DNR max contour:</strong> ${lake.exceeds_dnr_note || ""}</div>` : ""}
       ${lake.no_depth_map ? `<div class="stats">
         <div><strong>Acres</strong>${acres}</div>
