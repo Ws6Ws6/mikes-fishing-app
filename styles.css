@@ -130,8 +130,8 @@ html, body {
 .legend-title { font-weight: 700; margin-bottom: 4px; }
 .ramp {
   height: 10px; border-radius: 999px;
-  /* matches depthColor() in app.js: 0 ft -> 80+ ft */
-  background: linear-gradient(90deg, rgb(200,230,255), rgb(115,140,215), rgb(30,50,175));
+  /* fallback; app.js applyLegendRamp() sets this from DEPTH_STOPS (0 ft -> 80+ ft) */
+  background: linear-gradient(90deg, rgb(0,119,194) 0%, rgb(31,79,192) 25%, rgb(58,47,168) 50%, rgb(82,30,140) 75%, rgb(52,10,86) 100%);
 }
 .legend-scale { display: flex; justify-content: space-between; margin-top: 3px; color: var(--muted); }
 body.trolling .legend { bottom: calc(178px + var(--safe-bottom)); }
