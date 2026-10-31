@@ -86,15 +86,39 @@
     }
   });
 
+  // Depth colour ramp, shallow -> deep. Dark enough that 0–20 ft lines read on light
+  // water (OSM / USGS Topo); on imagery basemaps a light halo is drawn under the lines.
+  // The legend ramp is built from these same stops (see applyLegendRamp).
+  const DEPTH_STOPS = [
+    [0, [0, 119, 194]],   // strong blue
+    [20, [31, 79, 192]],  // royal blue
+    [40, [58, 47, 168]],  // indigo
+    [60, [82, 30, 140]],  // violet
+    [80, [52, 10, 86]],   // deep purple (80+)
+  ];
+  const DEPTH_MAX = 80;
   function depthColor(ft) {
-    if (ft == null) return "#4aa3d9";
-    const t = Math.max(0, Math.min(1, ft / 80));
-    // light cyan -> deep navy
-    const r = Math.round(200 - t * 170);
-    const g = Math.round(230 - t * 180);
-    const b = Math.round(255 - t * 80);
-    return `rgb(${r},${g},${b})`;
+    if (ft == null) return "#1f6fc0";
+    const d = Math.max(0, Math.min(DEPTH_MAX, +ft || 0));
+    for (let i = 1; i < DEPTH_STOPS.length; i++) {
+      const [d1, c1] = DEPTH_STOPS[i];
+      if (d <= d1) {
+        const [d0, c0] = DEPTH_STOPS[i - 1];
+        const t = (d - d0) / (d1 - d0);
+        const c = c0.map((v, k) => Math.round(v + (c1[k] - v) * t));
+        return `rgb(${c[0]},${c[1]},${c[2]})`;
+      }
+    }
+    const c = DEPTH_STOPS[DEPTH_STOPS.length - 1][1];
+    return `rgb(${c[0]},${c[1]},${c[2]})`;
   }
+  function applyLegendRamp() {
+    const el = document.querySelector("#legend .ramp");
+    if (!el) return;
+    const stops = DEPTH_STOPS.map(([d, c]) => `rgb(${c[0]},${c[1]},${c[2]}) ${Math.round((d / DEPTH_MAX) * 100)}%`);
+    el.style.background = `linear-gradient(90deg, ${stops.join(", ")})`;
+  }
+  applyLegendRamp();
 
   let lakes = [];
   let contourLayer = null;
@@ -763,6 +787,17 @@
     };
   }
 
+  // Light halo under contour lines, only on imagery basemaps (dark water hides dark lines).
+  const IMAGERY_BASEMAPS = { sat: true, usgsImagery: true };
+  let haloLayer = null;
+  function haloStyle(props) {
+    const z = map.getZoom();
+    const base = z >= 18 ? 2.4 : z >= 16 ? 1.7 : z >= 14 ? 1.25 : z >= 12 ? 1.0 : 0.85;
+    const index = props && props.line_type === "INDEX";
+    const dashed = props && (props.line_style === "dashed" || props.georef_method === "synthetic" || props.contour_method === "synthetic_or_distance_based");
+    return { color: "#ffffff", opacity: 0.8, weight: (index ? base + 0.55 : base) + 2, dashArray: dashed ? "6 5" : null };
+  }
+
   function updateLabels() {
     if (labelLayer) {
       map.removeLayer(labelLayer);
@@ -889,6 +924,31 @@
     tagContourSvg();
     contourLayer.on("add", tagContourSvg);
 
+    const syncHalo = () => {
+      const want = !!IMAGERY_BASEMAPS[basemap] && map.hasLayer(contourLayer);
+      if (want) {
+        if (!haloLayer) {
+          haloLayer = L.layerGroup();
+          contourLayer.eachLayer((l) => {
+            const props = (l.feature && l.feature.properties) || {};
+            const h = L.polyline(l.getLatLngs(), { ...haloStyle(props), renderer: contourRenderer, interactive: false, className: "contour-halo" });
+            h._haloProps = props;
+            haloLayer.addLayer(h);
+          });
+        }
+        if (!map.hasLayer(haloLayer)) {
+          // Halo paths must sit under the coloured lines in the same SVG.
+          map.removeLayer(contourLayer);
+          haloLayer.eachLayer((h) => h.setStyle(haloStyle(h._haloProps)));
+          haloLayer.addTo(map);
+          contourLayer.addTo(map);
+        }
+      } else if (haloLayer && map.hasLayer(haloLayer)) {
+        map.removeLayer(haloLayer);
+      }
+    };
+    document.addEventListener("mfa:basemap", syncHalo);
+
     // Visibility + marker sizing depend on zoom only.
     const syncContourVis = () => {
       const z = map.getZoom();
@@ -897,6 +957,7 @@
       } else if (map.hasLayer(contourLayer)) {
         map.removeLayer(contourLayer);
       }
+      syncHalo();
       lakeMarkers.eachLayer((m) => {
         const ll = m.getLatLng && m.getLatLng();
         if (!ll || !Number.isFinite(ll.lat) || !Number.isFinite(ll.lng)) return;
@@ -911,6 +972,7 @@
     // Leaflet was still settling the pan transform (worsened canvas drift).
     const syncContourStyle = () => {
       if (map.hasLayer(contourLayer)) contourLayer.setStyle(styleContour);
+      if (haloLayer && map.hasLayer(haloLayer)) haloLayer.eachLayer((h) => h.setStyle(haloStyle(h._haloProps)));
     };
     // Labels depend on viewport bounds; throttle during inertial pan / follow-me.
     let _labelTimer = null;
