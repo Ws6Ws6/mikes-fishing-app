@@ -20,7 +20,8 @@
   });
   // Drop Leaflet's default "Leaflet" prefix link (flag + leafletjs.com); provider credits stay.
   map.attributionControl.setPrefix(false);
-  L.control.zoom({ position: "bottomright" }).addTo(map);
+  // Bottom-left: zoom buttons must not sit under the depth/launch legend.
+  L.control.zoom({ position: "bottomleft" }).addTo(map);
 
   // Dedicated high pane for boat launches (above contours/overlays)
   if (!map.getPane("launchesPane")) {
