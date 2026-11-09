@@ -387,12 +387,28 @@
   function closeLakeTooltips() {
     if (lakeMarkers) lakeMarkers.eachLayer((m) => { if (m.closeTooltip) m.closeTooltip(); });
   }
+  function syncLakeUrl(lake) {
+    const url = new URL(location.href);
+    if (lake && lake.id) url.searchParams.set("lake", lake.id);
+    else url.searchParams.delete("lake");
+    const next = url.pathname + url.search + url.hash;
+    const cur = location.pathname + location.search + location.hash;
+    if (next !== cur) history.replaceState({ lakeId: lake && lake.id }, "", next);
+  }
+  function applyLakeFromUrl() {
+    const id = new URLSearchParams(location.search).get("lake");
+    if (!id) return false;
+    const l = lakeById(id);
+    if (l) { selectLake(l, true); return true; }
+    return false;
+  }
   function selectLake(lake, fly) {
     selectedLake = lake;
     closeLakeTooltips();
     showLakeCard(lake);
     openPanel(false);
     closeLakeTooltips();
+    syncLakeUrl(lake);
     if ((lake.has_contours || lake.no_depth_map) && lake.bbox) {
       const b = lake.bbox;
       if (fly) {
@@ -1048,6 +1064,8 @@
 
     placeLakeMarkers();
     renderLakeList();
+    applyLakeFromUrl();
+    window.addEventListener("popstate", applyLakeFromUrl);
     if (sources) {
       console.info("Data sources:", sources);
     }
