@@ -80,8 +80,10 @@ html, body {
 .filters { display: flex; gap: 10px; padding: 8px 12px; font-size: .82rem; color: var(--muted); flex-wrap: nowrap; overflow-x: auto; }
 .filters label { white-space: nowrap; display: inline-flex; align-items: center; gap: 4px; }
 #lakeList { list-style: none; margin: 0; padding: 0; overflow: auto; flex: 1; }
-#lakeList li {
-  padding: 12px 14px; border-bottom: 1px solid #eef3f7; cursor: pointer;
+#lakeList li { padding: 0; border-bottom: 1px solid #eef3f7; }
+#lakeList .lake-row {
+  display: block; width: 100%; padding: 12px 14px; border: 0; background: transparent;
+  text-align: left; cursor: pointer; min-height: 44px; font: inherit; color: inherit;
 }
 #lakeList li:hover, #lakeList li:active { background: #f3f9fc; }
 #lakeList .name { font-weight: 650; }
@@ -120,8 +122,8 @@ html, body {
 .card .actions button.secondary, .card .actions a.secondary { background: #e8f2f8; color: var(--deep); }
 .card .source { margin-top: 10px; font-size: .72rem; color: var(--muted); line-height: 1.35; }
 .card .close {
-  position: absolute; top: 8px; right: 8px; border: 0; background: transparent;
-  font-size: 1.1rem; cursor: pointer; color: var(--muted); width: 32px; height: 32px;
+  position: absolute; top: 4px; right: 4px; border: 0; background: transparent;
+  font-size: 1.1rem; cursor: pointer; color: var(--muted); width: 44px; height: 44px; min-width: 44px; min-height: 44px;
 }
 
 .legend {
@@ -528,3 +530,11 @@ body.trolling .leaflet-bottom.leaflet-left {
 }
 .county-chip[aria-pressed="true"] { background: var(--bg); color: #fff; border-color: var(--bg); }
 .county-chip:disabled { opacity: .45; cursor: default; }
+
+.skip-link {
+  position: absolute; left: 12px; top: -48px; z-index: 4000;
+  background: #fff; color: var(--deep); font-weight: 700; padding: 10px 14px;
+  border-radius: 10px; box-shadow: var(--shadow); text-decoration: none;
+}
+.skip-link:focus { top: calc(10px + var(--safe-top)); }
+#map:focus { outline: none; }
