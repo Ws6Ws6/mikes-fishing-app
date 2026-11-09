@@ -102,6 +102,14 @@
     const myJob = job;
     onProgress && onProgress(0, urls.length, "Saving app and lake data…");
     await cacheAppFiles();
+    if (lake.has_contours && lake.id) {
+      try {
+        const c = await caches.open(RUNTIME);
+        const abs = new URL("./data/contours/" + lake.id + ".geojson", location.href);
+        const r = await fetch(abs.href, { cache: "no-cache" });
+        if (r.ok) await c.put(abs.origin + abs.pathname, r);
+      } catch (_) {}
+    }
     async function worker() {
       while (i < urls.length && !myJob.cancel) {
         const u = urls[i++];

@@ -1,12 +1,18 @@
 /* Files the service worker keeps for offline use (shared by sw.js and offline.js). */
 (function (g) {
-  g.MFA_SHELL_VERSION = "2026-10-29j";
+  g.MFA_SHELL_VERSION = "2026-11-09k";
   g.MFA_SHELL = [
     "./",
     "./index.html",
     "./app.js",
     "./styles.css",
     "./favicon.svg",
+    "./favicon.ico",
+    "./vendor/leaflet/leaflet.css",
+    "./vendor/leaflet/leaflet.js",
+    "./vendor/leaflet.markercluster/MarkerCluster.css",
+    "./vendor/leaflet.markercluster/MarkerCluster.Default.css",
+    "./vendor/leaflet.markercluster/leaflet.markercluster.js",
     "./js/shell-files.js",
     "./js/tools.js",
     "./js/offline.js",
@@ -31,18 +37,11 @@
   ];
   g.MFA_DATA = [
     "./data/lakes.geojson",
-    "./data/contours.geojson",
     "./data/launches.geojson",
     "./data/sources.json",
     "./data/dnr_fish.json",
     "./data/regs.json",
     "./data/launch_attrs.json",
   ];
-  g.MFA_CDN = [
-    "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
-    "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
-    "https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css",
-    "https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css",
-    "https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js",
-  ];
+  g.MFA_CDN = [];
 })(typeof self !== "undefined" ? self : window);

@@ -469,6 +469,7 @@
     openPanel(false);
     closeLakeTooltips();
     syncLakeUrl(lake);
+    if (lake.has_contours) ensureLakeContours(lake.id);
     if ((lake.has_contours || lake.no_depth_map) && lake.bbox) {
       const b = lake.bbox;
       if (fly) {
@@ -976,6 +977,45 @@
     });
   }
 
+
+  const contourCache = new Map();
+  const contourPending = new Map();
+  let onContoursAdded = () => {};
+  function ensureLakeContours(id) {
+    if (!id) return Promise.resolve({ type: "FeatureCollection", features: [] });
+    if (contourCache.has(id)) return Promise.resolve(contourCache.get(id));
+    if (contourPending.has(id)) return contourPending.get(id);
+    const p = fetch("./data/contours/" + encodeURIComponent(id) + ".geojson")
+      .then((r) => (r.ok ? r.json() : { type: "FeatureCollection", features: [] }))
+      .then((gj) => {
+        contourCache.set(id, gj);
+        contourPending.delete(id);
+        if (contourLayer && gj.features && gj.features.length) {
+          contourLayer.addData(gj);
+          onContoursAdded();
+        }
+        return gj;
+      })
+      .catch((e) => {
+        contourPending.delete(id);
+        console.warn("Contour fetch failed", id, e);
+        return { type: "FeatureCollection", features: [] };
+      });
+    contourPending.set(id, p);
+    return p;
+  }
+  function loadContoursInView() {
+    if (!map || map.getZoom() < 14) return Promise.resolve();
+    const b = map.getBounds();
+    const jobs = [];
+    for (const l of lakes) {
+      if (!l.has_contours || !l.bbox) continue;
+      const bb = L.latLngBounds([l.bbox[1], l.bbox[0]], [l.bbox[3], l.bbox[2]]);
+      if (b.intersects(bb)) jobs.push(ensureLakeContours(l.id));
+    }
+    return Promise.all(jobs);
+  }
+
   async function loadData() {
     // Launches load on their own so a huge contours fetch cannot block or abort them.
     const launchesPromise = fetch("./data/launches.geojson")
@@ -985,9 +1025,8 @@
         return null;
       });
 
-    const [lakesGj, contoursGj, sources] = await Promise.all([
+    const [lakesGj, sources] = await Promise.all([
       fetch("./data/lakes.geojson").then((r) => r.json()),
-      fetch("./data/contours.geojson").then((r) => r.json()),
       fetch("./data/sources.json").then((r) => r.json()).catch(() => null),
     ]);
 
@@ -1022,7 +1061,7 @@
     // sat in the wrong geographic place after pan, wheel-zoom, or touch scroll.
     // padding keeps nearby lines drawn while panning without a full redraw race.
     const contourRenderer = L.svg({ padding: 0.5 });
-    contourLayer = L.geoJSON(contoursGj, {
+    contourLayer = L.geoJSON({ type: "FeatureCollection", features: [] }, {
       style: styleContour,
       renderer: contourRenderer,
     }).addTo(map);
@@ -1101,13 +1140,20 @@
         updateLabels();
       }, 120);
     };
+    onContoursAdded = () => {
+      if (haloLayer) { map.removeLayer(haloLayer); haloLayer = null; }
+      syncHalo();
+      syncContourStyle();
+      scheduleLabels(true);
+    };
     map.on("zoomend", () => {
       syncContourVis();
       syncContourStyle();
       scheduleLabels(true);
       syncLaunchesForZoom();
+      loadContoursInView();
     });
-    map.on("moveend", () => scheduleLabels(false));
+    map.on("moveend", () => { scheduleLabels(false); loadContoursInView(); });
     syncContourVis();
     syncContourStyle();
     scheduleLabels(true);
@@ -1127,6 +1173,9 @@
     renderLakeList();
     renderCountyChips();
     applyLakeFromUrl();
+    setLoadStatus("");
+    loadContoursInView();
+    if (selectedLake && selectedLake.has_contours) ensureLakeContours(selectedLake.id);
     window.addEventListener("popstate", applyLakeFromUrl);
     if (sources) {
       console.info("Data sources:", sources);
@@ -1248,17 +1297,22 @@
       map.panTo([lat, lng], { animate: true, duration: 0.4 });
     }
 
-    const depthInfo = nearestContourDepth(lat, lng);
-    document.getElementById("trollSpeed").textContent =
-      troll.speedMph != null ? troll.speedMph.toFixed(1) : "—";
-    document.getElementById("trollHeading").textContent =
-      troll.heading != null ? Math.round(troll.heading) : "—";
-    document.getElementById("trollDepth").textContent = depthInfo ? `${depthInfo.depth}` : "—";
-    const srcEl = document.getElementById("trollDepthSrc");
-    if (srcEl)
-      srcEl.textContent = depthInfo
-        ? `Nearest contour: ${depthInfo.depth} ft · ${depthSourceLabel(lakeById(depthInfo.lakeId))} · ${Math.round(depthInfo.distM)} m away`
-        : "No verified depth line within 80 m";
+    const paintDepth = () => {
+      if (!troll.on || troll.lat !== lat) return;
+      const depthInfo = nearestContourDepth(lat, lng);
+      document.getElementById("trollSpeed").textContent =
+        troll.speedMph != null ? troll.speedMph.toFixed(1) : "—";
+      document.getElementById("trollHeading").textContent =
+        troll.heading != null ? Math.round(troll.heading) : "—";
+      document.getElementById("trollDepth").textContent = depthInfo ? `${depthInfo.depth}` : "—";
+      const srcEl = document.getElementById("trollDepthSrc");
+      if (srcEl)
+        srcEl.textContent = depthInfo
+          ? `Nearest contour: ${depthInfo.depth} ft · ${depthSourceLabel(lakeById(depthInfo.lakeId))} · ${Math.round(depthInfo.distM)} m away`
+          : "No verified depth line within 80 m";
+    };
+    paintDepth();
+    loadContoursInView().then(paintDepth);
   }
 
   async function requestWakeLock() {
@@ -1561,6 +1615,7 @@
     escapeHtml,
     lakeById,
     selectLake: (l, fly) => selectLake(l, fly),
+    ensureLakeContours,
   };
   document.dispatchEvent(new CustomEvent("mfa:ready"));
 
