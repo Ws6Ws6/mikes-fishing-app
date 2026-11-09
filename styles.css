@@ -54,11 +54,12 @@ html, body {
 #topbar > * { pointer-events: auto; }
 .brand { display: flex; gap: 10px; align-items: center; }
 .brand h1 { margin: 0; font-size: 1.05rem; letter-spacing: .2px; }
+.brand .name-short { display: none; }
 .brand .tag { margin: 0; font-size: .72rem; opacity: .85; }
 .hook { font-size: 1.4rem; filter: drop-shadow(0 2px 4px rgba(0,0,0,.35)); }
 .top-actions { display: flex; gap: 6px; }
 .top-actions button, .troll-controls button, #btnClosePanel {
-  border: 0; border-radius: 12px; width: 42px; height: 42px;
+  border: 0; border-radius: 12px; width: 44px; height: 44px; min-width: 44px; min-height: 44px;
   background: rgba(255,255,255,.95); color: var(--deep);
   font-size: 1.1rem; cursor: pointer; box-shadow: var(--shadow);
 }
@@ -285,7 +286,10 @@ body.trolling .legend { bottom: calc(178px + var(--safe-bottom)); }
   .brand .tag { display: none; }
   .hook { font-size: 1.2rem; }
   .top-actions { gap: 4px; flex-shrink: 0; }
-  .top-actions button { width: 38px; height: 38px; font-size: 1rem; border-radius: 10px; }
+  .top-actions button { width: 44px; height: 44px; min-width: 44px; min-height: 44px; font-size: 1rem; border-radius: 10px; }
+  .brand .name-full { display: none; }
+  .brand .name-short { display: inline; }
+  .brand h1 { overflow: visible; text-overflow: unset; }
   .panel { top: calc(56px + var(--safe-top)); }
 }
 @media (max-width: 340px) {
@@ -491,3 +495,12 @@ body.trolling .radar-bar { bottom: calc(var(--troll-hud-h, 196px) + 22px + var(-
 body.trolling .leaflet-bottom.leaflet-left {
   bottom: calc(var(--troll-hud-h, 196px) + 10px + var(--safe-bottom));
 }
+
+.load-status {
+  position: absolute; z-index: 950; left: 50%; top: calc(72px + var(--safe-top));
+  transform: translateX(-50%);
+  background: rgba(11,61,92,.94); color: #fff; font-weight: 650; font-size: .9rem;
+  padding: 10px 16px; border-radius: 999px; box-shadow: var(--shadow);
+  pointer-events: none;
+}
+.load-status.hidden { display: none; }

@@ -76,16 +76,8 @@
     document.dispatchEvent(new CustomEvent("mfa:basemap", { detail: { name } }));
     return basemap;
   }
-  document.getElementById("btnLayers").addEventListener("click", () => {
-    // Quick toggle: street <-> satellite (other basemaps live in the Tools menu).
-    if (basemap === "street") {
-      setBasemap("sat", true);
-      toast("Satellite basemap");
-    } else {
-      setBasemap("street", true);
-      toast("Street basemap");
-    }
-  });
+  // Basemap switching lives in Tools > Basemap & offline maps (no duplicate header button).
+
 
   // Depth colour ramp, shallow -> deep. Dark enough that 0–20 ft lines read on light
   // water (OSM / USGS Topo); on imagery basemaps a light halo is drawn under the lines.
@@ -392,10 +384,15 @@
     return true;
   }
 
+  function closeLakeTooltips() {
+    if (lakeMarkers) lakeMarkers.eachLayer((m) => { if (m.closeTooltip) m.closeTooltip(); });
+  }
   function selectLake(lake, fly) {
     selectedLake = lake;
+    closeLakeTooltips();
     showLakeCard(lake);
     openPanel(false);
+    closeLakeTooltips();
     if ((lake.has_contours || lake.no_depth_map) && lake.bbox) {
       const b = lake.bbox;
       if (fly) {
@@ -1440,8 +1437,18 @@
   };
   document.dispatchEvent(new CustomEvent("mfa:ready"));
 
-  loadData().catch((e) => {
-    console.error(e);
-    toast("Failed to load lake data");
-  });
+  function setLoadStatus(msg) {
+    const el = document.getElementById("loadStatus");
+    if (!el) return;
+    if (!msg) { el.classList.add("hidden"); el.textContent = ""; return; }
+    el.classList.remove("hidden");
+    el.textContent = msg;
+  }
+  loadData()
+    .then(() => setLoadStatus(""))
+    .catch((e) => {
+      console.error(e);
+      setLoadStatus("");
+      toast("Failed to load lake data");
+    });
 })();
