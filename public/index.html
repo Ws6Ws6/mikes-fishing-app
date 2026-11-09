@@ -34,14 +34,13 @@
     <div class="brand">
       <span class="hook" aria-hidden="true">🎣</span>
       <div>
-        <h1>Mike's Fishing App</h1>
+        <h1><span class="name-full">Mike's Fishing App</span><span class="name-short">Mike's Fishing</span></h1>
         <p class="tag">Indiana boat launches · NE Indiana depth maps</p>
       </div>
     </div>
     <div class="top-actions">
       <button id="btnLocate" type="button" aria-label="Show my location" title="My location">📍</button>
       <button id="btnSearch" type="button" aria-label="Find a lake" title="Find a lake">🔍</button>
-      <button id="btnLayers" type="button" aria-label="Switch basemap" title="Basemap">🗺</button>
       <button id="btnLaunches" type="button" aria-label="Toggle boat launches" title="Toggle boat launches" aria-pressed="false">🛶</button>
       <button id="btnTools" type="button" aria-label="Tools menu: offline maps and more" title="Tools" aria-expanded="false" aria-controls="toolsPanel">☰</button>
     </div>
@@ -72,6 +71,7 @@
   </aside>
 
   <div id="map"></div>
+  <div id="loadStatus" class="load-status" role="status" aria-live="polite">Loading lake maps…</div>
 
   <div id="lakeCard" class="card hidden" role="dialog" aria-label="Lake details"></div>
 
