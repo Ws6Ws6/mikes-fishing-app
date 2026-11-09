@@ -327,6 +327,16 @@
       .sort((a, b) => a.name.localeCompare(b.name));
   }
 
+
+  // Never show internal QC notes (strict.py, file paths, ICP, overlay filenames).
+  const QC_NOTE = /strict\.py|strict_multi|check\/|h54\/|\.(png|jpg|json)\b|ICP |fit_iou|water_iou|frac_inside|IoU=|overlay check/i;
+  function publicReviewNote(lake) {
+    if (!lake || !lake.needs_review) return "";
+    const t = String(lake.review_notes || "").trim();
+    if (t && !QC_NOTE.test(t)) return t;
+    return "These contours still need a position or depth check. Depths are not a substitute for sonar.";
+  }
+
   function renderLakeList() {
     const ul = document.getElementById("lakeList");
     ul.innerHTML = "";
@@ -632,7 +642,7 @@
           : lake.needs_review
             ? "Needs review"
             : lake.has_contours
-              ? (lake.contour_method === "vector_featureserver" ? "Vector contours" : lake.contour_method === "lidar_dem_contour" ? "Lidar contours (unofficial)" : "Digitized PDF contours")
+              ? (lake.contour_method === "vector_featureserver" ? "Vector contours" : lake.contour_method === "lidar_dem_contour" ? "Lidar contours (unofficial)" : lake.contour_method === "historical_trace" ? "Unofficial historical contours" : "Digitized PDF contours")
               : "PDF map only"
       }</div>
       ${
@@ -643,8 +653,8 @@
               lake.review_notes
                 || "Georeferencing is synthetic or shapes are approximate. Depth values come from the survey, but line positions are not reliable."
             } Contours draw dashed on the map.</div>`
-          : lake.needs_review && lake.review_notes
-            ? `<div class="review-notes"><strong>Review${lake.review_priority ? " ("+lake.review_priority+")" : ""}:</strong> ${lake.review_notes}</div>`
+          : lake.needs_review && publicReviewNote(lake)
+            ? `<div class="review-notes"><strong>Needs a closer look:</strong> ${escapeHtml(publicReviewNote(lake))}</div>`
             : ""
       }
       ${lake.depth_banner && !lake.no_depth_map ? `<div class="review-notes"><strong>${escapeHtml(lake.depth_banner_title || "Note")}:</strong> ${escapeHtml(lake.depth_banner)}</div>` : ""}

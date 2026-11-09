@@ -7,11 +7,12 @@
   "use strict";
   const T = window.mfaTools, M = () => window.__mfa;
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-  const VERIFIED_METHODS = { vector_featureserver: 1, traced_from_pdf: 1 };
+  const VERIFIED_METHODS = { vector_featureserver: 1, traced_from_pdf: 1, lidar_dem_contour: 1 };
   function isVerified(l) {
     return !!(l && l.has_contours && !l.needs_review && !l.no_depth_map && VERIFIED_METHODS[l.contour_method] &&
-      l.data_quality !== "needs_review" && l.data_quality !== "pdf_digitized" && l.line_style !== "dashed" &&
-      !/distance_from_shore|synthetic/.test(l.depth_assignment || ""));
+      l.line_style !== "dashed" &&
+      !/distance_from_shore|synthetic/.test(l.depth_assignment || "") &&
+      l.contour_method !== "synthetic_or_distance_based");
   }
   let contoursP = null;
   const loadContours = () => (contoursP = contoursP || fetch("./data/contours.geojson").then((r) => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); }).catch((e) => { contoursP = null; throw e; }));
