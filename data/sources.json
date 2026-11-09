@@ -2,14 +2,24 @@
  "generated": "2026-10-31T00:40:07+00:00",
  "region": "Northeast Indiana",
  "counties": [
-  "Steuben",
-  "LaGrange",
-  "Noble",
+  "Adams",
+  "Allen",
+  "Blackford",
+  "Branch (MI)",
   "DeKalb",
-  "Kosciusko",
   "Elkhart",
-  "Whitley",
-  "Allen"
+  "Fulton",
+  "Grant",
+  "Howard",
+  "Huntington",
+  "Kosciusko",
+  "LaGrange",
+  "Miami",
+  "Noble",
+  "Steuben",
+  "Wabash",
+  "Wells",
+  "Whitley"
  ],
  "lakes_with_contours": 155,
  "contour_features": 7213,
@@ -253,7 +263,7 @@
   },
   "sources": [
    {
-    "name": "Indiana DNR Fish & Wildlife \u2014 Fishing Access Sites",
+    "name": "Indiana DNR Fish & Wildlife — Fishing Access Sites",
     "url": "https://gisdata.in.gov/server/rest/services/Hosted/Fish_Access_RO/FeatureServer/0",
     "access": "public",
     "notes": "Official public access sites; boat_ramp=Yes / Boat Ramp / Carry Down / Canoe Ramp."
@@ -267,13 +277,13 @@
    {
     "name": "OpenStreetMap (leisure=slipway, marina, amenity=boat_rental)",
     "url": "https://www.openstreetmap.org/",
-    "access": "from OSM access=* tag (private/customers/members \u2192 private; yes/public \u2192 public; else unknown)",
+    "access": "from OSM access=* tag (private/customers/members → private; yes/public → public; else unknown)",
     "notes": "Deduped against DNR/rec within ~120 m. Untagged slipways labeled unknown. Private club launches not in OSM/state inventories are intentionally omitted."
    }
   ],
   "caveats": [
    "Private launch coverage is limited to sites published in the state recreational facilities inventory or OSM with access=private/customers/members.",
-   "Do not treat private/commercial markers as guaranteed guest access \u2014 confirm with the operator.",
+   "Do not treat private/commercial markers as guaranteed guest access — confirm with the operator.",
    "No gated club directories were scraped; absence of a private ramp does not mean none exist."
   ],
   "rebuild": "python3 scripts/rebuild_launches.py  # requires shapely; copies to public/data/"
