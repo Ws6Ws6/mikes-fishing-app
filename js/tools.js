@@ -9,16 +9,34 @@
   const lakePanel = document.getElementById("panel");
   if (!btn || !panel || !body) return;
 
+  let lastFocus = null;
+  function focusables(root) {
+    return [...root.querySelectorAll('button, [href], input, select, textarea, summary, [tabindex]:not([tabindex="-1"])')].filter((el) => !el.disabled && el.offsetParent !== null);
+  }
   function open(on) {
     panel.classList.toggle("hidden", !on);
     btn.setAttribute("aria-expanded", on ? "true" : "false");
     btn.classList.toggle("active", on);
     if (on && lakePanel) lakePanel.classList.add("hidden");
+    if (on) {
+      lastFocus = document.activeElement;
+      const close = document.getElementById("btnCloseTools");
+      requestAnimationFrame(() => { try { (close || panel).focus(); } catch (_) {} });
+    } else if (lastFocus && lastFocus.focus) {
+      try { lastFocus.focus(); } catch (_) {}
+    }
   }
   btn.addEventListener("click", () => open(panel.classList.contains("hidden")));
   document.getElementById("btnCloseTools").addEventListener("click", () => open(false));
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && !panel.classList.contains("hidden")) open(false);
+    if (panel.classList.contains("hidden")) return;
+    if (e.key === "Escape") { open(false); return; }
+    if (e.key !== "Tab") return;
+    const els = focusables(panel);
+    if (!els.length) return;
+    const first = els[0], last = els[els.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
   });
   // Opening the lake list closes Tools (only one sheet at a time).
   const search = document.getElementById("btnSearch");

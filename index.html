@@ -30,6 +30,7 @@
   <meta name="apple-mobile-web-app-title" content="Mike's Fishing" />
 </head>
 <body>
+  <a class="skip-link" href="#map">Skip to map</a>
   <header id="topbar">
     <div class="brand">
       <span class="hook" aria-hidden="true">🎣</span>
@@ -71,7 +72,7 @@
     <div id="toolsBody" class="tools-body"></div>
   </aside>
 
-  <div id="map"></div>
+  <div id="map" tabindex="-1"></div>
   <div id="loadStatus" class="load-status" role="status" aria-live="polite">Loading lake maps…</div>
 
   <div id="lakeCard" class="card hidden" role="dialog" aria-label="Lake details"></div>

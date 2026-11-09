@@ -411,9 +411,13 @@
           : l.max_contour_ft != null ? ` · max ≥${l.max_contour_ft} ft` : "";
       const acres = l.acres != null ? ` · ${l.acres} ac`
         : Array.isArray(l.acres_range) ? ` · ~${l.acres_range[0]}–${l.acres_range[1]} ac` : "";
-      li.innerHTML = `<div class="name">${l.name}${badge}</div>
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "lake-row";
+      btn.innerHTML = `<div class="name">${l.name}${badge}</div>
         <div class="meta">${l.county || "—"}${acres}${depth}</div>`;
-      li.addEventListener("click", () => selectLake(l, true));
+      btn.addEventListener("click", () => selectLake(l, true));
+      li.appendChild(btn);
       ul.appendChild(li);
     }
   }
@@ -647,8 +651,9 @@
       if (typeof window.mfaLaunchFilter === "function" && !window.mfaLaunchFilter(Lch)) continue;
       const m = L.marker([Lch.lat, Lch.lng], {
         icon: launchIcon(Lch.access),
-        keyboard: false,
+        keyboard: true,
         pane: "launchesPane",
+        title: Lch.name || "Boat launch",
       });
       m.bindPopup(launchPopupHtml(Lch), { maxWidth: 280 });
       m.bindTooltip(
@@ -1522,6 +1527,21 @@
   });
 
   // Deep-link helpers for Playwright screenshots
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "Escape") return;
+    const card = document.getElementById("lakeCard");
+    if (card && !card.classList.contains("hidden")) {
+      card.classList.add("hidden");
+      e.stopPropagation();
+      return;
+    }
+    const list = document.getElementById("panel");
+    if (list && !list.classList.contains("hidden")) {
+      list.classList.add("hidden");
+    }
+  });
+
   window.__mfa = {
     map,
     selectLakeByName(name) {
