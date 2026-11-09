@@ -504,3 +504,18 @@ body.trolling .leaflet-bottom.leaflet-left {
   pointer-events: none;
 }
 .load-status.hidden { display: none; }
+
+/* Item 6: mobile peek sheet — desktop card layout is unchanged. */
+@media (max-width: 799px) {
+  .card.peek .nearby-launches,
+  .card.peek .card-extras,
+  .card.peek > .source { display: none; }
+  .card-expand {
+    display: block; width: 100%; margin-top: 8px; min-height: 44px;
+    border: 0; border-radius: 11px; cursor: pointer;
+    background: #e8f2f8; color: var(--deep); font-weight: 650; font-size: .9rem;
+  }
+}
+@media (min-width: 800px) {
+  .card-expand { display: none; }
+}

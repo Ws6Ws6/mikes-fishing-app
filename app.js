@@ -723,6 +723,32 @@
     const srcP = card.querySelector("p.source");
     card.insertBefore(extra, srcP);
     document.dispatchEvent(new CustomEvent("mfa:lakecard", { detail: { lake, card, extras: extra } }));
+    applyCardPeek(card);
+  }
+
+  function applyCardPeek(card) {
+    const existing = card.querySelector("#btnCardExpand");
+    if (existing) existing.remove();
+    card.classList.remove("peek", "expanded");
+    if (window.innerWidth >= 800) return;
+    card.classList.add("peek");
+    const btn = document.createElement("button");
+    btn.id = "btnCardExpand";
+    btn.type = "button";
+    btn.className = "card-expand";
+    btn.setAttribute("aria-expanded", "false");
+    btn.textContent = "Show more";
+    btn.addEventListener("click", () => {
+      const peek = card.classList.toggle("peek");
+      // toggle returns new state of the class: true if now peeking
+      btn.textContent = peek ? "Show more" : "Show less";
+      btn.setAttribute("aria-expanded", peek ? "false" : "true");
+      if (!peek) card.classList.add("expanded");
+      else card.classList.remove("expanded");
+    });
+    const actions = card.querySelector(".actions");
+    if (actions) actions.after(btn);
+    else card.appendChild(btn);
   }
 
   function goNextNearest(from) {
