@@ -62,5 +62,9 @@
     extras.insertBefore(d, after || null);
     return { details: d, body: content, summary: s };
   }
+  const about = addSection({ id: "toolAbout", title: "ℹ About & sources", order: 90 });
+  about.innerHTML = `<p class="tool-note">Depth lines: Indiana DNR surveys (IndianaMap) and DNR depth-map PDFs; a few lakes are unofficial traces of 1922–1954 Indiana Dept. of Conservation / USGS maps (marked on each lake); Salamonie Lake has unofficial lines from USGS lidar, measured from summer pool. Lake outlines: USGS NHD and OpenStreetMap. Launches: Indiana DNR, IndianaMap and OpenStreetMap.</p>
+    <p class="tool-note">Depths are feet below the surface on the survey date — not live sonar.</p>`;
+
   window.mfaTools = { addSection, open, cardSection };
 })();
