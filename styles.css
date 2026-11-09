@@ -519,3 +519,12 @@ body.trolling .leaflet-bottom.leaflet-left {
 @media (min-width: 800px) {
   .card-expand { display: none; }
 }
+
+.county-chips { display: flex; gap: 6px; padding: 0 12px 8px; overflow-x: auto; flex-shrink: 0; }
+.county-chip {
+  flex: 0 0 auto; min-height: 36px; padding: 0 12px; border: 1px solid #c9d8e3;
+  border-radius: 999px; background: #fff; color: var(--deep); font-weight: 650;
+  font-size: .8rem; cursor: pointer; white-space: nowrap;
+}
+.county-chip[aria-pressed="true"] { background: var(--bg); color: #fff; border-color: var(--bg); }
+.county-chip:disabled { opacity: .45; cursor: default; }

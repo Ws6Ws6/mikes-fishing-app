@@ -307,17 +307,29 @@
     });
   }
 
+  let countyFilter = null;
+  let sortNear = null; // {lat, lng} after Locate
+
   function filteredLakes() {
     const q = normSearch(document.getElementById("lakeSearch").value);
     const showC = document.getElementById("filterContours").checked;
     const showP = document.getElementById("filterPdf").checked;
-    return lakes
-      .filter((l) => {
+    const list = lakes.filter((l) => {
         if (l.has_contours && !showC) return false;
         if (!l.has_contours && !showP) return false;
+        if (countyFilter && l.county !== countyFilter && l.county2 !== countyFilter) return false;
         return lakeMatchesQuery(l, q);
-      })
-      .sort((a, b) => a.name.localeCompare(b.name));
+      });
+    if (sortNear && sortNear.lat != null) {
+      list.sort((a, b) => {
+        const da = a.lat != null ? haversineM([sortNear.lat, sortNear.lng], [a.lat, a.lng]) : Infinity;
+        const db = b.lat != null ? haversineM([sortNear.lat, sortNear.lng], [b.lat, b.lng]) : Infinity;
+        return da - db;
+      });
+    } else {
+      list.sort((a, b) => a.name.localeCompare(b.name));
+    }
+    return list;
   }
 
 
@@ -328,6 +340,50 @@
     const t = String(lake.review_notes || "").trim();
     if (t && !QC_NOTE.test(t)) return t;
     return "These contours still need a position or depth check. Depths are not a substitute for sonar.";
+  }
+
+
+  function allCounties() {
+    const set = new Set();
+    for (const l of lakes) {
+      if (l.county) set.add(l.county);
+      if (l.county2) set.add(l.county2);
+    }
+    return [...set].sort((a, b) => a.localeCompare(b));
+  }
+  function renderCountyChips() {
+    const el = document.getElementById("countyChips");
+    if (!el) return;
+    el.innerHTML = "";
+    const mk = (label, { pressed, disabled, onClick, title }) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "county-chip";
+      b.textContent = label;
+      b.setAttribute("aria-pressed", pressed ? "true" : "false");
+      if (title) b.title = title;
+      if (disabled) b.disabled = true;
+      b.addEventListener("click", onClick);
+      el.appendChild(b);
+      return b;
+    };
+    mk("All", { pressed: !countyFilter && !sortNear, onClick: () => { countyFilter = null; sortNear = sortNear; /* keep coords but cancel near-sort */ sortNear = null; renderCountyChips(); renderLakeList(); } });
+    mk("Nearest to me", {
+      pressed: !!sortNear,
+      disabled: !sortNear && !(window.__mfaLastFix),
+      title: "Sort the list by distance from your location",
+      onClick: () => {
+        const fix = window.__mfaLastFix;
+        if (!fix) return;
+        sortNear = { lat: fix.lat, lng: fix.lng };
+        countyFilter = null;
+        renderCountyChips();
+        renderLakeList();
+      }
+    });
+    for (const c of allCounties()) {
+      mk(c, { pressed: countyFilter === c, onClick: () => { countyFilter = countyFilter === c ? null : c; sortNear = null; renderCountyChips(); renderLakeList(); } });
+    }
   }
 
   function renderLakeList() {
@@ -1064,6 +1120,7 @@
 
     placeLakeMarkers();
     renderLakeList();
+    renderCountyChips();
     applyLakeFromUrl();
     window.addEventListener("popstate", applyLakeFromUrl);
     if (sources) {
@@ -1441,6 +1498,12 @@
     navigator.geolocation.getCurrentPosition(
       (pos) => {
         const { latitude, longitude } = pos.coords;
+        window.__mfaLastFix = { lat: latitude, lng: longitude };
+        sortNear = { lat: latitude, lng: longitude };
+        countyFilter = null;
+        renderCountyChips();
+        renderLakeList();
+        openPanel(true);
         map.setView([latitude, longitude], Math.max(map.getZoom(), 13));
         L.circleMarker([latitude, longitude], {
           radius: 7,
