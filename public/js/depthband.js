@@ -96,7 +96,10 @@
       <p class="sec-src" id="dbStat" aria-live="polite">Loading contours…</p>`;
     const stat = body.querySelector("#dbStat"), iMin = body.querySelector("#dbMin"), iMax = body.querySelector("#dbMax");
     let data = null;
-    loadContours().then((gj) => {
+    const incoming = (M() && M().ensureLakeContours)
+      ? M().ensureLakeContours(lake.id)
+      : loadContours();
+    incoming.then((gj) => {
       if (cur !== lake) return;
       data = build(lake.id, gj, lake.lat != null ? lake.lat : lake.bbox ? (lake.bbox[1] + lake.bbox[3]) / 2 : 40);
       stat.textContent = `Contour depths on this lake: ${data.depths.join(", ")} ft. Shading follows these lines only.`;
