@@ -11,407 +11,1177 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mikesfishingapp.com/lakes/by-county/adams/</loc>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/adams/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/allen/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/bartholomew/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/blackford/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/boone/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/branch-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/brown/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/carroll/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/cass/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/clark/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/clay/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/crawford/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/daviess/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/dearborn/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/decatur/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/dekalb/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/delaware/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/dubois/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/elkhart/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/fayette/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/floyd/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/franklin/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/fulton/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/gibson/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/grant/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/greene/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/hamilton/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/hancock/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/harrison/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/hendricks/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/henry/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/howard/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/huntington/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/jackson/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/jasper/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/jennings/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/johnson/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/knox/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/kosciusko/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/lagrange/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/laporte/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/lawrence/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/madison/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/marion/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/marshall/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/martin/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/miami/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/monroe/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/montgomery/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/morgan/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/newton/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/noble/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/orange/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/owen/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/parke/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/perry/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/pike/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/porter/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/posey/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/pulaski/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/putnam/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/ripley/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/scott/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/spencer/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/st-joseph/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/starke/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/steuben/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/sullivan/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/tippecanoe/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/union/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/vanderburgh/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/vigo/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/wabash/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/warrick/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/washington/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/wayne/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/wells/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/white/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/indiana/whitley/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/alcona/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/alger/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/allegan/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/alpena/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/antrim/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/baraga/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/barry/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/benzie/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/berrien/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/branch/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/calhoun/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/cass/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/charlevoix/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/cheboygan/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/chippewa/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/clare/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/clinton/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/crawford/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/delta/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/dickinson/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/emmet/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/genesee/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/gladwin/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/gogebic/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/grand-traverse/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/hillsdale/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/houghton/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/ingham/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/ionia/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/iosco/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/iron/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/isabella/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/jackson/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/kalamazoo/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/kalkaska/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/kent/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/keweenaw/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/lapeer/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/leelanau/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/lenawee/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/livingston/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/luce/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/mackinac/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/manistee/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/marquette/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/mason/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/mecosta/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/menominee/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/midland/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/missaukee/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/montcalm/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/montmorency/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/muskegon/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/newaygo/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/oakland/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/oceana/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/ogemaw/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/ontonagon/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/osceola/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/oscoda/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/otsego/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/ottawa/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/presque-isle/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/roscommon/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/schoolcraft/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/st-joseph/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/tuscola/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/van-buren/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/washtenaw/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/wayne/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/michigan/wexford/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/by-county/adams/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/allen/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/bartholomew/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/blackford/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/boone/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/branch-mi/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/brown/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/carroll/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/cass/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/clark/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/clay/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/crawford/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/daviess/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/dearborn/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/decatur/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/dekalb/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/delaware/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/dubois/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/elkhart/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/fayette/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/floyd/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/franklin/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/fulton/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/gibson/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/grant/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/greene/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/hamilton/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/hancock/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/harrison/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/hendricks/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/henry/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/howard/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/huntington/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/jackson/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/jasper/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/jennings/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/johnson/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/knox/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/kosciusko/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/lagrange/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/lake/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/laporte/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/lawrence/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/madison/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/marion/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/marshall/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/martin/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/miami/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/monroe/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/montgomery/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/morgan/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/newton/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/noble/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/orange/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/owen/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/parke/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/perry/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/pike/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/porter/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/posey/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/pulaski/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/putnam/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/ripley/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/scott/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/spencer/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/st-joseph/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/starke/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/steuben/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/sullivan/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/tippecanoe/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/union/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/vanderburgh/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/vigo/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/wabash/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/warrick/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/washington/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/wayne/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/wells/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/white/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/by-county/whitley/</loc>
     <lastmod>2026-11-10</lastmod>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/1000-islands-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/ackerman-lake-alger-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/adams-lake-charlevoix-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -431,7 +1201,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/alderman-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/allen-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/allen-lake-kosciusko/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/allen-lake-lenawee-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/alma-lake-mecosta-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/ambrose-lake-ogemaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/andrus-lake-chippewa-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -446,6 +1246,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/appleton-lake-livingston-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/arbutus-lake-grand-traverse-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/arm-pit-pike/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -456,7 +1266,17 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/arnold-lake-clare-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/ashby-pit-pike/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/ashford-lake-schoolcraft-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -467,6 +1287,26 @@
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/atwood-lake-lagrange/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/au-sable-lake-ogemaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/au-train-lake-alger-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/austin-lake-kalamazoo-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/avalon-lake-montmorency-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -496,6 +1336,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/bankson-lake-van-buren-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/banning-lake-kosciusko/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -521,6 +1366,56 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/bass-lake-dickinson-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/bass-lake-grand-traverse-28-137-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/bass-lake-grand-traverse-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/bass-lake-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/bass-lake-kent-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/bass-lake-lake-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/bass-lake-luce-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/bass-lake-marquette-52-305-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/bass-lake-marquette-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/bass-lake-schoolcraft-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/bass-lake-steuben/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -531,12 +1426,57 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/bassett-lake-barry-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/baugher-lake/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/baw-beese-lake-hillsdale-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/bay-city-lake-mackinac-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/bear-den-lake-presque-isle-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/bear-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/bear-lake-hillsdale-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/bear-lake-kalkaska-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/bear-lake-manistee-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/beatons-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/beaufort-lake-baraga-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -556,6 +1496,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/beaver-lake-alpena-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/beaver-pit-pike/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -571,7 +1516,17 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/belas-lake-cass-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/bell-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/bell-marie-lake-otsego-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -581,7 +1536,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/belleville-lake-wayne-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/benefiel-pit-sullivan/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/benton-lake-oceana-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/bergess-lake-mecosta-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/berry-lake-wexford-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -616,7 +1591,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/big-bass-lake-otsego-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/big-bear-lake-otsego-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/big-bradford-lake-otsego-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/big-chapman-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/big-fish-lake-lapeer-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/big-lake-allegan-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/big-lake-baraga-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -626,7 +1631,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/big-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/big-lake-osceola-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/big-lake-otsego-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/big-long-lake-lagrange/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/big-mud-lake-clare-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -636,12 +1661,42 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/big-pine-island-lake-kent-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/big-piney-pond-daviess/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/big-seven-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/big-star-lake-lake-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/big-trout-lake-marquette-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/big-turkey-lake-steuben/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/bills-lake-newaygo-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/birch-lake-antrim-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -656,7 +1711,17 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/bird-lake-hillsdale-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/bischoff-reservoir-ripley/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/bishop-lake-livingston-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -671,12 +1736,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/black-lake-berrien-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/black-lake-cheboygan-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/black-lake-whitley/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/blackman-lake-lagrange/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/blue-gill-lake-crawford-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -696,12 +1776,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/blue-lake-kalkaska-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/bluegrass-lake/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/bobcat-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/bobcat-lake-sullivan/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/bodi-lake-luce-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -731,6 +1826,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/boot-lake-schoolcraft-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/booth-lake-steuben/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -756,12 +1856,52 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/boyles-creek-clare-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/brandywine-lake-van-buren-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/brevoort-lake-mackinac-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/bright-lake-crawford-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/bristol-lake-barry-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/bristol-lake-noble/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/brockway-lake-mecosta-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/brokesha-lake-lagrange/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/brooks-lake-benzie-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/brooks-lake-newaygo-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -791,7 +1931,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/bruin-lake-washtenaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/brule-lake-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/brush-creek-reservoir/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/brush-lake-newaygo-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -831,12 +1986,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/burt-lake-cheboygan-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/bush-lake-ogemaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/buttonbush-lake-elkhart/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/butts-lake-elkhart/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/cable-lake-iron-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -851,12 +2021,57 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/camp-lake-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/camp-seven-lake-delta-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/campau-lake-kent-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/canfield-lake-manistee-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/caribou-lake-chippewa-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/carney-lake-dickinson-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/carr-lake-kosciusko/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/carter-lake-barry-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/cary-lake-branch-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/cass-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/cass-lake-oakland-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -871,7 +2086,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/cedar-hedge-lake-grand-traverse-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/cedar-island-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/cedar-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/cedar-lake-alcona-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/cedar-lake-grand-traverse-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -886,7 +2121,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/cedar-lake-leelanau-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/cedar-lake-steuben/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/cedar-lake-van-buren-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/cedar-lake-washtenaw-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -897,6 +2147,11 @@
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/cedarville-reservoir/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/center-lake-jackson-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -916,6 +2171,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/chaney-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/cheeseboro-lake-steuben/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -926,7 +2186,32 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/chicago-lake-delta-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/chicagon-lake-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/chippewa-lake-mecosta-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/chrisney-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/cisco-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/clam-lake-antrim-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -936,12 +2221,82 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/clark-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/clear-lake-barry-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/clear-lake-houghton-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/clear-lake-mecosta-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/clear-lake-montmorency-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/clear-lake-ogemaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/clear-lake-schoolcraft-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/clear-lake-st-joseph-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/clear-lake-steuben/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/clear-lake-van-buren-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/clear-pit-greene/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/clear-squaw-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/clifford-lake-montcalm-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/cochran-lake-cheboygan-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/coldwater-lake-branch-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/colwell-lake-schoolcraft-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -956,6 +2311,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/corey-lake-st-joseph-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/corky-pit-greene/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -966,12 +2326,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/courtney-lake-ontonagon-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/covington-lake-allen/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/cowden-lake-montcalm-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/coxhall-gardens-park-pond-hamilton/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/craig-lake-branch-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/cranberry-lake-clare-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/cranberry-lake-kalkaska-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -986,6 +2371,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/crescent-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/crooked-creek-lake/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -996,7 +2386,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/crooked-lake-emmet-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/crooked-lake-montmorency-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/crooked-lake-noble/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/crooked-lake-washtenaw-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1006,7 +2411,47 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/crotched-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/crystal-lake-houghton-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/crystal-lake-kosciusko/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/crystal-lake-montcalm-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/crystal-lake-oceana-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/cub-lake-hillsdale-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/cub-lake-kalkaska-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/culhane-lake-luce-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/cusino-lake-schoolcraft-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1026,7 +2471,32 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/dana-lake-delta-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/daredevil-pit-clay/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/davis-lake-leelanau-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/davison-lake-lapeer-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/dawn-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/deadman-lake-ontonagon-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1066,6 +2536,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/deer-lake-charlevoix-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/deer-lake-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/delaney-county-park-lake/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -1086,6 +2566,21 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/derby-lake-montcalm-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/devils-lake-lenawee-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/devoe-lake-ogemaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/dewart-lake/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -1096,7 +2591,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/diamond-lake-cass-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/diamond-lake-kosciusko/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/diamond-lake-mecosta-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/diamond-lake-oceana-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/diamond-lake-osceola-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1111,12 +2626,32 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/dickerson-lake-montcalm-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/dickinson-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/dillards-pit/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/dinner-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/dixon-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/dixon-lake-otsego-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1136,12 +2671,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/dodge-lake-schoolcraft-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/dogleg-pit-pike/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/dogwood-lake-daviess/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/donnell-lake-cass-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/douglas-lake-cheboygan-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1156,7 +2706,47 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/doyle-lake-washtenaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/driskels-lake-cass-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/dubois-county-fairgrounds-pond-2-dubois/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/duck-lake-allegan-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/duck-lake-calhoun-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/duck-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/duck-lake-grand-traverse-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/duck-lake-livingston-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/duck-lake-montcalm-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1176,6 +2766,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/duncan-lake-barry-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/dunton-lake-dekalb/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -1186,7 +2781,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/dutch-fred-lake-schoolcraft-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/eagle-creek-reservoir-marion/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/eagle-lake-allegan-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/eagle-lake-kalamazoo-39-275-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/eagle-lake-kalamazoo-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1196,12 +2811,52 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/eagle-lake-van-buren-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/eagle-lake-washtenaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/east-brazil-lake-clay/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/east-crooked-lake-livingston-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/east-lake-elkhart/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/east-lake-kalkaska-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/east-lake-luce-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/east-lake-schoolcraft-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/east-twin-lake-luce-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/east-twin-lake-montmorency-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1226,7 +2881,32 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/edey-lake-dickinson-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/eel-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/elbow-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/elbow-lake-lake-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/elk-creek-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/elk-lake-grand-traverse-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1236,7 +2916,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/ellis-lake-grand-traverse-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/ellis-pit-greene/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/ellsworth-lake-antrim-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/emerald-lake-otsego-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/emily-lake-houghton-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1247,6 +2947,26 @@
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/engle-lake-noble/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/englewright-lake-newaygo-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/engman-lake-marquette-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/ess-lake-montmorency-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/estes-lake-houghton-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1321,7 +3041,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/fife-lake-grand-traverse-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/final-cut-lake-warrick/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/fire-lake-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/first-fortune-lake-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/first-lake-branch-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1331,12 +3071,47 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/fish-lake-alger-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/fish-lake-barry-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/fish-lake-cass-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/fish-lake-elkhart/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/fish-lake-grand-traverse-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/fish-lake-steuben/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/fish-lake-van-buren-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/fishers-lake-st-joseph-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/five-lakes-clare-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1361,6 +3136,21 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/floyd-lake-iosco-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/ford-lake-mason-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/ford-lake-washtenaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/fossil-lake-dubois/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -1372,6 +3162,11 @@
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/four-lakes-park-pond-2-knox/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/fourmile-lake-washtenaw-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1392,6 +3187,11 @@
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/franke-lake-clark/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/frenchman-lake-chippewa-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1441,6 +3241,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/gaylanta-lake-montmorency-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/geist-reservoir-hamilton/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -1451,7 +3256,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/gemini-lakes-schoolcraft-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/gentian-failing-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/george-lake-branch-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/george-lake-ogemaw-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1466,7 +3286,17 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/gilead-lake-branch-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/gilmour-lake-greene/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/glen-lake-leelanau-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1476,7 +3306,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/glidden-lake-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/glimmerglass-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/glory-lake-crawford-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/goguac-lake-calhoun-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/golden-lake-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/golden-lake-steuben/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/golden-silence-lake-gogebic-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1496,6 +3356,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/goose-lake-missaukee-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/goose-lake-whitley/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -1507,6 +3372,11 @@
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/goose-pond-jennings/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/gooseneck-lake-delta-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1526,7 +3396,47 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/gosling-lake-livingston-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/graham-lake-calhoun-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/grand-boulevard-lake-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/grand-lake-presque-isle-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/grass-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/grass-lake-jackson-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/grass-lake-luce-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/grass-lake-montcalm-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/grass-lake-montmorency-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1541,6 +3451,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/gravel-lake-van-buren-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/gravel-pit-lake-steuben/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -1551,12 +3466,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/green-lake-allegan-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/green-lake-grand-traverse-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/green-lake-lagrange/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/green-lake-steuben/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/green-lake-washtenaw-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1591,6 +3521,36 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/grousehaven-lake-ogemaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/gull-lake-kalamazoo-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/gulliver-lake-schoolcraft-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/gun-lake-barry-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/gun-lake-mason-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/guthrie-lake-otsego-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/hackberry-pit-sullivan/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -1601,7 +3561,17 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/hackert-lake-mason-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/hackleburg-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/hagerman-lake-iron-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1611,7 +3581,42 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/half-moon-lake-montcalm-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/half-moon-lake-muskegon-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/halfmoon-lake-washtenaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/hall-lake-barry-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/hall-lake-van-buren-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/hamilton-lake-dickinson-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/hamilton-lake-steuben/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/hamlin-lake-mason-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1641,6 +3646,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/hardwood-lake-ogemaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/hardy-lake-scott/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -1656,6 +3666,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/harwood-lake-cass-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/hawg-pit-clay/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -1666,7 +3681,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/hayward-lake-menominee-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/healy-lake-manistee-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/heart-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/heart-lake-otsego-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/heaton-lake-elkhart/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/hemlock-lake-cass-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/hemlock-lake-hillsdale-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1681,7 +3726,17 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/henry-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/henry-lake-steuben/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/herendeene-lake-benzie-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1691,7 +3746,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/heron-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/hess-lake-newaygo-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/hewes-lake-ingham-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/hi-land-lake-livingston-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/hicks-lake-osceola-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/hidden-lake-kosciusko/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/higgins-lake-roscommon-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1701,12 +3786,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/highbank-lake-newaygo-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/hill-lake-kosciusko/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/hillsview-lake-mecosta-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/hindman-lake-noble/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/hoags-lake-mason-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1726,6 +3826,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/hogset-lake-kalamazoo-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/hoister-lake-gladwin-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/hominy-ridge-lake-wabash/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -1741,12 +3851,42 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/horseshoe-lake-alcona-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/horseshoe-lake-crawford-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/horseshoe-lake-marquette-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/horseshoe-lake-montcalm-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/horseshoe-lake-noble/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/horseshoe-lake-ogemaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/horseshoe-pond-daviess/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/houghton-lake-roscommon-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1761,12 +3901,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/hubbard-lake-alcona-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/hudson-lake-laporte/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/hungerford-lake-newaygo-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/hunter-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/hunter-lake-montcalm-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1781,7 +3936,32 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/huzzy-lake-van-buren-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/imp-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/independence-lake-washtenaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/indian-lake-dekalb/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/indian-lake-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/indian-lake-kalkaska-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1796,12 +3976,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/indian-lake-schoolcraft-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/indiana-lake-elkhart/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/infinity-pit-warrick/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/intermediate-lake-antrim-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1831,12 +4021,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/jackpine-lake-delta-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/jackson-lake-montmorency-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/jackson-pit-greene/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/james-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/james-lake-iron-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1856,6 +4061,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/jehnsen-lake-mecosta-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/jewell-lake-alcona-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/ji-case-lake/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -1871,12 +4086,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/johnson-lake-marquette-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/johnson-lake-noble/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/jones-lake-crawford-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/jones-lake-noble/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/jordan-lake-barry-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/joslin-lake-washtenaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/kaks-lake-luce-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1891,7 +4131,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/kennedy-lake-schoolcraft-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/kettle-lake-kent-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/kickapoo-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/killdeer-lake-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/king-lake-baraga-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1902,6 +4162,11 @@
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/kiwanis-lake-floyd/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/klinger-lake-st-joseph-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1941,6 +4206,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/kp-lake-crawford-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/krannert-lake-marion/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -1956,12 +4226,52 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/lac-la-belle-keweenaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lac-vieux-desert-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/ladder-pit-sullivan/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-ann-benzie-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-ann-menominee-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-antoine-dickinson-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-arfelin-marquette-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/lake-arrowhead-steuben/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-bailey-keweenaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-bellaire-antrim-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1976,6 +4286,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-cadillac-wexford-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/lake-celina/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -1986,12 +4301,47 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-charlevoix-charlevoix-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-chemung-livingston-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/lake-cicott-cass/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-cora-van-buren-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/lake-cottonwood-johnson/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-eleven-van-buren-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-ellen-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-emily-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-emma-presque-isle-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2006,12 +4356,62 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-fanny-hooe-keweenaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-fenton-genesee-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-ferdelman-presque-isle-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-fifteen-montmorency-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-fourteen-van-buren-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/lake-freeman-white/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-george-clare-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-george-ogemaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/lake-george-steuben/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-gogebic-ontonagon-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-gratiot-keweenaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-hudson-lenawee-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2031,6 +4431,26 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-keewaydin-marquette-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-lansing-ingham-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-lavine-branch-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-leelanau-leelanau-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/lake-lemon-monroe/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -2041,7 +4461,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-macatawa-ottawa-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/lake-manitou/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-manuka-otsego-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-margrethe-crawford-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-marjory-otsego-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-mary-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-mary-menominee-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2056,7 +4506,42 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-may-presque-isle-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-mecosta-mecosta-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-medora-keweenaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-michigamme-marquette-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/lake-minfenokee-steuben/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-minnawanna-lapeer-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-missaukee-missaukee-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-mitchell-wexford-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2066,7 +4551,47 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-nettie-presque-isle-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-oakland-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-of-the-woods-antrim-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-of-the-woods-branch-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/lake-of-the-woods-steuben/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-of-the-woods-van-buren-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-orion-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-ottawa-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-perrault-houghton-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2081,12 +4606,42 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-roland-houghton-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-sainte-kathryn-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/lake-salinda/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-sapphire-missaukee-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-sixteen-allegan-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/lake-sullivan-sullivan/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-thumb-charlevoix-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lake-twentyseven-otsego-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2106,7 +4661,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/lakeville-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lancaster-lake-cheboygan-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/landis-lake-fulton/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lane-lake-calhoun-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/langford-lake-gogebic-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2136,6 +4711,21 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/le-ferre-lake-kalamazoo-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/leach-lake-barry-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lee-lake-calhoun-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/levy-lake-pike/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -2146,7 +4736,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/lime-lake-kent-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lime-lake-leelanau-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/lime-lake-steuben/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lime-lake-south-jackson-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2166,12 +4771,32 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/lincoln-lake-kent-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/lindsey-lake-noble/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/little-barbee-lake-kosciusko/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/little-boot-lake-schoolcraft-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/little-brevoort-lake-mackinac-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/little-cedar-lake-washtenaw-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2186,12 +4811,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/little-duck-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/little-george-pit-clay/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/little-lake-marquette-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/little-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/little-long-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/little-long-lake-barry-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/little-long-lake-clare-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2202,6 +4852,26 @@
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/little-pike-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/little-platte-lake-benzie-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/little-shag-lake-marquette-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/little-tom-lake-allegan-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/little-tomahawk-lake-presque-isle-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2221,12 +4891,32 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/little-whitefish-lake-montcalm-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/littlefield-lake-isabella-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/locust-pit-sullivan/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/locust-pit-warrick/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lodge-lake-ogemaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/londo-lake-iosco-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2241,12 +4931,107 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/long-lake-alpena-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/long-lake-barry-8-362-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/long-lake-barry-8-69-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/long-lake-barry-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/long-lake-cheboygan-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/long-lake-clare-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/long-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/long-lake-hillsdale-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/long-lake-ionia-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/long-lake-iosco-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/long-lake-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/long-lake-kalamazoo-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/long-lake-lapeer-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/long-lake-montmorency-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/long-lake-noble/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/long-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/long-lake-ogemaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/long-lake-st-joseph-78-46-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/long-lake-st-joseph-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/long-lake-wabash/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/long-lake-wexford-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2271,7 +5056,17 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/loon-lake-montcalm-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/loon-lake-noble/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/loon-lake-oakland-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2286,12 +5081,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/lost-lake-presque-isle-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/lost-lake-wells/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/lotor-pit-pike/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lotus-lake-oakland-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2306,12 +5111,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/lower-crooked-lake-barry-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/lower-fry-pit-sullivan/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/lower-herring-lake-benzie-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/lower-long-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/lower-pettibone-lake-oakland-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2326,6 +5146,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/lyman-lake-delta-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/lynn-pit-sullivan/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -2336,7 +5161,17 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/maceday-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/mallard-pond-jennings/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/manistique-lake-mackinac-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2351,6 +5186,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/marble-lake-branch-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/marion-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/marion-lake-pike/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -2361,7 +5206,17 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/marl-lake-roscommon-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/marsh-lake-steuben/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/marten-lake-iron-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2376,7 +5231,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/martiny-lake-mecosta-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/mary-lake-dickinson-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/mason-pit-sullivan/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/matteson-lake-branch-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2401,7 +5271,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/mccollum-lake-oscoda-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/mccord-square-park-pond-hancock/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/mccormick-lake-montmorency-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/mccoy-lake-osceola-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/mcdonald-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/mcdonald-lake-schoolcraft-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/mclaren-lake-oceana-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2441,6 +5341,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/middle-lake-barry-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/middle-straits-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/middlefork-reservoir-wayne/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -2451,7 +5361,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/milakokia-lake-mackinac-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/mill-lake-washtenaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/mill-pond-marshall/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/millecoquins-lake-mackinac-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2462,6 +5387,16 @@
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/millers-lake-noble/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/miner-lake-allegan-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/minerva-lake-schoolcraft-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2481,6 +5416,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/mona-lake-muskegon-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/mongo-millpond-lagrange/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -2496,7 +5436,32 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/moon-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/moore-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/moosehead-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/moraine-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/morris-chapel-pit-greene/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/morrison-lake-ionia-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2546,6 +5511,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/mud-lake-st-joseph-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/mud-lake-steuben/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -2556,7 +5526,17 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/mud-lake-washtenaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/mulberry-pit-greene/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/mullett-lake-cheboygan-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2571,12 +5551,47 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/munro-lake-cheboygan-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/murphy-lake-tuscola-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/murray-lake-kent-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/muskallonge-lake-luce-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/muskellunge-lake-kosciusko/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/muskellunge-lake-montcalm-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/muskrat-lake-clinton-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/muskrat-lake-greene/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/muskrat-lake-montmorency-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2597,6 +5612,21 @@
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/nauvoo-lake-lagrange/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/nawakwa-lake-alger-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/nepessing-lake-lapeer-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/nevins-lake-montcalm-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2631,7 +5661,32 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/nichols-lake-newaygo-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/nighthawk-lake-jennings/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/no-name-livingston-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/no-name-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/no-name-tuscola-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/no-name-wexford-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2646,12 +5701,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/north-lake-lake-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/north-lake-menominee-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/north-lake-washtenaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/north-little-lake-kosciusko/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/north-manistique-lake-luce-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/north-pit-jasper/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/north-scott-lake-van-buren-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2671,7 +5751,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/norway-lake-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/nottawa-lake-calhoun-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/nowland-lake-charlevoix-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/nyona-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/obrien-lake-alcona-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2721,7 +5821,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/omena-lake-st-joseph-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/onemile-lake-jackson-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/ontario-millpond-lagrange/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/opal-lake-otsego-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/orchard-lake-oakland-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2732,6 +5852,21 @@
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/oswego-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/otis-lake-barry-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/otsego-lake-otsego-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/otter-lake-houghton-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2751,7 +5886,17 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/oxbow-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/palestine-lake-kosciusko/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/palmer-lake-st-joseph-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2761,12 +5906,72 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/paradise-lake-cass-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/paradise-lake-lake-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/parent-lake-baraga-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/park-lake-clinton-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/patoka-lake-orange/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/paulding-pond-ontonagon-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/paw-paw-lake-berrien-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/paw-paw-lake-kalamazoo-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/peach-lake-ogemaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/perch-lake-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/perch-lake-luce-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/perch-lake-marquette-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/perch-lake-steuben/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/perch-lake-northwest-luce-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2777,6 +5982,36 @@
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/persimmon-lake-greene/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/petes-lake-schoolcraft-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/pickerel-lake-dickinson-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/pickerel-lake-kalkaska-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/pickerel-lake-newaygo-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/pickerel-lake-otsego-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/pickerel-lake-washtenaw-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2801,6 +6036,26 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/pike-lake-allegan-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/pike-lake-houghton-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/pike-lake-luce-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/pike-lake-marquette-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/pine-canyon-lake-steuben/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -2812,6 +6067,11 @@
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/pine-lake-laporte/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/pine-lake-manistee-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2836,12 +6096,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/platte-lake-benzie-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/plattsburg-pond-washington/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/pleasant-lake-noble/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/pleasant-lake-st-joseph-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2856,12 +6126,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/pomeroy-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/pomoxis-pit-pike/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/pond-lil-lagrange/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/pontiac-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/portage-lake-manistee-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2881,6 +6166,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/prairie-lake-calhoun-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/prairie-pond-pike/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -2891,12 +6181,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/pratt-lake-gladwin-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/pretty-lake/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/pretty-lake-marshall/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/pretty-lake-mecosta-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2931,7 +6231,32 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/rainbow-lake-montcalm-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/randall-n-cemetary-l-branch-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/ransom-lake-newaygo-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/red-pine-pit-sullivan/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/redboat-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/reed-lake-livingston-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -2966,6 +6291,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/reynolds-lake-van-buren-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/rice-lake-houghton-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/richards-pit-greene/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -2982,6 +6317,11 @@
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/ridinger-lake-kosciusko/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/rifle-lake-ogemaw-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3006,12 +6346,32 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/robbins-pond-ontonagon-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/robinson-lake/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/robinson-lake-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/robinson-lake-oceana-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/robinson-park-pond-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/rock-lake-dickinson-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3026,6 +6386,26 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/roland-lake-baraga-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/rose-lake-osceola-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/ross-lake-gladwin-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/ross-lake-schoolcraft-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/rosser-park-pond/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -3036,12 +6416,32 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/round-lake-emmet-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/round-lake-hillsdale-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/round-lake-iosco-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/round-lake-noble/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/round-lake-steuben/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/round-lake-van-buren-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3061,6 +6461,26 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/ruppert-lake-kalamazoo-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/rush-lake-montmorency-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/rush-lake-van-buren-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/ruth-lake-baraga-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/sacarider-lake/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -3076,6 +6496,21 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/saddle-lake-van-buren-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/sage-lake-ogemaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/saint-clair-lake-antrim-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/salamonie-lake-huntington/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -3087,6 +6522,21 @@
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/sand-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/sand-lake-lenawee-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/sandy-lake-houghton-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/sanford-lake-midland-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3126,6 +6576,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/school-section-lake-van-buren-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/scott-pit-greene/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -3142,6 +6597,16 @@
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/sechrist-lake-kosciusko/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/section-one-lake-crawford-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/selkirk-lake-allegan-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3166,6 +6631,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/shafer-lake-van-buren-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/shag-lake-marquette-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/shakamak-lake/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -3186,7 +6661,17 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/sheffer-lake-allegan-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/shelter-lake-greene/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/sherman-lake-kalamazoo-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3211,6 +6696,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/shoe-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/shoepac-lake-presque-isle-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/shovel-lake-east-greene/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -3226,6 +6721,31 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/shupac-lake-crawford-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/silver-lake-branch-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/silver-lake-cheboygan-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/silver-lake-dickinson-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/silver-lake-grand-traverse-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/silver-lake-kosciusko/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -3236,12 +6756,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/silver-lake-oceana-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/silver-lake-steuben/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/simonton-lake-elkhart/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/sixmile-lake-antrim-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/sixmile-lake-dickinson-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3286,6 +6821,21 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/snyder-lake-schoolcraft-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/snyder-lake-washtenaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/solberg-lake-dickinson-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/south-bass-lake-sullivan/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -3301,7 +6851,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/south-lake-washtenaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/south-manistique-lake-mackinac-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/south-mud-lake-fulton/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/south-scott-lake-van-buren-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3336,7 +6901,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/spider-lake-grand-traverse-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/sporley-lake-marquette-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/sports-lake-grant/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/spring-lake-grand-traverse-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3361,12 +6941,32 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/squaw-lake-marquette-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/stager-lake-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/stanley-lake-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/stanton-lake-kosciusko/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/star-pit-greene/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/starvation-lake-kalkaska-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3386,12 +6986,32 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/steuben-lake-schoolcraft-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/stevens-lake-benzie-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/stevenson-lake-isabella-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/still-lake-lagrange/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/stone-arch-johnson/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/stone-lake-cass-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3416,12 +7036,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/sudden-lake-ontonagon-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/sugarloaf-lake-kalamazoo-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/sugarloaf-lake-washtenaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/sullivan-lake-washtenaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/summit-lake-noble/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/sundance-lake-brown/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/sunrise-lake-osceola-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3436,12 +7081,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/sunset-lake-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/sunset-park-pond-henry/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/susan-lake-charlevoix-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/swains-lake-jackson-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/swan-lake-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/swinney-park-pond-allen/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/switzer-lake-lake-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3466,12 +7136,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/tallman-lake-mason-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/tamarack-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/tamarack-lake-montcalm-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/tamarack-lake-noble/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/tamarack-lake-steuben/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/tawas-lake-iosco-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/taylor-lake-gogebic-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3486,6 +7181,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/tea-lake-oscoda-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/teal-pit-warrick/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -3496,7 +7196,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/tee-lake-ogemaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/teeple-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/tepee-lake-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/terry-lake-dekalb/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/thayer-lake-keweenaw-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3516,12 +7236,42 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/thompson-lake-st-joseph-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/thornapple-lake-barry-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/thousand-island-lake-gogebic-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/thousand-islands-lake-greene/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/three-legged-lake-van-buren-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/three-rivers-county-park-pond-lake/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/threemile-lake-van-buren-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/thrush-lake-gogebic-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3541,7 +7291,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/tipsico-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/todd-lake-osceola-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/todd-pit-greene/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/tomahawk-lake-presque-isle-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/torch-lake-antrim-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/tower-lake-isabella-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/town-corner-lake-montmorency-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3551,12 +7331,32 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/townline-lake-mecosta-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/tree-pit-sullivan/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/triangle-lake-schoolcraft-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/trimble-pit-greene/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/trout-lake-chippewa-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/trout-lake-gladwin-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3581,7 +7381,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/turtle-lake-benzie-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/turtle-lake-sullivan/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/twin-lake-east-muskegon-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/twin-lake-north-marquette-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/twin-lake-west-muskegon-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3596,7 +7416,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/twinwood-lake-newaygo-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/union-lake-branch-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/union-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/upper-brace-lake-calhoun-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/upper-fish-lake-laporte/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/upper-herring-lake-benzie-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/upper-jeptha-lake-van-buren-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3616,6 +7466,21 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/valley-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/van-auken-lake-van-buren-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/van-etten-lake-iosco-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/vann-park-pond-warrick/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -3631,12 +7496,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/vineyard-lake-jackson-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/w-keith-ruble-lake/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/w-s-gibbs-memorial-park-pond-hendricks/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/wabascon-lake-calhoun-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/wabasis-lake-kent-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3666,12 +7546,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/walsh-lake-washtenaw-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/walters-lake-steuben/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/wampler-pit-greene/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/warner-lake-calhoun-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3696,12 +7586,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/webb-lake-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/weber-lake-spencer/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mikesfishingapp.com/lakes/webster-lake-kosciusko/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/wegwaas-lake-chippewa-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/wells-lake-osceola-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3731,6 +7636,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/west-twin-lake-luce-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/west-twin-lake-montmorency-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/west-twin-pit/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
@@ -3756,7 +7671,17 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/white-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/whitewater-lake-union/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/whitmore-lake-washtenaw-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3776,7 +7701,17 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/wiggins-lake-gladwin-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/wilcox-lake-scott/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/wildwood-lake-oakland-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3786,7 +7721,17 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/williams-lake-barry-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/willow-pit-sullivan/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/wilson-lake-antrim-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3796,7 +7741,27 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/windover-lake-clare-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/winnipeg-lake-calhoun-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/winona-lake-kosciusko/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/winslow-lake-iron-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/witch-lake-marquette-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
@@ -3806,12 +7771,37 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/wolf-lake-marquette-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/wolf-lake-noble/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://mikesfishingapp.com/lakes/wolverine-lake-oakland-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://mikesfishingapp.com/lakes/wood-duck-pond-jennings/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/woodard-lake-ionia-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/woodland-lake-livingston-mi/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mikesfishingapp.com/lakes/worm-lake-baraga-mi/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.7</priority>
   </url>
