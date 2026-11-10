@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T18:23:55Z",
+ "generated": "2026-11-10T19:03:29Z",
  "region": "Indiana & Michigan",
  "counties": [
   "Adams",
@@ -149,8 +149,8 @@
   "White",
   "Whitley"
  ],
- "lakes_with_contours": 881,
- "contour_features": 23241,
+ "lakes_with_contours": 235,
+ "contour_features": 10726,
  "sources": [
   {
    "name": "IndianaMap / Indiana DNR Lake Bathymetry Contours",
@@ -439,10 +439,10 @@
   "rebuild": "python3 scripts/rebuild_launches.py  # requires shapely; copies to public/data/",
   "count": 2265
  },
- "lakes_no_depth_map": 451,
+ "lakes_no_depth_map": 1097,
  "lakes_retrace_pending": 16,
  "lakes_total": 1332,
  "launch_count": 2265,
  "notes_salamonie": "Salamonie Lake contours added 2026-10-30 from USGS 3DEP lidar (no DNR bathymetry exists for Salamonie); depths below summer pool 755 ft NGVD29.",
- "notes_michigan": "Added 646 Michigan lakes with official MDNR Inland Lake Contours (12515 lines) on 2026-11-10. Held back: Wixom Lake (Edenville Dam failure 2020), Lily Lake (Clare, shoreline mismatch), and Long/Tan/Cedar/Spring (Oakland, combined name). DEPTH values are feet as published. Launch points from DNR PRD Boating Access Sites (MiBFF)."
+ "notes_michigan": "Michigan lake points and PRD launches remain (2026-11-10). Official MDNR Inland Lake Contours were hidden the same day after shoreline QA: MapServer outSR=4326 matches EPSG:3078\u2192WGS84 within ~1 m (not a CRS/reprojection bug), but many contour lines cross current OSM/satellite shorelines (digitization/old-survey vs modern water, not a statewide datum shift we can safely reproject). All 646 previously published MI contour lakes now show \u201cNo depth map yet.\u201d Held back earlier: Wixom Lake (Edenville Dam failure 2020), Lily Lake (Clare), Long/Tan/Cedar/Spring (Oakland)."
 }
