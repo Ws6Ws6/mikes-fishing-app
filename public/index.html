@@ -19,6 +19,9 @@
   <meta name="twitter:title" content="Mike's Fishing App" />
   <meta name="twitter:description" content="Indiana lake depth maps, public boat launches, weather, radar, and GPS trolling tools. Depths come from Indiana DNR surveys and clearly labeled unofficial traces — not live sonar." />
   <meta name="twitter:image" content="https://mikesfishingapp.com/og.png" />
+  <link rel="preload" href="vendor/leaflet/leaflet.js" as="script" />
+  <link rel="preload" href="app.js" as="script" />
+  <link rel="preload" href="data/lakes.geojson" as="fetch" crossorigin />
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
   <link rel="stylesheet" href="vendor/leaflet.markercluster/MarkerCluster.css" />
   <link rel="stylesheet" href="vendor/leaflet.markercluster/MarkerCluster.Default.css" />

@@ -1,6 +1,6 @@
 /* Files the service worker keeps for offline use (shared by sw.js and offline.js). */
 (function (g) {
-  g.MFA_SHELL_VERSION = "2026-11-09k";
+  g.MFA_SHELL_VERSION = "2026-11-10p";
   g.MFA_SHELL = [
     "./",
     "./index.html",

@@ -16,7 +16,7 @@ self.addEventListener("install", (event) => {
       // Shell + CDN only; the 17 MB data files are cached as the app loads them.
       await Promise.all(
         self.MFA_SHELL.concat(self.MFA_CDN).map((u) =>
-          fetch(u, { cache: "no-cache" }).then((r) => (r.ok ? c.put(u, r) : null)).catch(() => null)
+          fetch(u).then((r) => (r.ok ? c.put(u, r) : null)).catch(() => null)
         )
       );
     })
