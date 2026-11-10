@@ -133,6 +133,238 @@
     unknown: { fill: "#6b7280", stroke: "#374151" },
   };
 
+const MPS_PER_MPH = 0.44704;
+const EARTH_M = 6371000;
+
+function trollDistM(a, b) {
+  const toRad = (d) => (d * Math.PI) / 180;
+  const dLat = toRad(b.lat - a.lat);
+  const dLon = toRad(b.lng - a.lng);
+  const lat1 = toRad(a.lat);
+  const lat2 = toRad(b.lat);
+  const h =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLon / 2) ** 2;
+  return 2 * EARTH_M * Math.asin(Math.min(1, Math.sqrt(h)));
+}
+
+function median(nums) {
+  const a = nums.filter((x) => x != null && Number.isFinite(x)).sort((x, y) => x - y);
+  if (!a.length) return null;
+  const m = Math.floor(a.length / 2);
+  return a.length % 2 ? a[m] : (a[m - 1] + a[m]) / 2;
+}
+
+function createTrollSpeedFilter(options) {
+  const opt = options || {};
+  const stationaryMph = opt.stationaryMph != null ? opt.stationaryMph : 0.5;
+  const STATIONARY_MPS = stationaryMph * MPS_PER_MPH;
+  const MAX_ACC_M = opt.maxAccM != null ? opt.maxAccM : 25;
+  const STALE_MS = opt.staleMs != null ? opt.staleMs : 5000;
+  const LAG_MS = opt.lagMs != null ? opt.lagMs : 8000;
+  const TAU_S = opt.tauS != null ? opt.tauS : 4;
+  const JUMP_M = opt.jumpM != null ? opt.jumpM : 25;
+  const BUBBLE_M = opt.bubbleM != null ? opt.bubbleM : null; // set from accuracy if null
+  const SETTLE_MS = opt.settleMs != null ? opt.settleMs : 4000;
+  const MAX_DERIVED_MPS = 25 * MPS_PER_MPH;
+
+  function clipDerived(v) {
+    if (v == null || !Number.isFinite(v)) return null;
+    if (v < STATIONARY_MPS) return 0;
+    // A short GPS jump can look like hundreds of mph. Don't show that.
+    if (v > MAX_DERIVED_MPS) return null;
+    return v;
+  }
+
+  function centroid(arr) {
+    let lat = 0, lng = 0, tt = 0;
+    for (const p of arr) { lat += p.lat; lng += p.lng; tt += p.t; }
+    const n = arr.length;
+    return { lat: lat / n, lng: lng / n, t: tt / n };
+  }
+
+  let ema = null;
+  let emaHist = [];
+  let rawHist = [];
+  let posHist = [];
+  let first = null;
+  let anchor = null;
+  let anchorSettled = false;
+  let shownMps = null;
+  let lastUsedT = 0;
+  let stopped = true;
+  let stopCount = 0;
+
+  function reset() {
+    ema = null;
+    emaHist = [];
+    rawHist = [];
+    posHist = [];
+    first = null;
+    anchor = null;
+    anchorSettled = false;
+    shownMps = null;
+    lastUsedT = 0;
+    stopped = true;
+    stopCount = 0;
+  }
+
+  function posSpeedMps(now) {
+    if (!ema) return null;
+    let old = null;
+    for (let i = 0; i < emaHist.length; i++) {
+      if (now - emaHist[i].t >= LAG_MS) old = emaHist[i];
+    }
+    if (!old) return null;
+    const dt = (ema.t - old.t) / 1000;
+    if (dt < LAG_MS / 1000 - 0.75) return null;
+    return trollDistM(old, ema) / dt;
+  }
+
+  function medianPos(now) {
+    const v = posSpeedMps(now);
+    if (v != null) {
+      posHist.push({ t: now, v });
+      posHist = posHist.filter((p) => now - p.t <= 12000);
+    }
+    return median(posHist.map((p) => p.v));
+  }
+
+  function push(fix, now) {
+    if (now == null) now = fix.t;
+    const acc = fix.acc;
+    const poor = acc != null && Number.isFinite(acc) && acc > MAX_ACC_M;
+    if (poor || !Number.isFinite(fix.lat) || !Number.isFinite(fix.lng)) {
+      return shownMps;
+    }
+
+    const pt = { lat: fix.lat, lng: fix.lng, t: fix.t != null ? fix.t : now, acc: acc };
+    lastUsedT = now;
+    rawHist.push(pt);
+    rawHist = rawHist.filter((p) => now - p.t <= 20000);
+    if (!first) first = pt;
+    if (!anchor) anchor = { lat: pt.lat, lng: pt.lng, t: pt.t };
+
+    if (!ema) {
+      ema = { lat: pt.lat, lng: pt.lng, t: pt.t };
+    } else {
+      const dt = (pt.t - ema.t) / 1000;
+      if (dt > 0) {
+        const a = 1 - Math.exp(-Math.min(dt, 10) / TAU_S);
+        ema = {
+          lat: a * pt.lat + (1 - a) * ema.lat,
+          lng: a * pt.lng + (1 - a) * ema.lng,
+          t: pt.t,
+        };
+      } else {
+        ema.t = pt.t;
+      }
+    }
+    emaHist.push({ lat: ema.lat, lng: ema.lng, t: ema.t });
+    emaHist = emaHist.filter((e) => now - e.t <= 20000);
+
+    if (!anchorSettled && stopped && first && now - first.t >= SETTLE_MS) {
+      const win = rawHist.filter((p) => p.t <= first.t + SETTLE_MS);
+      if (win.length) anchor = centroid(win);
+      else if (ema) anchor = { lat: ema.lat, lng: ema.lng, t: ema.t };
+      anchorSettled = true;
+    }
+
+    const gps =
+      fix.spd != null && Number.isFinite(fix.spd) && fix.spd >= 0 ? fix.spd : null;
+    const pos = medianPos(now);
+    const jumped = anchor ? trollDistM(anchor, pt) >= JUMP_M : false;
+    const accRef = acc != null && Number.isFinite(acc) ? acc : 10;
+    const bubbleM = BUBBLE_M != null ? BUBBLE_M : Math.max(10, accRef);
+    const leftBubble = anchor && ema && trollDistM(anchor, ema) >= bubbleM;
+    const lagS = LAG_MS / 1000;
+    const observed = pos != null ? pos * lagS : null;
+    const highGps = gps != null && gps > 2.2 * MPS_PER_MPH;
+    const posReady = pos != null && posHist.length >= 3;
+
+    let raw = null;
+    if (gps != null && gps < STATIONARY_MPS) {
+      raw = 0;
+    } else if (jumped && gps != null && gps < 25 * MPS_PER_MPH) {
+      // A large move before the window fills: trust a boat-range GPS speed
+      // (t.py's 3.0 mph steps, but not a 60 mph jitter spike).
+      raw = gps;
+    } else if (gps != null && highGps) {
+      // 3.7 mph while sitting still: only trust this if the smoothed path
+      // has left the sit-bubble and moved at least half as fast.
+      raw = posReady && leftBubble && pos >= gps * 0.5 ? gps : 0;
+    } else if (gps != null) {
+      if (pos == null && !jumped) raw = 0;
+      else if (pos != null && pos < STATIONARY_MPS) raw = 0;
+      else raw = gps;
+    } else if (pos != null) {
+      const use = observed >= Math.max(6, accRef * 0.75) ? clipDerived(pos) : 0;
+      raw = use;
+    } else if (jumped) {
+      // Only derive a speed from a jump after a couple of seconds, and
+      // only if it is in boat range. A 0.5 s 100 m hop is a GPS jump,
+      // not a 400 mph boat. If rejected, keep the last good reading.
+      const dt = (pt.t - (anchor ? anchor.t : first.t)) / 1000;
+      const derived = dt >= 2 ? clipDerived(trollDistM(anchor || first, pt) / dt) : null;
+      raw = derived != null ? derived : null;
+    }
+
+    if (raw == null) return shownMps;
+
+    if (raw < STATIONARY_MPS) {
+      stopCount += 1;
+      if (stopped || stopCount >= 3) {
+        if (!stopped && ema) {
+          anchor = { lat: ema.lat, lng: ema.lng, t: ema.t };
+          anchorSettled = true;
+        }
+        stopped = true;
+        shownMps = shownMps == null && stopCount < 1 ? null : 0;
+        if (stopped) shownMps = 0;
+        return shownMps;
+      }
+      // Brief dip while moving: keep the last reading.
+      return shownMps;
+    }
+
+    stopCount = 0;
+    if (stopped) {
+      stopped = false;
+      shownMps = raw;
+    } else {
+      shownMps = 0.55 * raw + 0.45 * shownMps;
+      if (shownMps < STATIONARY_MPS) {
+        stopped = true;
+        shownMps = 0;
+      }
+    }
+    return shownMps;
+  }
+
+  function tick(now) {
+    if (now == null) now = Date.now();
+    if (shownMps == null) return null;
+    if (lastUsedT && now - lastUsedT >= STALE_MS) {
+      if (!stopped && ema) {
+        anchor = { lat: ema.lat, lng: ema.lng, t: ema.t };
+        anchorSettled = true;
+      }
+      stopped = true;
+      shownMps = 0;
+    }
+    return shownMps;
+  }
+
+  function mph() {
+    return shownMps == null ? null : shownMps / MPS_PER_MPH;
+  }
+
+  return { push, tick, reset, value: () => shownMps, mph, trollDistM };
+}
+
+
+  window.createTrollSpeedFilter = createTrollSpeedFilter;
+
   // Trolling state
   const troll = {
     on: false,
@@ -146,6 +378,8 @@
     track: [],
     boatMarker: null,
     trackLine: null,
+    speedFilter: createTrollSpeedFilter(),
+    _speedTimer: null,
   };
 
   function toast(msg, ms = 2200) {
@@ -1319,19 +1553,21 @@
     });
     troll.lat = lat;
     troll.lng = lng;
-    if (speed != null && !Number.isNaN(speed)) {
-      troll.speedMph = Math.max(0, speed * 2.23694);
-    } else {
-      troll.speedMph = null;
-    }
+    const acc = pos.coords.accuracy;
+    const tFix = pos.timestamp || Date.now();
+    const gpsSpd = speed != null && !Number.isNaN(speed) ? speed : null;
+    const mps = troll.speedFilter.push({ lat, lng, t: tFix, acc, spd: gpsSpd }, tFix);
+    troll.speedMph = mps == null ? null : mps * 2.23694;
     if (heading != null && !Number.isNaN(heading)) {
       troll.heading = heading;
     }
-    // derive speed/heading from track if GPS doesn't provide
+    // derive heading from track if GPS doesn't provide; only add points that
+    // moved more than the accuracy bubble so the line doesn't wander when still.
+    const minTrackM = Math.max(4, Math.min(acc != null && !Number.isNaN(acc) ? acc : 10, 20) * 0.8);
     if (troll.track.length) {
       const prev = troll.track[troll.track.length - 1];
       const d = haversineM(prev, [lat, lng]);
-      if (d > 1.5) {
+      if (d > minTrackM) {
         if (troll.heading == null || heading == null) {
           const dy = lat - prev[0];
           const dx = lng - prev[1];
@@ -1499,6 +1735,16 @@
       toast("Location isn't available in this browser, so Trolling mode can't follow you.", 5000);
       return;
     }
+    troll.speedFilter.reset();
+    troll.speedMph = null;
+    if (troll._speedTimer) clearInterval(troll._speedTimer);
+    troll._speedTimer = setInterval(() => {
+      if (!troll.on) return;
+      const mps = troll.speedFilter.tick(Date.now());
+      troll.speedMph = mps == null ? null : mps * 2.23694;
+      const el = document.getElementById("trollSpeed");
+      if (el) el.textContent = troll.speedMph != null ? troll.speedMph.toFixed(1) : "—";
+    }, 1000);
     troll.watchId = navigator.geolocation.watchPosition(onTrollPosition, onTrollGeoError, {
       enableHighAccuracy: true,
       maximumAge: 1000,
@@ -1526,6 +1772,11 @@
     troll.on = false;
     document.body.classList.remove("trolling");
     document.getElementById("trollHud").classList.add("hidden");
+    if (troll._speedTimer) {
+      clearInterval(troll._speedTimer);
+      troll._speedTimer = null;
+    }
+    if (troll.speedFilter) troll.speedFilter.reset();
     if (troll.watchId != null) {
       navigator.geolocation.clearWatch(troll.watchId);
       troll.watchId = null;
@@ -1676,6 +1927,8 @@
     lakeById,
     selectLake: (l, fly) => selectLake(l, fly),
     ensureLakeContours,
+    createTrollSpeedFilter,
+    trollState: () => troll,
   };
   document.dispatchEvent(new CustomEvent("mfa:ready"));
 

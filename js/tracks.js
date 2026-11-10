@@ -9,7 +9,7 @@
   if (!M || !G) return;
   const map = M.map, esc = M.escapeHtml;
   const PREF = "mfa.trackRecord", SHOWN = "mfa.tracksShown";
-  const MIN_MOVE_M = 3, MAX_GAP_MS = 15000, MAX_ACC_M = 100, MAX_POINTS = 50000;
+  const MIN_MOVE_M = 3, MAX_GAP_MS = 15000, MAX_ACC_M = 25, MAX_POINTS = 50000;
 
   // ---------- storage (IndexedDB, in-memory fallback) ----------
   let dbp = null, mem = new Map();
@@ -94,10 +94,19 @@
     if (prev) {
       const m = distM(prev, pt), dt = t - prev.t;
       if (dt <= 0) return;
-      if (m < MIN_MOVE_M && dt < MAX_GAP_MS) return;
+      const accFloor = Math.max(prev.acc || 0, pt.acc || 0);
+      const minMove = Math.max(MIN_MOVE_M, Math.min(accFloor, 20) * 0.8);
+      if (m < minMove && dt < MAX_GAP_MS) return;
+      // Skip points that bounce around a previously recorded cluster (GPS jitter).
+      const recent = cur.points.slice(-15);
+      if (dt < MAX_GAP_MS && recent.some((p) => distM(p, pt) < minMove)) return;
       if (d.spd != null) pt.spd = +d.spd.toFixed(2);
       else if (dt >= 1000) { pt.spd = +(m / (dt / 1000)).toFixed(2); pt.sd = 1; } // derived from positions (only over ≥1 s, to avoid GPS-jitter spikes)
-    } else if (d.spd != null) pt.spd = +d.spd.toFixed(2);
+      if (pt.spd != null && pt.spd < 0.5 * 0.44704) pt.spd = 0;
+    } else if (d.spd != null) {
+      pt.spd = +d.spd.toFixed(2);
+      if (pt.spd < 0.5 * 0.44704) pt.spd = 0;
+    }
     if (d.acc != null) pt.acc = Math.round(d.acc);
     cur.points.push(pt);
     if (cur.points.length > MAX_POINTS) cur.points.shift();
