@@ -544,10 +544,13 @@
       : "";
     const kind = launchKindLabel(p.launch_type);
     const kindHtml = kind ? `<div class="launch-kind ${kind.cls}">${escapeHtml(kind.text)}</div>` : "";
+    const approxHtml = p.location_approx
+      ? `<div class="launch-kind">Approximate location</div>`
+      : "";
     return `<div class="launch-popup">
       <strong>${escapeHtml(p.name)}</strong>
       <span class="access-badge ${badgeClass}">${accessLabel}</span>
-      ${kindHtml}${lake}${county}
+      ${kindHtml}${approxHtml}${lake}${county}
       ${typeof window.mfaLaunchAttrs === "function" ? `<div class="launch-attrs">${window.mfaLaunchAttrs(p)}</div>` : ""}
       <div class="launch-actions">
         <a href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(dest)}" target="_blank" rel="noopener">Drive here</a>
