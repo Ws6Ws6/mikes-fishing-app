@@ -447,6 +447,31 @@
   function closeLakeTooltips() {
     if (lakeMarkers) lakeMarkers.eachLayer((m) => { if (m.closeTooltip) m.closeTooltip(); });
   }
+  const HOME_TITLE = "Indiana lake depth maps and boat launches | Mike's Fishing App";
+  const HOME_CANONICAL = "https://mikesfishingapp.com/";
+  function countyPlaceName(county) {
+    if (!county) return "Indiana";
+    if (/\(|\bcounty\b/i.test(county)) return county;
+    return county + " County";
+  }
+  function syncDocumentSeo(lake) {
+    const link = document.querySelector('link[rel="canonical"]');
+    if (lake && lake.id) {
+      const place = countyPlaceName(lake.county);
+      const noMap = lake.no_depth_map || !lake.has_contours;
+      const unofficial = /unofficial/i.test((lake.accuracy_note || "") + " " + (lake.source || ""))
+        || lake.contour_method === "lidar_dem_contour";
+      document.title = noMap
+        ? (lake.name + " — no depth map yet | " + place + ", Indiana")
+        : unofficial
+          ? (lake.name + " depth map (unofficial) | " + place + ", Indiana")
+          : (lake.name + " depth map | " + place + ", Indiana");
+      if (link) link.setAttribute("href", "https://mikesfishingapp.com/lakes/" + encodeURIComponent(lake.id) + "/");
+    } else {
+      document.title = HOME_TITLE;
+      if (link) link.setAttribute("href", HOME_CANONICAL);
+    }
+  }
   function syncLakeUrl(lake) {
     const url = new URL(location.href);
     if (lake && lake.id) url.searchParams.set("lake", lake.id);
@@ -454,13 +479,23 @@
     const next = url.pathname + url.search + url.hash;
     const cur = location.pathname + location.search + location.hash;
     if (next !== cur) history.replaceState({ lakeId: lake && lake.id }, "", next);
+    syncDocumentSeo(lake);
   }
   function applyLakeFromUrl() {
     const id = new URLSearchParams(location.search).get("lake");
-    if (!id) return false;
+    if (!id) { syncDocumentSeo(null); return false; }
     const l = lakeById(id);
     if (l) { selectLake(l, true); return true; }
     return false;
+  }
+  function applySearchFromUrl() {
+    const q = new URLSearchParams(location.search).get("q");
+    if (q == null || q === "") return false;
+    const input = document.getElementById("lakeSearch");
+    if (input) input.value = q;
+    openPanel(true);
+    renderLakeList();
+    return true;
   }
   function selectLake(lake, fly) {
     selectedLake = lake;
@@ -1175,6 +1210,7 @@
     placeLakeMarkers();
     renderLakeList();
     renderCountyChips();
+    applySearchFromUrl();
     applyLakeFromUrl();
     setLoadStatus("");
     loadContoursInView();
