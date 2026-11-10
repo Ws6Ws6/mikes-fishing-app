@@ -69,6 +69,30 @@ self.addEventListener("fetch", (event) => {
   if (url.origin !== self.location.origin) return; // NWS, OSM, Esri, DNR… go straight to the network.
 
   const isNav = req.mode === "navigate";
+  const path = url.pathname;
+  const isSeoDoc = /(?:^|\/)lakes\//.test(path) || /(?:^|\/)404\.html$/.test(path);
+  // Static /lakes/ pages and 404.html must never be served the map SPA shell.
+  if (isNav && isSeoDoc) {
+    event.respondWith(
+      fetch(req)
+        .then((res) => {
+          if (res.ok && res.type === "basic") {
+            const copy = res.clone();
+            caches.open(RUNTIME).then((c) => c.put(url.origin + path, copy));
+          }
+          return res;
+        })
+        .catch(async () => {
+          const hit = await caches.match(url.origin + path);
+          if (hit) return hit;
+          return new Response("<h1>Offline</h1><p>This directory page is not saved for offline use. Open the map home page instead.</p>", {
+            status: 503,
+            headers: { "Content-Type": "text/html" },
+          });
+        })
+    );
+    return;
+  }
   if (!isNav && !isCacheableSameOrigin(url)) return;
   // Cache key without the query string so ?v=… cache-busters still hit offline.
   const key = isNav ? new URL("./", self.registration.scope).href : url.origin + url.pathname;

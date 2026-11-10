@@ -6,19 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#0b3d5c" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <title>Mike's Fishing App</title>
-  <meta name="description" content="Indiana lake depth maps, public boat launches, weather, radar, and GPS trolling tools. Depths come from Indiana DNR surveys and clearly labeled unofficial traces — not live sonar." />
+  <title>Indiana lake depth maps and boat launches | Mike's Fishing App</title>
+  <meta name="description" content="Indiana lake depth maps and boat launches for 686 lakes. Official DNR contours are labeled; unofficial traces are labeled unofficial; lakes without a survey say no depth map yet. Depths are not live sonar." />
   <link rel="canonical" href="https://mikesfishingapp.com/" />
-  <meta property="og:title" content="Mike's Fishing App" />
-  <meta property="og:description" content="Indiana lake depth maps, public boat launches, weather, radar, and GPS trolling tools. Depths come from Indiana DNR surveys and clearly labeled unofficial traces — not live sonar." />
+  <meta property="og:title" content="Indiana lake depth maps and boat launches | Mike's Fishing App" />
+  <meta property="og:description" content="Indiana lake depth maps and boat launches for 686 lakes. Official DNR contours are labeled; unofficial traces are labeled unofficial; lakes without a survey say no depth map yet. Depths are not live sonar." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mikesfishingapp.com/" />
   <meta property="og:image" content="https://mikesfishingapp.com/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Mike's Fishing App" />
-  <meta name="twitter:description" content="Indiana lake depth maps, public boat launches, weather, radar, and GPS trolling tools. Depths come from Indiana DNR surveys and clearly labeled unofficial traces — not live sonar." />
+  <meta name="twitter:title" content="Indiana lake depth maps and boat launches | Mike's Fishing App" />
+  <meta name="twitter:description" content="Indiana lake depth maps and boat launches for 686 lakes. Official DNR contours are labeled; unofficial traces are labeled unofficial; lakes without a survey say no depth map yet. Depths are not live sonar." />
   <meta name="twitter:image" content="https://mikesfishingapp.com/og.png" />
   <link rel="preload" href="vendor/leaflet/leaflet.js" as="script" />
   <link rel="preload" href="app.js" as="script" />
@@ -32,6 +32,23 @@
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
   <meta name="apple-mobile-web-app-title" content="Mike's Fishing" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Mike's Fishing App",
+    "url": "https://mikesfishingapp.com/",
+    "description": "Indiana lake depth maps and public boat launches. Official DNR contours are labeled; unofficial traces are labeled unofficial.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://mikesfishingapp.com/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#map">Skip to map</a>
@@ -41,6 +58,7 @@
       <div>
         <h1><span class="name-full">Mike's Fishing App</span><span class="name-short">Mike's Fishing</span></h1>
         <p class="tag">Indiana boat launches · Indiana depth maps</p>
+        <p class="brand-dir"><a href="/lakes/">All lakes</a></p>
       </div>
     </div>
     <div class="top-actions">
@@ -121,6 +139,12 @@
       <div><span class="dot unknown"></span> Unknown access</div>
     </div>
   </div>
+
+
+  <footer id="seoFooter">
+    <p class="seo-intro">Statewide Indiana lake depth maps and public boat launches. Official DNR contours are labeled; unofficial traces are labeled unofficial. Lakes without a published survey say no depth map yet. Depths are not live sonar.</p>
+    <p><a href="/lakes/">All Indiana lakes</a></p>
+  </footer>
 
   <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
 
