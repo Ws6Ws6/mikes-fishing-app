@@ -248,6 +248,8 @@
         return `${yr ? yr + " " : ""}historic map (unofficial)`;
       case "lidar_dem_contour":
         return "USGS lidar (unofficial)";
+      case "dnr_paper_map_fitted":
+        return "Michigan DNR lake map (hand-drawn), fitted to shoreline";
       default:
         return "unofficial";
     }
@@ -774,7 +776,7 @@
           : lake.needs_review
             ? "Needs review"
             : lake.has_contours
-              ? (lake.contour_method === "vector_featureserver" ? "Vector contours" : lake.contour_method === "lidar_dem_contour" ? "Lidar contours (unofficial)" : lake.contour_method === "historical_trace" ? "Unofficial historical contours" : "Digitized PDF contours")
+              ? (lake.contour_method === "vector_featureserver" ? "Vector contours" : lake.contour_method === "lidar_dem_contour" ? "Lidar contours (unofficial)" : lake.contour_method === "historical_trace" ? "Unofficial historical contours" : lake.contour_method === "dnr_paper_map_fitted" ? "Unofficial DNR map (fitted shoreline)" : "Digitized PDF contours")
               : "PDF map only"
       }</div>
       ${
