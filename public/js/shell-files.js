@@ -1,6 +1,12 @@
 /* Files the service worker keeps for offline use (shared by sw.js and offline.js). */
 (function (g) {
-  g.MFA_SHELL_VERSION = "2026-11-10x";
+  g.MFA_SHELL_VERSION = "2026-11-10y";
+  // Shell cache may be replaced on a version bump. Data, contour shards, and
+  // per-lake tile caches must survive a bump so saved lakes still work offline.
+  g.MFA_SHELL_CACHE = "mfa-shell-" + g.MFA_SHELL_VERSION;
+  g.MFA_DATA_CACHE = "mfa-data-v1";
+  g.MFA_RUNTIME_LEGACY = "mfa-runtime-v1";
+  g.MFA_TILE_PREFIX = "mfa-tiles-";
   g.MFA_SHELL = [
     "./",
     "./index.html",

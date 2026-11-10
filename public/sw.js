@@ -7,13 +7,28 @@
  *   bulk downloading; Esri imagery terms do not allow offline caching).
  */
 importScripts("./js/shell-files.js");
-const RUNTIME = "mfa-runtime-v1";
-const TILE_PREFIX = "mfa-tiles-";
+const SHELL = self.MFA_SHELL_CACHE;
+const DATA = self.MFA_DATA_CACHE;
+const LEGACY = self.MFA_RUNTIME_LEGACY;
+const TILE_PREFIX = self.MFA_TILE_PREFIX || "mfa-tiles-";
+
+function cacheNameFor(url) {
+  try {
+    const p = new URL(url, self.location.origin).pathname;
+    if (p === "/data" || p.startsWith("/data/")) return DATA;
+  } catch (_) {}
+  return SHELL;
+}
+
+function putInCache(key, res) {
+  caches.open(cacheNameFor(key)).then((c) => c.put(key, res));
+}
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(RUNTIME).then(async (c) => {
-      // Shell + CDN only; the 17 MB data files are cached as the app loads them.
+    caches.open(SHELL).then(async (c) => {
+      // Shell + CDN only; lake data and contour shards are cached as the app
+      // loads them (into MFA_DATA_CACHE, which survives a shell version bump).
       await Promise.all(
         self.MFA_SHELL.concat(self.MFA_CDN).map((u) =>
           fetch(u).then((r) => (r.ok ? c.put(u, r) : null)).catch(() => null)
@@ -25,9 +40,15 @@ self.addEventListener("install", (event) => {
 });
 
 self.addEventListener("activate", (event) => {
+  // Only drop previous shell caches. Never delete mfa-data-*, mfa-tiles-*,
+  // or the legacy mfa-runtime-v1 cache (saved contours and lake data live there).
   event.waitUntil(
     caches.keys().then((keys) =>
-      Promise.all(keys.filter((k) => k !== RUNTIME && !k.startsWith(TILE_PREFIX) && k.startsWith("mfa-")).map((k) => caches.delete(k)))
+      Promise.all(
+        keys
+          .filter((k) => k.startsWith("mfa-shell-") && k !== SHELL)
+          .map((k) => caches.delete(k))
+      )
     ).then(() => self.clients.claim())
   );
 });
@@ -57,7 +78,7 @@ self.addEventListener("fetch", (event) => {
           fetch(req).then((res) => {
             if (res.ok || res.type === "opaque") {
               const copy = res.clone();
-              caches.open(RUNTIME).then((c) => c.put(req.url, copy));
+              putInCache(req.url, copy);
             }
             return res;
           })
@@ -78,7 +99,7 @@ self.addEventListener("fetch", (event) => {
         .then((res) => {
           if (res.ok && res.type === "basic") {
             const copy = res.clone();
-            caches.open(RUNTIME).then((c) => c.put(url.origin + path, copy));
+            putInCache(url.origin + path, copy);
           }
           return res;
         })
@@ -101,7 +122,7 @@ self.addEventListener("fetch", (event) => {
       .then((res) => {
         if (res.ok && res.type === "basic") {
           const copy = res.clone();
-          caches.open(RUNTIME).then((c) => c.put(key, copy));
+          putInCache(key, copy);
         }
         return res;
       })

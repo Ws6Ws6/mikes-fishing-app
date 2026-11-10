@@ -7,8 +7,9 @@
   const M = window.__mfa;
   if (!M) return;
   const esc = M.escapeHtml;
-  const RUNTIME = "mfa-runtime-v1";
-  const TILE_PREFIX = "mfa-tiles-";
+  const DATA = window.MFA_DATA_CACHE || "mfa-data-v1";
+  const SHELL = window.MFA_SHELL_CACHE || ("mfa-shell-" + (window.MFA_SHELL_VERSION || "dev"));
+  const TILE_PREFIX = window.MFA_TILE_PREFIX || "mfa-tiles-";
   const STORE_KEY = "mfa.offlineLakes";
   const MAX_TILES = 1200; // per lake, both layers combined
   const MIN_Z = 11;
@@ -69,21 +70,29 @@
   const tileUrl = (tpl, [z, x, y]) => tpl.replace("{z}", z).replace("{x}", x).replace("{y}", y);
 
   async function cacheAppFiles() {
-    const c = await caches.open(RUNTIME);
-    const urls = (window.MFA_SHELL || []).concat(window.MFA_DATA || []);
-    for (const u of urls) {
+    const shellCache = await caches.open(SHELL);
+    const dataCache = await caches.open(DATA);
+    for (const u of window.MFA_SHELL || []) {
       const abs = new URL(u, location.href);
-      const key = abs.pathname === "/" || u === "./" ? abs.origin + abs.pathname : abs.origin + abs.pathname;
-      const hit = await c.match(key);
+      const key = abs.origin + abs.pathname;
+      try {
+        const r = await fetch(abs.href, { cache: "no-cache" });
+        if (r.ok) await shellCache.put(key, r);
+      } catch (_) {}
+    }
+    for (const u of window.MFA_DATA || []) {
+      const abs = new URL(u, location.href);
+      const key = abs.origin + abs.pathname;
+      const hit = await dataCache.match(key) || await caches.match(key);
       if (hit && /\.geojson$/.test(abs.pathname)) continue; // already stored by the app's own load
       try {
         const r = await fetch(abs.href, { cache: "no-cache" });
-        if (r.ok) await c.put(key, r);
+        if (r.ok) await dataCache.put(key, r);
       } catch (_) {}
     }
     for (const u of window.MFA_CDN || []) {
-      if (await c.match(u)) continue;
-      try { const r = await fetch(u, { mode: "cors" }); if (r.ok) await c.put(u, r); } catch (_) {}
+      if (await caches.match(u)) continue;
+      try { const r = await fetch(u, { mode: "cors" }); if (r.ok) await shellCache.put(u, r); } catch (_) {}
     }
   }
 
@@ -104,8 +113,8 @@
     await cacheAppFiles();
     if (lake.has_contours && lake.id) {
       try {
-        const c = await caches.open(RUNTIME);
-        const abs = new URL("./data/contours/" + lake.id + ".geojson", location.href);
+        const c = await caches.open(DATA);
+        const abs = new URL("./data/contours/" + encodeURIComponent(lake.id) + ".geojson", location.href);
         const r = await fetch(abs.href, { cache: "no-cache" });
         if (r.ok) await c.put(abs.origin + abs.pathname, r);
       } catch (_) {}

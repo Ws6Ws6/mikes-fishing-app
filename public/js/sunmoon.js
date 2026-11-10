@@ -11,27 +11,96 @@
   const tz = () => new Date().toLocaleTimeString([], { timeZoneName: "short" }).split(" ").pop();
   const ymd = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
   const PH = 1 / 29.530588; // one day as a fraction of the synodic month
-  function phaseName(p) {
-    if (p < PH || p > 1 - PH) return ["New moon", "🌑"];
-    if (Math.abs(p - 0.25) < PH) return ["First quarter", "🌓"];
-    if (Math.abs(p - 0.5) < PH) return ["Full moon", "🌕"];
-    if (Math.abs(p - 0.75) < PH) return ["Last quarter", "🌗"];
+  function phaseName(p, frac) {
+    // Use illumination for the four principal names so a day slightly past
+    // first/last quarter is not still labelled as the quarter.
+    if (frac != null && Number.isFinite(frac)) {
+      if (frac <= 0.02) return ["New moon", "🌑"];
+      if (frac >= 0.98) return ["Full moon", "🌕"];
+      if (Math.abs(frac - 0.5) <= 0.02) {
+        return p < 0.5 ? ["First quarter", "🌓"] : ["Last quarter", "🌗"];
+      }
+    } else {
+      if (p < PH || p > 1 - PH) return ["New moon", "🌑"];
+      if (Math.abs(p - 0.25) < PH / 2) return ["First quarter", "🌓"];
+      if (Math.abs(p - 0.5) < PH / 2) return ["Full moon", "🌕"];
+      if (Math.abs(p - 0.75) < PH / 2) return ["Last quarter", "🌗"];
+    }
     if (p < 0.25) return ["Waxing crescent", "🌒"];
     if (p < 0.5) return ["Waxing gibbous", "🌔"];
     if (p < 0.75) return ["Waning gibbous", "🌖"];
     return ["Waning crescent", "🌘"];
   }
-  // Next time the phase fraction crosses `target` (0 = new, 0.5 = full), hourly steps.
+  // Next new (target 0) or full (target 0.5) moon, Meeus Astronomical
+  // Algorithms ch. 49. SunCalc's phase fraction wraps hours away from
+  // true syzygy and was briefly decreasing near full — that made Nov 24
+  // 2026 (a full moon) show up as the next new moon.
+  function toRad(d) {
+    d = d % 360;
+    if (d < 0) d += 360;
+    return (d * Math.PI) / 180;
+  }
+  function meeusMoonJDE(k) {
+    const T = k / 1236.85, T2 = T * T, T3 = T2 * T, T4 = T3 * T;
+    let jde = 2451550.09766 + 29.530588861 * k + 0.00015437 * T2 - 0.000000150 * T3 + 0.00000000073 * T4;
+    const E = 1 - 0.002516 * T - 0.0000074 * T2;
+    const M = toRad(2.5534 + 29.10535670 * k - 0.0000014 * T2 - 0.00000011 * T3);
+    const Mp = toRad(201.5643 + 385.81693528 * k + 0.0107582 * T2 + 0.00001238 * T3 - 0.000000058 * T4);
+    const F = toRad(160.7376 + 390.67050284 * k - 0.0016118 * T2 - 0.00000227 * T3 + 0.000000011 * T4);
+    const Om = toRad(124.7746 - 1.56375588 * k + 0.0020672 * T2 + 0.00000215 * T3);
+    const sin = Math.sin;
+    const isNew = Math.abs(k - Math.round(k)) < 1e-6;
+    const c = isNew
+      ? -0.40720 * sin(Mp) + 0.17241 * E * sin(M) + 0.01608 * sin(2 * Mp) + 0.01039 * sin(2 * F)
+        + 0.00739 * E * sin(Mp - M) - 0.00514 * E * sin(Mp + M) + 0.00208 * E * E * sin(2 * M)
+        - 0.00111 * sin(Mp - 2 * F) - 0.00057 * sin(Mp + 2 * F) + 0.00056 * E * sin(2 * Mp + M)
+        - 0.00042 * sin(3 * Mp) + 0.00042 * E * sin(M + 2 * F) + 0.00038 * E * sin(M - 2 * F)
+        - 0.00024 * E * sin(2 * Mp - M) - 0.00017 * sin(Om) - 0.00007 * sin(Mp + 2 * M)
+        + 0.00004 * sin(2 * Mp - 2 * F) + 0.00004 * sin(3 * M) + 0.00003 * sin(Mp + M - 2 * F)
+        + 0.00003 * sin(2 * Mp + 2 * F) - 0.00003 * sin(Mp + M + 2 * F) + 0.00003 * sin(Mp - M + 2 * F)
+        - 0.00002 * sin(Mp - M - 2 * F) - 0.00002 * sin(3 * Mp + M) + 0.00002 * sin(4 * Mp)
+      : -0.40614 * sin(Mp) + 0.17302 * E * sin(M) + 0.01614 * sin(2 * Mp) + 0.01043 * sin(2 * F)
+        + 0.00734 * E * sin(Mp - M) - 0.00515 * E * sin(Mp + M) + 0.00209 * E * E * sin(2 * M)
+        - 0.00111 * sin(Mp - 2 * F) - 0.00057 * sin(Mp + 2 * F) + 0.00056 * E * sin(2 * Mp + M)
+        - 0.00042 * sin(3 * Mp) + 0.00042 * E * sin(M + 2 * F) + 0.00038 * E * sin(M - 2 * F)
+        - 0.00024 * E * sin(2 * Mp - M) - 0.00017 * sin(Om) - 0.00007 * sin(Mp + 2 * M)
+        + 0.00004 * sin(2 * Mp - 2 * F) + 0.00004 * sin(3 * M) + 0.00003 * sin(Mp + M - 2 * F)
+        + 0.00003 * sin(2 * Mp + 2 * F) - 0.00003 * sin(Mp + M + 2 * F) + 0.00003 * sin(Mp - M + 2 * F)
+        - 0.00002 * sin(Mp - M - 2 * F) - 0.00002 * sin(3 * Mp + M) + 0.00002 * sin(4 * Mp);
+    const A = [
+      [299.77 + 0.107408 * k - 0.009173 * T2, 0.000325],
+      [251.88 + 0.016321 * k, 0.000165],
+      [251.83 + 26.651886 * k, 0.000164],
+      [349.42 + 36.412478 * k, 0.000126],
+      [84.66 + 18.206239 * k, 0.000110],
+      [141.74 + 53.303771 * k, 0.000062],
+      [207.14 + 2.453732 * k, 0.000060],
+      [161.72 + 7.351313 * k, 0.000056],
+      [195.39 + 50.317609 * k, 0.000047],
+      [226.51 + 51.263693 * k, 0.000042],
+      [87.53 + 21.157916 * k, 0.000040],
+      [129.11 + 2.668002 * k, 0.000037],
+      [213.45 + 2.790096 * k, 0.000035],
+      [106.54 + 117.149972 * k, 0.000023],
+    ];
+    let extra = 0;
+    for (const [deg, coeff] of A) extra += coeff * Math.sin(toRad(deg));
+    return jde + c + extra;
+  }
+  function jdeToDate(jde) {
+    return new Date((jde - 2440587.5) * 86400000);
+  }
   function nextPhase(from, target) {
-    let prev = S.getMoonIllumination(from).phase;
-    for (let h = 1; h <= 24 * 31; h++) {
-      const t = new Date(from.getTime() + h * 3600e3), p = S.getMoonIllumination(t).phase;
-      const crossed = target === 0 ? p < prev : prev < target && p >= target;
-      if (crossed) return t;
-      prev = p;
+    const year = from.getUTCFullYear() + (from.getUTCMonth() + from.getUTCDate() / 31) / 12;
+    let k = (year - 2000) * 12.3685;
+    k = target === 0.5 ? Math.floor(k - 0.5) + 0.5 : Math.floor(k);
+    for (let i = 0; i < 4; i++) {
+      const t = jdeToDate(meeusMoonJDE(k + i));
+      if (t.getTime() > from.getTime()) return t;
     }
     return null;
   }
+
   // ---- Moonrise / moonset: SunCalc's simplified lunar model can be ~10+ min off, so
   // rise/set use Paul Schlyter's lunar theory (main perturbation terms, ~2' accuracy)
   // with topocentric parallax, semidiameter and 34' refraction (USNO convention).
@@ -104,7 +173,7 @@
   }
   function render(body, lake, day) {
     const { sun, moon, ill, noon } = compute(lake, day);
-    const [pn, pe] = phaseName(ill.phase);
+    const [pn, pe] = phaseName(ill.phase, ill.fraction);
     const nf = nextPhase(noon, 0.5), nn = nextPhase(noon, 0);
     const row = (k, v) => `<tr><th scope="row">${k}</th><td>${v || "—"}</td></tr>`;
     const moonRise = moon.alwaysUp ? "Up all day" : moon.alwaysDown ? "Down all day" : tf(moon.rise) || "No moonrise this day";
