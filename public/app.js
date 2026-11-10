@@ -1,12 +1,12 @@
-/* Mike's Fishing App — Indiana boat launches · NE Indiana lake depth prototype */
+/* Mike's Fishing App — Indiana & Michigan boat launches and lake depth maps */
 (function () {
   "use strict";
 
   const MAX_ZOOM = 22;
-  // Default view covers NE Indiana (Peru/Muncie north to MI/OH lines); pan/zoom freely for statewide launches.
+  // Default view stays on NE Indiana. Bounds cover Indiana and Michigan so northern lakes are reachable.
   const NE_CENTER = [41.0, -85.4];
   const NE_ZOOM = 9;
-  const STATE_BOUNDS = L.latLngBounds([37.75, -88.12], [41.78, -84.75]);
+  const STATE_BOUNDS = L.latLngBounds([37.7, -90.6], [48.35, -82.1]);
 
   const map = L.map("map", {
     center: NE_CENTER,
@@ -239,7 +239,7 @@
     const yr = (String(lk.source || "").match(/\b(1[89]\d\d|20\d\d)\b/) || [])[1];
     switch (lk.contour_method) {
       case "vector_featureserver":
-        return "DNR survey";
+        return (lk.state === "MI") ? "Michigan DNR Inland Lake Contours" : "DNR survey";
       case "traced_from_pdf":
         return "DNR map (traced)";
       case "raster_color_band_trace":
@@ -300,7 +300,8 @@
     const name = normSearch(l.name);
     const county = normSearch(l.county);
     const county2 = normSearch(l.county2);
-    const hay = `${name} ${county} ${county2}`.trim();
+    const state = lakeStateName(l).toLowerCase();
+    const hay = `${name} ${county} ${county2} ${state} ${normSearch(l.state)}`.trim();
     return q.split(/\s+/).every((tok) => {
       const t = expandSearchToken(tok);
       return tokenFuzzyIn(hay, t) || tokenFuzzyIn(hay, tok);
@@ -308,7 +309,16 @@
   }
 
   let countyFilter = null;
+  let stateFilter = null; // "IN" | "MI" | null
   let sortNear = null; // {lat, lng} after Locate
+
+  function lakeState(l) {
+    const s = String((l && l.state) || "IN").toUpperCase();
+    return s === "MI" ? "MI" : "IN";
+  }
+  function lakeStateName(l) {
+    return lakeState(l) === "MI" ? "Michigan" : "Indiana";
+  }
 
   function filteredLakes() {
     const q = normSearch(document.getElementById("lakeSearch").value);
@@ -317,6 +327,7 @@
     const list = lakes.filter((l) => {
         if (l.has_contours && !showC) return false;
         if (!l.has_contours && !showP) return false;
+        if (stateFilter && lakeState(l) !== stateFilter) return false;
         if (countyFilter && l.county !== countyFilter && l.county2 !== countyFilter) return false;
         return lakeMatchesQuery(l, q);
       });
@@ -346,6 +357,7 @@
   function allCounties() {
     const set = new Set();
     for (const l of lakes) {
+      if (stateFilter && lakeState(l) !== stateFilter) continue;
       if (l.county) set.add(l.county);
       if (l.county2) set.add(l.county2);
     }
@@ -367,7 +379,7 @@
       el.appendChild(b);
       return b;
     };
-    mk("All", { pressed: !countyFilter && !sortNear, onClick: () => { countyFilter = null; sortNear = sortNear; /* keep coords but cancel near-sort */ sortNear = null; renderCountyChips(); renderLakeList(); } });
+    mk("All", { pressed: !countyFilter && !stateFilter && !sortNear, onClick: () => { countyFilter = null; stateFilter = null; sortNear = null; renderCountyChips(); renderLakeList(); } });
     mk("Nearest to me", {
       pressed: !!sortNear,
       disabled: !sortNear && !(window.__mfaLastFix),
@@ -377,12 +389,17 @@
         if (!fix) return;
         sortNear = { lat: fix.lat, lng: fix.lng };
         countyFilter = null;
+        stateFilter = null;
         renderCountyChips();
         renderLakeList();
       }
     });
-    for (const c of allCounties()) {
-      mk(c, { pressed: countyFilter === c, onClick: () => { countyFilter = countyFilter === c ? null : c; sortNear = null; renderCountyChips(); renderLakeList(); } });
+    mk("Indiana", { pressed: stateFilter === "IN" && !sortNear, onClick: () => { stateFilter = stateFilter === "IN" ? null : "IN"; countyFilter = null; sortNear = null; renderCountyChips(); renderLakeList(); } });
+    mk("Michigan", { pressed: stateFilter === "MI" && !sortNear, onClick: () => { stateFilter = stateFilter === "MI" ? null : "MI"; countyFilter = null; sortNear = null; renderCountyChips(); renderLakeList(); } });
+    if (stateFilter) {
+      for (const c of allCounties()) {
+        mk(c, { pressed: countyFilter === c, onClick: () => { countyFilter = countyFilter === c ? null : c; sortNear = null; renderCountyChips(); renderLakeList(); } });
+      }
     }
   }
 
@@ -415,7 +432,7 @@
       btn.type = "button";
       btn.className = "lake-row";
       btn.innerHTML = `<div class="name">${l.name}${badge}</div>
-        <div class="meta">${l.county || "—"}${acres}${depth}</div>`;
+        <div class="meta">${l.county || "—"}, ${lakeStateName(l)}${acres}${depth}</div>`;
       btn.addEventListener("click", () => selectLake(l, true));
       li.appendChild(btn);
       ul.appendChild(li);
@@ -447,25 +464,26 @@
   function closeLakeTooltips() {
     if (lakeMarkers) lakeMarkers.eachLayer((m) => { if (m.closeTooltip) m.closeTooltip(); });
   }
-  const HOME_TITLE = "Indiana lake depth maps and boat launches | Mike's Fishing App";
+  const HOME_TITLE = "Indiana & Michigan lake depth maps and boat launches | Mike's Fishing App";
   const HOME_CANONICAL = "https://mikesfishingapp.com/";
   function countyPlaceName(county) {
-    if (!county) return "Indiana";
+    if (!county) return "";
     if (/\(|\bcounty\b/i.test(county)) return county;
     return county + " County";
   }
   function syncDocumentSeo(lake) {
     const link = document.querySelector('link[rel="canonical"]');
     if (lake && lake.id) {
-      const place = countyPlaceName(lake.county);
+      const st = lakeStateName(lake);
+      const place = countyPlaceName(lake.county) || st;
       const noMap = lake.no_depth_map || !lake.has_contours;
       const unofficial = /unofficial/i.test((lake.accuracy_note || "") + " " + (lake.source || ""))
         || lake.contour_method === "lidar_dem_contour";
       document.title = noMap
-        ? (lake.name + " — no depth map yet | " + place + ", Indiana")
+        ? (lake.name + " — no depth map yet | " + place + ", " + st)
         : unofficial
-          ? (lake.name + " depth map (unofficial) | " + place + ", Indiana")
-          : (lake.name + " depth map | " + place + ", Indiana");
+          ? (lake.name + " depth map (unofficial) | " + place + ", " + st)
+          : (lake.name + " depth map | " + place + ", " + st);
       if (link) link.setAttribute("href", "https://mikesfishingapp.com/lakes/" + encodeURIComponent(lake.id) + "/");
     } else {
       document.title = HOME_TITLE;
@@ -748,7 +766,7 @@
     card.innerHTML = `
       <button class="close" id="btnCloseCard" type="button" aria-label="Close">✕</button>
       <h2>${lake.name}</h2>
-      <div class="county">${lake.county || ""}${lake.county2 ? " / " + lake.county2 : ""} · ${
+      <div class="county">${lake.county || ""}${lake.county2 ? " / " + lake.county2 : ""}, ${lakeStateName(lake)} · ${
         lake.retrace_pending ? "Depth map being re-traced" :
         lake.no_depth_map ? "No depth map yet" :
         lake.georef_method === "synthetic" || lake.contour_method === "synthetic_or_distance_based"
@@ -1599,6 +1617,7 @@
         window.__mfaLastFix = { lat: latitude, lng: longitude };
         sortNear = { lat: latitude, lng: longitude };
         countyFilter = null;
+        stateFilter = null;
         renderCountyChips();
         renderLakeList();
         openPanel(true);
