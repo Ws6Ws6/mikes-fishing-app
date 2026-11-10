@@ -1284,6 +1284,8 @@ function createTrollSpeedFilter(options) {
         contourPending.delete(id);
         if (contourLayer && gj.features && gj.features.length) {
           contourLayer.addData(gj);
+          const el = contourLayer._renderer && contourLayer._renderer._container;
+          if (el) el.classList.add("contour-svg");
           onContoursAdded();
         }
         return gj;
@@ -1353,18 +1355,25 @@ function createTrollSpeedFilter(options) {
     // sat in the wrong geographic place after pan, wheel-zoom, or touch scroll.
     // padding keeps nearby lines drawn while panning without a full redraw race.
     const contourRenderer = L.svg({ padding: 0.5 });
+    // Leaflet 1.9 ignores renderer className and may create the SVG only when
+    // the first contour is added (lazy shards), or recreate it on view reset.
+    // Tag inside _initContainer so fill:none CSS always hits contour strokes.
+    const _initContourSvg = contourRenderer._initContainer.bind(contourRenderer);
+    contourRenderer._initContainer = function () {
+      _initContourSvg();
+      if (this._container) this._container.classList.add("contour-svg");
+    };
     contourLayer = L.geoJSON({ type: "FeatureCollection", features: [] }, {
       style: styleContour,
       renderer: contourRenderer,
     }).addTo(map);
-    // Leaflet 1.9 SVG renderer ignores renderer className — tag the container ourselves
-    // so fill:none CSS only hits contour strokes, not lake circleMarkers.
     const tagContourSvg = () => {
       const el = contourRenderer && contourRenderer._container;
       if (el) el.classList.add("contour-svg");
     };
     tagContourSvg();
     contourLayer.on("add", tagContourSvg);
+    map.on("viewreset zoomend", tagContourSvg);
 
     const syncHalo = () => {
       const want = !!IMAGERY_BASEMAPS[basemap] && map.hasLayer(contourLayer);
