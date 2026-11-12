@@ -2,7 +2,7 @@
   "id": "./",
   "name": "Mike's Fishing App",
   "short_name": "Mike's Fishing",
-  "description": "Indiana & Michigan lake depth maps, boat launches, weather, and trolling tools.",
+  "description": "Northeast Indiana lake depth maps, boat launches, weather, and trolling tools.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
