@@ -1,4 +1,4 @@
-/* Mike's Fishing App — Indiana & Michigan boat launches and lake depth maps */
+/* Mike's Fishing App — Northeast Indiana boat launches and lake depth maps */
 (function () {
   "use strict";
 
@@ -700,7 +700,7 @@ function createTrollSpeedFilter(options) {
   function closeLakeTooltips() {
     if (lakeMarkers) lakeMarkers.eachLayer((m) => { if (m.closeTooltip) m.closeTooltip(); });
   }
-  const HOME_TITLE = "Indiana & Michigan lake depth maps and boat launches | Mike's Fishing App";
+  const HOME_TITLE = "Northeast Indiana lake depth maps and boat launches | Mike's Fishing App";
   const HOME_CANONICAL = "https://mikesfishingapp.com/";
   function countyPlaceName(county) {
     if (!county) return "";

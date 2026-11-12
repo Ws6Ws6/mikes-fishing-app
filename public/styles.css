@@ -540,27 +540,6 @@ body.trolling .leaflet-bottom.leaflet-left {
 #map:focus { outline: none; }
 
 
-/* Crawlable home intro + All lakes link. Keep clear of the legend (right)
-   and Leaflet zoom (bottom-left). Hidden while trolling so the HUD stays clear. */
+/* "All lakes" directory link in the header brand. */
 .brand-dir { margin: 2px 0 0; font-size: 12px; }
 .brand-dir a { color: #e8f4fa; text-decoration: underline; text-underline-offset: 2px; }
-#seoFooter {
-  position: absolute; z-index: 850;
-  left: 10px;
-  bottom: calc(86px + var(--safe-bottom));
-  max-width: min(300px, calc(100vw - 176px));
-  padding: 7px 9px;
-  border-radius: 8px;
-  background: rgba(255,255,255,.88);
-  color: var(--ink);
-  font-size: 12px;
-  line-height: 1.35;
-  box-shadow: var(--shadow);
-}
-#seoFooter p { margin: 0 0 4px; }
-#seoFooter p:last-child { margin: 0; }
-#seoFooter a { color: #0e4d73; }
-body.trolling #seoFooter { display: none; }
-@media (max-width: 520px) {
-  #seoFooter { padding: 5px 8px; max-width: calc(100vw - 170px); }
-}
